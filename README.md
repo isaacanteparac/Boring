@@ -17,13 +17,13 @@
     npm i passport 
     npm i passport-local 
     npm i timeago.js 
-    
     npm i express-validator
-    npm i nodemon
+    npm i ts-node -D
 
 # ACT FILE
     npx tsc --init
     es2018 que es v9
+
 
 # READ FILE
     npx tsc
