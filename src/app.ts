@@ -1,5 +1,5 @@
 import express, {Application}  from "express";
-
+import morgan  from "morgan";
 
 
 
@@ -8,8 +8,18 @@ export class App {
 
     private app: Application;
 
-    constructor(){
+    constructor(private port?: number | string){
         this.app = express();
+        this.settings();
+        this.middlewares();
+    }
+
+    settings(){
+        this.app.set("port", this.port || process.env.PORT || 3720);
+    }
+
+    middlewares(){
+        this.app.use(morgan("dev"));
     }
 
     async listen()
@@ -19,9 +29,8 @@ export class App {
         console.log("     █    █▄▄█ █▄▄▀ █▀▀▄ █  █ █  █");
         console.log("     █▄▄█ ▀  ▀ ▀ ▀▀ ▀▀▀  ▀▀▀▀ ▀  ▀ ");
         console.log("          SINGULARITY INC © 2021");
-        this.app.set("port", process.env.PORT || 3720);
-        await this.app.listen(this.app.get("port"));
 
+        await this.app.listen(this.app.get("port"));
         console.log("\nSERVER ON PORT "+ this.app.get("port"));
     }
 }

@@ -7,12 +7,14 @@
     npm install -S express
     npm i nodemon -D
     ____________________________
-    npm i express-handlebars 
-    npm i @types/express-session
-    npm i @types/connect-flash
-    npm i mysql 
+    npm i @types/express-handlebars -D 
+    npm i @types/express-session -D
+    npm i @types/connect-flash -D
+    npm i morgan -D 
+    npm i mysql2 -D
+    npm i types/mysql2 -D
     npm i express-mysql-session 
-    npm i morgan 
+    
     npm i bcryptjs 
     npm i passport 
     npm i passport-local 
