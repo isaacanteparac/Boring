@@ -14,7 +14,7 @@ export async function _get_(req: Request, res: Response) {
 }
 
 export async function _post_(req: Request, res: Response) {
-    
+    console.log("this is post login")
 }
 
 
