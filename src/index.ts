@@ -11,28 +11,6 @@ const path = require('path')
 
 
 
-/*app.get("/", (req, res) => {
-  res.send("USE TYPESCRIPT BACKEND");
-});*/
-
-
-
-/*MIDDLEWARES */
-/*app.use(morgan("start"));
-
-
-/**GLOBAL VARIABLE*/
-
-
-/*ROUTES*/
-
-/*PUBLIC */
-
-/*STAR */
-
-
-
-
 
 async function main(){
   const app = new App();
