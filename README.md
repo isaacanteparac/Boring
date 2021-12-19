@@ -35,3 +35,7 @@
 
 # RUN ALL
     npm start
+# BEAUTIFUL
+    console.log("\n     █▀▀█ █▀▀█ █▀▀█ █▀▀▄ █▀▀█ █▀▀▄ ");
+    console.log("     █    █▄▄█ █▄▄▀ █▀▀▄ █  █ █  █");
+    console.log("     █▄▄█ ▀  ▀ ▀ ▀▀ ▀▀▀  ▀▀▀▀ ▀  ▀ ");

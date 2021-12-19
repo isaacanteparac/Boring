@@ -8,8 +8,11 @@ import { connect } from '../../../connect_database';
 
 
 export async function _get_(req: Request, res: Response) {
-    console.log("hola");
-    return res.json("esto es un get");
+    const conn = await connect();
+    const posts = await conn.query('SELECT * FROM user');
+
+
+    return res.json(posts[0]);
 }
 
 export async function _post_(req: Request, res: Response) {

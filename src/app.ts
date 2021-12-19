@@ -1,9 +1,7 @@
 import express, {Application, Response, Request, NextFunction}  from "express";
 import morgan  from "morgan";
-
 import path from "path";
-import { engine } from 'express-handlebars';
-
+import { engine } from "express-handlebars";
 
 
 //TITLE:ROUTES
@@ -22,7 +20,7 @@ export class App {
         this.public_();
     }
 
-    settings(){
+    async settings(){
         this.app.set("port", this.port || process.env.PORT || 3720);
         this.app.set("views", path.join(__dirname, "./views"));
 
@@ -37,6 +35,7 @@ export class App {
         this.app.engine(".hbs", engine(handlebarsConfig));
         this.app.set("view engine", ".hbs");
 
+        
     }
 
     middlewares(){
@@ -62,10 +61,7 @@ export class App {
     async listen()
     {
         console.clear();
-        console.log("\n     █▀▀█ █▀▀█ █▀▀█ █▀▀▄ █▀▀█ █▀▀▄ ");
-        console.log("     █    █▄▄█ █▄▄▀ █▀▀▄ █  █ █  █");
-        console.log("     █▄▄█ ▀  ▀ ▀ ▀▀ ▀▀▀  ▀▀▀▀ ▀  ▀ ");
-        console.log("          SINGULARITY INC © 2021");
+        console.log("\n   DEVELOPED BY ISAAC ANTEPARA CEREZO");
 
         await this.app.listen(this.app.get("port"));
         console.log("\nSERVER ON PORT "+ this.app.get("port"));
