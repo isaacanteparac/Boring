@@ -1,0 +1,54 @@
+* {
+    cursor: default;
+    outline: none;
+}
+
+.boxFriends {
+    /* background-color: var(--backgroundDark);*/
+    margin-bottom: 60px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contentFriend {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    margin-top: 15px;
+    width: 34%;
+    border-radius: 20px;
+    border: 1px solid var(--borderBlack);
+    padding: 0;
+    background-color: var(--backgroundComponent);
+}
+
+.contentFriend:active {
+    background-color: var(--colorActiveBtn);
+}
+
+.contactfriend .contentOnePost {
+    border-bottom-left-radius: var(--borderRadioBig);
+    border-bottom-right-radius: var(--borderRadioBig);
+}
+
+.nameFriend {
+    margin: 0;
+    font-size: 1.1rem;
+    color: var(--white);
+    margin-bottom: 3px;
+    text-align: center;
+}
+
+.usernameFriend {
+    color: var(--white);
+    margin-bottom: 5px;
+}
+
+.photoContact {
+    width: 100%;
+    margin: 0;
+}

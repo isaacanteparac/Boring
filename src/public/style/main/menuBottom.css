@@ -1,0 +1,65 @@
+* {
+    cursor: default;
+    outline: none;
+    --heightNav: 6%;
+}
+
+.navInfer {
+    display: block;
+    position: fixed;
+    bottom: 10px;
+    width: 90%;
+    height: var(--heightNav);
+    transition: all 0.5s;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    left: 5%;
+    border: 1px solid var(--borderBlack);
+}
+
+.navInfer ul.navbar-menu {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--backgroundComponent);
+    height: 100%;
+    border-radius: 50px;
+}
+
+.navInfer ul.navbar-menu li {
+    display: inline-block;
+    text-transform: capitalize;
+}
+
+.links-footer {
+    font-size: 50px;
+    margin: 0 25px;
+    text-decoration: none;
+}
+
+.links-footer:hover {
+    color: var(--blueLigth);
+}
+
+.btnFooter {
+    background-color: var(--transp);
+    margin: 0 5px;
+    padding-top: 5px;
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+}
+
+.iconsFooter {
+    width: 30px;
+    color: var(--colorIconsHeadMenu)!important;
+}
+
+.iconsFooter:active {
+    color: var(--white)!important;
+}

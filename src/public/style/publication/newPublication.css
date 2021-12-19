@@ -1,0 +1,174 @@
+* {
+    outline: none;
+    cursor: default;
+}
+
+.boxNewPost {
+    padding: 0;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+.contentNewPost {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.contentTypeFile {
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    margin-top: 15px;
+}
+
+.fileUpload {
+    background: var(--transp);
+    width: 30px;
+    height: 30px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    cursor: pointer;
+    margin: 0 1px;
+}
+
+.fileUpload input.upload {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    width: 148px;
+    height: 46px;
+    cursor: pointer;
+}
+
+input[type="file"] {
+    position: fixed;
+    right: 100%;
+    bottom: 100%;
+}
+
+.custom-file-upload {
+    border: 1px solid var(--lowlowWhite);
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+}
+
+.iconsNewPost {
+    width: 30px;
+    color: var(--white)!important;
+}
+
+.iconsNewPost:active {
+    color: var(--blueLigth)!important;
+}
+
+.divBtnNewPost {
+    position: relative;
+    top: 50%;
+    display: flex;
+    justify-content: right;
+}
+
+.btnNewPost {
+    border: none;
+    background-color: var(--blueLigth);
+    color: white;
+    font-size: 20px;
+    border-radius: 20px;
+    text-align: center;
+    width: 70px;
+    height: 30px;
+    margin-right: 5px;
+    margin-top: 30px;
+}
+
+.btnNewPost:active {
+    background-color: var(--blueLigth);
+}
+
+.divTypeExclusi {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+}
+
+.divTypeExclusi label {
+    color: var(--white);
+    margin-left: 5px;
+    margin-right: 10px;
+    font-size: 16px;
+}
+
+.divTypeContent {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.optionsTypeContent {
+    width: 90%;
+    margin-top: 20px;
+    margin-left: 14px;
+    position: relative;
+    background-color: var(--transp);
+    border: none;
+    color: white;
+    border-bottom: 1px solid var(--borderGrayLigth);
+    text-transform: capitalize;
+    font-size: 16px;
+}
+
+.optionsContent {
+    background-color: var(--backgroundComponent);
+    text-decoration: none;
+    border: none;
+}
+
+.descriptionNewPost input {
+    background-color: var(--transp);
+    margin-left: 10px;
+    border: none;
+    color: var(--white);
+    border-bottom: 1px solid var(--borderGrayLigth);
+    width: 90%;
+    font-size: 16px;
+}
+
+.subtitle {
+    color: var(--white);
+    width: 80%;
+    margin: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+.btnClose {
+    background-color: var(--trasnp);
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    float: right;
+    border: none;
+    position: relative;
+    bottom: 10px;
+    color: var(--colorIconsHeadMenu);
+    font-size: 25px;
+}
+
+.btnClose:active {
+    color: var(--white);
+}

@@ -1,0 +1,75 @@
+* {
+    cursor: default;
+    outline: none;
+}
+
+.divBlur {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 50px;
+    background-color: rgba(0, 0, 0, 0.616);
+}
+
+.contentBoxBlur {
+    position: relative;
+    width: 80%;
+    background-color: var(--backgroundComponent);
+    bottom: 20%;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.contentBoxBlur .contentChat {
+    border-radius: 0;
+}
+
+.contentBoxBlur .contentChat:hover {
+    background-color: var(--backgroundComponent);
+}
+
+.optionsBox {
+    height: 40px;
+    border-radius: 15px;
+    padding-top: 10px;
+    padding-left: 10px;
+    margin: 0 10px;
+}
+
+.optionsBox:active {
+    background-color: var(--colorActiveBtn);
+    color: var(--white)!important;
+}
+
+.optionsBox h4 {
+    color: var(--white);
+    position: relative;
+    bottom: 20px;
+}
+
+.optionsBox .iconsOp {
+    margin-right: 10px;
+}
+
+.optionsBox .iconsOp:active {
+    color: var(--white)!important;
+}
+
+.btnOptions {
+    background-color: var(--transp);
+    width: 30px;
+    height: 30px;
+    border: none;
+    margin-right: 5px;
+}
+
+.iconsOp {
+    color: var(--white)!important;
+}
+
+.iconsOp:active {
+    color: var(--blueLigth)!important;
+}

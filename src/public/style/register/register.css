@@ -1,0 +1,149 @@
+@import url(https://fonts.googleapis.com/css2?family=Azeret+Mono&display=swap);
+* {
+    cursor: default;
+    outline: none;
+}
+
+.register {
+    background-color: var(--transp);
+}
+
+.contenRegister {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.bannerLogin,
+.bannerSingup {
+    width: 100%;
+    /*height:300px;*/
+    height: 300px;
+    /*border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;*/
+}
+
+.bannerSingup {
+    height: 195px;
+}
+
+.titleLabel {
+    color: var(--white);
+    text-decoration: none;
+    font-family: 'Azeret Mono', monospace;
+    text-align: left;
+    font-weight: 700;
+    font-size: 48px;
+    position: relative;
+    top: 20%;
+    left: 15px;
+}
+
+.contentForm {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    /*background-color: var(--backgroundDark);*/
+    /*background-color: transparent;*/
+}
+
+.boxInputRegistre {
+    /*background-color: var(--backgroundDark);*/
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+.boxInputRegistre input {
+    background-color: var(--transp);
+    width: 80%;
+    height: 35px;
+    border: none;
+    border-bottom: 1px solid var(--borderGrayLigth);
+    margin-top: 5px;
+    color: var(--blueLigth);
+    font-size: 1.2rem;
+}
+
+.boxBtnForm {
+    display: flex;
+    justify-content: center;
+}
+
+.btnOk,
+.btnNo {
+    width: 75%;
+    height: 50px;
+    margin: 10px 0;
+    border-radius: 10px;
+    border: none;
+    background: var(--blueLigth);
+    color: white;
+    font-size: 1.2rem;
+}
+
+.btnOk:active {
+    background-color: var(--blueDark);
+}
+
+.btnNo {
+    width: 75%;
+    height: 50px;
+    margin: 10px 0;
+    border-radius: 10px;
+    border: none;
+    background: var(--tranps);
+    color: var(--borderGrayLigth);
+    border: 1px solid var(--borderGrayLigth);
+    font-size: 1.2rem;
+}
+
+.btnNo:active {
+    background-color: var(--colorActiveBtn);
+}
+
+.separationLine {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.separationLine label {
+    color: var(--white);
+    font-size: 15px;
+}
+
+.separationLine hr {
+    width: 38%;
+    height: 1px;
+    background-color: var(--borderGrayLigth);
+    border: none;
+}
+
+.primary {
+    /*background-image: radial-gradient(circle at 0% 0%, #422f73 0, #2c256f 25%, #051b6b 50%, #001367 75%, #000b63 100%);*/
+    width: 100%;
+    height: 100%;
+    padding-bottom: 50px;
+}
+
+.contentText {
+    display: flex;
+    flex-direction: column;
+}
+
+.contentText p {
+    color: var(--white);
+    font-size: 15px;
+    position: relative;
+    left: 15px;
+}
+
+.doubleBtnDiv {
+    position: relative;
+}

@@ -1,0 +1,125 @@
+* {
+    --blueLigth: #1040e2;
+    --blueDark: #133297;
+    --redLigth: #df1937;
+    --redDark: #b1162d;
+    --maxHeightContentPost: 412px;
+    --borderRadioBig: 30px;
+    --borderGrayLigth: #999898;
+    /*------------DARK-----------------*/
+    --backgroundComponent: #171925;
+    --borderBlack: #0d0d0d;
+    --colorActiveBtn: #000000;
+    --transp: rgba(7, 7, 7, 0);
+    --colorIconsHeadMenu: #646a80;
+    --white: #fff;
+    --lowWhite: #e7e7e7;
+    --lowlowWhite: #b6b6b6;
+    --backgrounBody: #050505;
+    --backgroundScroll: #0a0a0a;
+    --btnInteractionPost: #070707a1;
+    /*------LIGTH-------------------*/
+    --white: #000;
+    --lowlowWhite: #333333;
+    --lowWhite: #191919;
+    --backgroundComponent: #fff;
+    --colorActiveBtn: #b6b3b3;
+    --borderBlack: #cccccc;
+    --backgrounBody: #e6e6e6;
+    --backgroundScroll: #e6e6e6;
+    --btnInteractionPost: #d6d2d2a1;
+    outline: none;
+    cursor: default;
+}
+
+.head {
+    display: block;
+    position: fixed;
+    height: 50px;
+    width: 100%;
+    top: 0;
+    z-index: 9998;
+    transition: all 0.5s;
+}
+
+.content-head {
+    background-color: var(--backgroundComponent);
+    width: 100%;
+    height: 50px;
+    margin: 0 auto;
+    clear: both;
+    padding-top: 5px;
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid var(--borderBlack);
+}
+
+.head ul.subContent-head {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+}
+
+.head ul.subContent-head li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.links {
+    color: var(--white);
+    font-size: 23px;
+}
+
+.logo-head {
+    margin: 0;
+    margin-top: 4px;
+    padding: 0;
+    text-align: center;
+}
+
+.logo {
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    float: left;
+    font-weight: 700;
+    font-size: 30px;
+    color: var(--white);
+    border-left: 2px groove var(--blueLigth);
+    border-left-width: 30px;
+    border-radius: 20px;
+}
+
+.divbtnRight {
+    display: block;
+    float: right;
+    position: relative;
+    bottom: 45px;
+    right: 1px;
+}
+
+.divbtnLeft {
+    display: block;
+    float: left;
+    position: relative;
+    bottom: 45px;
+    left: 1px;
+}
+
+.btnHead {
+    background-color: var(--transp);
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+}
+
+.iconHead {
+    color: var(--colorIconsHeadMenu)!important;
+    width: 20px;
+    height: 20px;
+}
+
+.iconHead:active {
+    color: var(--white)!important;
+}

@@ -1,0 +1,144 @@
+* {
+    cursor: default;
+    outline: none;
+}
+
+.profile {
+    width: 100%;
+    height: 100%;
+    /* background-color: var(--backgroundDark);*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.infProfile {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /*background-color: var(--backgroundDark);*/
+    width: 100%;
+    border-bottom: 1px solid var(--borderBlack);
+    padding-bottom: 10px;
+}
+
+.infProfile .photoUser {
+    width: 90px;
+    height: 90px;
+    border-radius: var(--borderRadioBig);
+    background-color: var(--blueLigth);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.infProfile .photo {
+    width: 85px;
+    height: 85px;
+    border-radius: var(--borderRadioBig);
+}
+
+.infProfile .btnAddUser {
+    position: relative;
+    bottom: 10px;
+    background-color: var(--redLigth);
+    width: 30px;
+    height: 30px;
+    border-radius: 25px;
+    border: none;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.btnAddUser:active {
+    background-color: var(--redDark);
+}
+
+.iconsProfile {
+    width: 20px;
+    filter: invert(100%);
+}
+
+.informationUser {
+    width: 100%;
+    /*background-color: var(--backgroundDark);*/
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    color: var(--white);
+}
+
+.informationUser h4 {
+    margin: 0;
+    font-size: 20px;
+}
+
+.informationUser h5 {
+    margin: 0;
+}
+
+.informationUser p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.postFollowLike {
+    padding: 0;
+}
+
+.listLine {
+    margin: 0;
+    padding: 0;
+    height: 40px;
+    padding-top: 5px;
+    display: flex;
+    justify-content: center;
+    color: var(--white);
+}
+
+.listLine .elementList {
+    display: inline;
+    padding: 5px;
+    margin: 5px;
+    border-radius: var(--borderRadioBig);
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+    height: 20px;
+}
+
+.elementList:active {
+    background-color: var(--backgroundComponent);
+}
+
+.optionsSearchPost {
+    margin-bottom: 5px;
+}
+
+.allPost {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.onePost {
+    /*background-color: var(--backgroundDark);*/
+    width: 30%;
+    height: 20%;
+    border-radius: 20px;
+    margin: auto;
+    margin-top: 15px;
+}
+
+.contentOnePost {
+    width: 100%;
+    border-radius: 20px;
+}
