@@ -55,14 +55,13 @@ export class App {
     }
 
     public_(){
-        this.app.use(express.static(path.join(__dirname, "./public")))
+        this.app.use(express.static(path.join(__dirname, "./public/")))
     }
 
     async listen()
     {
         console.clear();
         console.log("\n   DEVELOPED BY ISAAC ANTEPARA CEREZO");
-
         await this.app.listen(this.app.get("port"));
         console.log("\nSERVER ON PORT "+ this.app.get("port"));
     }

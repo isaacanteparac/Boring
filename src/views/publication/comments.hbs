@@ -1,0 +1,38 @@
+<div className="coment">
+    <div className="contentPost">
+        <Post />
+    </div>
+
+    <div className="comentBox">
+        <div className="title">
+            <h4>Comments</h4>
+        </div>
+
+        <!--NOTE:mapa para mostrar los comentar de todos los usurios-->
+            <div className="comentUser" key={this.props.id_comment}>
+                <div className="photoUser">
+                    <img className="photo" src="#" />
+                </div>
+                <div className="divTextsUserPrimary">
+                    <div className="divTextnameUser">
+                        <label className="textUserLabel">username</label>
+                    </div>
+                    <div className="divTextUser">
+                        <p className="textUserP">comentario de cualquier usuario</p>
+                    </div>
+                </div>
+            </div>
+    </div>
+
+    <div className="boxInput">
+        <form onSubmit={this.postUserComment} autocomplete="off">
+            <div className="contenInputMessage">
+                <input className="inputMessage" rows type="text" name="comment" onChange={this.onChangenComment}
+                    placeholder="Comment" />
+                <button type="submit" className="btnPostMessage">
+                    Post
+                </button>
+            </div>
+        </form>
+    </div>
+</div>

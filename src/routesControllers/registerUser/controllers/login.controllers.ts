@@ -10,9 +10,9 @@ import { connect } from '../../../connect_database';
 export async function _get_(req: Request, res: Response) {
     const conn = await connect();
     const posts = await conn.query('SELECT * FROM user');
+    console.log(posts[0]);
 
-
-    return res.json(posts[0]);
+    return res.render("layout/main");
 }
 
 export async function _post_(req: Request, res: Response) {

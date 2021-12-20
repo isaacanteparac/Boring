@@ -1,0 +1,37 @@
+<div className="register">
+    <div className="contenRegister">
+        <div className="bannerLogin">
+            <label className="titleLabel">Welcome<br />Back</label>
+        </div>
+        <div className="contentForm">
+
+            <form action="/login" method="post">
+                <div className="boxInputRegistre">
+                    <input type="text" name="username" placeholder="Username" autoFocus />
+                </div>
+                <div className="boxInputRegistre">
+                    <input type="password" name="password" placeholder="Password" />
+                </div>
+                <div className="boxBtnForm">
+                    <button type="submit" className="btnOk">
+                        Login
+                    </button>
+                </div>
+            </form>
+
+            <div className="separationLine">
+                <hr />
+                <label>or</label>
+                <hr />
+            </div>
+
+            <a className="link" href="/sign-up">
+                <div className="boxBtnForm">
+                    <button className="btnNo" type="submit">
+                        Sign up
+                    </button>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
