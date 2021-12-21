@@ -5,9 +5,9 @@ const router = Router();
 
 //DEPENDENCE:CONTROLLERS LOGIN
 const {_get_, 
-    _post_,
+    _post_/*
     _update_,
-    _delete_} = require('../controllers/login.controllers');
+_delete_*/} = require('../controllers/signup.controllers');
 
 
 
@@ -17,12 +17,12 @@ router.route("/")
 
 router.route("/")
     .post(_post_);
-
+/*
 router.route("/")
     .get(_update_);
 
 router.route("/")
-    .post(_delete_);
+    .post(_delete_);*/
 
 
 export default router;

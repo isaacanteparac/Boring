@@ -3,6 +3,10 @@
     cursor: default;
     outline: none;
 }
+.contentApp {
+    margin-top: 0px;
+}
+
 
 .register {
     background-color: var(--transp);
@@ -21,14 +25,11 @@
 .bannerLogin,
 .bannerSingup {
     width: 100%;
-    /*height:300px;*/
-    height: 300px;
-    /*border-bottom-left-radius: 50px;
-    border-bottom-right-radius: 50px;*/
+    height: 250px;
 }
 
 .bannerSingup {
-    height: 195px;
+    height: 140px;
 }
 
 .titleLabel {
@@ -43,13 +44,23 @@
     left: 15px;
 }
 
+.bannerSingup .titleLabel{
+    font-size: 43px;
+}
+
+
+
 .contentForm {
-    margin-top: 15px;
+    margin-top: 10px;
     display: flex;
     flex-direction: column;
     width: 100%;
     /*background-color: var(--backgroundDark);*/
     /*background-color: transparent;*/
+}
+
+#signup .contentForm{
+    margin-top: 50px;
 }
 
 .boxInputRegistre {
@@ -68,6 +79,10 @@
     margin-top: 5px;
     color: var(--blueLigth);
     font-size: 1.2rem;
+}
+
+#signup .boxInputRegistre{
+    height: 35px;
 }
 
 .boxBtnForm {

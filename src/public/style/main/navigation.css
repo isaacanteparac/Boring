@@ -5,7 +5,7 @@
 }
 
 .navInfer {
-    display: block;
+    display: none;
     position: fixed;
     bottom: 10px;
     width: 90%;

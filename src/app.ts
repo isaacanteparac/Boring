@@ -6,6 +6,9 @@ import { engine } from "express-handlebars";
 
 //TITLE:ROUTES
 import loginRouter from "./routesControllers/registerUser/routes/login.routes";
+import signupRouter from "./routesControllers/registerUser/routes/signup.routes";
+import publicationRouter from "./routesControllers/publication/routes/publication.routes";
+
 
 export class App {
 
@@ -52,6 +55,8 @@ export class App {
 
     routes(){
         this.app.use(loginRouter);
+        this.app.use("/sign-up", signupRouter);
+        this.app.use("/post", publicationRouter);
     }
 
     public_(){

@@ -1,35 +1,35 @@
-<div className="coment">
-    <div className="contentPost">
+<div class="coment">
+    <div class="contentPost">
         <Post />
     </div>
 
-    <div className="comentBox">
-        <div className="title">
+    <div class="comentBox">
+        <div class="title">
             <h4>Comments</h4>
         </div>
 
         <!--NOTE:mapa para mostrar los comentar de todos los usurios-->
-            <div className="comentUser" key={this.props.id_comment}>
-                <div className="photoUser">
-                    <img className="photo" src="#" />
+            <div class="comentUser" key={this.props.id_comment}>
+                <div class="photoUser">
+                    <img class="photo" src="#" />
                 </div>
-                <div className="divTextsUserPrimary">
-                    <div className="divTextnameUser">
-                        <label className="textUserLabel">username</label>
+                <div class="divTextsUserPrimary">
+                    <div class="divTextnameUser">
+                        <label class="textUserLabel">username</label>
                     </div>
-                    <div className="divTextUser">
-                        <p className="textUserP">comentario de cualquier usuario</p>
+                    <div class="divTextUser">
+                        <p class="textUserP">comentario de cualquier usuario</p>
                     </div>
                 </div>
             </div>
     </div>
 
-    <div className="boxInput">
+    <div class="boxInput">
         <form onSubmit={this.postUserComment} autocomplete="off">
-            <div className="contenInputMessage">
-                <input className="inputMessage" rows type="text" name="comment" onChange={this.onChangenComment}
+            <div class="contenInputMessage">
+                <input class="inputMessage" rows type="text" name="comment" onChange={this.onChangenComment}
                     placeholder="Comment" />
-                <button type="submit" className="btnPostMessage">
+                <button type="submit" class="btnPostMessage">
                     Post
                 </button>
             </div>

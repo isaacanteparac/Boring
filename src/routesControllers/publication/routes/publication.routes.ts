@@ -1,0 +1,18 @@
+import { Router } from "express";
+const router = Router();
+
+//const passport = require("passport")
+
+//DEPENDENCE:CONTROLLERS LOGIN
+const {_get_
+        } = require('../controllers/publication.controllers');
+
+
+
+
+router.route("/")
+    .get(_get_);
+
+
+
+export default router;

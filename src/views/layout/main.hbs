@@ -5,12 +5,33 @@
     <meta charset="utf-8" />
     <meta name="description" content="Web site created using create-react-app" <meta name="viewport"
         content="width=device-width, initial-scale=1.0">
-
+    <title>Carbon</title>
+    <!--TITLE:JQUERY INTERACTIVE-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+    <!--TITLE: MAIN--->
     <link rel="stylesheet" href="style/main/main.css"/>
     <link rel="stylesheet"  href="style/main/navigation.css"/>
     <link rel="stylesheet" href="style/main/head.css"/>
+    <link rel="stylesheet" href="style/main/options.css"/>
+    <script src="javascript/main/headAndnavigation.js"></script>
 
-    <title>Carbon</title>
+    <!--TITLE: REGISTER--->
+    <link rel="stylesheet" href="style/register/register.css"/>
+
+    <!--TITLE: CHAT--->
+    <link rel="stylesheet" href="style/chat/chat.css"/>
+    <link rel="stylesheet" href="style/chat/contactBook.css"/>
+
+    <!--TITLE: PROFILE--->
+    <link rel="stylesheet" href="style/profile/profile.css"/>
+
+    <!--TITLE: PUBLICATION--->
+    <link rel="stylesheet" href="style/publication/publication.css"/>
+    <link rel="stylesheet" href="style/publication/comment.css"/>
+    <link rel="stylesheet" href="style/publication/createPublication.css"/>
+    
+    
 </head>
 
 <body>
@@ -18,8 +39,8 @@
     {{>headi}}
 
     <!--TITLE:BODY-->
-    <div className="contentApp">
-        contenido
+    <div class="contentApp">
+        {{{body}}}
     </div>
 
     <!--TITLE:MENU BOTTOM-->
