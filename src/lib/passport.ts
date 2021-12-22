@@ -21,11 +21,7 @@ passport.use('signup', new LocalStrategy({
         password
     };
     const db = await connect();
-    newUser.password = await encryptPassword(newUser.password);
-    await db.query("INSERT INTO users SET ?", [newUser]);
-    return done(null, newUser);
     if(newUser.password === repeatpassword){
-        
         newUser.password = await encryptPassword(newUser.password);
         await db.query("INSERT INTO users SET ?", [newUser]);
         console.log("USER ADD ");
