@@ -6,7 +6,7 @@ export async function connect(): Promise<Pool> {
         host: 'localhost',
         user: 'thisisisaacac',
         password: '2002',
-        database: 'origincarbon',
+        database: 'duaui',
         connectionLimit: 10
     });
     return connection_;

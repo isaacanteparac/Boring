@@ -1,6 +1,6 @@
 import { Router } from "express";
 const router = Router();
-
+import passport from "passport";
 //const passport = require("passport")
 
 //DEPENDENCE:CONTROLLERS LOGIN

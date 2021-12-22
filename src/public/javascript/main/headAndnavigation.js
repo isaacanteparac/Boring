@@ -14,4 +14,7 @@ $(document).ready(function() {
                
                });
      }
+     else{
+          $(".contentApp").css("margin-top", "0");
+     }
 });

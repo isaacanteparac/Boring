@@ -1,6 +1,6 @@
-USE origincarbon;
+USE duaui;
 
-CREATE TABLE publication(
+CREATE TABLE publications(
     id INT(11) NOT NULL AUTO_INCREMENT,
     description VARCHAR(255) NULL,
     file MEDIUMBLOB,
@@ -9,5 +9,5 @@ CREATE TABLE publication(
     updatee_ timestamp NOT NULL DEFAULT current_timestamp ON UPDATE CURRENT_TIMESTAMP,
     delete_  timestamp NOT NULL DEFAULT current_timestamp,
     PRIMARY KEY (id),
-    FOREIGN KEY (id_user) REFERENCES user(id)
+    FOREIGN KEY (id_user) REFERENCES users(id)
 );
