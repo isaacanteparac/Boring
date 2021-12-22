@@ -14,17 +14,20 @@ passport.use('signup', new LocalStrategy({
     passReqToCallback: true
 }, async (req: Request, username: string, password: string, done:any )=>{
     const {fullname, email, repeatpassword} = req.body;
-    const newUser: IUser = {
-        fullname,
-        username,
-        email,
-        password
-    };
-    const db = await connect();
-    if(newUser.password === repeatpassword){
-        newUser.password = await encryptPassword(newUser.password);
-        await db.query("INSERT INTO users SET ?", [newUser]);
+
+    if(password === repeatpassword){
+        const db = await connect();
+        password = await encryptPassword(password);
+        let newUser: IUser = {
+            fullname,
+            username,
+            email,
+            password
+        };
+        let result:any = await db.query("INSERT INTO users SET ?", [newUser]);
         console.log("USER ADD ");
+        newUser.id =   result[0].insertId;
+        console.log(newUser)
         return done(null, newUser);
     }
     else{
@@ -33,12 +36,12 @@ passport.use('signup', new LocalStrategy({
     }
 }))
 
-/*passport.serializeUser((user: any, done: any) => {
+passport.serializeUser((user: any, done: any) => {
     done(null, user.id);
   });
-  
+
 passport.deserializeUser(async (id: number, done: any) => {
     const db = await connect();
     const rows = await db.query('SELECT * FROM users WHERE id = ?', [id]);
     done(null, rows[0]);
-});*/
+});

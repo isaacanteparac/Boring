@@ -11,9 +11,10 @@ import { engine } from "express-handlebars";
 //NOTE:IMPORTS PARA EXEC LA AUTH DE USER
 import session from "express-session";
 import passport from "passport";
-//import validator from 'express-validator';
+//import vali from 'express-validator';
 const MySQLStore = require('express-mysql-session')(session);
 require('./lib/passport');
+
 
 //TITLE:ROUTES
 import loginRouter from "./routesControllers/registerUser/routes/login.routes";
@@ -49,19 +50,23 @@ export class App {
 
         this.app.engine(".hbs", engine(handlebarsConfig));
         this.app.set("view engine", ".hbs");
-
-        
     }
 
     middlewares(){
+        
         this.app.use(morgan("dev"));
         this.app.use(express.urlencoded({extended: true}));
         this.app.use(express.json());
         this.app.use(session({
-            secret: 'thisisisaacac3702',
+            secret:  process.env.SESSION_SECRET || 'i*/ws7d6554ds/+#',
             resave: false,
             saveUninitialized: false,
-            store: new MySQLStore(connect)
+            store: new MySQLStore({
+                host: 'localhost',
+                user: 'thisisisaacac',
+                password: '2002',
+                database: 'duaui'
+              })
         }));
         //this.app.use(flash());
         this.app.use(passport.initialize());

@@ -10,14 +10,17 @@
     npm i @types/express-handlebars -D 
     npm i @types/express-session -D
     npm i @types/connect-flash -D
+
+
     npm i morgan -D 
     npm i mysql2 -D
     npm i types/mysql2 -D
-    npm i express-mysql-session 
+    npm i express-mysql-session -D
+    npm i types/passport
+    npm i passport-local -D
+    npm i bcryptjs -D
     
-    npm i bcryptjs 
-    npm i passport 
-    npm i passport-local 
+
     npm i timeago.js 
     npm i express-validator
     npm i ts-node -D
