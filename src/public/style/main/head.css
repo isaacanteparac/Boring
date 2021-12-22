@@ -3,7 +3,7 @@
     --blueDark: #133297;
     --redLigth: #df1937;
     --redDark: #b1162d;
-    --maxHeightContentPost: 412px;
+    --maxHeightContentPost: 400px;
     --borderRadioBig: 30px;
     --borderGrayLigth: #999898;
     /*------------DARK-----------------*/
@@ -19,7 +19,7 @@
     --backgroundScroll: #0a0a0a;
     --btnInteractionPost: #070707a1;
     /*------LIGTH-------------------*/
-    /*--white: #000;
+    --white: #000;
     --lowlowWhite: #333333;
     --lowWhite: #191919;
     --backgroundComponent: #fff;
@@ -27,7 +27,7 @@
     --borderBlack: #cccccc;
     --backgrounBody: #e6e6e6;
     --backgroundScroll: #e6e6e6;
-    --btnInteractionPost: #d6d2d2a1;*/
+    --btnInteractionPost: #d6d2d2a1;
     outline: none;
     cursor: default;
 }
@@ -91,7 +91,7 @@
 }
 
 .divbtnRight {
-    display: block;
+    display: none;
     float: right;
     position: relative;
     bottom: 45px;
@@ -99,7 +99,7 @@
 }
 
 .divbtnLeft {
-    display: block;
+    display: none;
     float: left;
     position: relative;
     bottom: 45px;

@@ -6,7 +6,7 @@ $(document).ready(function() {
      currentUrl != url_+"login"){
           $("#headi").show();
           $(window).scroll(function() {
-               if ($(this).scrollTop() > 0) {
+               if ($(this).scrollTop() > 100 ){
                     $('#navigation').fadeOut();
                } else {
                     $('#navigation').fadeIn();

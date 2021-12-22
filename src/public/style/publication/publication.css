@@ -14,12 +14,15 @@
 
 .post {
     /* background-color: var(--backgroundDark);*/
+    width: 96%;
+    margin: auto;
     margin-top: 65px;
-    margin-bottom: 65px;
+    margin-bottom: 10px;
 }
 
 .contentPost {
     margin-top: 10px;
+    border-radius: var(--borderRadioBig);
 }
 
 .nameUser {
@@ -65,8 +68,10 @@
 }*/
 
 .fileUser {
-    width: 100%;
+    max-width: 100%;
     max-height: var(--maxHeightContentPost);
+    border-bottom-left-radius: var(--borderRadioBig);
+    border-bottom-right-radius: var(--borderRadioBig);
 }
 
 .fileUser .contentFile {
