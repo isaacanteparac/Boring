@@ -37,7 +37,7 @@ passport.use('signup', new LocalStrategy({
     }
 }))
 
-passport.serializeUser((user: any, done: any) => {
+/*passport.serializeUser((user: any, done: any) => {
     done(null, user.id);
   });
   
@@ -45,4 +45,4 @@ passport.deserializeUser(async (id: number, done: any) => {
     const db = await connect();
     const rows = await db.query('SELECT * FROM users WHERE id = ?', [id]);
     done(null, rows[0]);
-});
+});*/

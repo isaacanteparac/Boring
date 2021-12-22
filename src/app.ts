@@ -57,15 +57,15 @@ export class App {
         this.app.use(morgan("dev"));
         this.app.use(express.urlencoded({extended: true}));
         this.app.use(express.json());
-        /*this.app.use(session({
-            secret: 'thisisisaacac',
+        this.app.use(session({
+            secret: 'thisisisaacac3702',
             resave: false,
             saveUninitialized: false,
             store: new MySQLStore(connect)
-        }));*/
+        }));
         //this.app.use(flash());
-        //this.app.use(passport.initialize());
-        //this.app.use(passport.session());
+        this.app.use(passport.initialize());
+        this.app.use(passport.session());
         //this.app.use(validator());
     }
 
