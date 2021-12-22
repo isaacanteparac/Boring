@@ -8,7 +8,7 @@ import { IUser } from "../routesControllers/registerUser/interfaces/user.interfa
 import {connect} from "../connect_database";
 
 
-passport.use('signup', new LocalStrategy({
+passport.use("signup", new LocalStrategy({
     usernameField: "username",
     passwordField: "password",
     passReqToCallback: true
@@ -24,10 +24,9 @@ passport.use('signup', new LocalStrategy({
             email,
             password
         };
-        let result:any = await db.query("INSERT INTO users SET ?", [newUser]);
+        const result:any = await db.query("INSERT INTO users SET ?", [newUser]);
         console.log("USER ADD ");
-        newUser.id =   result[0].insertId;
-        console.log(newUser)
+        newUser.id = result[0].insertId;
         return done(null, newUser);
     }
     else{
@@ -35,6 +34,36 @@ passport.use('signup', new LocalStrategy({
         return done(null, false);
     }
 }))
+
+
+passport.use("login", new LocalStrategy({
+    usernameField: "username",
+    passwordField: "password",
+    passReqToCallback: true
+    }, async (res: Response, username: string, password: string, done: any) =>{
+        const db = await connect();
+        const verifUser: any = await db.query("SELECT * FROM users WHERE username = ?", [username]);
+        if(verifUser.length > 0){
+            const user = verifUser[0]
+            const verifiPassword = await decryptPassword(password, user[0].password);
+            if(verifiPassword){
+                done(null, user[0]);
+            }
+            else{
+                console.log("alerta de ese usuario no existe")
+                //alerta de password incorrecto
+                done(null, false);
+            }
+        }
+        else{
+            //alerta de ese usuario no existe
+            console.log("alerta de ese usuario no existe")
+            done(null, false);
+        }
+        
+    }
+))
+
 
 passport.serializeUser((user: any, done: any) => {
     done(null, user.id);
