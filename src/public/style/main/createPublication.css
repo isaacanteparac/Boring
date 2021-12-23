@@ -179,36 +179,38 @@ input[type="file"] {
 }
 
 .divClosePublication{
-    position: fixed;
+    display: none;
     width: 250px;
     height: 20px;
+    position: relative;
+    bottom: 3px;
+    left: 10px;
 }
 
 .btnClose{
     background-color: var(--transp);
     position: relative;
-    bottom: 15px;
+    bottom: 5px;
     right: 5px;
     max-height: 20px;
-    float: left;
-    color: var(--colorIconsHeadMenu);
+    float: right;
     font-size: 25px;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none; 
+    color: var(--redLigth)!important;
 }
 
 .btnClose:active {
-    color: var(--white);
+    color: var(--redDark)!important;
 }
+
 
 #eliminarFileCreatePublication{
-    float: right;
-    display: none;
-    color: var(--redLigth);
+    float: left;
+    color: var(--borderGrayLigth)!important;
 }
-
 
 .preview{
     display: none;

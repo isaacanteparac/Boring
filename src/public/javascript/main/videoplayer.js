@@ -11,7 +11,7 @@ $(document).ready(function () {
    $(".preview").show();
    $("#viewImagen").hide();
    $("#viewVideo").show();
-   $("#eliminarFileCreatePublication").show();
+   $(".divClosePublication").show();
 
    if (!archivos || !archivos.length) {
        $imagenPrevisualizacion.src = "";

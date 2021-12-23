@@ -5,32 +5,31 @@ $(document).ready( () =>{
         $("#boxCreatePublication").hide();
         $(".preview").hide();
         $('#navigation').show();
+        $(".divClosePublication").hide();
     });
 
     $("#eliminarFileCreatePublication").click( () => {
         $(".preview").hide();
-        $("#eliminarFileCreatePublication").hide();
+        $(".divClosePublication").hide();
     })
 
-    $("#selectImagePublication").click( () => {
-        
-    })
+
 
     $("#selectImagePublication").click( () => {
         $('#selectVideoPublication').val("");
+        $("video").get(0).pause();
         $("#viewVideo").hide();
-        $("#eliminarFileCreatePublication").hide();
+        $(".divClosePublication").hide();
         viewImage();
         
     })
     
     $("#selectVideoPublication").click( () => {
         $('#selectImagenPublication').val("");
+        
         $("#viewImagen").hide();
-        $("#eliminarFileCreatePublication").hide();
+        $(".divClosePublication").hide();
     })
-
-
 
 })
 
@@ -49,7 +48,7 @@ function viewImage(){
     $(".preview").show();
     $("#viewVideo").hide();
     $("#viewImagen").show();
-    $("#eliminarFileCreatePublication").show();
+    $(".divClosePublication").show();
 
 
     if (!archivos || !archivos.length) {
