@@ -1,4 +1,4 @@
-# Origin-Carbon
+# DUAUI
 
 # INITIALIZE
     npm init -y
@@ -37,7 +37,10 @@
 
 # RUN ALL
     npm start
-# BEAUTIFUL
-    console.log("\n     █▀▀█ █▀▀█ █▀▀█ █▀▀▄ █▀▀█ █▀▀▄ ");
-    console.log("     █    █▄▄█ █▄▄▀ █▀▀▄ █  █ █  █");
-    console.log("     █▄▄█ ▀  ▀ ▀ ▀▀ ▀▀▀  ▀▀▀▀ ▀  ▀ ");
+# DISPLAY
+![description-app-info](https://user-images.githubusercontent.com/69361351/147205046-37dbd5dd-10a0-4dd7-8341-f7ccace0b52c.png)
+![sign-up-duaui](https://user-images.githubusercontent.com/69361351/147205087-20d1e2b5-534f-4c56-bee4-3065ddf4d545.png)
+![login-duaui](https://user-images.githubusercontent.com/69361351/147205098-c1cd49ac-c9cc-43d4-9655-a11d8b4e66cf.png)
+![publications-users](https://user-images.githubusercontent.com/69361351/147205112-d8398dc9-9fba-4bae-bc2c-a1745a86c081.png)
+![new-publication-user](https://user-images.githubusercontent.com/69361351/147205125-88b7df4e-f5d9-4b86-acee-d0eb1c3b2e03.png)
+
