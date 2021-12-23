@@ -16,6 +16,10 @@
 
 }
 
+.contentNewPost .subtitle{
+    color: var(--blueLigth);
+}
+
 .contentNewPost {
     width: 100%;
     display: flex;
@@ -42,6 +46,7 @@
     justify-content: center;
     cursor: pointer;
     margin: 0 1px;
+    border-radius: 10px;
 }
 
 .fileUpload input.upload {
@@ -58,6 +63,8 @@
     cursor: pointer;
 }
 
+
+
 input[type="file"] {
     position: fixed;
     right: 100%;
@@ -73,11 +80,11 @@ input[type="file"] {
 
 .iconsNewPost {
     width: 30px;
-    color: var(--white)!important;
+    color: var(--blueLigth)!important;
 }
 
-.iconsNewPost:active {
-    color: var(--blueLigth)!important;
+.iconsNewPost:hover {
+    color: black!important;
 }
 
 .divBtnUpadateBottom {
@@ -102,7 +109,7 @@ input[type="file"] {
 }
 
 .btnNewPost:active {
-    background-color: var(--blueLigth);
+    background-color: var(--blueDark);
 }
 
 .divTypeExclusi {
@@ -150,9 +157,10 @@ input[type="file"] {
     margin-left: 10px;
     border: none;
     color: var(--white);
-    border-bottom: 1px solid var(--borderGrayLigth);
+    /*border-bottom: 1px solid var(--borderGrayLigth);*/
     width: 90%;
     font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     overflow: auto;
     outline: none;
     box-sizing: border-box;
