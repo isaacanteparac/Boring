@@ -15,7 +15,7 @@
     --white: #fff;
     --lowWhite: #e7e7e7;
     --lowlowWhite: #b6b6b6;
-    --backgrounBody: #08090a;
+    --backgrounBody: #101113;
     --backgroundScroll: #0a0a0a;
     --btnInteractionPost: #070707a1;
     /*------LIGTH-------------------*/
@@ -88,6 +88,10 @@
     border-left: 2px groove var(--blueLigth);
     border-left-width: 30px;
     border-radius: 20px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; 
 }
 
 .divbtnRight {

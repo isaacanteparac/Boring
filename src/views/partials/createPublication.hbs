@@ -3,22 +3,66 @@
         <div class="contentNewPost">
             
             <form action="/create-publication" method="post" autocomplete="off">
-
-                <!--NOTE:USO DE JS INTERACTIVO PARA CERRARLA VENTANA DE PUBLICACION-->
-                <label class="btnClose" id="windowCreatePublication">
-                    x
-                </label>
-
+                <label class="btnClose" id="windowCreatePublication">x</label>
                 <h3 class="subtitle">New post</h3>
-
                 <div class="descriptionNewPost">
-                    <textarea type="text" id="descriptionPublication"
-                    name="description" placeholder="What are you thinking?" autoFocus></textarea>
+                    <textarea type="text" autofocus id="descriptionPublication"
+                    name="description" placeholder="What are you thinking?"></textarea>
                 </div>
 
-                <div class="preview">
+                <div class="preview" style="display: block;">
+                    <div class="divClosePublication">
+                        <label class="btnClose" id="eliminarFileCreatePublication">x</label>
+                    </div>
+
                     <!--NOTE: HACER UNA VISTA DEL CONTENIDO QUE SE VA A SUBIR-->
-                    <img src="/iconos/billiecuadra.jpeg" class="previewFile" />
+                    <div class="previewFile">
+                        <div class="overlay">
+                            <div class="button"></div>
+                        </div>
+                        
+                        <div id="video" class="video">
+                            <video src="https://webdevtrick.com/wp-content/uploads/sample-footage.mp4">
+                            </video>
+                        </div>
+                        
+                        <div id="controls">
+                            <div class="playButton">
+                                <div class="playPause"></div>
+                            </div>
+                        
+                            <div class="ProgressContainer">
+                                <div class="timer intialTime">
+                                    00:00
+                                </div>
+                                <div class="progressBar">
+                                    <div class="progress"></div>
+                                </div>
+                                <div class="time">
+                                    00:00
+                                </div>
+                                <div class="timer fullTime">
+                                    00:00
+                                </div>
+                            </div>
+                        
+                            <div class="volume">
+                                <div class="icon"></div>
+                        
+                                <div class="intensityBar">
+                                    <div class="intensity"></div>
+                                </div>
+                            </div>
+                        </div>
+                            
+                    </div>
+                    
+                    
+     
+    
+                    
+    
+                    <img  class="previewFile" id="previewFileUser"/>
                 </div>
             
                 
@@ -28,7 +72,8 @@
                 <div class="divBtnUpadateBottom">
                     <div class="contentTypeFile">
                     <div class="fileUpload">
-                        <input type="file" class="upload" accept="image/png, image/jpeg" name="media_content" />
+                        <input type="file" id="selectImagePublication"
+                        class="upload" accept="image/png, image/jpeg" name="media_content" />
                         <span>
                             <svg class="iconsNewPost" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                 viewBox="0 0 24 24">
@@ -39,7 +84,8 @@
                     </div>
 
                     <div class="fileUpload">
-                        <input type="file" class="upload" accept=".mp3,audio/*" name="media_content" />
+                        <input type="file" id="selectAudioPublication"
+                        class="upload" accept=".mp3,audio/*" name="media_content" />
                         <span>
                             <svg class="iconsNewPost" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                 viewBox="0 0 24 24">
@@ -50,7 +96,8 @@
                     </div>
 
                     <div class="fileUpload">
-                        <input type="file" class="upload" accept="video/mp4,video/x-m4v,video/*" name="media_content" />
+                        <input type="file" id="selectVideoPublication"
+                        class="upload" accept="video/mp4,video/x-m4v,video/*" name="media_content" />
                         <span>
                             <svg class="iconsNewPost" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                 viewBox="0 0 24 24">
@@ -61,7 +108,8 @@
                     </div>
 
                     <div class="fileUpload">
-                        <input type="file" class="upload" accept=".doc, .docx, .ppt, .pptx, .txt, .pdf, .zip"
+                        <input type="file" id="selectDocPublication"
+                        class="upload" accept=".doc, .docx, .ppt, .pptx, .txt, .pdf, .zip"
                             name="media_content" />
                         <span>
                             <svg class="iconsNewPost" xmlns="http://www.w3.org/2000/svg" width="24" height="24"

@@ -82,6 +82,11 @@
     max-height: var(--maxHeightContentPost);
     border-bottom-left-radius: var(--borderRadioBig);
     border-bottom-right-radius: var(--borderRadioBig);
+    user-drag: none; 
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
 }
 
 

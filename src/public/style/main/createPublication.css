@@ -178,17 +178,26 @@ input[type="file"] {
     margin-left: 10px;
 }
 
-.btnClose {
-    background-color: var(--trasnp);
-    width: 30px;
-    height: 30px;
-    border-radius: 15px;
-    float: right;
-    border: none;
+.divClosePublication{
+    position: fixed;
+    text-align: right;
+    width: 250px;
+    height: 20px;
+}
+
+.btnClose{
+    background-color: var(--transp);
     position: relative;
-    bottom: 10px;
+    bottom: 15px;
+    max-height: 20px;
+    float: right;
     color: var(--colorIconsHeadMenu);
+    margin-left: 3px;
     font-size: 25px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; 
 }
 
 .btnClose:active {
@@ -197,16 +206,42 @@ input[type="file"] {
 
 
 .preview{
+    display: none;
     background-color: var(--transp);
-    width: 250px;
-    height: 250px;
+    max-width: 250px;
+    max-height: 250px;
+
     margin: auto;
+    padding: auto;
     border-radius: 10px;
+    border: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; 
+}
+
+.preview ,.btnClose{
+    margin-top: 5px;
+    margin-right: 3px;
 }
 
 .preview ,.previewFile{
-    width: 250px;
-    height: 250px;
+    max-width: 250px;
+    max-height: 250px;
+
     margin: auto;
     border-radius: 10px;
+    user-drag: none; 
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
 }
+
+/*---------------------------------*/
+
+
+
+
+

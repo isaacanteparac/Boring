@@ -16,6 +16,10 @@
     border-radius: 50px;
     left: 5%;
     border: 1px solid var(--borderBlack);
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; 
 }
 
 .navInfer ul.navbar-menu {
