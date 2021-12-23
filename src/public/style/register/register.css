@@ -23,6 +23,10 @@
 .bannerSingup {
     width: 100%;
     height: 250px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; 
 }
 
 .bannerSingup {
@@ -123,6 +127,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; 
 }
 
 .separationLine label {
@@ -135,6 +143,7 @@
     height: 1px;
     background-color: var(--borderGrayLigth);
     border: none;
+
 }
 
 .primary {
