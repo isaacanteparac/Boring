@@ -16,18 +16,18 @@
     --lowWhite: #e7e7e7;
     --lowlowWhite: #b6b6b6;
     --backgrounBody: #101113;
-    --backgroundScroll: #0a0a0a;
+    --backgroundScroll: #101113;
     --btnInteractionPost: #070707a1;
     /*------LIGTH-------------------*/
-   /* --white: #000;
+    --white: #000;
     --lowlowWhite: #333333;
     --lowWhite: #191919;
     --backgroundComponent: #fff;
     --colorActiveBtn: #b6b3b3;
     --borderBlack: #cccccc;
-    --backgrounBody: #e6e6e6;
+    --backgrounBody: #d7d7d7;
     --backgroundScroll: #e6e6e6;
-    --btnInteractionPost: #d6d2d2a1;*/
+    --btnInteractionPost: #d6d2d2a1;
     outline: none;
     cursor: default;
 }

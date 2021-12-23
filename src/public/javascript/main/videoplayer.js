@@ -1,4 +1,5 @@
 // Code By Webdevtrick ( https://webdevtrick.com )
+
 $(document).ready(function () {
 
     'use strict';
@@ -9,7 +10,6 @@ $(document).ready(function () {
         video          = $('video'),
         play           = $('.play'),
         volume         = $('.volume .icon'),
-        volumeIntesity = $('.volume .intensityBar'),
         intensity      = $('.intensity'),
         progressBar    = $('.progressBar'),
         progress       = $('.progressBar .progress'),
@@ -17,7 +17,6 @@ $(document).ready(function () {
         vidDuration    = $('.fullTime'),
         expandButton   = $('.scale'),
         overlayScreen  = $('.overlay'),
-        timeState      = $('.time'),
         overlayButton  = $('.overlay .button'),
         update;
 
@@ -31,8 +30,6 @@ $(document).ready(function () {
     play_pause.add(video).click(function () { playVid(); });
 
     progressBar.click(function () {skip(); });
-
-    progressBar.mousemove(function () { timeState.text(getTimeState()); });
 
     volume.click(function () { toggleMute(); });
   
@@ -59,19 +56,11 @@ $(document).ready(function () {
     function playVid() {
         if (video.get(0).paused) {
             video.get(0).play();
-            playIcon.css({
-               'background': 'url(https://webdevtrick.com/wp-content/uploads/pause.svg)',
-               'background-size': '100% 100%'
-            });
             overlayScreen.hide();
             update = setInterval(updateplayer, 1);
 
         } else {
             video.get(0).pause();
-            playIcon.css({
-               'background': 'url(https://webdevtrick.com/wp-content/uploads/play.svg)',
-               'background-size': '100% 100%'
-            });
             overlayScreen.show();
             clearInterval(update);
         }
@@ -82,20 +71,9 @@ $(document).ready(function () {
         progress.css({'width': percentage + '%'});
         timer.text(getFormatedTime());
         vidDuration.text(getFormatedFullTime());
-
-        if (video[0].ended) {
-            playIcon.css({
-               'background': 'url(https://webdevtrick.com/wp-content/uploads/play.svg)',
-               'background-size': '100% 100%'
-            });
-            overlayScreen.show();
+        if (video[0].paused) {
             overlayButton.css({
-               'background': 'url(https://webdevtrick.com/wp-content/uploads/replay.svg)',
-               'background-size': '100% 100%'
-            });
-        } else if (video[0].paused) {
-            overlayButton.css({
-               'background': 'url(https://webdevtrick.com/wp-content/uploads/playBTN.svg)',
+               'background': 'url(../../iconos/videoplayer/videoPlay.svg)',
                'background-size': '100% 100%'
             });
         }
@@ -168,33 +146,20 @@ $(document).ready(function () {
         if (!video[0].muted) {
            video[0].muted = true;
            volume.css({
-              'background': 'url(https://webdevtrick.com/wp-content/uploads/mute.svg)',
+              'background': 'url(../../iconos/videoplayer/volumenMute.svg)',
               'background-size': '100% 100%'
            });
            intensity.hide();
         } else {
            video[0].muted = false;
            volume.css({
-              'background': 'url(https://webdevtrick.com/wp-content/uploads/volume.svg)',
+              'background': 'url(../../iconos/videoplayer/volumeActive.svg)',
               'background-size': '100% 100%'
            });
            intensity.show();
         }
     }
 
-    function changeVolume() {
-       var mouseX = event.pageX - volumeIntesity.offset().left,
-           width  = volumeIntesity.outerWidth();
-
-       video[0].volume = (mouseX / width);
-       intensity.css('width', (mouseX / width) * width + 'px');
-       video[0].muted = false;
-       volume.css({
-          'background': 'url(https://webdevtrick.com/wp-content/uploads/volume.svg)',
-          'background-size': '100% 100%'
-       });
-       intensity.show();
-    }
 
     function fullScreen() {
         if (video[0].requestFullscreen) {
@@ -231,36 +196,8 @@ $(document).ready(function () {
        }
     }
 
-    $(window).keypress(function (e) {
-       if (e.keyCode === 0 || e.keyCode === 32) {
-          e.preventDefault()
-          playVid();
-       }
-    });
-  
-    for (var i = 0, l = videos.length; i < l; i++) {
-    var video = videos[i];
-    var src = video.src || (function () {
-        var sources = video.querySelectorAll("source");
-        for (var j = 0, sl = sources.length; j < sl; j++) {
-            var source = sources[j];
-            var type = source.type;
-            var isMp4 = type.indexOf("mp4") != -1;
-            if (isMp4) return source.src;
-        }
-        return null;
-    })();
-    if (src) {
-        var isYoutube = src && src.match(/(?:youtu|youtube)(?:\.com|\.be)\/([\w\W]+)/i);
-        if (isYoutube) {
-            var id = isYoutube[1].match(/watch\?v=|[\w\W]+/gi);
-            id = (id.length > 1) ? id.splice(1) : id;
-            id = id.toString();
-            var mp4url = "http://www.youtubeinmp4.com/redirect.php?video=";
-            video.src = mp4url + id;
-        }
-    }
-}
+   
+
 
 
 });

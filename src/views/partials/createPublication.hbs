@@ -4,7 +4,8 @@
             
             <form action="/create-publication" method="post" autocomplete="off">
                 <label class="btnClose" id="windowCreatePublication">x</label>
-                <h3 class="subtitle">New post</h3>
+                <h3 class="subtitle">New Post</h3>
+
                 <div class="descriptionNewPost">
                     <textarea type="text" autofocus id="descriptionPublication"
                     name="description" placeholder="What are you thinking?"></textarea>
@@ -16,7 +17,7 @@
                     </div>
 
                     <!--NOTE: HACER UNA VISTA DEL CONTENIDO QUE SE VA A SUBIR-->
-                    <div class="previewFile">
+                    <div class="previewFile" id="previewVideoUser">
                         <div class="overlay">
                             <div class="button"></div>
                         </div>
@@ -32,42 +33,28 @@
                             </div>
                         
                             <div class="ProgressContainer">
-                                <div class="timer intialTime">
+                                <div class="intialTime">
                                     00:00
                                 </div>
                                 <div class="progressBar">
                                     <div class="progress"></div>
                                 </div>
-                                <div class="time">
-                                    00:00
-                                </div>
-                                <div class="timer fullTime">
+                                <div class="fullTime">
                                     00:00
                                 </div>
                             </div>
                         
                             <div class="volume">
                                 <div class="icon"></div>
-                        
-                                <div class="intensityBar">
-                                    <div class="intensity"></div>
-                                </div>
                             </div>
                         </div>
                             
                     </div>
                     
-                    
-     
-    
-                    
-    
+
                     <img  class="previewFile" id="previewFileUser"/>
                 </div>
             
-                
-
-                
 
                 <div class="divBtnUpadateBottom">
                     <div class="contentTypeFile">
