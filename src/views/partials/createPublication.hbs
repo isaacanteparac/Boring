@@ -11,19 +11,22 @@
                     name="description" placeholder="What are you thinking?"></textarea>
                 </div>
 
-                <div class="preview" style="display: block;">
-                    <div class="divClosePublication">
-                        <label class="btnClose" id="eliminarFileCreatePublication">x</label>
-                    </div>
+                <div class="divClosePublication">
+                    <label class="btnClose" id="eliminarFileCreatePublication">x</label>
+                </div>
+
+                <div class="preview">
+                    
 
                     <!--NOTE: HACER UNA VISTA DEL CONTENIDO QUE SE VA A SUBIR-->
-                    <div class="previewFile" id="previewVideoUser">
+                    <div class="previewFile" id="viewVideo">
                         <div class="overlay">
                             <div class="button"></div>
                         </div>
                         
                         <div id="video" class="video">
-                            <video src="https://webdevtrick.com/wp-content/uploads/sample-footage.mp4">
+                            <video id="previewVideoUser">
+                           
                             </video>
                         </div>
                         
@@ -51,8 +54,10 @@
                             
                     </div>
                     
-
-                    <img  class="previewFile" id="previewFileUser"/>
+             
+                    <img class="previewFile" id="viewImagen"/>
+                  
+                    
                 </div>
             
 

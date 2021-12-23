@@ -1,4 +1,5 @@
 
+
 $(document).ready( () =>{
     $("#windowCreatePublication").click( () => {
         $("#boxCreatePublication").hide();
@@ -8,9 +9,26 @@ $(document).ready( () =>{
 
     $("#eliminarFileCreatePublication").click( () => {
         $(".preview").hide();
+        $("#eliminarFileCreatePublication").hide();
     })
 
-    viewImage();
+    $("#selectImagePublication").click( () => {
+        
+    })
+
+    $("#selectImagePublication").click( () => {
+        $('#selectVideoPublication').val("");
+        $("#viewVideo").hide();
+        $("#eliminarFileCreatePublication").hide();
+        viewImage();
+        
+    })
+    
+    $("#selectVideoPublication").click( () => {
+        $('#selectImagenPublication').val("");
+        $("#viewImagen").hide();
+        $("#eliminarFileCreatePublication").hide();
+    })
 
 
 
@@ -21,13 +39,18 @@ $(document).ready( () =>{
 
 function viewImage(){
     const $seleccionArchivos = document.querySelector("#selectImagePublication"),
-    $imagenPrevisualizacion = document.querySelector("#previewFileUser");
+    $imagenPrevisualizacion = document.querySelector("#viewImagen");
 
     $seleccionArchivos.addEventListener("change", () => {
 
     const archivos = $seleccionArchivos.files;
 
+    
     $(".preview").show();
+    $("#viewVideo").hide();
+    $("#viewImagen").show();
+    $("#eliminarFileCreatePublication").show();
+
 
     if (!archivos || !archivos.length) {
         $imagenPrevisualizacion.src = "";
@@ -38,3 +61,4 @@ function viewImage(){
     $imagenPrevisualizacion.src = objectURL;
     });
 }
+

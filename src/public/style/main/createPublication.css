@@ -180,7 +180,6 @@ input[type="file"] {
 
 .divClosePublication{
     position: fixed;
-    text-align: right;
     width: 250px;
     height: 20px;
 }
@@ -189,10 +188,10 @@ input[type="file"] {
     background-color: var(--transp);
     position: relative;
     bottom: 15px;
+    right: 5px;
     max-height: 20px;
-    float: right;
+    float: left;
     color: var(--colorIconsHeadMenu);
-    margin-left: 3px;
     font-size: 25px;
     -webkit-user-select: none;
     -moz-user-select: none;
@@ -204,6 +203,12 @@ input[type="file"] {
     color: var(--white);
 }
 
+#eliminarFileCreatePublication{
+    float: right;
+    display: none;
+    color: var(--redLigth);
+}
+
 
 .preview{
     display: none;
@@ -212,24 +217,21 @@ input[type="file"] {
     max-height: 250px;
     margin: auto;
     margin-top: 15px;
-    padding: auto;
     border-radius: 10px;
     border: none;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.preview ,.btnClose{
-    margin-top: 5px;
-    margin-right: 3px;
-}
 
 .preview ,.previewFile{
     max-width: 250px;
     max-height: 250px;
-
     margin: auto;
     border-radius: 10px;
     user-drag: none; 
@@ -238,6 +240,14 @@ input[type="file"] {
     -webkit-user-select: none;
     -ms-user-select: none;
 }
+
+
+#viewImagen, #viewVideo{
+    display: none;
+    max-width: 250px;
+    max-height: 250px;
+}
+
 
 /*---------------------------------*/
 
