@@ -13,9 +13,12 @@
                     <input type="password" name="password" placeholder="Password" />
                 </div>
                 <div class="boxBtnForm">
-                    <button type="submit" class="btnOk">
+                    <button type="submit" class="btnOk" id="btnLogin">
                         Login
                     </button>
+                    <div class="LoaderBall" id="loginBallLoader">
+                        {{>animationLoader}}
+                    </div>
                 </div>
             </form>
 

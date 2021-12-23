@@ -1,11 +1,11 @@
-
-
 $(document).ready( () =>{
+    
     $("#windowCreatePublication").click( () => {
         $("#boxCreatePublication").hide();
         $(".preview").hide();
         $('#navigation').show();
         $(".divClosePublication").hide();
+        $("#descriptionNewPost").text("");
     });
 
     $("#eliminarFileCreatePublication").click( () => {
@@ -17,6 +17,7 @@ $(document).ready( () =>{
 
     $("#selectImagePublication").click( () => {
         $('#selectVideoPublication').val("");
+        $(".preview").hide();
         $("video").get(0).pause();
         $("#viewVideo").hide();
         $(".divClosePublication").hide();
@@ -26,7 +27,7 @@ $(document).ready( () =>{
     
     $("#selectVideoPublication").click( () => {
         $('#selectImagenPublication').val("");
-        
+        $(".preview").hide();
         $("#viewImagen").hide();
         $(".divClosePublication").hide();
     })

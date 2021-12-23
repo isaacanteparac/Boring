@@ -16,12 +16,15 @@
     <link rel="stylesheet" href="style/main/options.css"/>
     <link rel="stylesheet" href="style/main/createPublication.css"/>
     <link rel="stylesheet" href="style/main/videoPlayer.css"/>
+    <link rel="stylesheet" href="style/main/animationLoader.css"/>
     <script src="javascript/main/headAndnavigation.js"></script>
     <script src="javascript/main/options.js"></script>
     <script src="javascript/main/videoPlayer.js"></script>
 
     <!--TITLE: REGISTER--->
     <link rel="stylesheet" href="style/register/register.css"/>
+    <script src="javascript/register/register.js"></script>
+    
 
     <!--TITLE: CHAT--->
     <link rel="stylesheet" href="style/chat/chat.css"/>
@@ -47,9 +50,11 @@
     <div class="contentApp">
         {{{body}}}
     </div>
-    <!--INTERACION-->
+    <!--INTERACION-- {{>animationLoader}}-->
     {{>createPublication}}
+    
 
+    
     <!--TITLE:MENU BOTTOM-->
     {{>navigation}}
 

@@ -6,6 +6,7 @@
     --maxHeightContentPost: 400px;
     --borderRadioBig: 30px;
     --borderGrayLigth: #999898;
+    --colorBallLoaser: #fff;
     /*------------DARK-----------------*/
     --backgroundComponent: #050505;
     --borderBlack: #0d0d0d;
@@ -126,4 +127,17 @@
 
 .iconHead:active {
     color: var(--white)!important;
+}
+
+.LoaderBall {
+    width: 75%;
+    height: 50px;
+    margin: 10px 0;
+    border-radius: 10px;
+    border: none;
+    background: var(--blueLigth);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
 }

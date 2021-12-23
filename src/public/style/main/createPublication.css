@@ -185,6 +185,7 @@ input[type="file"] {
     position: relative;
     bottom: 3px;
     left: 10px;
+    margin-top: 5px;
 }
 
 .btnClose{
@@ -250,8 +251,6 @@ input[type="file"] {
     max-height: 250px;
 }
 
-
-/*---------------------------------*/
 
 
 
