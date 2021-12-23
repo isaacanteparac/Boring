@@ -18,9 +18,10 @@
     position: relative;
     width: 80%;
     background-color: var(--backgroundComponent);
-    bottom: 20%;
     border-radius: 20px;
     padding: 10px;
+    margin: auto;
+    top: 50px;
 }
 
 .contentBoxBlur .contentChat {

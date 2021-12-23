@@ -14,7 +14,9 @@
     <link rel="stylesheet"  href="style/main/navigation.css"/>
     <link rel="stylesheet" href="style/main/head.css"/>
     <link rel="stylesheet" href="style/main/options.css"/>
+    <link rel="stylesheet" href="style/main/createPublication.css"/>
     <script src="javascript/main/headAndnavigation.js"></script>
+    <script src="javascript/main/options.js"></script>
 
     <!--TITLE: REGISTER--->
     <link rel="stylesheet" href="style/register/register.css"/>
@@ -29,19 +31,22 @@
     <!--TITLE: PUBLICATION--->
     <link rel="stylesheet" href="style/publication/publication.css"/>
     <link rel="stylesheet" href="style/publication/comment.css"/>
-    <link rel="stylesheet" href="style/publication/createPublication.css"/>
+    
     
     
 </head>
 
 <body>
     <!--TITLE:HEAD-->
+    
     {{>headi}}
-
+    
     <!--TITLE:BODY-->
     <div class="contentApp">
         {{{body}}}
     </div>
+    <!--INTERACION-->
+    {{>createPublication}}
 
     <!--TITLE:MENU BOTTOM-->
     {{>navigation}}

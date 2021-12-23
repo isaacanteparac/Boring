@@ -6,7 +6,7 @@ import path from "path";
 import { engine } from "express-handlebars";
 
 //NOTE: MESSAGE DE ALERT A FRONTEND
-//import flash from "connect-flash";
+import flash from "connect-flash";
 
 //NOTE:IMPORTS PARA EXEC LA AUTH DE USER
 import session from "express-session";
@@ -53,7 +53,6 @@ export class App {
     }
 
     middlewares(){
-        
         this.app.use(morgan("dev"));
         this.app.use(express.urlencoded({extended: true}));
         this.app.use(express.json());
@@ -68,14 +67,17 @@ export class App {
                 database: 'duaui'
               })
         }));
-        //this.app.use(flash());
+        this.app.use(flash());
         this.app.use(passport.initialize());
         this.app.use(passport.session());
         //this.app.use(validator());
     }
 
     globalVar(){
-        this.app.use((req:Request, res:Response, next:NextFunction ) =>{
+        this.app.use((req:any, res:Response, next:NextFunction ) =>{
+            this.app.locals.message = req.flash('message');
+            this.app.locals.success = req.flash('success');
+            this.app.locals.user = req.user;
             next();
         })
     }

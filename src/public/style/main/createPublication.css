@@ -3,11 +3,17 @@
     cursor: default;
 }
 
+
+#boxCreatePublication{
+    display: none;
+}
+
 .boxNewPost {
     padding: 0;
     padding: 15px;
     display: flex;
     justify-content: center;
+
 }
 
 .contentNewPost {
@@ -18,9 +24,10 @@
 
 .contentTypeFile {
     display: flex;
-    align-items: center;
-    padding-left: 10px;
-    margin-top: 15px;
+    position: relative;
+    float: left;
+    margin-left: 5px;
+    margin-top: 30px;
 }
 
 .fileUpload {
@@ -73,16 +80,17 @@ input[type="file"] {
     color: var(--blueLigth)!important;
 }
 
-.divBtnNewPost {
+.divBtnUpadateBottom {
     position: relative;
     top: 50%;
-    display: flex;
-    justify-content: right;
+    /*display: flex;*/
+    /*justify-content: right;*/
 }
 
 .btnNewPost {
     border: none;
     background-color: var(--blueLigth);
+    float: right;
     color: white;
     font-size: 20px;
     border-radius: 20px;
@@ -137,7 +145,7 @@ input[type="file"] {
     border: none;
 }
 
-.descriptionNewPost input {
+.descriptionNewPost textarea {
     background-color: var(--transp);
     margin-left: 10px;
     border: none;
@@ -145,7 +153,13 @@ input[type="file"] {
     border-bottom: 1px solid var(--borderGrayLigth);
     width: 90%;
     font-size: 16px;
+    overflow: auto;
+    outline: none;
+    box-sizing: border-box;
+    resize: none;
+    max-height: 76px;
 }
+
 
 .subtitle {
     color: var(--white);
@@ -171,4 +185,20 @@ input[type="file"] {
 
 .btnClose:active {
     color: var(--white);
+}
+
+
+.preview{
+    background-color: var(--transp);
+    width: 250px;
+    height: 250px;
+    margin: auto;
+    border-radius: 10px;
+}
+
+.preview ,.previewFile{
+    width: 250px;
+    height: 250px;
+    margin: auto;
+    border-radius: 10px;
 }

@@ -9,9 +9,8 @@
     ____________________________
     npm i @types/express-handlebars -D 
     npm i @types/express-session -D
-    npm i @types/connect-flash -D
 
-
+    npm i connect-flash -D
     npm i morgan -D 
     npm i mysql2 -D
     npm i types/mysql2 -D

@@ -1,19 +1,32 @@
-<div class="divBlur">
+<div class="divBlur" id="boxCreatePublication">
     <div class="contentBoxBlur">
         <div class="contentNewPost">
+            
             <form action="/create-publication" method="post" autocomplete="off">
 
                 <!--NOTE:USO DE JS INTERACTIVO PARA CERRARLA VENTANA DE PUBLICACION-->
-                <button class="btnClose">
+                <label class="btnClose" id="windowCreatePublication">
                     x
-                </button>
-
+                </label>
 
                 <h3 class="subtitle">New post</h3>
+
                 <div class="descriptionNewPost">
-                    <input type="text" name="description" placeholder="Description" />
+                    <textarea type="text" id="descriptionPublication"
+                    name="description" placeholder="What are you thinking?" autoFocus></textarea>
                 </div>
-                <div class="contentTypeFile">
+
+                <div class="preview">
+                    <!--NOTE: HACER UNA VISTA DEL CONTENIDO QUE SE VA A SUBIR-->
+                    <img src="/iconos/billiecuadra.jpeg" class="previewFile" />
+                </div>
+            
+                
+
+                
+
+                <div class="divBtnUpadateBottom">
+                    <div class="contentTypeFile">
                     <div class="fileUpload">
                         <input type="file" class="upload" accept="image/png, image/jpeg" name="media_content" />
                         <span>
@@ -57,17 +70,7 @@
                             </svg>
                         </span>
                     </div>
-                </div>
-
-                <div>
-                    <!--NOTE: HACER UNA VISTA DEL CONTENIDO QUE SE VA A SUBIR-->
-                    <h1>VER CONTENIDO QUE SE VA AS SUBIR</h1>
-                    {this.media_content}
-                </div>
-
-
-
-                <div class="divBtnNewPost">
+                    </div>
                     <button type="submit" class="btnNewPost">
                         Post
                     </button>
