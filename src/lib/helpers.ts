@@ -17,9 +17,4 @@ export async function decryptPassword(password:string, hashPassword:string) {
     }
 }
 
-export async function   convertBase64(file:string) {
-
-    
-    return ;
-}
 

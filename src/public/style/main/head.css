@@ -7,19 +7,7 @@
     --borderRadioBig: 30px;
     --borderGrayLigth: #999898;
     --colorBallLoaser: #fff;
-    /*------------DARK-----------------*/
-    --backgroundComponent: #050505;
-    --borderBlack: #0d0d0d;
-    --colorActiveBtn: #000000;
-    --transp: rgba(7, 7, 7, 0);
-    --colorIconsHeadMenu: #646a80;
-    --white: #fff;
-    --lowWhite: #e7e7e7;
-    --lowlowWhite: #b6b6b6;
-    --backgrounBody: #101113;
-    --backgroundScroll: #101113;
-    --btnInteractionPost: #070707a1;
-    /*------LIGTH-------------------*/
+    /*----------------------*/
     --white: #000;
     --lowlowWhite: #333333;
     --lowWhite: #191919;
@@ -29,6 +17,7 @@
     --backgrounBody: #d7d7d7;
     --backgroundScroll: #e6e6e6;
     --btnInteractionPost: #d6d2d2a1;
+    /*---------------------------*/
     outline: none;
     cursor: default;
 }
@@ -140,4 +129,32 @@
     align-items: center;
     justify-content: center;
     display: none;
+}
+
+.positionModeDarkLigth{
+    float: right;
+    position: relative;
+    bottom: 45px;
+    right: 1px;
+}
+
+.modeDarkLigth{
+    color: var(--white)!important;
+    width: 20px;
+    height: 20px;
+}
+
+
+#modeMoon{
+    display: none;
+}
+#modeMoon, .modeDarkLigth :active{
+    color: blue!important;
+}
+
+#modeSun{
+    display: block;
+}
+#modeSun, .modeDarkLigth :active{
+    color: yellow!important;
 }

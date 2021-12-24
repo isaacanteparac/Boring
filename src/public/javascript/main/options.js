@@ -32,6 +32,40 @@ $(document).ready( () =>{
         $(".divClosePublication").hide();
     })
 
+    $("#modeSun").click( () =>{
+        $("#modeSun").hide();
+        $("#modeMoon").show();
+        $("*").css({
+            "--white": "#000",
+            "--lowlowWhite": "#333333",
+            "--lowWhite": "#191919",
+            "--backgroundComponent": "#fff",
+            "--colorActiveBtn": "#b6b3b3",
+            "--borderBlack": "#cccccc",
+            "--backgrounBody": "#d7d7d7",
+            "--backgroundScroll": "#e6e6e6",
+            "--btnInteractionPost": "#d6d2d2a1"
+        });
+        
+    })
+
+    $("#modeMoon").click( () =>{
+        $("#modeMoon").hide();
+        $("#modeSun").show();
+        $("*").css({
+            "--white": "#fff",
+            "--lowlowWhite": "#b6b6b6",
+            "--lowWhite": "#e7e7e7",
+            "--backgroundComponent": "#050505",
+            "--colorActiveBtn": "#000000",
+            "--borderBlack": "#0d0d0d",
+            "--backgrounBody": "#101113",
+            "--backgroundScroll": "#101113",
+            "--btnInteractionPost": "#070707a1"
+        });
+        
+    })
+
 })
 
 

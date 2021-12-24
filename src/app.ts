@@ -20,7 +20,7 @@ require('./lib/passport');
 import loginRouter from "./routesControllers/registerUser/routes/login.routes";
 import signupRouter from "./routesControllers/registerUser/routes/signup.routes";
 import publicationRouter from "./routesControllers/publication/routes/publication.routes";
-import { connect } from "./connect_database";
+
 
 
 export class App {
@@ -57,7 +57,7 @@ export class App {
         this.app.use(express.urlencoded({extended: true}));
         this.app.use(express.json());
         this.app.use(session({
-            secret:  process.env.SESSION_SECRET || 'i*/ws7d6554ds/+#',
+            secret:  process.env.SESSION_SECRET || 'i*/ws7d6554dsf/+#',
             resave: false,
             saveUninitialized: false,
             store: new MySQLStore({

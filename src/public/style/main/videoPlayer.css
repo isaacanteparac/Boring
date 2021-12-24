@@ -1,8 +1,9 @@
 .video video{
   width: 250px;
-  width: 250px;
+  max-height: 250px;
   border-radius: 10px;
 }
+
 
 .overlay .button{
   width: 40px;
