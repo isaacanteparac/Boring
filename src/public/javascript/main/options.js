@@ -2,10 +2,17 @@ $(document).ready( () =>{
     
     $("#windowCreatePublication").click( () => {
         $("#boxCreatePublication").hide();
+        $body.bind('scroll', function() {
+            // "Desactivar" el scroll horizontal
+            if ($body.scrollLeft() !== 0) {
+                $body.scrollLeft(0);
+            }
+        });
         $(".preview").hide();
         $('#navigation').show();
         $(".divClosePublication").hide();
         $("#descriptionNewPost").text("");
+
     });
 
     $("#eliminarFileCreatePublication").click( () => {
@@ -44,7 +51,9 @@ $(document).ready( () =>{
             "--borderBlack": "#cccccc",
             "--backgrounBody": "#d7d7d7",
             "--backgroundScroll": "#e6e6e6",
-            "--btnInteractionPost": "#d6d2d2a1"
+            "--btnInteractionPost": "#d6d2d2a1",
+            "--colorIconsHeadMenu": "#000",
+            "--backgrounWindow": "#fff"
         });
         
     })
@@ -61,10 +70,29 @@ $(document).ready( () =>{
             "--borderBlack": "#0d0d0d",
             "--backgrounBody": "#101113",
             "--backgroundScroll": "#101113",
-            "--btnInteractionPost": "#070707a1"
+            "--btnInteractionPost": "#070707a1",
+            "--colorIconsHeadMenu": "#fff",
+            "--backgrounWindow": "#000"
         });
-        
     })
+
+    $("#btnCommentPublication").click( () =>{
+        $('#navigation').hide();
+        let scrollLocation  = window.pageYOffset;
+        window.onscroll = function() {
+        let scrollUser = window.pageYOffset;
+        if(scrollLocation >= scrollUser){
+            document.getElementById('inputCommentUser').style.display = 'block';
+        }
+        else{
+            document.getElementById('inputCommentUser').style.display = 'none';
+        }
+        scrollLocation = scrollUser;
+    }
+    })
+    
+
+
 
 })
 

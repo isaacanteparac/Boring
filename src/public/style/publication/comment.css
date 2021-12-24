@@ -19,7 +19,9 @@
     flex-direction: column;
 }
 
-.contentComent {
+
+
+.coment .contentComent {
     margin: 0;
     padding: 0;
     width: 100%;
@@ -28,6 +30,7 @@
 .comentBox {
     width: 100%;
     height: 100%;
+    margin-top: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -123,15 +126,13 @@
     height: 35px;
     margin-left: 5px;
     background-color: var(--blueLigth);
-    /*border-bottom-right-radius: var(--borderRadioBig);
-    border-top-right-radius: var(--borderRadioBig);*/
     border-radius: var(--borderRadioBig);
     color: var(--white);
     border: none;
     font-size: 1.1rem;
 }
 
-.btnPostMessage:hover {
+.btnPostMessage:active {
     background-color: var(--blueDark);
 }
 

@@ -20,7 +20,7 @@ require('./lib/passport');
 import loginRouter from "./routesControllers/registerUser/routes/login.routes";
 import signupRouter from "./routesControllers/registerUser/routes/signup.routes";
 import publicationRouter from "./routesControllers/publication/routes/publication.routes";
-
+import commentRouter from "./routesControllers/comments/routes/comments.routes";
 
 
 export class App {
@@ -86,6 +86,7 @@ export class App {
         this.app.use(loginRouter);
         this.app.use("/sign-up", signupRouter);
         this.app.use("/post", publicationRouter);
+        this.app.use("/comments", commentRouter);
     }
 
     public_(){

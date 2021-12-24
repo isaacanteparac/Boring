@@ -7,14 +7,21 @@ $(document).ready( () => {
           $("#headi").show();
           $("#navigation").show();
 
-          $(window).scroll( () => {
-               if ($(this).scrollTop() > 100 ){
-                    $('#navigation').hide();
-               } else {
-                    $('#navigation').show();
-               }
-               
-               });
+          let scrollLocation  = window.pageYOffset;
+          window.onscroll = function() {
+          let scrollUser = window.pageYOffset;
+          if(scrollLocation >= scrollUser){
+               document.getElementById('navigation').style.display = 'block';
+          }
+          else{
+               document.getElementById('navigation').style.display = 'none';
+          }
+          scrollLocation = scrollUser;
+          }
+          if(currentUrl === url_+"comments"){
+               $("#navigation").hide();
+          }
+
 
           $("#createPublication").click(() =>{
                textareaAutoResize()

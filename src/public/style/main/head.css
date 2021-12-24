@@ -17,6 +17,8 @@
     --backgrounBody: #d7d7d7;
     --backgroundScroll: #e6e6e6;
     --btnInteractionPost: #d6d2d2a1;
+    --colorIconsHeadMenu: #000;
+    --backgrounWindow: #fff;
     /*---------------------------*/
     outline: none;
     cursor: default;
@@ -144,17 +146,15 @@
     height: 20px;
 }
 
+.modeDarkLigth :active{
+    color: var(--borderGrayLigth)!important;
+}
 
 #modeMoon{
-    display: none;
-}
-#modeMoon, .modeDarkLigth :active{
-    color: blue!important;
-}
-
-#modeSun{
     display: block;
 }
-#modeSun, .modeDarkLigth :active{
-    color: yellow!important;
+
+
+#modeSun{
+    display: none;
 }

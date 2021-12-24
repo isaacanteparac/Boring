@@ -17,8 +17,9 @@
 .contentBoxBlur {
     position: relative;
     width: 80%;
-    background-color: var(--backgroundComponent);
+    background-color: var(--backgrounWindow);
     border-radius: 20px;
+    border: 4px solid var(--blueLigth);
     padding: 10px;
     margin: auto;
     top: 50px;

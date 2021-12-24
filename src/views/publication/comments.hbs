@@ -1,7 +1,37 @@
 <div class="coment">
+
+
     <div class="contentPost">
-        <Post />
+        <div class="information">
+ 
+                <Link to="/profile" class="linkdec">
+                <div class="photoUser">
+                    <img src="#" />
+                </div>
+
+                <div class="nameUser">
+                    <h4>Isaac Antepara</h4>
+                </div>
+                <div class="messageUser">
+                    <label>I/thisisisaacac</label>
+                </div>
+            </Link>
+        </div>
+
+        <div class="fileUser">
+            <img src="/iconos/billiecuadra.jpg" class="contentImagen" />
+        </div>
     </div>
+
+
+
+
+
+
+
+
+
+
 
     <div class="comentBox">
         <div class="title">
@@ -9,23 +39,136 @@
         </div>
 
         <!--NOTE:mapa para mostrar los comentar de todos los usurios-->
-            <div class="comentUser" key={this.props.id_comment}>
-                <div class="photoUser">
-                    <img class="photo" src="#" />
+        <div class="comentUser" >
+            <div class="photoUser">
+                <img class="photo" src="#" />
+            </div>
+            <div class="divTextsUserPrimary">
+                <div class="divTextnameUser">
+                    <label class="textUserLabel">username</label>
                 </div>
-                <div class="divTextsUserPrimary">
-                    <div class="divTextnameUser">
-                        <label class="textUserLabel">username</label>
-                    </div>
-                    <div class="divTextUser">
-                        <p class="textUserP">comentario de cualquier usuario</p>
-                    </div>
+                <div class="divTextUser">
+                    <p class="textUserP">comentario de cualquier usuario</p>
                 </div>
             </div>
+        </div>
+
+
+        <div class="comentUser" >
+            <div class="photoUser">
+                <img class="photo" src="#" />
+            </div>
+            <div class="divTextsUserPrimary">
+                <div class="divTextnameUser">
+                    <label class="textUserLabel">username</label>
+                </div>
+                <div class="divTextUser">
+                    <p class="textUserP">comentario de cualquier usuario</p>
+                </div>
+            </div>
+        </div><div class="comentUser" >
+            <div class="photoUser">
+                <img class="photo" src="#" />
+            </div>
+            <div class="divTextsUserPrimary">
+                <div class="divTextnameUser">
+                    <label class="textUserLabel">username</label>
+                </div>
+                <div class="divTextUser">
+                    <p class="textUserP">comentario de cualquier usuario</p>
+                </div>
+            </div>
+        </div><div class="comentUser" >
+            <div class="photoUser">
+                <img class="photo" src="#" />
+            </div>
+            <div class="divTextsUserPrimary">
+                <div class="divTextnameUser">
+                    <label class="textUserLabel">username</label>
+                </div>
+                <div class="divTextUser">
+                    <p class="textUserP">comentario de cualquier usuario</p>
+                </div>
+            </div>
+        </div><div class="comentUser" >
+            <div class="photoUser">
+                <img class="photo" src="#" />
+            </div>
+            <div class="divTextsUserPrimary">
+                <div class="divTextnameUser">
+                    <label class="textUserLabel">username</label>
+                </div>
+                <div class="divTextUser">
+                    <p class="textUserP">comentario de cualquier usuario</p>
+                </div>
+            </div>
+        </div><div class="comentUser" >
+            <div class="photoUser">
+                <img class="photo" src="#" />
+            </div>
+            <div class="divTextsUserPrimary">
+                <div class="divTextnameUser">
+                    <label class="textUserLabel">username</label>
+                </div>
+                <div class="divTextUser">
+                    <p class="textUserP">comentario de cualquier usuario</p>
+                </div>
+            </div>
+        </div><div class="comentUser" >
+            <div class="photoUser">
+                <img class="photo" src="#" />
+            </div>
+            <div class="divTextsUserPrimary">
+                <div class="divTextnameUser">
+                    <label class="textUserLabel">username</label>
+                </div>
+                <div class="divTextUser">
+                    <p class="textUserP">comentario de cualquier usuario</p>
+                </div>
+            </div>
+        </div><div class="comentUser" >
+            <div class="photoUser">
+                <img class="photo" src="#" />
+            </div>
+            <div class="divTextsUserPrimary">
+                <div class="divTextnameUser">
+                    <label class="textUserLabel">username</label>
+                </div>
+                <div class="divTextUser">
+                    <p class="textUserP">comentario de cualquier usuario</p>
+                </div>
+            </div>
+        </div><div class="comentUser" >
+            <div class="photoUser">
+                <img class="photo" src="#" />
+            </div>
+            <div class="divTextsUserPrimary">
+                <div class="divTextnameUser">
+                    <label class="textUserLabel">username</label>
+                </div>
+                <div class="divTextUser">
+                    <p class="textUserP">comentario de cualquier usuario</p>
+                </div>
+            </div>
+        </div><div class="comentUser" >
+            <div class="photoUser">
+                <img class="photo" src="#" />
+            </div>
+            <div class="divTextsUserPrimary">
+                <div class="divTextnameUser">
+                    <label class="textUserLabel">username</label>
+                </div>
+                <div class="divTextUser">
+                    <p class="textUserP">comentario de cualquier usuario</p>
+                </div>
+            </div>
+        </div>
+
+
     </div>
 
-    <div class="boxInput">
-        <form onSubmit={this.postUserComment} autocomplete="off">
+    <div class="boxInput" id="inputCommentUser">
+        <form action="/comments" method="post" autocomplete="off">
             <div class="contenInputMessage">
                 <input class="inputMessage" rows type="text" name="comment" onChange={this.onChangenComment}
                     placeholder="Comment" />
