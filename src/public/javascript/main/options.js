@@ -9,6 +9,8 @@ $(document).ready( () =>{
             }
         });
         $(".preview").hide();
+        $(".optionViewPreview").hide();
+        $(".controlsVideo").hide();
         $('#navigation').show();
         $(".divClosePublication").hide();
         $("#descriptionNewPost").text("");
@@ -18,6 +20,8 @@ $(document).ready( () =>{
     $("#eliminarFileCreatePublication").click( () => {
         $(".preview").hide();
         $(".divClosePublication").hide();
+        $(".optionViewPreview").hide();
+        $(".controlsVideo").hide();
     })
 
 
@@ -25,7 +29,9 @@ $(document).ready( () =>{
     $("#selectImagePublication").click( () => {
         $('#selectVideoPublication').val("");
         $(".preview").hide();
+        $(".controlsVideo").hide();
         $("video").get(0).pause();
+        $(".optionViewPreview").hide();
         $("#viewVideo").hide();
         $(".divClosePublication").hide();
         viewImage();
@@ -35,6 +41,8 @@ $(document).ready( () =>{
     $("#selectVideoPublication").click( () => {
         $('#selectImagenPublication').val("");
         $(".preview").hide();
+        $(".optionViewPreview").hide();
+        $(".controlsVideo").hide();
         $("#viewImagen").hide();
         $(".divClosePublication").hide();
     })

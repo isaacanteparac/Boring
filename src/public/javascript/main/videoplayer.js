@@ -11,7 +11,10 @@ $(document).ready(function () {
    $(".preview").show();
    $("#viewImagen").hide();
    $("#viewVideo").show();
+   $(".controlsVideo").show();
+   $(".optionViewPreview").show();
    $(".divClosePublication").show();
+
 
    if (!archivos || !archivos.length) {
        $imagenPrevisualizacion.src = "";

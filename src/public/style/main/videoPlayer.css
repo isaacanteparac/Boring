@@ -5,6 +5,14 @@
 }
 
 
+.controlsVideo{
+  display: none;
+  width: 250px;
+  height: 20px;
+  margin: 0;
+  padding: 0 4px;
+}
+
 .overlay .button{
   width: 40px;
   height: 40px;
@@ -41,7 +49,7 @@
   border-radius: 20px;
   cursor: pointer;
   position: relative;
-  bottom:15px;
+  bottom:14px;
   left: 40px;
 }
 .ProgressContainer .progressBar:hover + .time {
@@ -66,14 +74,15 @@
   justify-content: flex-end;
   position: relative;
 }
+
 .volume .icon {
-  width: 15px;
-  height: 15px;
+  width: 14px;
+  height: 14px;
   background: url(../../iconos/videoplayer/volumeActive.svg);
   background-size: 100% 100%;
   cursor: pointer;
   position: relative;
   bottom: 18px;
-  left: 110px;
+  left: 105px;
 
 }

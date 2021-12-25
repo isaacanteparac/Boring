@@ -182,10 +182,8 @@ input[type="file"] {
     display: none;
     width: 250px;
     height: 20px;
-    position: relative;
-    bottom: 3px;
-    left: 10px;
-    margin-top: 5px;
+    position: fixed;
+    
 }
 
 .btnClose{
@@ -215,12 +213,12 @@ input[type="file"] {
 
 .preview{
     display: none;
-    background-color: var(--transp);
+    background-image: var(--backgroundFile);
     max-width: 250px;
     max-height: 250px;
     margin: auto;
-    margin-top: 15px;
-    border-radius: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
     border: none;
     -webkit-user-select: none;
     -moz-user-select: none;
@@ -232,7 +230,7 @@ input[type="file"] {
 }
 
 
-.preview ,.previewFile{
+.previewFile{
     max-width: 250px;
     max-height: 250px;
     margin: auto;
@@ -244,12 +242,26 @@ input[type="file"] {
     -ms-user-select: none;
 }
 
+.optionViewPreview{
+    display: none;
+    width: 250px;
+    height: 20px;
+    margin: auto;
+    margin-top: 0;
+    display: flex;
+    align-items: center;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-image: var(--backgroundFile);
+  }
+
 
 #viewImagen, #viewVideo{
     display: none;
     max-width: 250px;
     max-height: 250px;
 }
+
 
 
 
