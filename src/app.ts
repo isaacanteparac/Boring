@@ -98,7 +98,12 @@ export class App {
     async listen()
     {
         console.clear();
-        console.log("\n   DEVELOPED BY ISAAC ANTEPARA CEREZO");
+        console.log("\n                 █▄██▄█              ▄▄▄▄▄");
+        console.log("        █▄█▄█▄█▄█▐█┼██▌█▄█▄█▄█▄█   ▄█▄█▄█▄█▄");
+        console.log("        ███┼█████▐████▌█████┼███      ░░░");
+        console.log("        █████████▐████▌█████████      ░░░");
+        console.log("\n              Dev By Isaac Antepara C.");
+        console.log("    Invented, Transformed, Created and Destroyed");
         await this.app.listen(this.app.get("port"));
         console.log("\nSERVER ON PORT "+ this.app.get("port"));
     }
