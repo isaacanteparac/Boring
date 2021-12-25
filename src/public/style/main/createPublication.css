@@ -208,7 +208,13 @@ input[type="file"] {
 
 #eliminarFileCreatePublication{
     float: left;
+    position: relative;
+    left: 2px;
     color: var(--borderGrayLigth)!important;
+}
+
+#eliminarFileCreatePublication:active{
+    color: var(--white)!important;
 }
 
 .preview{
@@ -217,8 +223,7 @@ input[type="file"] {
     max-width: 250px;
     max-height: 250px;
     margin: auto;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+    border-radius: 10px;
     border: none;
     -webkit-user-select: none;
     -moz-user-select: none;

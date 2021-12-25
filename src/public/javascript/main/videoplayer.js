@@ -8,6 +8,11 @@ $(document).ready(function () {
 
    const archivos = $seleccionArchivos.files;
 
+   $(".preview").css({
+    "border-radius": "0",
+    "border-top-left-radius": "10px",
+    "border-top-right-radius": "10px"
+   });
    $(".preview").show();
    $("#viewImagen").hide();
    $("#viewVideo").show();

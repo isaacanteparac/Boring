@@ -22,6 +22,7 @@ import signupRouter from "./routesControllers/registerUser/routes/signup.routes"
 import publicationRouter from "./routesControllers/publication/routes/publication.routes";
 import commentRouter from "./routesControllers/comments/routes/comments.routes";
 import profileRouter from "./routesControllers/profile/routes/profile.routes";
+import chatRouter from "./routesControllers/chats/routes/chats.routes";
 
 
 export class App {
@@ -89,6 +90,7 @@ export class App {
         this.app.use("/post", publicationRouter);
         this.app.use("/comments", commentRouter);
         this.app.use("/profile", profileRouter);
+        this.app.use("/chats", chatRouter);
     }
 
     public_(){

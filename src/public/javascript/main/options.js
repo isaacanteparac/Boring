@@ -1,6 +1,7 @@
 $(document).ready( () =>{
     
     $("#windowCreatePublication").click( () => {
+        $('#navigation').show();
         $("#boxCreatePublication").hide();
         $body.bind('scroll', function() {
             // "Desactivar" el scroll horizontal
@@ -11,10 +12,20 @@ $(document).ready( () =>{
         $(".preview").hide();
         $(".optionViewPreview").hide();
         $(".controlsVideo").hide();
-        $('#navigation').show();
+        
         $(".divClosePublication").hide();
         $("#descriptionNewPost").text("");
 
+    });
+
+    $("#windowOptionUserFriendChat").click( () => {
+        $("#boxOptionsUserFriendChat").hide();
+        $('#navigation').show();
+    });
+
+    $("#userFriendPhoto").click( () => {
+        $("#boxOptionsUserFriendChat").show();
+        $('#navigation').hide();
     });
 
     $("#eliminarFileCreatePublication").click( () => {
@@ -22,12 +33,16 @@ $(document).ready( () =>{
         $(".divClosePublication").hide();
         $(".optionViewPreview").hide();
         $(".controlsVideo").hide();
+        
     })
 
 
 
     $("#selectImagePublication").click( () => {
         $('#selectVideoPublication').val("");
+        $(".preview").css({
+            "border-radius": "10px"
+        });
         $(".preview").hide();
         $(".controlsVideo").hide();
         $("video").get(0).pause();
@@ -61,7 +76,9 @@ $(document).ready( () =>{
             "--backgroundScroll": "#e6e6e6",
             "--btnInteractionPost": "#d6d2d2a1",
             "--colorIconsHeadMenu": "#000",
-            "--backgrounWindow": "#fff"
+            "--backgrounWindow": "#fff",
+            "--actionBtnDefaul": "#B9b5b5"
+            
         });
         
     })
@@ -80,7 +97,8 @@ $(document).ready( () =>{
             "--backgroundScroll": "#101113",
             "--btnInteractionPost": "#070707a1",
             "--colorIconsHeadMenu": "#fff",
-            "--backgrounWindow": "#000"
+            "--backgrounWindow": "#000",
+            "--actionBtnDefaul": "#1f1f1f"
         });
     })
 
