@@ -73,7 +73,7 @@ $(document).ready(function () {
       }
    });
 
-    volumeIntesity.click(function () { changeVolume(); });
+
 
     overlayButton.click(function () { playVid();});
   

@@ -40,6 +40,7 @@ $(document).ready( () =>{
 
     $("#selectImagePublication").click( () => {
         $('#selectVideoPublication').val("");
+        $('#selectImagePublication').val("");
         $(".preview").css({
             "border-radius": "10px"
         });
@@ -55,6 +56,8 @@ $(document).ready( () =>{
     
     $("#selectVideoPublication").click( () => {
         $('#selectImagenPublication').val("");
+        $("video").get(0).pause();
+        $('#selectVideoPublication').val("");
         $(".preview").hide();
         $(".optionViewPreview").hide();
         $(".controlsVideo").hide();
@@ -77,8 +80,9 @@ $(document).ready( () =>{
             "--btnInteractionPost": "#d6d2d2a1",
             "--colorIconsHeadMenu": "#000",
             "--backgrounWindow": "#fff",
-            "--actionBtnDefaul": "#B9b5b5"
-            
+            "--actionBtnDefaul": "#B9b5b5",
+            "--leftoverBoxDark": "#0e0e0e",
+            "--leftoverBoxLigth": "#d7d7d7",
         });
         
     })
@@ -98,7 +102,10 @@ $(document).ready( () =>{
             "--btnInteractionPost": "#070707a1",
             "--colorIconsHeadMenu": "#fff",
             "--backgrounWindow": "#000",
-            "--actionBtnDefaul": "#1f1f1f"
+            "--actionBtnDefaul": "#1f1f1f",
+            "--leftoverBoxDark": "#101113",
+            "--leftoverBoxLigth": "#313131",
+
         });
     })
 

@@ -22,6 +22,8 @@
 .contentPost {
     margin-top: 10px;
     border-radius: var(--borderRadioBig);
+    box-shadow: 2px 2px 5px var(--leftoverBoxDark),
+    -2px -2px 5px var(--leftoverBoxLigth);
 }
 
 

@@ -87,7 +87,7 @@ export class App {
     routes(){
         this.app.use(loginRouter);
         this.app.use("/sign-up", signupRouter);
-        this.app.use("/post", publicationRouter);
+        this.app.use("/publication", publicationRouter);
         this.app.use("/comments", commentRouter);
         this.app.use("/profile", profileRouter);
         this.app.use("/chats", chatRouter);
@@ -105,13 +105,39 @@ export class App {
         console.log("        ███┼█████▐████▌█████┼███      ░░░");
         console.log("        █████████▐████▌█████████      ░░░");
         console.log("\n              Dev By Isaac Antepara C.");
-        console.log("    Invented, Transformed, Created and Destroyed");
+        console.log("  Invented, Transformed, Created and Destroyed");
         await this.app.listen(this.app.get("port"));
         console.log("\nSERVER ON PORT "+ this.app.get("port"));
     }
 }
-
-
-
-
+/*
+const human: object = {
+    name: "isaac antepara", 
+    age: undefined,
+    nPrograms: 23,
+    skill: "do anything, but only when I feel like it",
+    animalFav: "bat",
+    favCar: "rolls royce wraith black badge",
+    favArtists: ["billie eilish", "dua lipa", "travis scott", "yellow claw"],
+    insult: "fuck",
+    iq: undefined,
+    peopleAdmire: "yo",
+    currentJob: ["Collaborating with nasa to detect future landslides,"+
+     "          just for fun",
+                "duaui by Isaac Antepara"],
+    foodStorage: undefined,
+    importantIssues: ["technology", 
+                        "physics", 
+                        "economy", 
+                        "fashion",
+                        "jewelry",
+                        "cars",
+                        "cosmos",
+                        "nature",
+                        "animals",
+                        "science fiction books"],
+    gender: "heterosexual",
+    sex: "male"
+};
+*/
 

@@ -29,6 +29,8 @@
     --colorIconsHeadMenu: #fff;
     --backgrounWindow: #000;
     --actionBtnDefaul: #1f1f1f;
+    --leftoverBoxDark: #101113;
+    --leftoverBoxLigth: #313131;
     /*---------------------------*/
     outline: none;
     cursor: default;

@@ -194,6 +194,8 @@ input[type="file"] {
     max-height: 20px;
     float: right;
     font-size: 25px;
+    max-width:50px;
+    max-height: 50px;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
@@ -209,7 +211,7 @@ input[type="file"] {
 #eliminarFileCreatePublication{
     float: left;
     position: relative;
-    left: 2px;
+    left: 8px;
     color: var(--borderGrayLigth)!important;
 }
 

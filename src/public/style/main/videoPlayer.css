@@ -32,7 +32,7 @@
 }
 
 .ProgressContainer{
-  color: var( --white);
+  color: white;
   font-size: 15px;
 }
 
@@ -43,7 +43,7 @@
 }
 
 .ProgressContainer .progressBar {
-  width: 150px;
+  width: 140px;
   height: 10px;
   background: var(--borderGrayLigth);
   border-radius: 20px;
@@ -52,10 +52,12 @@
   bottom:14px;
   left: 40px;
 }
+
 .ProgressContainer .progressBar:hover + .time {
   opacity: 1;
   transform: translateY(0);
 }
+
 .ProgressContainer .progressBar .progress {
   width: 0%;
   height: 100%;
@@ -83,6 +85,6 @@
   cursor: pointer;
   position: relative;
   bottom: 18px;
-  left: 105px;
+  left: 100px;
 
 }

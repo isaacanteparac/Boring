@@ -1,4 +1,4 @@
-$(document).redy( () => {
+$(document).ready( () => {
     $("#btnLogin").click( () =>{
         $("#btnLogin").hide();
         $("#loginBallLoader").show();
