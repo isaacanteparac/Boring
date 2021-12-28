@@ -168,3 +168,38 @@
     -ms-user-select: none;
 
 }
+
+
+.btnFilesUser {
+    background-color: var(--transp);
+    margin: 0 5px;
+    padding-top: 5px;
+    position: relative;
+    width: 55px;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: var(--colorIconsHeadMenu);
+}
+
+
+
+.btnFilesUser:active, .FilesUser:active{
+    background-color: var(--backgroundComponent);
+    color: var(--blueLigth)!important;
+}
+
+.FilesUser{
+    width: 55px;
+    height: 50px;
+    color: var(--colorIconsHeadMenu)!important;
+}
+
+.FilesUser:active {
+    color: var(--blueLigth)!important;
+}
