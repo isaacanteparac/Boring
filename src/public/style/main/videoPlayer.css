@@ -32,7 +32,7 @@
 }
 
 .ProgressContainer{
-  color: white;
+  color: var(--backgrounBody);
   font-size: 15px;
 }
 

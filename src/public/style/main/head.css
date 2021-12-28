@@ -7,30 +7,24 @@
     --borderRadioBig: 30px;
     --borderGrayLigth: #999898;
     --colorBallLoaser: #fff;
-    --backgroundFile: radial-gradient(circle at 90.56% 107.92%, #3a4641 0, 
-    #394743 3.33%, #384744 6.67%, #374745 10%, #374747 13.33%, 
-    #374648 16.67%, #374649 20%, #38464a 23.33%, #38464b 26.67%, 
-    #39454c 30%, #3a454d 33.33%, #3c454d 36.67%, #3d444d 40%, 
-    #3f444d 43.33%, #40434d 46.67%, #42434d 50%, #44434d 53.33%, 
-    #45424c 56.67%, #47424b 60%, #48414a 63.33%, #4a4149 66.67%, 
-    #4b4148 70%, #4c4047 73.33%, #4d4045 76.67%, #4e4044 80%, 
-    #4e4042 83.33%, #4e4041 86.67%, #4e4040 90%, #4e413f 93.33%,
-    #4e413d 96.67%, #4d413c 100%);
+    
     /*----------------------*/
-    --white: #fff;
-    --lowlowWhite: #b6b6b6;
-    --lowWhite: #e7e7e7;
-    --backgroundComponent: #050505;
-    --colorActiveBtn: #000000;
-    --borderBlack: #0d0d0d;
-    --backgrounBody: #101113;
-    --backgroundScroll: #101113;
-    --btnInteractionPost: #070707a1;
-    --colorIconsHeadMenu: #fff;
-    --backgrounWindow: #000;
-    --actionBtnDefaul: #1f1f1f;
-    --leftoverBoxDark: #101113;
-    --leftoverBoxLigth: #313131;
+    --white: #000;
+    --lowlowWhite: #333333;
+    --lowWhite: #191919;
+    --backgroundComponent: #fff;
+    --colorActiveBtn: #b6b3b3;
+    --borderBlack: #cccccc;
+    --backgrounBody: #e6e6e6;
+    --backgroundScroll: #e6e6e6;
+    --btnInteractionPost: #d6d2d2a1;
+    --colorIconsHeadMenu: #000;
+    --backgrounWindow: #fff;
+    --actionBtnDefaul: #B9b5b5;
+    --leftoverBoxDark: #0e0e0e;
+    --leftoverBoxLigth: #d7d7d7;
+    --backgroundFile:  radial-gradient(circle at 0% 0%,
+    #dcdacf 50%, #b1b1b8 66.67%, #8c8ca3 83.33%, #6e6b8f 100%);
     /*---------------------------*/
     outline: none;
     cursor: default;
@@ -163,10 +157,10 @@
 }
 
 #modeMoon{
-    display: none;
+    display: block;
 }
 
 
 #modeSun{
-    display: block;
+    display: none;
 }

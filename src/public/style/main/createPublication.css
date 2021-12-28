@@ -226,7 +226,6 @@ input[type="file"] {
     max-height: 250px;
     margin: auto;
     border-radius: 10px;
-    border: none;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
@@ -234,6 +233,7 @@ input[type="file"] {
     display: flex;
     align-items: center;
     justify-content: center;
+
 }
 
 
@@ -254,13 +254,12 @@ input[type="file"] {
     width: 250px;
     height: 20px;
     margin: auto;
-    margin-top: 0;
+    margin-top: 5px;
     display: flex;
     align-items: center;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    background-image: var(--backgroundFile);
-  }
+    border-radius: 10px;
+    background-color: var(--white);
+}
 
 
 #viewImagen, #viewVideo{

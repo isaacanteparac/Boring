@@ -3,12 +3,6 @@ $(document).ready( () =>{
     $("#windowCreatePublication").click( () => {
         $('#navigation').show();
         $("#boxCreatePublication").hide();
-        $body.bind('scroll', function() {
-            // "Desactivar" el scroll horizontal
-            if ($body.scrollLeft() !== 0) {
-                $body.scrollLeft(0);
-            }
-        });
         $(".preview").hide();
         $(".optionViewPreview").hide();
         $(".controlsVideo").hide();
@@ -41,9 +35,6 @@ $(document).ready( () =>{
     $("#selectImagePublication").click( () => {
         $('#selectVideoPublication').val("");
         $('#selectImagePublication').val("");
-        $(".preview").css({
-            "border-radius": "10px"
-        });
         $(".preview").hide();
         $(".controlsVideo").hide();
         $("video").get(0).pause();
@@ -75,7 +66,7 @@ $(document).ready( () =>{
             "--backgroundComponent": "#fff",
             "--colorActiveBtn": "#b6b3b3",
             "--borderBlack": "#cccccc",
-            "--backgrounBody": "#d7d7d7",
+            "--backgrounBody": "#e6e6e6",
             "--backgroundScroll": "#e6e6e6",
             "--btnInteractionPost": "#d6d2d2a1",
             "--colorIconsHeadMenu": "#000",
@@ -83,6 +74,8 @@ $(document).ready( () =>{
             "--actionBtnDefaul": "#B9b5b5",
             "--leftoverBoxDark": "#0e0e0e",
             "--leftoverBoxLigth": "#d7d7d7",
+            "--backgroundFile": "radial-gradient(circle at 0% 0%,"+
+                "#dcdacf 50%, #b1b1b8 66.67%, #8c8ca3 83.33%, #6e6b8f 100%)"
         });
         
     })
@@ -97,7 +90,7 @@ $(document).ready( () =>{
             "--backgroundComponent": "#050505",
             "--colorActiveBtn": "#000000",
             "--borderBlack": "#0d0d0d",
-            "--backgrounBody": "#101113",
+            "--backgrounBody": "#1a1a1a",
             "--backgroundScroll": "#101113",
             "--btnInteractionPost": "#070707a1",
             "--colorIconsHeadMenu": "#fff",
@@ -105,7 +98,8 @@ $(document).ready( () =>{
             "--actionBtnDefaul": "#1f1f1f",
             "--leftoverBoxDark": "#101113",
             "--leftoverBoxLigth": "#313131",
-
+            "--backgroundFile":  "radial-gradient(circle at 0% 0%,"+ 
+                "#313130 50%, #222127 66.67%, #15131e 83.33%, #080016 100%)"
         });
     })
 
