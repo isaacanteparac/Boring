@@ -37,3 +37,9 @@
 
 # RUN ALL
     npm start
+# DISPLAY
+![image](https://user-images.githubusercontent.com/69361351/147791386-d38932ba-b5ce-4b31-9da9-cbc9d8e0ff76.png)
+![image](https://user-images.githubusercontent.com/69361351/147791217-a1111741-2448-4d49-8ef9-c28d53c3416f.png)
+![image](https://user-images.githubusercontent.com/69361351/147791744-9f338a25-1616-41af-b832-f54b3ed467fc.png)
+
+
