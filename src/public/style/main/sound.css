@@ -1,0 +1,210 @@
+*:focus {
+    outline: none;
+}
+/*NOTE:VIZUALIZAR EL TIEMPO DEL AUDIO*/
+#player-track {
+    background-color: var(tranps);
+    border-radius: 10px;
+    width: 240px;
+    height: 50px;
+    padding: 0 5px;
+}
+
+#player-track.active {
+    top: -92px;
+}
+
+#track-name {
+    color: var(--white);
+    font-size: 17px;
+    text-align: center;
+}
+
+#track-time {
+    margin-top: 5px;
+    height: 20px;
+    background-color: var(--tranps);
+    border-radius: 5px;
+}
+
+#current-time {
+    float: left;
+    position: relative;
+    bottom: 2px;
+}
+
+#track-length {
+    float: right;
+    position: relative;
+    bottom: 10px;
+}
+
+#current-time,
+#track-length {
+    font-size: 15px;
+    color: var(--white);
+    background-color: var(--tranps);
+    border-radius: 10px;
+}
+
+#s-area{
+    background-color: var(--white);
+    width: 160px;
+    position: relative;
+    top: 6px;
+    left: 40px;
+
+}
+#s-area,
+#seek-bar {
+    border-radius: 3px;
+    height: 6px;
+
+}
+
+#seek-bar {
+    background-color: var(--blueLigth);
+    transition: 0.2s ease width;
+    z-index: 1;
+}
+
+
+
+/*NOTE:CONTROLLER DE AUIDO*/
+#player-content {
+    position: relative;
+    height: 100%;
+    background-image: var(--backgroundFile);
+    border-radius: 15px;
+    z-index: 2;
+}
+
+
+#player-controls {
+    float: right;
+    /*width: 180px;
+    height: 50px;*/
+    width: 250px;
+    height: 40px;
+    position: relative;
+    /*bottom: 40px;*/
+    background-color: var(tranps);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    /*margin-left: 50px;*/  
+}
+
+.button {
+    width: 30px;
+    height: 30px;
+    background-color: rgba(0, 0, 0, 0.465);
+    border-radius: 10px;
+    margin: 0 3px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btnInteractionSound{
+    width: 15px;
+    height: 15px;
+    color: white!important;
+}
+
+#playSound{
+    display: none;
+}
+
+#stopSound{
+    display: block;
+}
+
+
+
+
+/*NOTE:DISCO GIRATORIO*/
+
+
+#discSound{
+    width: 60px;
+    height: 60px;
+    color: var(--colorIconsHeadMenu)!important;
+}
+
+#album-art {
+    
+    position: relative;
+    top: 10px;
+    left: 15px;
+    width: 50px;
+    height: 50px;
+    background-color: var(--backgroundComponent);
+    transform: rotateZ(0);
+    transition: 0.3s ease all;
+    box-shadow: 0 0 0 6px var(--white);
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#album-art.active {
+    box-shadow: 0 0 0 12px var(--white);
+}
+
+#album-art:before {
+    top: 50%;
+    right: 0;
+    left: 0;
+    width: 15px;
+    height: 15px;
+    margin: -10px auto 0 auto;
+    background-color: #d6dee7;
+    border-radius: 50%;
+    box-shadow: inset 0 0 0 2px #fff;
+    z-index: 2;
+}
+
+#album-art #discSound {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    z-index: -1;
+}
+
+#album-art #discSound.active {
+    opacity: 1;
+    z-index: 1;
+}
+
+#album-art.active #discSound.active {
+    z-index: 1;
+    animation: rotateAlbumArt 3s linear 0s infinite forwards;
+}
+
+@keyframes rotateAlbumArt {
+    0% {
+        transform: rotateZ(0);
+    }
+    100% {
+        transform: rotateZ(360deg);
+    }
+}
+
+#album-art{
+    display: none;
+}
+
+#viewAudio{
+    display: none;
+}

@@ -35,14 +35,15 @@ $(document).ready( () =>{
     $("#selectImagePublication").click( () => {
         $('#selectVideoPublication').val("");
         $('#selectImagePublication').val("");
+        $(".preview").css('border-radius','10px');
         $(".preview").hide();
         $(".controlsVideo").hide();
         $("video").get(0).pause();
         $(".optionViewPreview").hide();
         $("#viewVideo").hide();
+        $("#viewAudio").hide();
         $(".divClosePublication").hide();
         viewImage();
-        
     })
     
     $("#selectVideoPublication").click( () => {
@@ -53,8 +54,27 @@ $(document).ready( () =>{
         $(".optionViewPreview").hide();
         $(".controlsVideo").hide();
         $("#viewImagen").hide();
+        $("#viewAudio").hide();
         $(".divClosePublication").hide();
     })
+
+    $("#selectAudioPublication").click( () => {
+        $('#selectImagenPublication').val("");
+        $('#selectVideoPublication').val("");
+        $("video").get(0).pause();
+        audio.pause();
+        $(".preview").css('border-radius','10px');
+        $('#selectAudioPublication').val("");
+        $(".optionViewPreview").hide();
+        $(".controlsVideo").hide();
+        $("#viewVideo").hide();
+        $("#viewImagen").hide();
+        $(".preview").show();
+        $("#viewAudio").show();
+        $(".divClosePublication").hide();
+        
+    })
+
 
     $("#modeSun").click( () =>{
         $("#modeSun").hide();
