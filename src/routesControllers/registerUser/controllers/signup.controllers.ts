@@ -16,7 +16,7 @@ export async function _get_(req: Request, res: Response) {
 
 export async function _post_(req: Request, res: Response, next:NextFunction) {
     passport.authenticate("signup",{
-        successRedirect: '/post',
+        successRedirect: '/publication',
         failureRedirect: '/sign-up',
         failureFlash: true
     })(req, res, next);

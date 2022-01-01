@@ -76,6 +76,13 @@ $(document).ready( () =>{
     })
 
 
+    $("#sendPublication").click(() =>{
+        $("#navigation").show();
+        $(".optionViewPreview").hide();
+        $("#boxCreatePublication").hide();
+   })
+
+
     $("#modeSun").click( () =>{
         $("#modeSun").hide();
         $("#modeMoon").show();
@@ -123,6 +130,8 @@ $(document).ready( () =>{
         });
     })
 
+
+
     $("#btnCommentPublication").click( () =>{
         $('#navigation').hide();
         let scrollLocation  = window.pageYOffset;
@@ -136,6 +145,10 @@ $(document).ready( () =>{
         }
         scrollLocation = scrollUser;
     }
+    })
+
+    $(".btnClosrMessage").click( () =>{
+        $(".content_message").hide();
     })
     
 

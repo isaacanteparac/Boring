@@ -1,0 +1,97 @@
+.alert_message{
+    background: var(--transp);
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    position:fixed;
+    left: 10%;
+    width: 80%;
+    top: 60px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; 
+}
+
+
+div.content_message{
+    background-color: aqua;
+    width: 100%;
+    height: 50px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+label.iconAlert{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+}
+
+
+p.textMessage{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: var(--transp);
+    width: 80%;
+    font-weight: 700;
+    max-height: 40px;
+    margin-left: 1px;
+}
+
+
+
+p.textalertMessage{
+    color: #fff;
+}
+
+div.messageAlert{
+    background-color:#eed817;
+
+}
+
+label.iconidMessageAlert{
+    color: #bc9a0f!important;
+}
+
+div.messageSuccess{
+    background-color:#4dee17;
+}
+label.iconidMessageSuccess{
+    color: #3abc0f!important;
+}
+
+div.messageFailed{
+    background-color:#ee1e17;
+}
+label.iconidMessageFailed{
+    color: #bc0f0f!important;
+}
+
+
+
+
+
+.btnClosrMessage{
+    position: relative;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    margin-right: 2px;
+    color: var(--redLigth)!important;
+    background-color: var(--transp);
+    border: none;
+}
+
+.btnClosrMessage:active{
+    color: var(--redDark)!important;
+}

@@ -14,7 +14,7 @@
                 <h3 class="subtitle">New Post</h3>
 
                 <div class="descriptionNewPost">
-                    <textarea type="text" autofocus id="descriptionPublication" name="description"
+                    <textarea type="text" autofocus id="description" name="description"
                         placeholder="What are you thinking?"></textarea>
                 </div>
 
@@ -47,6 +47,7 @@
 
                     <!--NOTE: SOUND-->
                     <div class="previewFile" id="viewAudio">
+                        <audio id="player"></audio>
                         <div id="player">
                             <div id="player-content">
                                 <div id="player-track">
@@ -138,12 +139,21 @@
 
 
 
+                <input type="text" style="display:none" id="file_content" name="file_content"/>
+              
+                    <button type="submit" class="btnNewPost" id="sendPublication">
+                        Send
+                    </button>
+                </div>
+            </form>
 
-                <div class="divBtnUpadateBottom">
+
+              <div class="divBtnUpadateBottom">
                     <div class="contentTypeFile">
+                        
                         <div class="fileUpload">
                             <input type="file" id="selectImagePublication" className="convertBase64blod" class="upload"
-                                className="convertBase64blod" accept="image/png, image/jpeg, image/jpg, image/gif"
+                                className="convertBase64blod" accept="image/png, image/jpeg, image/jpg"
                                 name="file_content" />
                             <span>
                                 <svg class="iconsNewPost" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
@@ -192,11 +202,16 @@
                             </span>
                         </div>
                     </div>
-                    <button type="submit" class="btnNewPost">
-                        Send
-                    </button>
-                </div>
-            </form>
+        
+        
+        
+
+        
+        
+        
+        
+        
+        
         </div>
     </div>
 </div>

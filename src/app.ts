@@ -1,5 +1,6 @@
 import express, {Application, Response, Request, NextFunction}  from "express";
 import morgan  from "morgan";
+import BodyParser from 'body-parser';
 
 //NOTE:IMPORTS PARA EXEC HANDLEBARS
 import path from "path";
@@ -7,6 +8,7 @@ import { engine } from "express-handlebars";
 
 //NOTE: MESSAGE DE ALERT A FRONTEND
 import flash from "connect-flash";
+
 
 //NOTE:IMPORTS PARA EXEC LA AUTH DE USER
 import session from "express-session";
@@ -28,6 +30,8 @@ import chatRouter from "./routesControllers/chats/routes/chats.routes";
 export class App {
 
     private app: Application;
+
+    
 
     constructor(private port?: number | string){
         this.app = express();
@@ -56,8 +60,14 @@ export class App {
 
     middlewares(){
         this.app.use(morgan("dev"));
-        this.app.use(express.urlencoded({extended: true}));
-        this.app.use(express.json());
+        
+        this.app.use(BodyParser.json({ limit: '15mb' }));
+        this.app.use(BodyParser.urlencoded({
+            limit: '15mb',
+            extended: true
+        }));
+       
+
         this.app.use(session({
             secret:  process.env.SESSION_SECRET || 'i*/ws7d6554dsf/+#',
             resave: false,
@@ -79,6 +89,7 @@ export class App {
         this.app.use((req:any, res:Response, next:NextFunction ) =>{
             this.app.locals.message = req.flash('message');
             this.app.locals.success = req.flash('success');
+            this.app.locals.failed = req.flash('failed');
             this.app.locals.user = req.user;
             next();
         })

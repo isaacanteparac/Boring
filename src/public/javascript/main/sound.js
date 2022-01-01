@@ -186,22 +186,22 @@ $(document).ready( function()
             tProgress.text('00:00');
             tTime.text('00:00');
 
-            currTrackName = trackNames[0];
-            audio.src = trackUrl[0];
+            currTrackName = flag;
+            audio.src = flag;
             
             nTime = 0;
             bTime = new Date();
             bTime = bTime.getTime();
 
-            if(flag != 0)
-            {
+            /*if(flag != 0)
+            {*/
                 audio.play();
                 playerTrack.addClass('active');
                 albumArt.addClass('active');
             
                 clearInterval(buffInterval);
                 checkBuffering();
-            }
+            /*}*/
 
             trackName.text(currTrackName);
             albumArt.find('img.active').removeClass('active');
@@ -222,8 +222,16 @@ $(document).ready( function()
     function initPlayer()
 	{	
         audio = new Audio();
+        $seleccionArchivos = document.querySelector("#selectAudioPublication");
+        const archivos = $seleccionArchivos.files;
+        if (!archivos || !archivos.length) {
+            $imagenPrevisualizacion.src = "";
+            return;
+        }
+        const primerArchivo = archivos[0];
+        const objectURL = URL.createObjectURL(primerArchivo);
 
-		selectTrack(0);
+		selectTrack(objectURL);
 		
 		audio.loop = false;
 		
