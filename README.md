@@ -1,6 +1,26 @@
 # DUAUI
 
-# INITIALIZE
+
+
+# BACKAEND USE
+    Typescript
+    Nodejs
+    Express
+    Passport
+    Nodemon
+    Mysql2
+
+
+
+# FRONTEND USE
+    JAVASCRIPT
+    CSS
+    HANDLEBARS>HTML
+    ICONS>SVG
+
+
+
+# INSTALL
     npm init -y
     npm install -D typescript
     npm install -D tslint
