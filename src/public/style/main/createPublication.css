@@ -11,6 +11,7 @@
 .boxNewPost {
     padding: 0;
     padding: 15px;
+    width: var(--maxWidthContentPost);
     display: flex;
     justify-content: center;
 

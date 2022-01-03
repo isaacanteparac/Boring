@@ -1,27 +1,54 @@
 <div class="coment">
 
 
-    <div class="contentPost">
-        <div class="information">
- 
-                <Link to="/profile" class="linkdec">
-                <div class="photoUser">
-                    <img src="#" />
-                </div>
+    <!--NOTE:crear un mapa que le llegue el contenido de las personas que sigue-->
+    <div class="viewPostContentuser">
+        <div class="userPost">
+       
+            <!--NOTE:CONTENVIEW-->
+            <div class="fileUser">
+                <img src="/iconos/dua.jpg" class="contentImagen" />
+            </div>
 
-                <div class="nameUser">
-                    <h4>Isaac Antepara</h4>
-                </div>
-                <div class="messageUser">
-                    <label>I/thisisisaacac</label>
-                </div>
-            </Link>
-        </div>
+            <!--NOTE:INFORMATION USER-->
+            <div class="information">
+                <a href="/profile" class="linkdec">
+                    <div class="photoUser">
+                        <img src="/iconos/isaac.jpg" />
+                    </div>
 
-        <div class="fileUser">
-            <img src="/iconos/billiecuadra.jpg" class="contentImagen" />
+                    <div class="nameUser">
+                        <h4>Isaac Antepara</h4>
+                    </div>
+                    <div class="messageUser">
+                        <label>I/thisisisaacac</label>
+                    </div>
+                </a>
+            </div>
+            <!--NOTE:INTERACTION POST USER-->
+            <div class="interactionPost">
+                <!--NOTE:LIKES--->
+                <button class="btnInteraction">
+                    <svg class="iconInterac" id="heart" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                        viewBox="0 0 24 24">
+                        <path fill="currentcolor"
+                            d="M12 4.248c-3.148-5.402-12-3.825-12 2.944 0 4.661 5.571 9.427 12 15.808 6.43-6.381 12-11.147 12-15.808 0-6.792-8.875-8.306-12-2.944z" />
+                    </svg>
+                </button>
+            
+                <!--NOTE:SHARE--->
+                <button class="btnInteraction">
+                    <svg class="iconInterac" id="share" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                        viewBox="0 0 24 24">
+                        <path fill="currentcolor"
+                            d="M24 0l-6 22-8.129-7.239 7.802-8.234-10.458 7.227-7.215-1.754 24-12zm-15 16.668v7.332l3.258-4.431-3.258-2.901z" />
+                    </svg>
+                </button>   
+            </div>
         </div>
     </div>
+
+   
 
 
 
