@@ -25,11 +25,11 @@ export async function calcularLongitudBytes(string_: string){
     }
     const stringSize = new Blob([string_]).size;
     if(stringSize <=15360){
-        console.log("OK SIZE"+stringSize);
+        console.log("OK SIZE "+stringSize);
         return true;
     }
     else{
-        console.log("NO SIZE"+stringSize);
+        console.log("NO SIZE "+stringSize);
         return false;
     }
 }

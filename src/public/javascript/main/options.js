@@ -150,9 +150,6 @@ $(document).ready( () =>{
     $(".btnClosrMessage").click( () =>{
         $(".content_message").hide();
     })
-    
-
-
 
 })
 

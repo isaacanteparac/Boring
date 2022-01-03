@@ -1,6 +1,7 @@
 import express, {Application, Response, Request, NextFunction}  from "express";
 import morgan  from "morgan";
 import BodyParser from 'body-parser';
+const validator =  require('express-validator');
 
 //NOTE:IMPORTS PARA EXEC HANDLEBARS
 import path from "path";
@@ -30,8 +31,6 @@ import chatRouter from "./routesControllers/chats/routes/chats.routes";
 export class App {
 
     private app: Application;
-
-    
 
     constructor(private port?: number | string){
         this.app = express();
@@ -121,34 +120,5 @@ export class App {
         console.log("\nSERVER ON PORT "+ this.app.get("port"));
     }
 }
-/*
-const human: object = {
-    name: "isaac antepara", 
-    age: undefined,
-    nPrograms: 23,
-    skill: "do anything, but only when I feel like it",
-    animalFav: "bat",
-    favCar: "rolls royce wraith black badge",
-    favArtists: ["billie eilish", "dua lipa", "travis scott", "yellow claw"],
-    insult: "fuck",
-    iq: undefined,
-    peopleAdmire: "yo",
-    currentJob: ["Collaborating with nasa to detect future landslides,"+
-     "          just for fun",
-                "duaui by Isaac Antepara"],
-    foodStorage: undefined,
-    importantIssues: ["technology", 
-                        "physics", 
-                        "economy", 
-                        "fashion",
-                        "jewelry",
-                        "cars",
-                        "cosmos",
-                        "nature",
-                        "animals",
-                        "science fiction books"],
-    gender: "heterosexual",
-    sex: "male"
-};
-*/
+
 

@@ -1,9 +1,8 @@
-import {Response, NextFunction} from "express";
+import {Request, Response, NextFunction} from "express";
 
-export function isLoggedIn(req: any, res: Response, next: NextFunction) {
-        if (req.isAuthenticated()) {
-            return next();
-        }
-        return res.redirect('/login');
+export function adminIsLoggedIn(req: any, res: Response, next: NextFunction) {
+    if (req.isAuthenticated()){
+        return next();
     }
-};
+    res.redirect('/login');
+}
