@@ -20,12 +20,12 @@ export async function _post_(req: any, res: Response) {
     const db = await connect();
     let new_publication: IPublication = req.body;
 
-    /*new_publication.id_user = req.user.id;
-    console.log(req.user.id);*/
+    new_publication.id_user = req.user.id;
+    
     if(calcularLongitudBytes(new_publication.file_content))
         console.log(new_publication.file_content);
-        console.log(new_publication.description);
-        
+        console.log("DESCRPTION "+new_publication.description);
+        console.log("ID_USER "+req.user.id);
         await db.query("INSERT INTO publications SET ?", [new_publication]);
         req.flash('success', 'Your post was sent.')
     return res.redirect("/profile");

@@ -3,12 +3,12 @@
     --blueDark: #133297;
     --redLigth: #df1937;
     --redDark: #b1162d;
-    --maxHeightContentPost: 410px;
+    --maxHeightContentPost: 400px;
     --maxWidthContentPost: 400px;
     --borderRadioBig: 30px;
     --borderGrayLigth: #999898;
     --colorBallLoaser: #fff;
-    
+    --heightNav: 50px;
     /*----------------------*/
     --white: #000;
     --lowlowWhite: #333333;
@@ -26,6 +26,7 @@
     --leftoverBoxLigth: #d7d7d7;
     --backgroundFile:  radial-gradient(circle at 0% 0%,
     #dcdacf 50%, #b1b1b8 66.67%, #8c8ca3 83.33%, #6e6b8f 100%);
+    --backgroundNavigation: rgba(255, 255, 255, 0.68);
     /*---------------------------*/
     outline: none;
     cursor: default;

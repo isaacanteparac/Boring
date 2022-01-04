@@ -1,25 +1,24 @@
 * {
     cursor: default;
     outline: none;
-    --heightNav: 6%;
+    --heightNav: 50px;
 }
 
 .navInfer {
     display: none;
     position: fixed;
     bottom: 15px;
-    width: 90%;
+    width: 100%;
     height: var(--heightNav);
     transition: all 0.5s;
     align-items: center;
     justify-content: center;
-    border-radius: 50px;
-    left: 5%;
-    border: 1px solid var(--borderBlack);
+    border-radius: 10px;
+    border: none;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
-    user-select: none; 
+    user-select: none;
 }
 
 .navInfer ul.navbar-menu {
@@ -28,8 +27,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: var(--backgroundComponent);
+    background-color: var(--backgroundNavigation);
     height: 100%;
+    width: 300px;
+    margin: auto;
     border-radius: 50px;
 }
 

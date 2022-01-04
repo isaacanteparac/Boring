@@ -1,7 +1,8 @@
 import express, {Application, Response, Request, NextFunction}  from "express";
 import morgan  from "morgan";
 import BodyParser from 'body-parser';
-const validator =  require('express-validator');
+
+var validator = require('express-validator');
 
 //NOTE:IMPORTS PARA EXEC HANDLEBARS
 import path from "path";
@@ -90,6 +91,7 @@ export class App {
             this.app.locals.success = req.flash('success');
             this.app.locals.failed = req.flash('failed');
             this.app.locals.user = req.user;
+            console.log("USER "+ req.Body);
             next();
         })
     }

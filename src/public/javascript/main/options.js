@@ -102,7 +102,8 @@ $(document).ready( () =>{
             "--leftoverBoxDark": "#0e0e0e",
             "--leftoverBoxLigth": "#d7d7d7",
             "--backgroundFile": "radial-gradient(circle at 0% 0%,"+
-                "#dcdacf 50%, #b1b1b8 66.67%, #8c8ca3 83.33%, #6e6b8f 100%)"
+                "#dcdacf 50%, #b1b1b8 66.67%, #8c8ca3 83.33%, #6e6b8f 100%)",
+            "--backgroundNavigation": "rgba(255, 255, 255, 0.68)"
         });
         
     })
@@ -126,7 +127,8 @@ $(document).ready( () =>{
             "--leftoverBoxDark": "#101113",
             "--leftoverBoxLigth": "#313131",
             "--backgroundFile":  "radial-gradient(circle at 0% 0%,"+ 
-                "#313130 50%, #222127 66.67%, #15131e 83.33%, #080016 100%)"
+                "#313130 50%, #222127 66.67%, #15131e 83.33%, #080016 100%)",
+            "--backgroundNavigation": "rgba(0, 0, 0, 0.68)"
         });
     })
 
