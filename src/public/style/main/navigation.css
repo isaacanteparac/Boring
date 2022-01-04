@@ -27,7 +27,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: var(--backgroundNavigation);
+    background: var(--backgrounNavigation);
+    backdrop-filter: blur(30px);
+    border: 2px solid var(--boderBlurBox);
     height: 100%;
     width: 300px;
     margin: auto;

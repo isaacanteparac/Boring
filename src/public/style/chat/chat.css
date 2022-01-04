@@ -27,7 +27,7 @@
 .photoUser {
     width: 40px;
     height: 40px;
-    background-color: #b6b6b6;
+    background-color: var(--lowlowWhite);
     border-radius: 20px;
     position: relative;
     top: 3px;

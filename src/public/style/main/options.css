@@ -11,7 +11,8 @@
     align-items: center;
     justify-content: center;
     top: 50px;
-    background-color: rgba(0, 0, 0, 0.465);
+    background: var(--backgrounNavigation);
+    backdrop-filter: blur(10px);
 }
 
 .contentBoxBlur {

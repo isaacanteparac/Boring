@@ -28,31 +28,37 @@ div.viewPostContentuser{
 }
 
 .userPost {
-    margin-top: 15px;
+    margin-top: 20px;
     border-radius: var(--borderRadioBig);
-    box-shadow: 2px 2px 5px var(--leftoverBoxDark),
-    -2px -2px 5px var(--leftoverBoxLigth);
     background-color: var(--transp);
     padding: 0;
     min-height: 400px;
     max-height: var(--maxHeightContentPost);
+    box-shadow: 5px 5px 5px var(--leftoverBoxDark); 
 }
 
 
 
 .information {
-    background-color: var(--backgroundComponent);
-    border-top-left-radius: var(--borderRadioBig);
-    border-top-right-radius: var(--borderRadioBig);
-    width: 100%;
+    /*background-color: var(--backgroundComponent);*/
+    /*border-top-left-radius: var(--borderRadioBig);
+    border-top-right-radius: var(--borderRadioBig);*/
+    border-radius: var(--borderRadioBig);
+    width: 60%;
     height: 50px;
     border: none;
     /*background-color: rgba(0, 0, 0, 0.514);*/
-    background-color: var(--transp);
+    /*background-color: var(--transp);*/
+    background: var(--backgrounNavigation);
+    backdrop-filter: blur(5px);
+    border: 2px solid rgba(0, 0, 0, 0.1);
     float: left;
+    left: 20%;
     position: relative;
-    bottom: var(--maxHeightContentPost);
+    bottom: 395px;
 }
+
+
 
 .information .nameUser {
     margin: 0;
@@ -69,7 +75,7 @@ div.viewPostContentuser{
     position: relative;
     left: 55px;
     bottom: 78px;
-    color: #b6b6b6;
+    color: #fff;
 }
 
 .information .photoUser {
@@ -83,20 +89,15 @@ div.viewPostContentuser{
 }
 
 
-/*.information .divTextsUserPrimary{
-    left: 55px;
-}*/
-
 .fileUser {
     width: 100%;
     height: var(--maxHeightContentPost);
-    /*border-bottom-left-radius: var(--borderRadioBig);
-    border-bottom-right-radius: var(--borderRadioBig);*/
     border-radius: var(--borderRadioBig);
     display: flex;
     align-items: center;
     justify-content: center;
     background-image: var(--backgroundFile);
+    overflow: hidden;
 }
 
 
@@ -104,8 +105,6 @@ div.viewPostContentuser{
 .contentImagen {
     width: 100%;
     height: var(--maxHeightContentPost);
-    /*border-bottom-left-radius: var(--borderRadioBig);
-    border-bottom-right-radius: var(--borderRadioBig);*/
     border-radius: var(--borderRadioBig);
     user-drag: none; 
     -moz-user-select: none;
@@ -117,8 +116,6 @@ div.viewPostContentuser{
 .contentVideo{
     width: 100%;
     height: var(--maxHeightContentPost);
-    /*border-bottom-left-radius: var(--borderRadioBig);
-    border-bottom-right-radius: var(--borderRadioBig);*/
     border-radius: var(--borderRadioBig);
     user-drag: none; 
     -moz-user-select: none;
@@ -136,10 +133,12 @@ div.viewPostContentuser{
     width: 45%;
     height: 40px;
     border-radius: var(--borderRadioBig);
-    background-color: var(--backgrounBody);
+    background: var(--backgrounNavigation);
+    backdrop-filter: blur(5px);
+    border: 2px solid var(--boderBlurBox);
     float:right;
     position: relative;
-    bottom: 100px;
+    bottom: 105px;
     right: 27%;
 }
 
@@ -162,15 +161,15 @@ svg.iconInterac {
     color:  #b6b3b3!important;
 }
 svg.iconLikesPost:active{
-    color: rgba(255, 0, 0, 0.646)!important;
+    color: rgba(255, 0, 0, 0.59)!important;
 }
 
 svg.iconCommentPost:active{
-    color: rgba(157, 0, 255, 0.646)!important;
+    color: rgba(112, 108, 113, 0.59)!important;
 }
 
 svg.iconSavePost:active{
-    color: rgba(0, 64, 255, 0.646)!important;
+    color: rgba(0, 64, 255, 0.56)!important;
 }
 
 

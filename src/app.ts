@@ -2,7 +2,8 @@ import express, {Application, Response, Request, NextFunction}  from "express";
 import morgan  from "morgan";
 import BodyParser from 'body-parser';
 
-var validator = require('express-validator');
+import { body, validationResult } from 'express-validator';
+
 
 //NOTE:IMPORTS PARA EXEC HANDLEBARS
 import path from "path";
@@ -28,6 +29,9 @@ import commentRouter from "./routesControllers/comments/routes/comments.routes";
 import profileRouter from "./routesControllers/profile/routes/profile.routes";
 import chatRouter from "./routesControllers/chats/routes/chats.routes";
 
+
+//TITLE:INTERFACES
+import { IUser } from "./routesControllers/registerUser/interfaces/user.interface";
 
 export class App {
 
@@ -77,12 +81,12 @@ export class App {
                 user: 'thisisisaacac',
                 password: '2002',
                 database: 'duaui'
-              })
+            })
         }));
         this.app.use(flash());
         this.app.use(passport.initialize());
         this.app.use(passport.session());
-        //this.app.use(validator());
+        //this.app.use(validationResult);
     }
 
     globalVar(){
@@ -90,6 +94,9 @@ export class App {
             this.app.locals.message = req.flash('message');
             this.app.locals.success = req.flash('success');
             this.app.locals.failed = req.flash('failed');
+
+
+
             this.app.locals.user = req.user;
             console.log("USER "+ req.Body);
             next();
