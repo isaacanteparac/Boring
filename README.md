@@ -58,8 +58,15 @@
 # RUN ALL
     npm start
 # DISPLAY
-![image](https://user-images.githubusercontent.com/69361351/147791386-d38932ba-b5ce-4b31-9da9-cbc9d8e0ff76.png)
-![image](https://user-images.githubusercontent.com/69361351/147791217-a1111741-2448-4d49-8ef9-c28d53c3416f.png)
-![image](https://user-images.githubusercontent.com/69361351/147791744-9f338a25-1616-41af-b832-f54b3ed467fc.png)
+![image](https://user-images.githubusercontent.com/69361351/148141378-12c6f928-6acf-4174-9781-90c13a134b09.png)
+![image](https://user-images.githubusercontent.com/69361351/148141466-404b2045-7d9c-4ce4-8747-287eba789188.png)
+![image](https://user-images.githubusercontent.com/69361351/148141443-428369c9-0ecc-4a18-8b73-cf22153e2f0b.png)
+![image](https://user-images.githubusercontent.com/69361351/148141504-83c2b0de-a4b4-4f3d-92ed-8fc56fb6a313.png)
+
+
+
+
+
+
 
 
