@@ -11,13 +11,11 @@
     Mysql2
 
 
-
 # FRONTEND USE
     JAVASCRIPT
     CSS
     HANDLEBARS>HTML
     ICONS>SVG
-
 
 
 # INSTALL
@@ -26,10 +24,8 @@
     npm install -D tslint
     npm install -S express
     npm i nodemon -D
-    ____________________________
     npm i @types/express-handlebars -D 
     npm i @types/express-session -D
-
     npm i connect-flash -D
     npm i morgan -D 
     npm i mysql2 -D
@@ -38,11 +34,10 @@
     npm i types/passport
     npm i passport-local -D
     npm i bcryptjs -D
-    
-
     npm i timeago.js 
     npm i express-validator
     npm i ts-node -D
+
 
 # ACT FILE
     npx tsc --init
@@ -52,11 +47,20 @@
 # READ FILE
     npx tsc
 
+
 # LINKS
     https://www.digitalocean.com/community/tutorials/setting-up-a-node-project-with-typescript-es
 
+
 # RUN ALL
     npm start
+
+
+# SQL
+    DELETE FROM nametable(eleimina todos los datos)
+    ALTER TABLE nametable AUTO_INCREMENT=1(reinicia el autoicremental de la tabla)
+
+
 # DISPLAY
 ![image](https://user-images.githubusercontent.com/69361351/148141378-12c6f928-6acf-4174-9781-90c13a134b09.png)
 ![image](https://user-images.githubusercontent.com/69361351/148141466-404b2045-7d9c-4ce4-8747-287eba789188.png)

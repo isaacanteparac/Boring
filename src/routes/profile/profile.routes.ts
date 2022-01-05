@@ -1,9 +1,9 @@
 import {Router} from "express";
-const { adminIsLoggedIn } = require('../../../lib/authentication');
+const { adminIsLoggedIn } = require('../../lib/authentication');
 const router = Router();
 
 
-import {_get_} from "../controllers/profile.controllers";
+import {_get_} from "../../controllers/profile/profile.controllers";
 
 router.route("/")
     .get(adminIsLoggedIn ,_get_);

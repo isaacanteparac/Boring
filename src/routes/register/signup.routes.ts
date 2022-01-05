@@ -1,23 +1,17 @@
 import { Router } from "express";
 const router = Router();
-
+import passport from "passport";
 //const passport = require("passport")
 
 //DEPENDENCE:CONTROLLERS LOGIN
-const {_getInformation_,
-    _get_, 
-    _post_,} = require('../controllers/login.controllers');
-
+const {_get_, 
+    _post_} = require('../../controllers/register/signup.controllers');
 
 router.route("/")
-    .get(_getInformation_);
-
-router.route("/login")
     .get(_get_);
 
-router.route("/login")
+router.route("/")
     .post(_post_);
-
 
 
 

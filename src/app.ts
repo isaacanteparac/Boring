@@ -22,21 +22,22 @@ require('./lib/passport');
 
 
 //TITLE:ROUTES
-import loginRouter from "./routesControllers/registerUser/routes/login.routes";
-import signupRouter from "./routesControllers/registerUser/routes/signup.routes";
-import publicationRouter from "./routesControllers/publication/routes/publication.routes";
-import commentRouter from "./routesControllers/comments/routes/comments.routes";
-import profileRouter from "./routesControllers/profile/routes/profile.routes";
-import chatRouter from "./routesControllers/chats/routes/chats.routes";
+import loginRouter from "./routes/register/login.routes";
+import signupRouter from "./routes/register/signup.routes";
+import publicationRouter from "./routes/publication/publication.routes";
+import commentRouter from "./routes/comment/comments.routes";
+import profileRouter from "./routes/profile/profile.routes";
+import chatRouter from "./routes/chat/chats.routes";
+
 
 
 //TITLE:INTERFACES
-import { IUser } from "./routesControllers/registerUser/interfaces/user.interface";
+import { IUser } from "./interfaces/register/user.interface";
 
 export class App {
 
     private app: Application;
-
+    private n: number = 0;
     constructor(private port?: number | string){
         this.app = express();
         this.settings();
@@ -94,11 +95,11 @@ export class App {
             this.app.locals.message = req.flash('message');
             this.app.locals.success = req.flash('success');
             this.app.locals.failed = req.flash('failed');
-
+            this.n+=1;
 
 
             this.app.locals.user = req.user;
-            console.log("USER "+ req.Body);
+            console.log(">>>>USER n"+this.n+" req = "+ req.Body);
             next();
         })
     }

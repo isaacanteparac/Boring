@@ -1,6 +1,6 @@
 import {Request, Response} from "express";
-import { connect } from "../../../connect_database";
-import { IComments } from "../interfaces/comments.interface";
+import { connect } from "../../connect_database";
+import { IComments } from "../../interfaces/comment/comments.interface";
 
 export async function _get_(req: Request, res: Response) {
     return res.render("publication/comments");

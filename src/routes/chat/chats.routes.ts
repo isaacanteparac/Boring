@@ -5,7 +5,7 @@ const router = Router();
 
 //DEPENDENCE:CONTROLLERS COMMENTS
 const {_get_, 
-    _post_,} = require('../controllers/chats.controllers');
+    _post_,} = require('../../controllers/chat/chats.controllers');
 
 
 router.route("/")

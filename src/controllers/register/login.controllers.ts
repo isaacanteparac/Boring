@@ -1,7 +1,5 @@
 import { NextFunction, Request, Response } from 'express'
 import passport from "passport";
-//TITLE:DATABASE CONNECTION
-import { connect } from '../../../connect_database';
 
 
 

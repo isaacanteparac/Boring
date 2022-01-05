@@ -4,7 +4,7 @@ import {encryptPassword, decryptPassword} from "../lib/helpers";
 
 import passport from "passport";
 import LocalStrategy from "passport-local";
-import { IUser } from "../routesControllers/registerUser/interfaces/user.interface";
+import { IUser } from "../interfaces/register/user.interface";
 import {connect} from "../connect_database";
 
 
