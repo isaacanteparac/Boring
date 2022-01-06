@@ -3,8 +3,8 @@
     --blueDark: #133297;
     --redLigth: #df1937;
     --redDark: #b1162d;
-    --maxHeightContentPost: 400px;
-    --maxWidthContentPost: 400px;
+    --maxHeightContentPost: 490px;
+    --maxWidthContentPost: 326px;
     --borderRadioBig: 30px;
     --borderGrayLigth: #999898;
     --colorBallLoaser: #fff;
@@ -76,8 +76,38 @@
     padding: 0;
     text-align: center;
 }
+.logo{
+    display: block;
+    text-decoration: none;
+    float: left;
 
-.logo {
+}
+
+.logo .logoTop{
+    border-left: 2px solid #0fee7e;
+    border-right: 2px solid #ffff00;
+    border-right-width: 12px;
+    border-left-width: 12px;
+    border-top-right-radius: 6px;
+    border-top-left-radius: 6px;
+    height: 12px;
+    position: relative;
+    top: 13px;
+}
+
+.logo .logoBottom{
+    border-left: 2px solid #1c1bec;
+    border-right: 2px solid  #ec1c1c;
+    border-right-width: 12px;
+    border-left-width: 12px;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    height: 12px;
+    position: relative;
+    top: 13px;
+}
+
+.logo-letter {
     display: block;
     text-decoration: none;
     text-transform: uppercase;
@@ -85,9 +115,11 @@
     font-weight: 700;
     font-size: 30px;
     color: var(--white);
-    border-left: 2px groove var(--blueLigth);
+    /*border-left: 2px groove var(--blueLigth);
+    border-right: 2px groove var(--redLigth);
+    border-right-width: 30px;
     border-left-width: 30px;
-    border-radius: 20px;
+    border-radius: 20px;*/
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;

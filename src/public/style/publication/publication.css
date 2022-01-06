@@ -32,7 +32,7 @@ div.viewPostContentuser{
     border-radius: var(--borderRadioBig);
     background-color: var(--transp);
     padding: 0;
-    min-height: 400px;
+    width: var(--maxWidthContentPost);
     max-height: var(--maxHeightContentPost);
     box-shadow: 5px 5px 5px var(--leftoverBoxDark); 
 }
@@ -40,22 +40,17 @@ div.viewPostContentuser{
 
 
 .information {
-    /*background-color: var(--backgroundComponent);*/
-    /*border-top-left-radius: var(--borderRadioBig);
-    border-top-right-radius: var(--borderRadioBig);*/
     border-radius: var(--borderRadioBig);
     width: 60%;
     height: 50px;
     border: none;
-    /*background-color: rgba(0, 0, 0, 0.514);*/
-    /*background-color: var(--transp);*/
     background: var(--backgrounNavigation);
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(3px);
     border: 2px solid rgba(0, 0, 0, 0.1);
     float: left;
     left: 20%;
     position: relative;
-    bottom: 395px;
+    bottom: calc(var(--maxHeightContentPost) - 5px);
 }
 
 
@@ -91,7 +86,7 @@ div.viewPostContentuser{
 
 .fileUser {
     width: 100%;
-    height: var(--maxHeightContentPost);
+    height: var(--maxHeightContentPost);   
     border-radius: var(--borderRadioBig);
     display: flex;
     align-items: center;
@@ -102,21 +97,10 @@ div.viewPostContentuser{
 
 
 
-.contentImagen {
+.contentImagen, .contentVideo{
     width: 100%;
-    height: var(--maxHeightContentPost);
-    border-radius: var(--borderRadioBig);
-    user-drag: none; 
-    -moz-user-select: none;
-    -webkit-user-drag: none;
-    -webkit-user-select: none;
-    -ms-user-select: none;
-}
-
-.contentVideo{
-    width: 100%;
-    height: var(--maxHeightContentPost);
-    border-radius: var(--borderRadioBig);
+    /*height: var(--maxHeightContentPost);*/
+    /*border-radius: var(--borderRadioBig);*/
     user-drag: none; 
     -moz-user-select: none;
     -webkit-user-drag: none;

@@ -34,6 +34,18 @@ export async function calcularLongitudBytes(string_: string){
     }
 }
 
+export async function decodeBase64(string_:string){
+    //const deco = window.atob(string_);
+    const dec = Buffer.from(string_, 'base64').toString('binary')
+    //console.log(dec);
+    //return dec;
+    fetch(string_)
+    .then(res => res.blob())
+    .then(blob => {
+        const file = new File([blob], "File name",{ type: "image/png" })
+        console.log(file)
+    })
+}
 
 
 

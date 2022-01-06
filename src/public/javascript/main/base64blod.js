@@ -1,3 +1,4 @@
+
 $(document).ready( () => {
     const id_inFile = "file_content";
 
@@ -28,8 +29,10 @@ $(document).ready( () => {
             return function(e) {
                 var binaryData = e.target.result;
                 var base64String = window.btoa(binaryData);
-                document.getElementById(id_inFile).value = base64String
+                document.getElementById(id_inFile).value = base64String;
+                console.log(base64String);
                 console.log(document.getElementById(id_inFile).value);
+                
             };
             
         })(f);
@@ -38,6 +41,7 @@ $(document).ready( () => {
 
 
 })
+
 
 
 
