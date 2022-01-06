@@ -1,4 +1,4 @@
-# DUAUI
+# BORING
 
 
 
@@ -64,8 +64,9 @@
 # DISPLAY
 ![image](https://user-images.githubusercontent.com/69361351/148141378-12c6f928-6acf-4174-9781-90c13a134b09.png)
 ![image](https://user-images.githubusercontent.com/69361351/148141466-404b2045-7d9c-4ce4-8747-287eba789188.png)
-![image](https://user-images.githubusercontent.com/69361351/148141443-428369c9-0ecc-4a18-8b73-cf22153e2f0b.png)
-![image](https://user-images.githubusercontent.com/69361351/148141504-83c2b0de-a4b4-4f3d-92ed-8fc56fb6a313.png)
+![image](https://user-images.githubusercontent.com/69361351/148417459-987c8a5c-797f-4469-9add-51afc3db7e5c.png)
+![image](https://user-images.githubusercontent.com/69361351/148417677-e678ec16-9bbf-4fb8-8372-674f944b48bf.png)
+
 
 
 
