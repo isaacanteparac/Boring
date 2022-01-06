@@ -5,7 +5,7 @@
         
             <!--NOTE:CONTENVIEW-->
             <div class="fileUser">
-                <img src="/iconos/batman.jpg" class="contentImagen" />
+                <img src={{decFile file_content}} class="contentImagen" />
             </div>
 
             <!--NOTE:INFORMATION USER-->
@@ -13,7 +13,6 @@
                 <a href="/profile" class="linkdec">
                     <div class="photoUser">
                         <!--<img src="/iconos/isaac.jpg" />-->
-                        photo
                     </div>
                 </a>
                 <div class="nameUser">
@@ -33,7 +32,18 @@
                     <svg class="iconInterac iconLikesPost" id="heart" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                         viewBox="0 0 24 24">
                         <path fill="currentcolor"
-                            d="M12 4.248c-3.148-5.402-12-3.825-12 2.944 0 4.661 5.571 9.427 12 15.808 6.43-6.381 12-11.147 12-15.808 0-6.792-8.875-8.306-12-2.944z" />
+                            d="M 17.828125 2.328125 C 14.570312 2.328125 12.503906 5.957031 12.015625 5.957031 C 11.585938 5.957031 9.605469 2.328125 6.203125 2.328125 C 2.890625 2.328125 0.1875 5.058594 0.0117188 8.363281 C -0.0898438 10.230469 0.511719 11.652344 1.363281 12.9375 C 3.054688 15.511719 10.46875 21.703125 12.027344 21.703125 C 13.617188 21.703125 20.960938 15.535156 22.667969 12.9375 C 23.519531 11.644531 24.117188 10.230469 24.019531 8.363281 C 23.839844 5.058594 21.140625 2.328125 17.828125 2.328125 "/>
+                    </svg>
+                </a>
+
+                <!--NOTE:DISLIKES--->
+                <a href="#"  class="linkdec btnInteraction">
+                    <svg class="iconInterac iconDisLikesPost" id="heart" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                        viewBox="0 0 24 24">
+                        <path fill="currentcolor"
+                            d="M 13.640625 18.667969 C 13.722656 18.5625 13.714844 18.351562 13.625 18.25 L 10.414062 14.761719 C 10.140625 14.460938 10.003906 14.074219 10.027344 13.671875 C 10.054688 13.269531 10.242188 12.902344 10.550781 12.644531 L 13.8125 9.910156 C 13.914062 9.824219 13.949219 9.621094 13.878906 9.507812 C 13.878906 9.507812 12.21875 6.589844 11.554688 5.695312 C 10.800781 4.679688 8.902344 2.464844 6.203125 2.464844 C 2.890625 2.464844 0.1875 5.195312 0.0117188 8.5 C -0.0898438 10.367188 0.511719 11.789062 1.363281 13.074219 C 2.835938 15.316406 8.644531 20.296875 11.152344 21.550781 C 11.207031 21.578125 11.324219 21.597656 11.5 21.386719 Z M 13.640625 18.667969 "/>
+                        <path fill="currentcolor"
+                            d="M 24.019531 8.5 C 23.84375 5.195312 21.140625 2.464844 17.828125 2.464844 C 15.65625 2.464844 14.015625 4.074219 13.015625 5.152344 C 12.96875 5.203125 12.863281 5.332031 13.039062 5.582031 L 15.015625 8.816406 C 15.425781 9.492188 15.273438 10.417969 14.667969 10.925781 L 11.40625 13.660156 C 11.367188 13.695312 11.355469 13.730469 11.355469 13.757812 C 11.351562 13.785156 11.359375 13.824219 11.394531 13.859375 L 14.601562 17.351562 C 15.136719 17.933594 15.171875 18.871094 14.683594 19.492188 L 13.324219 21.230469 C 13.207031 21.359375 13.253906 21.367188 13.300781 21.339844 C 15.976562 19.824219 21.253906 15.222656 22.667969 13.074219 C 23.519531 11.78125 24.117188 10.367188 24.019531 8.5 Z M 24.019531 8.5 "/>
                     </svg>
                 </a>
                 
@@ -44,16 +54,17 @@
                         <svg class="iconInterac iconCommentPost" id="coment" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                             viewBox="0 0 24 24">
                             <path fill="currentcolor"
-                                d="M.054 23c.971-1.912 2.048-4.538 1.993-6.368-1.308-1.562-2.047-3.575-2.047-5.625 0-5.781 5.662-10.007 12-10.007 6.299 0 12 4.195 12 10.007 0 6.052-6.732 11.705-15.968 9.458-1.678 1.027-5.377 2.065-7.978 2.535z" />
+                                d="M 12 1.5 C 5.371094 1.5 0 5.863281 0 11.25 C 0 13.574219 1.003906 15.703125 2.671875 17.375 C 2.085938 19.738281 0.125 21.84375 0.101562 21.867188 C 0 21.976562 -0.0273438 22.132812 0.03125 22.273438 C 0.09375 22.414062 0.226562 22.5 0.375 22.5 C 3.484375 22.5 5.8125 21.007812 6.964844 20.089844 C 8.5 20.667969 10.199219 21 12 21 C 18.628906 21 24 16.636719 24 11.25 C 24 5.863281 18.628906 1.5 12 1.5 Z M 12 1.5 "/>
                         </svg>
                     </button>
                 </a>
+
                 <!--NOTE:SAVE POST--->
                 <button class="btnInteraction">
                     <svg class="iconInterac iconSavePost" id="share" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                         viewBox="0 0 24 24">
                         <path fill="currentcolor"
-                        d="M18 24l-6-5.269-6 5.269v-24h12v24z"/>                
+                            d="M 19.226562 0 L 4.773438 0 C 4.089844 0 3.535156 0.554688 3.535156 1.238281 L 3.535156 17.507812 C 3.535156 18.070312 3.8125 18.59375 4.269531 18.917969 L 11.160156 23.734375 C 11.664062 24.089844 12.335938 24.089844 12.839844 23.734375 L 19.730469 18.917969 C 20.1875 18.59375 20.464844 18.070312 20.464844 17.507812 L 20.464844 1.238281 C 20.464844 0.554688 19.910156 0 19.226562 0 Z M 17.195312 9.289062 L 14.84375 11.289062 L 15.574219 14.300781 C 15.714844 14.867188 15.101562 15.316406 14.605469 15.007812 L 12 13.371094 L 9.386719 15.003906 C 8.894531 15.3125 8.28125 14.863281 8.417969 14.292969 L 9.152344 11.285156 L 6.800781 9.285156 C 6.359375 8.910156 6.589844 8.179688 7.171875 8.140625 L 10.238281 7.914062 L 11.398438 5.042969 C 11.617188 4.503906 12.375 4.503906 12.597656 5.042969 L 13.757812 7.914062 L 16.824219 8.140625 C 17.40625 8.183594 17.640625 8.914062 17.195312 9.289062 Z M 17.195312 9.289062 "/>
                     </svg>
                 </button>    
             </div>
@@ -61,301 +72,5 @@
         </div>
     {{/each}}
     <!------------------------------------>
-    <div class="userPost">
-    
-        <!--NOTE:CONTENVIEW-->
-        <div class="fileUser">
-            <img src="/iconos/dua.jpg" class="contentImagen" />
-        </div>
-
-        <!--NOTE:INFORMATION USER-->
-        <div class="information">
-            <a href="/profile" class="linkdec">
-                <div class="photoUser">
-                    <!--<img src="/iconos/isaac.jpg" />-->
-                    photo
-                </div>
-            </a>
-            <div class="nameUser">
-                <h4>isaac antepara</h4>
-            </div>
-            <div class="messageUser">
-                <label>thisisisaacantepara</label>
-            </div>
-            
-        </div>
-
-
-        <!--NOTE:INTERACTION POST USER-->
-        <div class="interactionPost">
-            <!--NOTE:LIKES--->
-            <a href="/publication/likes/"  class="linkdec btnInteraction">
-                <svg class="iconInterac iconLikesPost" id="heart" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                    viewBox="0 0 24 24">
-                    <path fill="currentcolor"
-                        d="M12 4.248c-3.148-5.402-12-3.825-12 2.944 0 4.661 5.571 9.427 12 15.808 6.43-6.381 12-11.147 12-15.808 0-6.792-8.875-8.306-12-2.944z" />
-                </svg>
-            </a>
-            
-            
-            <!--NOTE:COMMENTS--->
-            <a href="/comments" id="btnCommentPublication">
-                <button class="btnInteraction" >
-                    <svg class="iconInterac iconCommentPost" id="coment" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                        viewBox="0 0 24 24">
-                        <path fill="currentcolor"
-                            d="M.054 23c.971-1.912 2.048-4.538 1.993-6.368-1.308-1.562-2.047-3.575-2.047-5.625 0-5.781 5.662-10.007 12-10.007 6.299 0 12 4.195 12 10.007 0 6.052-6.732 11.705-15.968 9.458-1.678 1.027-5.377 2.065-7.978 2.535z" />
-                    </svg>
-                </button>
-            </a>
-            <!--NOTE:SAVE POST--->
-            <button class="btnInteraction">
-                <svg class="iconInterac iconSavePost" id="share" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                    viewBox="0 0 24 24">
-                    <path fill="currentcolor"
-                    d="M18 24l-6-5.269-6 5.269v-24h12v24z"/>                
-                </svg>
-            </button>    
-        </div>
-    
-    </div>
-    <div class="userPost">
-    
-        <!--NOTE:CONTENVIEW-->
-        <div class="fileUser">
-            <img src="/iconos/billiecuadra.jpg" class="contentImagen" />
-        </div>
-
-        <!--NOTE:INFORMATION USER-->
-        <div class="information">
-            <a href="/profile" class="linkdec">
-                <div class="photoUser">
-                    <!--<img src="/iconos/isaac.jpg" />-->
-                    photo
-                </div>
-            </a>
-            <div class="nameUser">
-                <h4>isaac antepara</h4>
-            </div>
-            <div class="messageUser">
-                <label>thisisisaacantepara</label>
-            </div>
-            
-        </div>
-
-
-        <!--NOTE:INTERACTION POST USER-->
-        <div class="interactionPost">
-            <!--NOTE:LIKES--->
-            <a href="/publication/likes/"  class="linkdec btnInteraction">
-                <svg class="iconInterac iconLikesPost" id="heart" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                    viewBox="0 0 24 24">
-                    <path fill="currentcolor"
-                        d="M12 4.248c-3.148-5.402-12-3.825-12 2.944 0 4.661 5.571 9.427 12 15.808 6.43-6.381 12-11.147 12-15.808 0-6.792-8.875-8.306-12-2.944z" />
-                </svg>
-            </a>
-            
-            
-            <!--NOTE:COMMENTS--->
-            <a href="/comments" id="btnCommentPublication">
-                <button class="btnInteraction" >
-                    <svg class="iconInterac iconCommentPost" id="coment" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                        viewBox="0 0 24 24">
-                        <path fill="currentcolor"
-                            d="M.054 23c.971-1.912 2.048-4.538 1.993-6.368-1.308-1.562-2.047-3.575-2.047-5.625 0-5.781 5.662-10.007 12-10.007 6.299 0 12 4.195 12 10.007 0 6.052-6.732 11.705-15.968 9.458-1.678 1.027-5.377 2.065-7.978 2.535z" />
-                    </svg>
-                </button>
-            </a>
-            <!--NOTE:SAVE POST--->
-            <button class="btnInteraction">
-                <svg class="iconInterac iconSavePost" id="share" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                    viewBox="0 0 24 24">
-                    <path fill="currentcolor"
-                    d="M18 24l-6-5.269-6 5.269v-24h12v24z"/>                
-                </svg>
-            </button>    
-        </div>
-    
-    </div>
-
-    <div class="userPost">
-    
-        <!--NOTE:CONTENVIEW-->
-        <div class="fileUser">
-            <img src="/iconos/green.jpg" class="contentImagen" />
-        </div>
-
-        <!--NOTE:INFORMATION USER-->
-        <div class="information">
-            <a href="/profile" class="linkdec">
-                <div class="photoUser">
-                    <!--<img src="/iconos/isaac.jpg" />-->
-                    photo
-                </div>
-            </a>
-            <div class="nameUser">
-                <h4>isaac antepara</h4>
-            </div>
-            <div class="messageUser">
-                <label>thisisisaacantepara</label>
-            </div>
-            
-        </div>
-
-
-        <!--NOTE:INTERACTION POST USER-->
-        <div class="interactionPost">
-            <!--NOTE:LIKES--->
-            <a href="/publication/likes/"  class="linkdec btnInteraction">
-                <svg class="iconInterac iconLikesPost" id="heart" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                    viewBox="0 0 24 24">
-                    <path fill="currentcolor"
-                        d="M12 4.248c-3.148-5.402-12-3.825-12 2.944 0 4.661 5.571 9.427 12 15.808 6.43-6.381 12-11.147 12-15.808 0-6.792-8.875-8.306-12-2.944z" />
-                </svg>
-            </a>
-            
-            
-            <!--NOTE:COMMENTS--->
-            <a href="/comments" id="btnCommentPublication">
-                <button class="btnInteraction" >
-                    <svg class="iconInterac iconCommentPost" id="coment" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                        viewBox="0 0 24 24">
-                        <path fill="currentcolor"
-                            d="M.054 23c.971-1.912 2.048-4.538 1.993-6.368-1.308-1.562-2.047-3.575-2.047-5.625 0-5.781 5.662-10.007 12-10.007 6.299 0 12 4.195 12 10.007 0 6.052-6.732 11.705-15.968 9.458-1.678 1.027-5.377 2.065-7.978 2.535z" />
-                    </svg>
-                </button>
-            </a>
-            <!--NOTE:SAVE POST--->
-            <button class="btnInteraction">
-                <svg class="iconInterac iconSavePost" id="share" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                    viewBox="0 0 24 24">
-                    <path fill="currentcolor"
-                    d="M18 24l-6-5.269-6 5.269v-24h12v24z"/>                
-                </svg>
-            </button>    
-        </div>
-    
-    </div>
-
-    <!--NOTE:VIDEOS-->
-    <div class="userPost">
-        
-            <!--NOTE:CONTENVIEW-->
-            <div class="fileUser">
-                <video src="/iconos/dua.mp4" class="contentVideo" />
-            </div>
-
-            <!--NOTE:INFORMATION USER-->
-            <div class="information">
-                <a href="/profile" class="linkdec">
-                    <div class="photoUser">
-                        <!--<img src="/iconos/isaac.jpg" />-->
-                        photo
-                    </div>
-                </a>
-                <div class="nameUser">
-                    <h4>isaac antepara</h4>
-                </div>
-                <div class="messageUser">
-                    <label>thisisisaacantepara</label>
-                </div>
-                
-            </div>
-
-
-            <!--NOTE:INTERACTION POST USER-->
-            <div class="interactionPost">
-                <!--NOTE:LIKES--->
-                <a href="/publication/likes/"  class="linkdec btnInteraction">
-                    <svg class="iconInterac iconLikesPost" id="heart" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                        viewBox="0 0 24 24">
-                        <path fill="currentcolor"
-                            d="M12 4.248c-3.148-5.402-12-3.825-12 2.944 0 4.661 5.571 9.427 12 15.808 6.43-6.381 12-11.147 12-15.808 0-6.792-8.875-8.306-12-2.944z" />
-                    </svg>
-                </a>
-                
-                
-                <!--NOTE:COMMENTS--->
-                <a href="/comments" id="btnCommentPublication">
-                    <button class="btnInteraction" >
-                        <svg class="iconInterac iconCommentPost" id="coment" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                            viewBox="0 0 24 24">
-                            <path fill="currentcolor"
-                                d="M.054 23c.971-1.912 2.048-4.538 1.993-6.368-1.308-1.562-2.047-3.575-2.047-5.625 0-5.781 5.662-10.007 12-10.007 6.299 0 12 4.195 12 10.007 0 6.052-6.732 11.705-15.968 9.458-1.678 1.027-5.377 2.065-7.978 2.535z" />
-                        </svg>
-                    </button>
-                </a>
-                <!--NOTE:SAVE POST--->
-                <button class="btnInteraction">
-                    <svg class="iconInterac iconSavePost" id="share" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                        viewBox="0 0 24 24">
-                        <path fill="currentcolor"
-                        d="M18 24l-6-5.269-6 5.269v-24h12v24z"/>                
-                    </svg>
-                </button>    
-            </div>
-        
-    </div>
-
-    <div class="userPost">
-        
-            <!--NOTE:CONTENVIEW-->
-            <div class="fileUser">
-                <video src="/iconos/yo.mp4" class="contentVideo" />
-            </div>
-
-            <!--NOTE:INFORMATION USER-->
-            <div class="information">
-                <a href="/profile" class="linkdec">
-                    <div class="photoUser">
-                        <!--<img src="/iconos/isaac.jpg" />-->
-                        photo
-                    </div>
-                </a>
-                <div class="nameUser">
-                    <h4>isaac antepara</h4>
-                </div>
-                <div class="messageUser">
-                    <label>thisisisaacantepara</label>
-                </div>
-                
-            </div>
-
-
-            <!--NOTE:INTERACTION POST USER-->
-            <div class="interactionPost">
-                <!--NOTE:LIKES--->
-                <a href="/publication/likes/"  class="linkdec btnInteraction">
-                    <svg class="iconInterac iconLikesPost" id="heart" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                        viewBox="0 0 24 24">
-                        <path fill="currentcolor"
-                            d="M12 4.248c-3.148-5.402-12-3.825-12 2.944 0 4.661 5.571 9.427 12 15.808 6.43-6.381 12-11.147 12-15.808 0-6.792-8.875-8.306-12-2.944z" />
-                    </svg>
-                </a>
-                
-                
-                <!--NOTE:COMMENTS--->
-                <a href="/comments" id="btnCommentPublication">
-                    <button class="btnInteraction" >
-                        <svg class="iconInterac iconCommentPost" id="coment" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                            viewBox="0 0 24 24">
-                            <path fill="currentcolor"
-                                d="M.054 23c.971-1.912 2.048-4.538 1.993-6.368-1.308-1.562-2.047-3.575-2.047-5.625 0-5.781 5.662-10.007 12-10.007 6.299 0 12 4.195 12 10.007 0 6.052-6.732 11.705-15.968 9.458-1.678 1.027-5.377 2.065-7.978 2.535z" />
-                        </svg>
-                    </button>
-                </a>
-                <!--NOTE:SAVE POST--->
-                <button class="btnInteraction">
-                    <svg class="iconInterac iconSavePost" id="share" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                        viewBox="0 0 24 24">
-                        <path fill="currentcolor"
-                        d="M18 24l-6-5.269-6 5.269v-24h12v24z"/>                
-                    </svg>
-                </button>    
-            </div>
-        
-    </div>
-
-
 
 </div>

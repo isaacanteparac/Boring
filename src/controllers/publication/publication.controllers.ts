@@ -9,15 +9,11 @@ import { connect } from '../../connect_database';
 //TITLE:INTERFACE
 import { IPublication } from '../../interfaces/publication/publication.interface';
 
-import { calcularLongitudBytes,
-        decodeBase64 } from "../../lib/helpers";
+import { calcularLongitudBytes} from "../../lib/helpers";
 
 export async function _get_(req: Request, res: Response) {
     const db = await connect();
     let data = await db.query("SELECT * FROM publications");
-    //console.log(data[0][0].file_content);
-    //const ms = decodeBase64(data[0][0].file_content);
-
     return res.render("publication/publications", {postUserContent:data[0]});
 }
 
@@ -28,7 +24,7 @@ export async function _post_(req: any, res: Response) {
 
     new_publication.id_user = req.user.id;
 
-    if(calcularLongitudBytes(new_publication.file_content))
+    //if(calcularLongitudBytes(new_publication.file_content))
         console.log(new_publication.file_content);
         console.log("DESCRPTION "+new_publication.description);
         console.log("ID_USER "+req.user.id);

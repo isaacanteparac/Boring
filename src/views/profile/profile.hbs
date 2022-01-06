@@ -93,10 +93,11 @@
         <!--NOTE: TODOS LOS POST POR EL MOMENTO SOLO IMAGENES-->
         <div class="allPost">
             <!--NOTE:hacer un mapa que contenga todos los post del user-->
-            <div class="onePost">
-                <!--<img class="contentOnePost" src="#"/>-->
-                postUser
-            </div>
+            {{#each userContent}}
+                <div class="onePost">
+                    <img src={{decFile file_content}} class="contentOnePost" />
+                </div>
+            {{/each}}
         </div>
     </div>
 

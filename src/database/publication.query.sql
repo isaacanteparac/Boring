@@ -5,6 +5,7 @@ CREATE TABLE publications(
     description VARCHAR(255) NULL,
     file_content MEDIUMTEXT,
     likes INT(11),
+    dislikes INT(11),
     views INT(11),
     id_user INT(11),
     create_  timestamp NOT NULL DEFAULT current_timestamp,
