@@ -1,0 +1,28 @@
+/*main*/
+@import "./main/head.scss";
+@import "./main/app.scss";
+@import "./main/alert.scss";
+@import "./main/navigation.scss";
+@import "./main/createPublication.scss";
+@import "./main/options.scss";
+
+/*LOADERS*/
+@import "./main/animationLoader.scss";
+
+/*view content files*/
+@import "./main/sound.scss";
+@import "./main/videoPlayer.scss";
+
+/*REGISTER*/
+@import "./register/register.scss";
+
+/*PUBLIC*/
+@import "./publication/publication.scss";
+@import "./publication/comment.scss";
+
+/*PROFILE*/
+@import "./profile/profile.scss";
+
+/*CHAT*/
+@import "./chat/chat.scss";
+@import "./chat/contactBook.scss";

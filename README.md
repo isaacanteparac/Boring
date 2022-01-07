@@ -37,6 +37,7 @@
     npm i timeago.js 
     npm i express-validator
     npm i ts-node -D
+    npm i -g node-sass
 
 
 # ACT FILE
@@ -46,6 +47,7 @@
 
 # READ FILE
     npx tsc
+    node-sass -w ./src/sass -o ./src/public/css(preprosesar sass)
 
 
 # LINKS

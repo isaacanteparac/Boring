@@ -1,0 +1,112 @@
+* {
+  --borderRadio: 5px;
+  cursor: default;
+  outline: none; }
+
+.chat {
+  width: 100%;
+  height: 55px;
+  margin-top: 1px;
+  padding-bottom: 5px;
+  border: none; }
+
+.contentChat {
+  padding: 5px 10px;
+  padding-bottom: 0;
+  margin: 0 5px;
+  height: 55px;
+  border-radius: 15px; }
+
+.contentChat:active {
+  background-color: var(--colorActiveBtn); }
+
+.photoUser {
+  width: 40px;
+  height: 40px;
+  background-color: var(--lowlowWhite);
+  border-radius: 20px;
+  position: relative;
+  top: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none; }
+
+.photoUser img {
+  width: 40px;
+  border-radius: 20px; }
+
+.divTextsUserPrimary {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  bottom: 35px;
+  left: 45px;
+  float: left;
+  width: 80%; }
+
+.divTextnameUser {
+  margin: 0;
+  padding: 0;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none; }
+
+.divTextUser {
+  margin: 0;
+  padding: 0; }
+
+.textNameUser {
+  color: var(--white); }
+
+.textUserP {
+  color: var(--lowlowWhite);
+  font-size: 15px;
+  width: 100%;
+  margin: 0;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none; }
+
+.textUserLabel {
+  color: var(--lowlowWhite);
+  font-size: 15px;
+  margin: 0; }
+
+.divBtnPlus {
+  background-color: var(--transp);
+  margin: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  float: right;
+  position: relative;
+  bottom: 130px; }
+
+.divBtnPlus button {
+  background-color: var(--transp);
+  border: 1px solid var(--transp);
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; }
+
+.allchats {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 60px;
+  background-color: var(--transp);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; }

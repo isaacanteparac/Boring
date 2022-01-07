@@ -1,0 +1,22 @@
+
+
+
+@mixin notUnderline{
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+@mixin centerPosition{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin centerPositionColumn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
