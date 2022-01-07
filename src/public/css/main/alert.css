@@ -1,0 +1,85 @@
+/*NOTE: BACKGROUND*/
+/*NOTE: TRANSPARENT*/
+/*NOTE: ALERT MESSAGE*/
+/*NOTE: BORDER*/
+/*NOTE: TEXT*/
+/*NOTE: BUTTON*/
+/*NOTE:TRASLATE BALL*/
+/*NOTE:BODY SIDE*/
+.alert_message {
+  background: #ffffff00;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  margin: 0 auto;
+  padding: 5px;
+  position: fixed;
+  left: 10%;
+  width: 80%;
+  top: 60px; }
+
+div.content_message {
+  width: 100%;
+  height: 50px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+label.iconAlert {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 15px; }
+
+p.textMessage {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #ffffff00;
+  width: 80%;
+  font-weight: 700;
+  max-height: 40px;
+  margin-left: 1px; }
+
+p.textalertMessage {
+  color: #fff; }
+
+div.messageAlert {
+  background-color: #177bee8f;
+  filter: blur(30%); }
+
+label.iconidMessageAlert {
+  color: #0f74bc !important; }
+
+div.messageSuccess {
+  background-color: #4dee178f;
+  filter: blur(30%); }
+
+label.iconidMessageSuccess {
+  color: #3abc0f !important; }
+
+div.messageFailed {
+  background-color: #ee1e178f;
+  filter: blur(30%); }
+
+label.iconidMessageFailed {
+  color: #bc0f0f !important; }
+
+.btnClosrMessage {
+  position: relative;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+  margin-right: 2px;
+  color: rgba(0, 0, 0, 0.465) !important;
+  background-color: #ffffff00;
+  border: none; }

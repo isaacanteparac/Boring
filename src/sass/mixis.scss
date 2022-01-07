@@ -1,3 +1,52 @@
+$blueLigth: #1040e2;
+$blueDark: #133297;
+$redLigth: #df1937;
+$redDark: #b1162d;
+$maxHeightContentPost: 490px;
+$maxWidthContentPost: 326px;
+
+$colorBallLoader: #fff;
+$heightNav: 50px;
+
+/*NOTE: BACKGROUND*/
+$backgroundLeft: #000;
+$backgroundRight: #000;
+$backgrounBody: #e6e6e6;
+$backgroundScroll: #e6e6e6;
+$backgroundComponent: #fff;
+$backgrounWindow: #fff;
+$backgroundFile:  radial-gradient(circle at 0% 0%,
+    #dcdacf 50%, #b1b1b8 66.67%, #8c8ca3 83.33%, #6e6b8f 100%);
+$backgroundNavigation: rgba(255, 255, 255, 0.68);
+
+/*NOTE: TRANSPARENT*/
+$transparent:#ffffff00;
+$transparentGray: rgba(0, 0, 0, 0.465);
+
+/*NOTE: ALERT MESSAGE*/
+$alertMessage: #177bee8f;
+$alertSuccess: #4dee178f;
+$alertFailed: #ee1e178f;
+
+/*NOTE: BORDER*/
+$borderBlack: #cccccc;
+$boderBlurBox: rgba(0, 0, 0, 0.1);
+$borderGrayLigth: #999898;
+$borderRadioBig: 30px;
+
+/*NOTE: TEXT*/
+$white: #000;
+$lowlowWhite: #333333;
+$lowWhite: #191919;
+
+/*NOTE: BUTTON*/
+$colorActiveBtn: #b6b3b3;
+$btnInteractionPost: #d6d2d2a1;
+$colorIconsHeadMenu: #000;
+$actionBtnDefaul: #B9b5b5;
+
+$leftoverBoxDark: #7b7b7b;
+
 
 
 
@@ -19,4 +68,34 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+}
+
+@mixin roundedBorder($widHei, $border) {
+    width: $widHei;
+    height: $widHei;
+    border-radius: $border;
+}
+
+/*NOTE:TRASLATE BALL*/
+@mixin ballRigth($background_, $webkit, $moz, $animation){
+    background: $background_;
+    -webkit-animation: right $webkit infinite ease-in-out;
+    -moz-animation: right $moz infinite ease-in-out;
+    animation: right $animation infinite ease-in-out;
+}
+@mixin ballLeft($background_, $webkit, $moz, $animation){
+    background: $background_;
+    -webkit-animation: left $webkit infinite ease-in-out;
+    -moz-animation: left $moz infinite ease-in-out;
+    animation: left $animation infinite ease-in-out;
+}
+
+/*NOTE:BODY SIDE*/
+@mixin side($display_, $position_, $top_, $width_, $heigth_, $background_){
+    display: $display_;
+    position: $position_;
+    top: $top_;
+    width: $width_;
+    height: $heigth_;
+    background-color: $background_;
 }

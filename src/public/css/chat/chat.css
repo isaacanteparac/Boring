@@ -1,8 +1,11 @@
-* {
-  --borderRadio: 5px;
-  cursor: default;
-  outline: none; }
-
+/*NOTE: BACKGROUND*/
+/*NOTE: TRANSPARENT*/
+/*NOTE: ALERT MESSAGE*/
+/*NOTE: BORDER*/
+/*NOTE: TEXT*/
+/*NOTE: BUTTON*/
+/*NOTE:TRASLATE BALL*/
+/*NOTE:BODY SIDE*/
 .chat {
   width: 100%;
   height: 55px;
@@ -18,13 +21,13 @@
   border-radius: 15px; }
 
 .contentChat:active {
-  background-color: var(--colorActiveBtn); }
+  background-color: #b6b3b3; }
 
 .photoUser {
   width: 40px;
   height: 40px;
-  background-color: var(--lowlowWhite);
   border-radius: 20px;
+  background-color: #333333;
   position: relative;
   top: 3px;
   display: flex;
@@ -38,6 +41,7 @@
 
 .photoUser img {
   width: 40px;
+  height: 40px;
   border-radius: 20px; }
 
 .divTextsUserPrimary {
@@ -62,10 +66,10 @@
   padding: 0; }
 
 .textNameUser {
-  color: var(--white); }
+  color: #000; }
 
 .textUserP {
-  color: var(--lowlowWhite);
+  color: #333333;
   font-size: 15px;
   width: 100%;
   margin: 0;
@@ -75,12 +79,12 @@
   -ms-user-select: none; }
 
 .textUserLabel {
-  color: var(--lowlowWhite);
+  color: #333333;
   font-size: 15px;
   margin: 0; }
 
 .divBtnPlus {
-  background-color: var(--transp);
+  background-color: #ffffff00;
   margin: 0;
   width: 20px;
   height: 20px;
@@ -90,8 +94,8 @@
   bottom: 130px; }
 
 .divBtnPlus button {
-  background-color: var(--transp);
-  border: 1px solid var(--transp);
+  background-color: #ffffff00;
+  border: 1px solid #ffffff00;
   width: 20px;
   height: 20px;
   border-radius: 10px;
@@ -105,7 +109,7 @@
   padding: 0;
   margin: 0;
   margin-bottom: 60px;
-  background-color: var(--transp);
+  background-color: #ffffff00;
   display: flex;
   align-items: center;
   justify-content: center;

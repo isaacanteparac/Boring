@@ -1,0 +1,177 @@
+* {
+  --blueLigth: #1040e2;
+  --blueDark: #133297;
+  --redLigth: #df1937;
+  --redDark: #b1162d;
+  --maxHeightContentPost: 490px;
+  --maxWidthContentPost: 326px;
+  --borderRadioBig: 30px;
+  --borderGrayLigth: #999898;
+  --colorBallLoaser: #fff;
+  --heightNav: 50px;
+  /*----------------------*/
+  --white: #000;
+  --lowlowWhite: #333333;
+  --lowWhite: #191919;
+  --backgroundComponent: #fff;
+  --colorActiveBtn: #b6b3b3;
+  --borderBlack: #cccccc;
+  --backgrounBody: #e6e6e6;
+  --backgroundScroll: #e6e6e6;
+  --btnInteractionPost: #d6d2d2a1;
+  --colorIconsHeadMenu: #000;
+  --backgrounWindow: #fff;
+  --actionBtnDefaul: #B9b5b5;
+  --leftoverBoxDark: #7b7b7b;
+  --boderBlurBox: rgba(0, 0, 0, 0.1);
+  --backgroundFile:  radial-gradient(circle at 0% 0%,
+    #dcdacf 50%, #b1b1b8 66.67%, #8c8ca3 83.33%, #6e6b8f 100%);
+  --backgroundNavigation: rgba(255, 255, 255, 0.68);
+  /*---------------------------*/
+  outline: none;
+  cursor: default; }
+
+.head {
+  display: none;
+  position: fixed;
+  height: 50px;
+  width: 100%;
+  top: 0;
+  z-index: 9998;
+  transition: all 0.5s; }
+
+.content-head {
+  background-color: var(--backgroundComponent);
+  width: 100%;
+  height: 50px;
+  margin: 0 auto;
+  clear: both;
+  padding-top: 5px;
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid var(--borderBlack); }
+
+.head ul.subContent-head {
+  margin: 0;
+  padding: 0;
+  display: inline-block; }
+
+.head ul.subContent-head li {
+  display: inline-block;
+  margin: 0 10px; }
+
+.links {
+  color: var(--white);
+  font-size: 23px; }
+
+.logo-head {
+  margin: 0;
+  margin-top: 4px;
+  padding: 0;
+  text-align: center; }
+
+.logo {
+  display: block;
+  text-decoration: none;
+  float: left; }
+
+.logo .logoTop {
+  border-left: 2px solid #0fee7e;
+  border-right: 2px solid #ffff00;
+  border-right-width: 12px;
+  border-left-width: 12px;
+  border-top-right-radius: 6px;
+  border-top-left-radius: 6px;
+  height: 12px;
+  position: relative;
+  top: 13px; }
+
+.logo .logoBottom {
+  border-left: 2px solid #1c1bec;
+  border-right: 2px solid  #ec1c1c;
+  border-right-width: 12px;
+  border-left-width: 12px;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  height: 12px;
+  position: relative;
+  top: 13px; }
+
+.logo-letter {
+  display: block;
+  text-decoration: none;
+  text-transform: uppercase;
+  float: left;
+  font-weight: 700;
+  font-size: 30px;
+  color: var(--white);
+  /*border-left: 2px groove var(--blueLigth);
+    border-right: 2px groove var(--redLigth);
+    border-right-width: 30px;
+    border-left-width: 30px;
+    border-radius: 20px;*/
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
+.divbtnRight {
+  display: block;
+  float: right;
+  position: relative;
+  bottom: 45px;
+  right: 1px; }
+
+.divbtnLeft {
+  display: none;
+  float: left;
+  position: relative;
+  bottom: 45px;
+  left: 1px; }
+
+.btnHead {
+  background-color: var(--transp);
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  border: none; }
+
+.iconHead {
+  color: var(--colorIconsHeadMenu) !important;
+  width: 20px;
+  height: 20px; }
+
+.iconHead:active {
+  color: var(--white) !important; }
+
+.LoaderBall {
+  width: 75%;
+  height: 50px;
+  margin: 10px 0;
+  border-radius: 10px;
+  border: none;
+  background: var(--blueLigth);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: none; }
+
+.positionModeDarkLigth {
+  float: right;
+  position: relative;
+  bottom: 45px;
+  right: 1px; }
+
+.modeDarkLigth {
+  color: var(--white) !important;
+  width: 20px;
+  height: 20px; }
+
+.modeDarkLigth :active {
+  color: var(--borderGrayLigth) !important; }
+
+#modeMoon {
+  display: block; }
+
+#modeSun {
+  display: none; }
