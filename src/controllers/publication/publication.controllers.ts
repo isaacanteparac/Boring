@@ -26,8 +26,9 @@ export async function _post_(req: any, res: Response) {
 
     //if(calcularLongitudBytes(new_publication.file_content))
         console.log(new_publication.file_content);
-        console.log("DESCRPTION "+new_publication.description);
-        console.log("ID_USER "+req.user.id);
+        console.log("DESCRPTION: "+new_publication.description);
+        console.log("ID_USER: "+req.user.id);
+        await db.query("SET @@global.max_allowed_packet = 1073741824");
         await db.query("INSERT INTO publications SET ?", [new_publication]);
         req.flash('success', 'Your post was sent.')
     return res.redirect("/profile");

@@ -51,8 +51,8 @@ p.textalertMessage{
 }
 
 div.messageAlert{
-    background-color:#eed817;
-
+    background-color:#177bee8f;
+    filter: blur(30%);
 }
 
 label.iconidMessageAlert{
@@ -60,14 +60,16 @@ label.iconidMessageAlert{
 }
 
 div.messageSuccess{
-    background-color:#4dee17;
+    background-color:#4dee178f;
+    filter: blur(30%);
 }
 label.iconidMessageSuccess{
     color: #3abc0f!important;
 }
 
 div.messageFailed{
-    background-color:#ee1e17;
+    background-color:#ee1e178f;
+    filter: blur(30%);
 }
 label.iconidMessageFailed{
     color: #bc0f0f!important;

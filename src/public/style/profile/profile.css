@@ -138,31 +138,28 @@
 
 .onePost {
     background-image: var(--backgroundFile);
-    /*width: 30%;
-    height: 20%;*/
-    width: 99px;
-    max-height: 99px;
-
-
-    border-radius: 20px;
+    width: 30%;
+    height: 130px;
+    
     margin: auto;
-    margin-top: 15px;
+    margin-top: 10px;
     padding: 0;
 
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
+
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none; 
+    border-radius: 10px;
 }
 
 .contentOnePost {
-    width: 99px;
-    max-height: 99px;
-    border-radius: 20px;
+    width: 100%;
+    max-height: 130px;
+    border-radius: 10px;
     user-drag: none; 
     -moz-user-select: none;
     -webkit-user-drag: none;
