@@ -49,7 +49,7 @@ $leftoverBoxDark: #7b7b7b;
 
 
 
-
+/*NOTE: DO NOT COPY CONTENT*/
 @mixin notUnderline{
     -moz-user-select: none;
     -webkit-user-drag: none;
@@ -57,12 +57,14 @@ $leftoverBoxDark: #7b7b7b;
     -ms-user-select: none;
 }
 
+/*NOTE:CENTER ELEMENTS*/
 @mixin centerPosition{
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
+/*NOTE: PLACE ELEMENTS IN CENTERED COLUMANS*/
 @mixin centerPositionColumn{
     display: flex;
     align-items: center;
@@ -70,13 +72,14 @@ $leftoverBoxDark: #7b7b7b;
     flex-direction: column;
 }
 
+/*NOTE: ROUND EDGES*/
 @mixin roundedBorder($widHei, $border) {
     width: $widHei;
     height: $widHei;
     border-radius: $border;
 }
 
-/*NOTE:TRASLATE BALL*/
+/*NOTE:BALL MOVEMENT*/
 @mixin ballRigth($background_, $webkit, $moz, $animation){
     background: $background_;
     -webkit-animation: right $webkit infinite ease-in-out;
@@ -90,7 +93,7 @@ $leftoverBoxDark: #7b7b7b;
     animation: left $animation infinite ease-in-out;
 }
 
-/*NOTE:BODY SIDE*/
+/*NOTE:SIDE BODY*/
 @mixin side($display_, $position_, $top_, $width_, $heigth_, $background_){
     display: $display_;
     position: $position_;
