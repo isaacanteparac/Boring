@@ -1,0 +1,173 @@
+/*NOTE: DO NOT COPY CONTENT*/
+/*NOTE:CENTER ELEMENTS*/
+/*NOTE: PLACE ELEMENTS IN CENTERED COLUMANS*/
+/*NOTE: ROUND EDGES*/
+/*NOTE:BALL MOVEMENT*/
+/*NOTE:SIDE BODY*/
+/*NOTE: LOGO COLORS*/
+/*NOTE:BORDER RADIUS*/
+/*NOTE: FONT-SIZE*/
+/*NOTE: FONT TYPE*/
+/*NOTE: BACKGROUND*/
+/*NOTE: TRANSPARENT*/
+/*NOTE: BORDER*/
+/*NOTE: TEXT*/
+/*NOTE: BUTTON*/
+.profile {
+  width: 100%;
+  height: 100%;
+  /* background-color: var(--backgroundDark);*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; }
+
+.infProfile {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  border-bottom: 1px solid #cccccc;
+  padding-bottom: 10px; }
+  .infProfile .photoUser {
+    width: 90px;
+    height: 90px;
+    border-radius: 30px;
+    background-image: radial-gradient(circle at 0% 0%, #b1b1b8 50%, #b1b1b8 66.67%, #8c8ca3 83.33%, #6e6b8f 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+  .infProfile .photo {
+    width: 85px;
+    height: 85px;
+    border-radius: 30px; }
+  .infProfile .btnAddUser {
+    position: relative;
+    bottom: 10px;
+    background-color: #df1937;
+    width: 30px;
+    height: 30px;
+    border-radius: 25px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; }
+    .infProfile .btnAddUser:active {
+      background-color: #b1162d; }
+
+.iconsProfile {
+  width: 20px;
+  filter: invert(100%); }
+
+.informationUser {
+  width: 100%;
+  /*background-image: var(--backgroundFile);*/
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+  color: #000; }
+  .informationUser h4 {
+    margin: 0;
+    font-size: 20px; }
+  .informationUser h5 {
+    margin: 0; }
+  .informationUser p {
+    margin: 0;
+    font-size: 13px; }
+
+.postFollowLike {
+  margin-top: 10px;
+  padding: 0; }
+
+.listLine {
+  margin: 0;
+  padding: 0;
+  height: 40px;
+  padding-top: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000;
+  text-align: center; }
+  .listLine .elementList {
+    display: inline;
+    padding: 5px;
+    margin: 5px;
+    border-radius: var(--borderRadioBig);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 400;
+    height: 30px;
+    border-radius: 10px;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none; }
+    .listLine .elementList:active {
+      background-color: #fff; }
+
+.optionsSearchPost {
+  margin-bottom: 5px; }
+
+.allPost {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap; }
+
+.onePost {
+  background-image: radial-gradient(circle at 0% 0%, #b1b1b8 50%, #b1b1b8 66.67%, #8c8ca3 83.33%, #6e6b8f 100%);
+  width: 45%;
+  height: 200px;
+  border-radius: 10px;
+  margin: auto;
+  margin-top: 10px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none; }
+
+.contentOnePost {
+  width: 100%;
+  max-height: 200px;
+  border-radius: 10px;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none; }
+
+.btnFilesUser {
+  background-color: #ffffff00;
+  margin: 0 5px;
+  padding-top: 5px;
+  position: relative;
+  width: 55px;
+  height: 50px;
+  border-radius: 10px;
+  border: none;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #000; }
+  .btnFilesUser:active {
+    background-color: #fff;
+    color: #1040e2 !important; }
+
+.FilesUser {
+  width: 55px;
+  height: 50px;
+  color: #000 !important; }
+  .FilesUser:active {
+    color: #1040e2 !important; }

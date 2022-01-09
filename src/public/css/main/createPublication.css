@@ -27,15 +27,13 @@
   width: 100%;
   display: flex;
   flex-direction: column;
-  background-color: #fff;
-  border-radius: 30px;
-  padding: 5px; }
+  background-color: #fff; }
 
 .contentTypeFile {
   display: flex;
   position: relative;
   float: left;
-  margin-left: 15px;
+  margin-left: 10px;
   bottom: 30px; }
 
 .fileUpload {
@@ -187,7 +185,7 @@ input[type="file"] {
 
 .preview {
   display: none;
-  background-image: radial-gradient(circle at 0% 0%, #dcdacf 50%, #b1b1b8 66.67%, #8c8ca3 83.33%, #6e6b8f 100%);
+  background-image: radial-gradient(circle at 0% 0%, #b1b1b8 50%, #b1b1b8 66.67%, #8c8ca3 83.33%, #6e6b8f 100%);
   max-width: 250px;
   max-height: 250px;
   border-radius: 10px;

@@ -1,17 +1,13 @@
-* {
-    cursor: default;
-    outline: none;
-}
+@import "../abstracts/mixis.scss";
+@import "../abstracts/variables.scss";
+
 
 div.post, div.viewPostContentuser {
     width: 96%;
     margin: auto;
     margin-top: 65px;
     margin-bottom: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+    @include centerPositionColumn;
 }
 
 div.viewPostContentuser{
@@ -20,55 +16,54 @@ div.viewPostContentuser{
 
 .userPost {
     margin-top: 20px;
-    border-radius: var(--borderRadioBig);
-    background-color: var(--transp);
+    border-radius: map-get($borderRadius, extrabig);
+    background-color: $transparent;
     padding: 0;
-    width: var(--maxWidthContentPost);
-    max-height: var(--maxHeightContentPost);
-    box-shadow: 5px 5px 5px var(--leftoverBoxDark); 
+    width: map-get($post, maxWidth );
+    max-height: map-get($post, maxHeight );
+    box-shadow: 5px 5px 5px $leftoverBoxDark; 
 }
 
 
 
 .information {
-    border-radius: var(--borderRadioBig);
+    border-radius:map-get($borderRadius, extrabig);
     width: 60%;
     height: 50px;
     border: none;
-    background: var(--backgrounNavigation);
-    backdrop-filter: blur(3px);
+    //background: var(--backgrounNavigation);
+    backdrop-filter: map-get($blurEffect, nano );
     border: 2px solid rgba(0, 0, 0, 0.1);
     float: left;
     left: 20%;
     position: relative;
-    bottom: calc(var(--maxHeightContentPost) - 5px);
+    bottom: 485px;
+
+    .nameUser {
+        margin: 0;
+        padding: 0;
+        width: 250px;
+        position: relative;
+        left: 55px;
+        bottom: 57px;
+        color: #fff;
+    }
+
+    .messageUser {
+        width: 250px;
+        position: relative;
+        left: 55px;
+        bottom: 78px;
+        color: #fff;
+    }
+
+    .photoUser {
+        position: relative;
+        top: 5px;
+        left: 10px;
+    }
 }
 
-
-
-.information .nameUser {
-    margin: 0;
-    padding: 0;
-    width: 250px;
-    position: relative;
-    left: 55px;
-    bottom: 57px;
-    color: #fff;
-}
-
-.information .messageUser {
-    width: 250px;
-    position: relative;
-    left: 55px;
-    bottom: 78px;
-    color: #fff;
-}
-
-.information .photoUser {
-    position: relative;
-    top: 5px;
-    left: 10px;
-}
 
 .linkdec {
     text-decoration: none;
@@ -77,12 +72,10 @@ div.viewPostContentuser{
 
 .fileUser {
     width: 100%;
-    height: var(--maxHeightContentPost);   
-    border-radius: var(--borderRadioBig);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-image: var(--backgroundFile);
+    height: map-get($post, maxHeight );   
+    border-radius: map-get($borderRadius, extrabig);
+    @include centerPosition;
+    background-image: $backgroundFile;
     overflow: hidden;
 }
 
@@ -90,27 +83,17 @@ div.viewPostContentuser{
 
 .contentImagen, .contentVideo{
     width: 100%;
-    /*height: var(--maxHeightContentPost);*/
-    /*border-radius: var(--borderRadioBig);*/
-    user-drag: none; 
-    -moz-user-select: none;
-    -webkit-user-drag: none;
-    -webkit-user-select: none;
-    -ms-user-select: none;
+    @include notUnderline;
 }
 
 
 
 .interactionPost {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 50%;
-    height: 40px;
-    border-radius: var(--borderRadioBig);
-    background: var(--backgrounNavigation);
-    backdrop-filter: blur(5px);
-    border: 2px solid var(--boderBlurBox);
+    @include centerPosition;
+    @include roundedBorder(50%, 40px, map-get($borderRadius, extrabig));
+    //background: var(--backgrounNavigation);
+    backdrop-filter: map-get($blurEffect, nano );
+    border: 2px solid $boderBlurBox;
     float:right;
     position: relative;
     bottom: 105px;
@@ -118,25 +101,17 @@ div.viewPostContentuser{
 }
 
 .btnInteraction {
-    background-color: var(--transp);
-    width: 40px;
-    height: 40px;
-    border-radius: 20px;
+    background-color: $transparent;
+    @include roundedBorder(40px, 40px, map-get($borderRadius, big));
     border: none;
     padding: 0;
     margin: 0 5px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    /*background-color: rgba(0, 0, 0, 0.465);*/
-    
+    @include centerPosition;
 }
 
 svg.iconInterac {
     color:  #b6b3b3!important;
 }
-
-
 
 svg.iconLikesPost:active{
     color: rgba(255, 0, 0, 0.59)!important;

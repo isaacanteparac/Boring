@@ -2,8 +2,12 @@ $blueLigth: #1040e2;
 $blueDark: #133297;
 $redLigth: #df1937;
 $redDark: #b1162d;
-$maxHeightContentPost: 490px;
-$maxWidthContentPost: 326px;
+
+$post:(
+    maxWidth: 326px,
+    maxHeight: 490px
+    
+);
 
 
 $loaders:(
@@ -14,10 +18,10 @@ $loaders:(
 
 /*NOTE: LOGO COLORS*/
 $logo: (
-    first: #27fc18,
-    second: #e3ff13,
-    third: #006aff,
-    fourth: #fa1717,
+    first: #0fee7e,
+    second: #ffff00,
+    third: #1c1bec,
+    fourth: #ec1c1c,
     leftRigthWidth: 12px,
     leftRigthRadius: 6px,
     heigth_: 12px,
@@ -37,19 +41,25 @@ $borderRadius:(
 
 /*NOTE: FONT-SIZE*/
 $fontSize:(
+    rem_2: 19.2px,
     rem_1: 17.6px,
     rem: 16px,
+    mega:43px,
     big:20px,
-    medium:15px
+    medium:15px,
+    small: 13px
 
 );
 /*NOTE: FONT TYPE*/
 $fontFamily:(
-    first: 'Segoe UI'
+    first: 'Segoe UI',
+    second: 'Azeret Mono'
 );
 
 $blurEffect:(
-    big: blur(30px)
+    big: blur(30px),
+    small: blur(10px),
+    nano: blur(5px)
 );
 
 $alertMessage:(
@@ -79,7 +89,7 @@ $backgroundScroll: #e6e6e6;
 $backgroundComponent: #fff;
 $backgrounWindow: #fff;
 $backgroundFile:  radial-gradient(circle at 0% 0%,
-    #dcdacf 50%, #b1b1b8 66.67%, #8c8ca3 83.33%, #6e6b8f 100%);
+ #b1b1b8 50%, #b1b1b8 66.67%, #8c8ca3 83.33%, #6e6b8f 100%);
 //$backgroundNavigation: rgba(255, 255, 255, 0.146);
 
 /*NOTE: TRANSPARENT*/
@@ -93,7 +103,6 @@ $transparentGray: rgba(0, 0, 0, 0.465);
 $borderBlack: #cccccc;
 $boderBlurBox: rgba(0, 0, 0, 0.1);
 $borderGrayLigth: #999898;
-$borderRadioBig: 30px;
 
 
 /*NOTE: TEXT*/

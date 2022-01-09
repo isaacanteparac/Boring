@@ -25,8 +25,8 @@
     }
 
     &.contentOnePost {
-        border-bottom-left-radius: $borderRadioBig;
-        border-bottom-right-radius: $borderRadioBig;
+        border-bottom-left-radius: map-get($borderRadius, extrabig);
+        border-bottom-right-radius: map-get($borderRadius, extrabig);
     }
 }
 

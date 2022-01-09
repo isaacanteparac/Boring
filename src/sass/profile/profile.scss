@@ -1,61 +1,42 @@
-* {
-    cursor: default;
-    outline: none;
-}
+@import "../abstracts/mixis.scss";
+@import "../abstracts/variables.scss";
 
 .profile {
     width: 100%;
     height: 100%;
     /* background-color: var(--backgroundDark);*/
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+    @include centerPositionColumn;
 }
 
 .infProfile {
     margin-top: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+    @include centerPositionColumn;
     width: 100%;
-    border-bottom: 1px solid var(--borderBlack);
+    border-bottom: 1px solid $borderBlack;
     padding-bottom: 10px;
-}
 
-.infProfile .photoUser {
-    width: 90px;
-    height: 90px;
-    border-radius: var(--borderRadioBig);
-    background-image: var(--backgroundFile);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+    .photoUser {
+        @include roundedBorder(90px, 90px, map-get($borderRadius, extrabig ));
+        background-image: $backgroundFile;
+        @include centerPosition;
+    }
 
-.infProfile .photo {
-    width: 85px;
-    height: 85px;
-    border-radius: var(--borderRadioBig);
-}
+    .photo {
+        @include roundedBorder(85px, 85px, map-get($borderRadius, extrabig ))
+    }
 
-.infProfile .btnAddUser {
-    position: relative;
-    bottom: 10px;
-    background-color: var(--redLigth);
-    width: 30px;
-    height: 30px;
-    border-radius: 25px;
-    border: none;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-}
+    .btnAddUser {
+        position: relative;
+        bottom: 10px;
+        background-color: $redLigth;
+        @include roundedBorder(30px, 30px, 25px);
+        border: map-get($borderRadius, null );
+        @include centerPositionColumn;
 
-.btnAddUser:active {
-    background-color: var(--redDark);
+        &:active {
+            background-color: $redDark;
+        }
+    }
 }
 
 .iconsProfile {
@@ -71,21 +52,21 @@
     flex-direction: column;
     padding: 0;
     margin: 0;
-    color: var(--white);
-}
+    color: $white;
 
-.informationUser h4 {
-    margin: 0;
-    font-size: 20px;
-}
+    h4 {
+        margin: 0;
+        font-size: map-get($fontSize, big);
+    }
 
-.informationUser h5 {
-    margin: 0;
-}
+    h5 {
+        margin: 0;
+    }
 
-.informationUser p {
-    margin: 0;
-    font-size: 14px;
+    p {
+        margin: 0;
+        font-size: map-get($fontSize, small);
+    }
 }
 
 .postFollowLike {
@@ -98,31 +79,26 @@
     padding: 0;
     height: 40px;
     padding-top: 5px;
-    display: flex;
-    justify-content: center;
-    color: var(--white);
-}
-
-.listLine .elementList {
-    display: inline;
-    padding: 5px;
-    margin: 5px;
-    border-radius: var(--borderRadioBig);
-    display: flex;
+    @include centerPosition;
+    color: $white;
     text-align: center;
-    align-items: center;
-    font-weight: 400;
-    height: 20px;
-    user-drag: none; 
-    -moz-user-select: none;
-    -webkit-user-drag: none;
-    -webkit-user-select: none;
-    -ms-user-select: none;
 
-}
+    .elementList {
+        display: inline;
+        padding: 5px;
+        margin: 5px;
+        border-radius: var(--borderRadioBig);
+        
+        @include centerPosition;
+        font-weight: 400;
+        height: 30px;
+        border-radius: map-get($borderRadius, small );
+        @include notUnderline;
 
-.elementList:active {
-    background-color: var(--backgroundComponent);
+        &:active {
+            background-color: $backgroundComponent;
+        }
+    }
 }
 
 .optionsSearchPost {
@@ -137,68 +113,45 @@
 }
 
 .onePost {
-    background-image: var(--backgroundFile);
-    width: 30%;
-    height: 130px;
-    
+    background-image: $backgroundFile;
+    @include roundedBorder(45%, 200px, map-get($borderRadius, small));
     margin: auto;
     margin-top: 10px;
     padding: 0;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none; 
-    border-radius: 10px;
+    @include centerPosition;
+    @include notUnderline;
 }
 
 .contentOnePost {
     width: 100%;
-    max-height: 130px;
-    border-radius: 10px;
-    user-drag: none; 
-    -moz-user-select: none;
-    -webkit-user-drag: none;
-    -webkit-user-select: none;
-    -ms-user-select: none;
-
+    max-height: 200px;
+    border-radius: map-get($borderRadius, small);
+    @include notUnderline;
 }
 
-
 .btnFilesUser {
-    background-color: var(--transp);
+    background-color: $transparent;
     margin: 0 5px;
     padding-top: 5px;
     position: relative;
-    width: 55px;
-    height: 50px;
-    border-radius: 10px;
-    border: none;
+    @include roundedBorder(55px, 50px, map-get($borderRadius, small));
+    border: map-get($borderRadius, null);
     text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    color: var(--colorIconsHeadMenu);
-}
+    @include centerPositionColumn;
+    color: $colorIconsHeadMenu;
 
-
-
-.btnFilesUser:active, .FilesUser:active{
-    background-color: var(--backgroundComponent);
-    color: var(--blueLigth)!important;
+    &:active{
+        background-color: $backgroundComponent;
+        color: $blueLigth!important;
+    }
 }
 
 .FilesUser{
     width: 55px;
     height: 50px;
-    color: var(--colorIconsHeadMenu)!important;
-}
+    color: $colorIconsHeadMenu!important;
 
-.FilesUser:active {
-    color: var(--blueLigth)!important;
+    &:active {
+        color: $blueLigth!important;
+    }
 }

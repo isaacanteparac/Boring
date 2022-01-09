@@ -1,7 +1,10 @@
+@import "../abstracts/mixis.scss";
+@import "../abstracts/variables.scss";
+
 .video video{
   width: 250px;
   max-height: 250px;
-  border-radius: 10px;
+  border-radius: map-get($borderRadius, small );
 }
 
 
@@ -27,45 +30,41 @@
 }
 
 .ProgressContainer{
-  background: var(--tansp);
+  background: $transparent;
   height: 20px;
 }
 
 .ProgressContainer{
-  color: var(--backgrounBody);
-  font-size: 15px;
+  color: $backgrounBody;
+  font-size: map-get($fontSize, medium);
+
+  .fullTime{
+    position: relative;
+    bottom: 30px;
+    float: right;
+  }
+
+  .progressBar {
+    @include roundedBorder(140px, 10px, map-get($borderRadius, big ));
+    background: $borderGrayLigth;
+    cursor: pointer;
+    position: relative;
+    bottom:14px;
+    left: 40px;
+
+    &:hover + .time {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .progress {
+      width: 0%;
+      height: 100%;
+      background: $blueLigth;
+      border-radius: map-get($borderRadius, big );
+    }
+  }
 }
-
-.ProgressContainer .fullTime{
-  position: relative;
-  bottom: 30px;
-  float: right;
-}
-
-.ProgressContainer .progressBar {
-  width: 140px;
-  height: 10px;
-  background: var(--borderGrayLigth);
-  border-radius: 20px;
-  cursor: pointer;
-  position: relative;
-  bottom:14px;
-  left: 40px;
-}
-
-.ProgressContainer .progressBar:hover + .time {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-.ProgressContainer .progressBar .progress {
-  width: 0%;
-  height: 100%;
-  background: var(--blueLigth);
-  border-radius: 20px;
-}
-
-
 
 
 .volume {
@@ -75,16 +74,16 @@
   align-items: center;
   justify-content: flex-end;
   position: relative;
-}
 
-.volume .icon {
-  width: 14px;
-  height: 14px;
-  background: url(../../iconos/videoplayer/volumeActive.svg);
-  background-size: 100% 100%;
-  cursor: pointer;
-  position: relative;
-  bottom: 18px;
-  left: 100px;
-
+  .icon {
+    width: 14px;
+    height: 14px;
+    background: url(../../iconos/videoplayer/volumeActive.svg);
+    background-size: 100% 100%;
+    cursor: pointer;
+    position: relative;
+    bottom: 18px;
+    left: 100px;
+  
+  }
 }

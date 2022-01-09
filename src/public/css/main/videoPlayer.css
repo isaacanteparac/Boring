@@ -1,0 +1,84 @@
+/*NOTE: DO NOT COPY CONTENT*/
+/*NOTE:CENTER ELEMENTS*/
+/*NOTE: PLACE ELEMENTS IN CENTERED COLUMANS*/
+/*NOTE: ROUND EDGES*/
+/*NOTE:BALL MOVEMENT*/
+/*NOTE:SIDE BODY*/
+/*NOTE: LOGO COLORS*/
+/*NOTE:BORDER RADIUS*/
+/*NOTE: FONT-SIZE*/
+/*NOTE: FONT TYPE*/
+/*NOTE: BACKGROUND*/
+/*NOTE: TRANSPARENT*/
+/*NOTE: BORDER*/
+/*NOTE: TEXT*/
+/*NOTE: BUTTON*/
+.video video {
+  width: 250px;
+  max-height: 250px;
+  border-radius: 10px; }
+
+.controlsVideo {
+  display: none;
+  width: 250px;
+  height: 20px;
+  margin: 0;
+  padding: 0 4px; }
+
+.overlay .button {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  background: url(../../iconos/videoplayer/videoPlay.svg);
+  background-size: 100% 100%;
+  transform: translate(-50%, calc(-50% - 30px));
+  cursor: pointer;
+  transition: width 0.2s, height 0.2s; }
+
+.ProgressContainer {
+  background: #ffffff00;
+  height: 20px; }
+
+.ProgressContainer {
+  color: #e6e6e6;
+  font-size: 15px; }
+  .ProgressContainer .fullTime {
+    position: relative;
+    bottom: 30px;
+    float: right; }
+  .ProgressContainer .progressBar {
+    width: 140px;
+    height: 10px;
+    border-radius: 20px;
+    background: #999898;
+    cursor: pointer;
+    position: relative;
+    bottom: 14px;
+    left: 40px; }
+    .ProgressContainer .progressBar:hover + .time {
+      opacity: 1;
+      transform: translateY(0); }
+    .ProgressContainer .progressBar .progress {
+      width: 0%;
+      height: 100%;
+      background: #1040e2;
+      border-radius: 20px; }
+
+.volume {
+  width: 100px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  position: relative; }
+  .volume .icon {
+    width: 14px;
+    height: 14px;
+    background: url(../../iconos/videoplayer/volumeActive.svg);
+    background-size: 100% 100%;
+    cursor: pointer;
+    position: relative;
+    bottom: 18px;
+    left: 100px; }

@@ -1,84 +1,78 @@
-* {
-    cursor: default;
-    outline: none;
-}
-
-.coment .post {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
+@import "../abstracts/mixis.scss";
+@import "../abstracts/variables.scss";
 
 .coment {
     margin: 0;
     padding: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+    @include centerPositionColumn;
+
+    .post {
+        @include centerPositionColumn;
+    }
+
+    .contentComent {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+
 }
-
-
-
-.coment .contentComent {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-}
+ 
 
 .comentBox {
-    width: 100%;
-    height: 100%;
+    @include roundedBorder(100%, 100%, map-get($borderRadius, extrabig ));
     margin-top: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-bottom: 50px;
-    border-radius: var(--borderRadioBig);
-    background-color: var(--backgroundComponent);
+    background-color: $backgroundComponent;
+
+    .title {
+        width: 100%;
+        height: 30px;
+        @include centerPositionColumn;
+
+        h4 {
+            color: $white;
+        }
+    }
+
 }
 
 .comentUser {
     width: 100%;
     height: 55px;
     margin-bottom: 10px;
-}
 
-.comentUser .photoUser {
-    position: relative;
-    bottom: 10px;
-    left: 10px;
-    width: 30px;
-    height: 30px;
-}
+    .photoUser {
+        position: relative;
+        bottom: 10px;
+        left: 10px;
+        width: 30px;
+        height: 30px;
+    }
 
-.comentUser .photo {
-    width: 30px;
-    height: 30px;
-}
+    .photo {
+        width: 30px;
+        height: 30px;
+    }
 
-.comentUser .divTextsUserPrimary {
-    width: 85%;
-}
+    .divTextsUserPrimary {
+        width: 85%;
+    }
 
-.comentUser .divTextsUserPrimary .textUserLabel {
-    font-size: 13px;
-    font-weight: bold;
-}
+    .divTextsUserPrimary{
+        .textUserLabel {
+            font-size: map-get($fontSize, small );
+            font-weight: bold;
+        }
 
-.comentUser .divTextsUserPrimary .textUserP {
-    font-size: 13px;
-    text-overflow: ellipsis;
-}
-
-.comentBox .title {
-    width: 100%;
-    height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+        .textUserP {
+            font-size: map-get($fontSize, small );
+            text-overflow: ellipsis;
+        }
+    }
 }
 
 .boxInput {
@@ -91,9 +85,7 @@
 
 .contenInputMessage {
     width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include centerPosition;
     padding: 5px 0;
 }
 
@@ -101,13 +93,13 @@
 .inputMessage {
     width: 74%;
     border: none;
-    border-radius: var(--borderRadioBig);
+    border-radius: map-get($borderRadius, extrabig);
     padding: 0 10px;
-    font-size: 16px;
-    font-family: 'Segoe UI';
-    border: 2px solid var(--blueLigth);
-    background-color: var(--colorActiveBtn);
-    color: var(--white);
+    font-size: map-get($fontSize, rem );
+    font-family: map-get($fontFamily, first );
+    border: 2px solid $blueLigth;
+    background-color: $colorActiveBtn;
+    color: $white;
 }
 
 .inputMessage {
@@ -122,24 +114,14 @@
 
 .btnPostMessage {
     margin: 0;
-    width: 15%;
-    height: 35px;
+    @include roundedBorder(15%, 35px, map-get($borderRadius, extrabig));
     margin-left: 5px;
-    background-color: var(--blueLigth);
-    border-radius: var(--borderRadioBig);
-    color: var(--white);
-    border: none;
-    font-size: 1.1rem;
-}
+    background-color: $blueLigth;
+    color: #fff;
+    border: map-get($borderRadius, null);
+    font-size: map-get($fontSize, rem_1 );
 
-.btnPostMessage:active {
-    background-color: var(--blueDark);
-}
-
-.comentBox .title {
-    height: 30px;
-}
-
-.title h4 {
-    color: var(--white);
+    :active {
+        background-color: $blueDark;
+    }
 }
