@@ -1,72 +1,64 @@
-* {
-    cursor: default;
-    outline: none;
-    --heightNav: 50px;
-}
+@import "../abstracts/mixis.scss";
+@import "../abstracts/variables.scss";
 
 .navInfer {
     display: none;
     position: fixed;
-    bottom: 15px;
-    width: 100%;
-    height: var(--heightNav);
+    bottom: map-get($navigation, divexterbottom );
+    width: map-get($navigation, divexterwidth );
+    height: map-get($navigation, divexterheigth );
     transition: all 0.5s;
     align-items: center;
     justify-content: center;
-    border-radius: 10px;
-    border: none;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-}
+    border-radius: map-get($borderRadius, small );
+    border: map-get($borderRadius, null );
+    @include notUnderline;
 
-.navInfer ul.navbar-menu {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: var(--backgrounNavigation);
-    backdrop-filter: blur(30px);
-    border: 2px solid var(--boderBlurBox);
-    height: 100%;
-    width: 300px;
-    margin: auto;
-    border-radius: 50px;
-}
-
-.navInfer ul.navbar-menu li {
-    display: inline-block;
-    text-transform: capitalize;
+    ul.navbar-menu {
+        margin: 0;
+        padding: 0;
+        @include centerPosition;
+        //background: $backgroundNavigation;
+        backdrop-filter: map-get($blurEffect, big );
+        border: 2px solid $boderBlurBox;
+        @include roundedBorder(map-get($navigation, navWidth ), 
+        map-get($navigation, navheigth), 
+        map-get($navigation, navradius));
+        margin: auto;
+    
+        li {
+            display: inline-block;
+            text-transform: capitalize;
+        }
+    }
 }
 
 .links-footer {
     font-size: 50px;
     margin: 0 25px;
     text-decoration: none;
+
+    :hover {
+        color: $blueLigth;
+    }
+
 }
 
-.links-footer:hover {
-    color: var(--blueLigth);
-}
 
 .btnFooter {
-    background-color: var(--transp);
+    background-color: $transparent;
     margin: 0 5px;
     padding-top: 5px;
     position: relative;
-    width: 40px;
-    height: 40px;
-    border-radius: 10px;
-    border: none;
+    @include roundedBorder(40px, 40px, map-get($borderRadius, small));
+    border: map-get($borderRadius, null);
 }
 
 .iconsFooter {
-    width: 30px;
-    color: var(--colorIconsHeadMenu)!important;
-}
+    width: map-get($navigation, icons);
+    color: $colorIconsHeadMenu!important;
 
-.iconsFooter:active {
-    color: var(--blueLigth)!important;
+    &:active {
+        color: $blueLigth!important;
+    }
 }

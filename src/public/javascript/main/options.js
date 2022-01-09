@@ -86,23 +86,23 @@ $(document).ready( () =>{
         $("#modeSun").hide();
         $("#modeMoon").show();
         $("*").css({
-            "--white": "#000",
-            "--lowlowWhite": "#333333",
-            "--lowWhite": "#191919",
-            "--backgroundComponent": "#fff",
-            "--colorActiveBtn": "#b6b3b3",
-            "--borderBlack": "#cccccc",
-            "--backgrounBody": "#e6e6e6",
-            "--backgroundScroll": "#e6e6e6",
-            "--btnInteractionPost": "#d6d2d2a1",
-            "--colorIconsHeadMenu": "#000",
-            "--backgrounWindow": "#fff",
-            "--actionBtnDefaul": "#B9b5b5",
-            "--leftoverBoxDark": "#7b7b7b",
-            "--boderBlurBox": "rgba(0, 0, 0, 0.1)",
-            "--backgroundFile": "radial-gradient(circle at 0% 0%,"+
+            "$white": "#000",
+            "$lowlowWhite": "#333333",
+            "$lowWhite": "#191919",
+            "$backgroundComponent": "#fff",
+            "$colorActiveBtn": "#b6b3b3",
+            "$borderBlack": "#cccccc",
+            "$backgrounBody": "#e6e6e6",
+            "$backgroundScroll": "#e6e6e6",
+            "$btnInteractionPost": "#d6d2d2a1",
+            "$colorIconsHeadMenu": "#000",
+            "$backgrounWindow": "#fff",
+            "$actionBtnDefaul": "#B9b5b5",
+            "$leftoverBoxDark": "#7b7b7b",
+            "$boderBlurBox": "rgba(0, 0, 0, 0.1)",
+            "$backgroundFile": "radial-gradient(circle at 0% 0%,"+
                 "#dcdacf 50%, #b1b1b8 66.67%, #8c8ca3 83.33%, #6e6b8f 100%)",
-            "--backgroundNavigation": "rgba(255, 255, 255, 0.68)"
+            "$backgroundNavigation": "rgba(255, 255, 255, 0.68)"
         });
         
     })
@@ -111,23 +111,23 @@ $(document).ready( () =>{
         $("#modeMoon").hide();
         $("#modeSun").show();
         $("*").css({
-            "--white": "#fff",
-            "--lowlowWhite": "#b6b6b6",
-            "--lowWhite": "#e7e7e7",
-            "--backgroundComponent": "#050505",
-            "--colorActiveBtn": "#000000",
-            "--borderBlack": "#0d0d0d",
-            "--backgrounBody": "#1a1a1a",
-            "--backgroundScroll": "#101113",
-            "--btnInteractionPost": "#070707a1",
-            "--colorIconsHeadMenu": "#fff",
-            "--backgrounWindow": "#000",
-            "--actionBtnDefaul": "#1f1f1f",
-            "--leftoverBoxDark": "#101113",
-            "--boderBlurBox": "rgba(255, 255, 255, 0.1)",
-            "--backgroundFile":  "radial-gradient(circle at 0% 0%,"+ 
+            "$white": "#fff",
+            "$lowlowWhite": "#b6b6b6",
+            "$lowWhite": "#e7e7e7",
+            "$backgroundComponent": "#050505",
+            "$colorActiveBtn": "#000000",
+            "$borderBlack": "#0d0d0d",
+            "$backgrounBody": "#1a1a1a",
+            "$backgroundScroll": "#101113",
+            "$btnInteractionPost": "#070707a1",
+            "$colorIconsHeadMenu": "#fff",
+            "$backgrounWindow": "#000",
+            "$actionBtnDefaul": "#1f1f1f",
+            "$leftoverBoxDark": "#101113",
+            "$boderBlurBox": "rgba(255, 255, 255, 0.1)",
+            "$backgroundFile":  "radial-gradient(circle at 0% 0%,"+ 
                 "#313130 50%, #222127 66.67%, #15131e 83.33%, #080016 100%)",
-            "--backgroundNavigation": "rgba(0, 0, 0, 0.68)"
+            "$backgroundNavigation": "rgba(0, 0, 0, 0.68)"
         });
     })
 

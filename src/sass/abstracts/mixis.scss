@@ -1,51 +1,4 @@
-$blueLigth: #1040e2;
-$blueDark: #133297;
-$redLigth: #df1937;
-$redDark: #b1162d;
-$maxHeightContentPost: 490px;
-$maxWidthContentPost: 326px;
 
-$colorBallLoader: #fff;
-$heightNav: 50px;
-
-/*NOTE: BACKGROUND*/
-$backgroundLeft: #000;
-$backgroundRight: #000;
-$backgrounBody: #e6e6e6;
-$backgroundScroll: #e6e6e6;
-$backgroundComponent: #fff;
-$backgrounWindow: #fff;
-$backgroundFile:  radial-gradient(circle at 0% 0%,
-    #dcdacf 50%, #b1b1b8 66.67%, #8c8ca3 83.33%, #6e6b8f 100%);
-$backgroundNavigation: rgba(255, 255, 255, 0.68);
-
-/*NOTE: TRANSPARENT*/
-$transparent:#ffffff00;
-$transparentGray: rgba(0, 0, 0, 0.465);
-
-/*NOTE: ALERT MESSAGE*/
-$alertMessage: #177bee8f;
-$alertSuccess: #4dee178f;
-$alertFailed: #ee1e178f;
-
-/*NOTE: BORDER*/
-$borderBlack: #cccccc;
-$boderBlurBox: rgba(0, 0, 0, 0.1);
-$borderGrayLigth: #999898;
-$borderRadioBig: 30px;
-
-/*NOTE: TEXT*/
-$white: #000;
-$lowlowWhite: #333333;
-$lowWhite: #191919;
-
-/*NOTE: BUTTON*/
-$colorActiveBtn: #b6b3b3;
-$btnInteractionPost: #d6d2d2a1;
-$colorIconsHeadMenu: #000;
-$actionBtnDefaul: #B9b5b5;
-
-$leftoverBoxDark: #7b7b7b;
 
 
 
@@ -73,11 +26,18 @@ $leftoverBoxDark: #7b7b7b;
 }
 
 /*NOTE: ROUND EDGES*/
-@mixin roundedBorder($widHei, $border) {
-    width: $widHei;
-    height: $widHei;
+@mixin roundedBorder($width_, $heigth_, $border) {
+    width: $width_;
+    height: $heigth_;
     border-radius: $border;
 }
+
+@mixin roundedBorderMax($width_, $heigth_, $border_) {
+    max-width: $width_;
+    max-height: $heigth_;
+    border-radius: $border_;
+}
+
 
 /*NOTE:BALL MOVEMENT*/
 @mixin ballRigth($background_, $webkit, $moz, $animation){

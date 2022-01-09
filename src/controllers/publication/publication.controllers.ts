@@ -30,7 +30,7 @@ export async function _post_(req: any, res: Response) {
         console.log("ID_USER: "+req.user.id);
         await db.query("SET @@global.max_allowed_packet = 1073741824");
         await db.query("INSERT INTO publications SET ?", [new_publication]);
-        req.flash('success', 'Your post was sent.')
+        req.flash('message', 'Your post was sent.')
     return res.redirect("/profile");
 }
 

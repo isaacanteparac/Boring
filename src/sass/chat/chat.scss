@@ -1,11 +1,12 @@
-@import "../mixis.scss";
+@import "../abstracts/mixis.scss";
+@import "../abstracts/variables.scss";
 
 .chat {
     width: 100%;
     height: 55px;
     margin-top: 1px;
     padding-bottom: 5px;
-    border: none;
+    border: map-get($borderRadius, null );
 }
 
 .contentChat {
@@ -13,7 +14,7 @@
     padding-bottom: 0;
     margin: 0 5px;
     height: 55px;
-    border-radius: 15px;
+    border-radius: map-get($borderRadius, medium);
 }
 
 .contentChat:active {
@@ -21,7 +22,7 @@
 }
 
 .photoUser {
-    @include roundedBorder(40px, 20px);
+    @include roundedBorder(40px, 40px, map-get($borderRadius, big));
     background-color: $lowlowWhite;
     position: relative;
     top: 3px;
@@ -30,7 +31,7 @@
 }
 
 .photoUser img {
-    @include roundedBorder(40px, 20px);
+    @include roundedBorder(40px, 40px, map-get($borderRadius, big));
 }
 
 .divTextsUserPrimary {
@@ -60,7 +61,7 @@
 
 .textUserP {
     color: $lowlowWhite;
-    font-size: 15px;
+    font-size: map-get($fontSize, medium );
     width: 100%;
     margin: 0;
     @include notUnderline;
@@ -68,14 +69,14 @@
 
 .textUserLabel {
     color: $lowlowWhite;
-    font-size: 15px;
+    font-size: map-get($fontSize, medium );
     margin: 0;
 }
 
 .divBtnPlus {
     background-color: $transparent;
     margin: 0;
-    @include roundedBorder(20px, 10px);
+    @include roundedBorder(20px, 20px, map-get($borderRadius, small ));
     float: right;
     position: relative;
     bottom: 130px;
@@ -84,7 +85,7 @@
 .divBtnPlus button {
     background-color: $transparent;
     border: 1px solid $transparent;
-    @include roundedBorder(20px, 10px);
+    @include roundedBorder(20px, 20px, map-get($borderRadius, small ));
     @include centerPositionColumn;
 }
 

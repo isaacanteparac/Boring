@@ -1,11 +1,18 @@
+/*NOTE: DO NOT COPY CONTENT*/
+/*NOTE:CENTER ELEMENTS*/
+/*NOTE: PLACE ELEMENTS IN CENTERED COLUMANS*/
+/*NOTE: ROUND EDGES*/
+/*NOTE:BALL MOVEMENT*/
+/*NOTE:SIDE BODY*/
+/*NOTE: LOGO COLORS*/
+/*NOTE:BORDER RADIUS*/
+/*NOTE: FONT-SIZE*/
+/*NOTE: FONT TYPE*/
 /*NOTE: BACKGROUND*/
 /*NOTE: TRANSPARENT*/
-/*NOTE: ALERT MESSAGE*/
 /*NOTE: BORDER*/
 /*NOTE: TEXT*/
 /*NOTE: BUTTON*/
-/*NOTE:TRASLATE BALL*/
-/*NOTE:BODY SIDE*/
 .alert_message {
   background: #ffffff00;
   display: flex;
@@ -39,7 +46,7 @@ label.iconAlert {
   border-radius: 15px; }
 
 p.textMessage {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI";
   background: #ffffff00;
   width: 80%;
   font-weight: 700;
@@ -51,21 +58,21 @@ p.textalertMessage {
 
 div.messageAlert {
   background-color: #177bee8f;
-  filter: blur(30%); }
+  backdrop-filter: blur(30px); }
 
 label.iconidMessageAlert {
   color: #0f74bc !important; }
 
 div.messageSuccess {
   background-color: #4dee178f;
-  filter: blur(30%); }
+  backdrop-filter: blur(30px); }
 
 label.iconidMessageSuccess {
   color: #3abc0f !important; }
 
 div.messageFailed {
   background-color: #ee1e178f;
-  filter: blur(30%); }
+  backdrop-filter: blur(30px); }
 
 label.iconidMessageFailed {
   color: #bc0f0f !important; }

@@ -1,4 +1,5 @@
-@import "../mixis.scss";
+@import "../abstracts/mixis.scss";
+@import "../abstracts/variables.scss";
 
 
 .boxFriends {
@@ -10,39 +11,36 @@
 }
 
 .contentFriend {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
+    @include centerPositionColumn;
     margin: auto;
     margin-top: 15px;
     width: 34%;
-    border-radius: 20px;
-    border: 1px solid var(--borderBlack);
+    border-radius: map-get($borderRadius, big);
+    border: 1px solid $borderBlack;
     padding: 0;
-    background-color: var(--backgroundComponent);
+    background-color: $backgroundComponent;
 
     &:active {
-        background-color: var(--colorActiveBtn);
+        background-color: $colorActiveBtn;
     }
 
     &.contentOnePost {
-        border-bottom-left-radius: var(--borderRadioBig);
-        border-bottom-right-radius: var(--borderRadioBig);
+        border-bottom-left-radius: $borderRadioBig;
+        border-bottom-right-radius: $borderRadioBig;
     }
 }
 
 
 .nameFriend {
     margin: 0;
-    font-size: 1.1rem;
-    color: var(--white);
+    font-size: map-get($fontSize, rem_1 );
+    color: $white;
     margin-bottom: 3px;
     text-align: center;
 }
 
 .usernameFriend {
-    color: var(--white);
+    color: $white;
     margin-bottom: 5px;
 }
 

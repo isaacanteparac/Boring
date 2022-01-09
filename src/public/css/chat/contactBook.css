@@ -1,11 +1,18 @@
+/*NOTE: DO NOT COPY CONTENT*/
+/*NOTE:CENTER ELEMENTS*/
+/*NOTE: PLACE ELEMENTS IN CENTERED COLUMANS*/
+/*NOTE: ROUND EDGES*/
+/*NOTE:BALL MOVEMENT*/
+/*NOTE:SIDE BODY*/
+/*NOTE: LOGO COLORS*/
+/*NOTE:BORDER RADIUS*/
+/*NOTE: FONT-SIZE*/
+/*NOTE: FONT TYPE*/
 /*NOTE: BACKGROUND*/
 /*NOTE: TRANSPARENT*/
-/*NOTE: ALERT MESSAGE*/
 /*NOTE: BORDER*/
 /*NOTE: TEXT*/
 /*NOTE: BUTTON*/
-/*NOTE:TRASLATE BALL*/
-/*NOTE:BODY SIDE*/
 .boxFriends {
   margin-bottom: 60px;
   width: 100%;
@@ -16,30 +23,30 @@
 .contentFriend {
   display: flex;
   align-items: center;
-  flex-direction: column;
   justify-content: center;
+  flex-direction: column;
   margin: auto;
   margin-top: 15px;
   width: 34%;
   border-radius: 20px;
-  border: 1px solid var(--borderBlack);
+  border: 1px solid #cccccc;
   padding: 0;
-  background-color: var(--backgroundComponent); }
+  background-color: #fff; }
   .contentFriend:active {
-    background-color: var(--colorActiveBtn); }
+    background-color: #b6b3b3; }
   .contentFriend.contentOnePost {
-    border-bottom-left-radius: var(--borderRadioBig);
-    border-bottom-right-radius: var(--borderRadioBig); }
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px; }
 
 .nameFriend {
   margin: 0;
-  font-size: 1.1rem;
-  color: var(--white);
+  font-size: 17.6px;
+  color: #000;
   margin-bottom: 3px;
   text-align: center; }
 
 .usernameFriend {
-  color: var(--white);
+  color: #000;
   margin-bottom: 5px; }
 
 .photoContact {

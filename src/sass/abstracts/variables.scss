@@ -1,0 +1,111 @@
+$blueLigth: #1040e2;
+$blueDark: #133297;
+$redLigth: #df1937;
+$redDark: #b1162d;
+$maxHeightContentPost: 490px;
+$maxWidthContentPost: 326px;
+
+
+$loaders:(
+    ballcolor: #fff,
+    balltrasnform: rotate(90deg)
+);
+
+
+/*NOTE: LOGO COLORS*/
+$logo: (
+    first: #27fc18,
+    second: #e3ff13,
+    third: #006aff,
+    fourth: #fa1717,
+    leftRigthWidth: 12px,
+    leftRigthRadius: 6px,
+    heigth_: 12px,
+    top_:13px,
+    fontsize: 30px,
+    fontweight: 700
+);
+
+/*NOTE:BORDER RADIUS*/
+$borderRadius:(
+    extrabig: 30px,
+    big: 20px,
+    medium: 15px,
+    small: 10px,    
+    null: none
+);
+
+/*NOTE: FONT-SIZE*/
+$fontSize:(
+    rem_1: 17.6px,
+    rem: 16px,
+    big:20px,
+    medium:15px
+
+);
+/*NOTE: FONT TYPE*/
+$fontFamily:(
+    first: 'Segoe UI'
+);
+
+$blurEffect:(
+    big: blur(30px)
+);
+
+$alertMessage:(
+    message: #177bee8f,
+    success: #4dee178f,
+    failed: #ee1e178f,
+    iconmessage: #0f74bc,
+    iconsuccess: #3abc0f,
+    iconfailed: #bc0f0f
+);
+
+$navigation:(
+    divexterwidth: 100%,
+    divexterheigth:50px,
+    divexterbottom: 15px,
+    navWidth: 300px,
+    navheigth:100%,
+    navradius: 50px,
+    icons:30px
+);
+
+/*NOTE: BACKGROUND*/
+$backgroundLeft: #000;
+$backgroundRight: #000;
+$backgrounBody: #e6e6e6;
+$backgroundScroll: #e6e6e6;
+$backgroundComponent: #fff;
+$backgrounWindow: #fff;
+$backgroundFile:  radial-gradient(circle at 0% 0%,
+    #dcdacf 50%, #b1b1b8 66.67%, #8c8ca3 83.33%, #6e6b8f 100%);
+//$backgroundNavigation: rgba(255, 255, 255, 0.146);
+
+/*NOTE: TRANSPARENT*/
+$transparent:#ffffff00;
+$transparentGray: rgba(0, 0, 0, 0.465);
+
+
+
+
+/*NOTE: BORDER*/
+$borderBlack: #cccccc;
+$boderBlurBox: rgba(0, 0, 0, 0.1);
+$borderGrayLigth: #999898;
+$borderRadioBig: 30px;
+
+
+/*NOTE: TEXT*/
+$white: #000;
+$lowlowWhite: #333333;
+$lowWhite: #191919;
+
+
+/*NOTE: BUTTON*/
+$colorActiveBtn: #b6b3b3;
+$btnInteractionPost: #d6d2d2a1;
+$colorIconsHeadMenu: #000;
+$actionBtnDefaul: #B9b5b5;
+
+$leftoverBoxDark: #7b7b7b;

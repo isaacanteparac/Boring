@@ -1,8 +1,5 @@
-* {
-    outline: none;
-    cursor: default;
-}
-
+@import "../abstracts/mixis.scss";
+@import "../abstracts/variables.scss";
 
 #boxCreatePublication{
     display: none;
@@ -11,60 +8,53 @@
 .boxNewPost {
     padding: 0;
     padding: 15px;
-    width: var(--maxWidthContentPost);
+    width: $maxWidthContentPost;
     display: flex;
     justify-content: center;
-
 }
 
-.contentNewPost .subtitle{
-    color: var(--blueDark);
-}
 
 .contentNewPost {
     width: 100%;
     display: flex;
     flex-direction: column;
+    background-color: $backgroundComponent;
+    border-radius: $borderRadioBig;
+    padding: 5px;
 }
 
 .contentTypeFile {
     display: flex;
     position: relative;
     float: left;
-    margin-left: 5px;
+    margin-left: 15px;
     bottom: 30px;
 }
 
 .fileUpload {
-    background: var(--transp);
-    width: 30px;
-    height: 30px;
+    background: $transparent;
+    @include roundedBorder(30px, 30px, 10px);
     overflow: hidden;
     position: relative;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
+    @include centerPositionColumn;
     cursor: pointer;
     margin: 0 1px;
-    border-radius: 10px;
+
+    input.upload {
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin: 0;
+        padding: 0;
+        font-size: 20px;
+        opacity: 0;
+        filter: alpha(opacity=0);
+        width: 148px;
+        height: 46px;
+        cursor: pointer;
+    }
+    
 }
-
-.fileUpload input.upload {
-    position: absolute;
-    top: 0;
-    right: 0;
-    margin: 0;
-    padding: 0;
-    font-size: 20px;
-    opacity: 0;
-    filter: alpha(opacity=0);
-    width: 148px;
-    height: 46px;
-    cursor: pointer;
-}
-
-
 
 input[type="file"] {
     position: fixed;
@@ -72,8 +62,11 @@ input[type="file"] {
     bottom: 100%;
 }
 
+
+
+
 .custom-file-upload {
-    border: 1px solid var(--lowlowWhite);
+    border: 1px solid $lowlowWhite;
     display: inline-block;
     padding: 6px 12px;
     cursor: pointer;
@@ -81,57 +74,55 @@ input[type="file"] {
 
 .iconsNewPost {
     width: 30px;
-    color: var(--blueLigth)!important;
-}
+    color: $blueLigth!important;
 
-.iconsNewPost:hover {
-    color: black!important;
+    &:hover {
+        color: black!important;
+    }
 }
 
 .divBtnUpadateBottom {
     position: relative;
     top: 50%;
-    /*display: flex;*/
-    /*justify-content: right;*/
 }
 
 .btnNewPost {
     border: none;
-    background-color: var(--blueLigth);
+    background-color: $blueLigth;
     float: right;
     color: white;
     font-size: 20px;
-    border-radius: 20px;
     text-align: center;
-    width: 70px;
-    height: 30px;
+    @include roundedBorder(70px, 30px, 20px);
     margin-right: 5px;
     margin-top: 30px;
+
+    &:active {
+        background-color: $blueDark;
+    }
 }
 
-.btnNewPost:active {
-    background-color: var(--blueDark);
-}
+
 
 .divTypeExclusi {
     margin-top: 10px;
     display: flex;
     align-items: center;
     padding-left: 10px;
+
+    label {
+        color: $white;
+        margin-left: 5px;
+        margin-right: 10px;
+        font-size: 16px;
+    }
+
 }
 
-.divTypeExclusi label {
-    color: var(--white);
-    margin-left: 5px;
-    margin-right: 10px;
-    font-size: 16px;
-}
 
 .divTypeContent {
     margin-top: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include centerPosition;
 }
 
 .optionsTypeContent {
@@ -139,43 +130,42 @@ input[type="file"] {
     margin-top: 20px;
     margin-left: 14px;
     position: relative;
-    background-color: var(--transp);
+    background-color: $transparent;
     border: none;
     color: white;
-    border-bottom: 1px solid var(--borderGrayLigth);
+    border-bottom: 1px solid $borderGrayLigth;
     text-transform: capitalize;
     font-size: 16px;
 }
 
 .optionsContent {
-    background-color: var(--backgroundComponent);
+    background: $backgroundComponent;
     text-decoration: none;
     border: none;
 }
 
-.descriptionNewPost textarea {
-    background-color: var(--transp);
-    margin-left: 10px;
-    border: none;
-    color: var(--white);
-    /*border-bottom: 1px solid var(--borderGrayLigth);*/
-    width: 90%;
-    font-size: 16px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    overflow: auto;
-    outline: none;
-    box-sizing: border-box;
-    resize: none;
-    max-height: 76px;
+.descriptionNewPost {
+    textarea {
+        background-color: $transparent;
+        margin-left: 10px;
+        border: none;
+        color: $white;
+        width: 90%;
+        font-size: 16px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        overflow: auto;
+        outline: none;
+        box-sizing: border-box;
+        resize: none;
+        max-height: 76px;
+    }
 }
 
 
 .subtitle {
-    color: var(--white);
+    color: $white;
     width: 80%;
-    margin: 0;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin: 10px 0;
     margin-left: 10px;
 }
 
@@ -184,28 +174,23 @@ input[type="file"] {
     width: 250px;
     height: 20px;
     position: fixed;
-    
 }
 
 .btnClose{
-    background-color: var(--transp);
+    background-color: $transparent;
     position: relative;
     bottom: 5px;
     right: 5px;
-    max-height: 20px;
     float: right;
     font-size: 25px;
     max-width:50px;
     max-height: 50px;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none; 
-    color: var(--redLigth)!important;
-}
+    @include notUnderline;
+    color: $redLigth!important;
 
-.btnClose:active {
-    color: var(--redDark)!important;
+    &:active {
+        color: $redDark!important;
+    }
 }
 
 
@@ -213,53 +198,38 @@ input[type="file"] {
     float: left;
     position: relative;
     left: 8px;
-    color: var(--borderGrayLigth)!important;
+    color: $borderGrayLigth!important;
+    &:active{
+        color: $white!important;
+    }
 }
 
-#eliminarFileCreatePublication:active{
-    color: var(--white)!important;
-}
 
 .preview{
     display: none;
-    background-image: var(--backgroundFile);
-    max-width: 250px;
-    max-height: 250px;
+    background-image: $backgroundFile;
+    @include roundedBorderMax(250px, 250px, 10px);
     margin: auto;
-    border-radius: 10px;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none; 
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include notUnderline;
+    @include centerPosition;
 
 }
 
 
 .previewFile{
-    max-width: 250px;
-    max-height: 250px;
     margin: auto;
-    border-radius: 10px;
-    user-drag: none; 
-    -moz-user-select: none;
-    -webkit-user-drag: none;
-    -webkit-user-select: none;
-    -ms-user-select: none;
+    @include roundedBorderMax(250px, 250px, 10px);
+    @include notUnderline;
 }
 
 .optionViewPreview{
     display: none;
-    width: 250px;
-    height: 20px;
+    @include roundedBorder(250px, 20px, 10px);
     margin: auto;
     margin-top: 5px;
     display: flex;
     align-items: center;
-    border-radius: 10px;
-    background-color: var(--white);
+    background-color: $white;
 }
 
 

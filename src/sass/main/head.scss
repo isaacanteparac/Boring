@@ -1,4 +1,4 @@
-* {
+/** {
     --blueLigth: #1040e2;
     --blueDark: #133297;
     --redLigth: #df1937;
@@ -9,7 +9,6 @@
     --borderGrayLigth: #999898;
     --colorBallLoaser: #fff;
     --heightNav: 50px;
-    /*----------------------*/
     --white: #000;
     --lowlowWhite: #333333;
     --lowWhite: #191919;
@@ -27,10 +26,11 @@
     --backgroundFile:  radial-gradient(circle at 0% 0%,
     #dcdacf 50%, #b1b1b8 66.67%, #8c8ca3 83.33%, #6e6b8f 100%);
     --backgroundNavigation: rgba(255, 255, 255, 0.68);
-    /*---------------------------*/
     outline: none;
     cursor: default;
-}
+}*/
+@import "../abstracts/mixis.scss";
+@import "../abstracts/variables.scss";
 
 .head {
     display: none;
@@ -43,7 +43,7 @@
 }
 
 .content-head {
-    background-color: var(--backgroundComponent);
+    background: $backgroundComponent;
     width: 100%;
     height: 50px;
     margin: 0 auto;
@@ -51,23 +51,27 @@
     padding-top: 5px;
     display: flex;
     justify-content: center;
-    border-bottom: 1px solid var(--borderBlack);
+    border-bottom: 1px solid $borderBlack;
 }
 
-.head ul.subContent-head {
-    margin: 0;
-    padding: 0;
-    display: inline-block;
+.head {
+    ul.subContent-head {
+        margin: 0;
+        padding: 0;
+        display: inline-block;
+
+        li {
+            display: inline-block;
+            margin: 0 10px;
+        }
+    }
 }
 
-.head ul.subContent-head li {
-    display: inline-block;
-    margin: 0 10px;
-}
+
 
 .links {
-    color: var(--white);
-    font-size: 23px;
+    color: $white;
+    font-size: map-get($fontSize, big );
 }
 
 .logo-head {
@@ -76,35 +80,36 @@
     padding: 0;
     text-align: center;
 }
+
 .logo{
     display: block;
     text-decoration: none;
     float: left;
 
-}
+    .logoTop{
+        border-left: 2px solid map-get($logo, first );
+        border-right: 2px solid map-get($logo, second );
+        border-right-width: map-get($logo, leftRigthWidth);
+        border-left-width: map-get($logo, leftRigthWidth);
+        border-top-right-radius: map-get($logo, leftRigthRadius);
+        border-top-left-radius: map-get($logo, leftRigthRadius);
+        height: map-get($logo, heigth_);
+        position: relative;
+        top: map-get($logo, top_);
+    }
 
-.logo .logoTop{
-    border-left: 2px solid #0fee7e;
-    border-right: 2px solid #ffff00;
-    border-right-width: 12px;
-    border-left-width: 12px;
-    border-top-right-radius: 6px;
-    border-top-left-radius: 6px;
-    height: 12px;
-    position: relative;
-    top: 13px;
-}
+    .logoBottom{
+        border-left: 2px solid map-get($logo, third );
+        border-right: 2px solid map-get($logo, fourth );
+        border-right-width: map-get($logo, leftRigthWidth);
+        border-left-width: map-get($logo, leftRigthWidth);
+        border-bottom-left-radius: map-get($logo, leftRigthRadius);;
+        border-bottom-right-radius: map-get($logo, leftRigthRadius);;
+        height: map-get($logo, heigth_);
+        position: relative;
+        top: map-get($logo, top_);
+    }
 
-.logo .logoBottom{
-    border-left: 2px solid #1c1bec;
-    border-right: 2px solid  #ec1c1c;
-    border-right-width: 12px;
-    border-left-width: 12px;
-    border-bottom-left-radius: 6px;
-    border-bottom-right-radius: 6px;
-    height: 12px;
-    position: relative;
-    top: 13px;
 }
 
 .logo-letter {
@@ -112,18 +117,10 @@
     text-decoration: none;
     text-transform: uppercase;
     float: left;
-    font-weight: 700;
-    font-size: 30px;
-    color: var(--white);
-    /*border-left: 2px groove var(--blueLigth);
-    border-right: 2px groove var(--redLigth);
-    border-right-width: 30px;
-    border-left-width: 30px;
-    border-radius: 20px;*/
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none; 
+    font-weight: map-get($logo, fontweight );
+    font-size: map-get($logo, fontsize);
+    color: $white;
+    @include notUnderline;
 }
 
 .divbtnRight {
@@ -143,33 +140,27 @@
 }
 
 .btnHead {
-    background-color: var(--transp);
-    width: 40px;
-    height: 40px;
-    border-radius: 20px;
-    border: none;
+    background-color: $transparent;
+    @include roundedBorder(40px, 40px, map-get($borderRadius, big));
+    border: map-get($borderRadius, null);
 }
 
 .iconHead {
-    color: var(--colorIconsHeadMenu)!important;
+    color: $colorIconsHeadMenu!important;
     width: 20px;
     height: 20px;
-}
 
-.iconHead:active {
-    color: var(--white)!important;
+    &:active {
+        color: $white!important;
+    }
 }
 
 .LoaderBall {
-    width: 75%;
-    height: 50px;
+    @include roundedBorder(75%, 50px, map-get($borderRadius, small));
     margin: 10px 0;
-    border-radius: 10px;
-    border: none;
-    background: var(--blueLigth);
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    border: map-get($borderRadius, null);
+    background: $blueLigth;
+    @include centerPosition;
     display: none;
 }
 
@@ -181,14 +172,15 @@
 }
 
 .modeDarkLigth{
-    color: var(--white)!important;
+    color: $white!important;
     width: 20px;
     height: 20px;
+
+    &:active{
+        color: $borderGrayLigth!important;
+    }
 }
 
-.modeDarkLigth :active{
-    color: var(--borderGrayLigth)!important;
-}
 
 #modeMoon{
     display: block;
