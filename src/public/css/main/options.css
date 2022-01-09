@@ -27,9 +27,10 @@
   top: 50px;
   backdrop-filter: blur(10px); }
 
-.contentBoxBlur {
+div.contentBoxBlur {
   position: relative;
-  width: 80%;
+  width: 300px;
+  max-height: 450px;
   background-color: #fff;
   border-radius: 30px;
   -webkit-box-shadow: 2px 2px 5px #7b7b7b;
@@ -37,8 +38,8 @@
   filter: shadow(color=#7b7b7b, direction=135, strength=2);
   padding: 10px;
   margin: auto;
-  margin-top: 60px; }
-  .contentBoxBlur .contentChat {
+  margin-top: 40px; }
+  div.contentBoxBlur .contentChat {
     border-radius: 30px; }
 
 .optionsBox {
@@ -75,4 +76,7 @@
     color: #1040e2 !important; }
 
 #boxOptionsUserFriendChat {
+  display: none; }
+
+#viewPublication {
   display: none; }

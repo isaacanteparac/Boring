@@ -15,9 +15,10 @@
     backdrop-filter: map-get($blurEffect, small );
 }
 
-.contentBoxBlur {
+div.contentBoxBlur {
     position: relative;
-    width: 80%;
+    width: map-get($post, maxCreateWidth );
+    max-height: map-get($post, maxCreateHeigth);
     background-color: $backgrounWindow;
     border-radius: map-get($borderRadius, extrabig );
     -webkit-box-shadow: 2px 2px 5px $leftoverBoxDark;
@@ -25,7 +26,7 @@
     filter: shadow(color=$leftoverBoxDark, direction=135, strength=2);
     padding: 10px;
     margin: auto;
-    margin-top: 60px;
+    margin-top: 40px;
 
     .contentChat {
         border-radius: map-get($borderRadius, extrabig );
@@ -79,5 +80,9 @@
 
 
 #boxOptionsUserFriendChat{
+    display: none;
+}
+
+#viewPublication{
     display: none;
 }

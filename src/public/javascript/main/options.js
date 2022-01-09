@@ -110,7 +110,7 @@ $(document).ready( () =>{
     $("#modeMoon").click( () =>{
         $("#modeMoon").hide();
         $("#modeSun").show();
-        $("*").css({
+        document.documentElement.style.setProperty({
             "$white": "#fff",
             "$lowlowWhite": "#b6b6b6",
             "$lowWhite": "#e7e7e7",

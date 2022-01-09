@@ -3,7 +3,7 @@
 @import "./main/app.scss";
 @import "./main/alert.scss";
 @import "./main/navigation.scss";
-@import "./main/createPublication.scss";
+
 @import "./main/options.scss";
 
 /*LOADERS*/
@@ -19,6 +19,8 @@
 /*PUBLIC*/
 @import "./publication/publication.scss";
 @import "./publication/comment.scss";
+@import "./publication/createPublication.scss";
+@import "./publication/preview.scss";
 
 /*PROFILE*/
 @import "./profile/profile.scss";
