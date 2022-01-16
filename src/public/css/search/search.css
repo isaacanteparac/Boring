@@ -13,25 +13,7 @@
 /*NOTE: BORDER*/
 /*NOTE: TEXT*/
 /*NOTE: BUTTON*/
-/*MOON
-$white: #fff;
-$lowlowWhite: #b6b6b6;
-$lowWhite: #e7e7e7;
-$backgroundComponent: #050505;
-$colorActiveBtn: #000000;
-$borderBlack: #0d0d0d;
-$backgrounBody: #1a1a1a;
-$backgroundScroll: #101113;
-$btnInteractionPost: #070707a1;
-$colorIconsHeadMenu: #fff;
-$backgrounWindow: #000;
-$actionBtnDefaul: #1f1f1f;
-$leftoverBoxDark: #101113;
-$boderBlurBox: rgba(255, 255, 255, 0.1);
-$backgroundFile:  radial-gradient(circle at 0% 0%, 
-    #313130 50%, #222127 66.67%, #15131e 83.33%, #080016 100%);
-$backgroundNavigation: rgba(0, 0, 0, 0.68);
-*/
+/*MOON*/
 .divSearch {
   padding-top: 5px;
   -moz-user-select: none;
@@ -40,7 +22,7 @@ $backgroundNavigation: rgba(0, 0, 0, 0.68);
   -ms-user-select: none; }
 
 .barSearch {
-  background-color: #fff;
+  background-color: #050505;
   margin: 0;
   position: relative;
   bottom: 1px;
@@ -94,21 +76,21 @@ $backgroundNavigation: rgba(0, 0, 0, 0.68);
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background-color: #fff;
+  background-color: #050505;
   color: #1040e2;
-  border: 1px solid #b6b3b3;
+  border: 1px solid #000000;
   padding: 2px;
   font-size: 15px; }
   .options:active {
     border: 2px solid #1040e2;
-    color: #000;
+    color: #fff;
     background-color: rgba(0, 0, 0, 0.465); }
 
 .contentSearchPost {
   display: flex;
   flex-wrap: wrap; }
   .contentSearchPost .postSearchUser {
-    background-image: radial-gradient(circle at 0% 0%, #b1b1b8 50%, #b1b1b8 66.67%, #8c8ca3 83.33%, #6e6b8f 100%);
+    background-image: radial-gradient(circle at 0% 0%, #313130 50%, #222127 66.67%, #15131e 83.33%, #080016 100%);
     width: 105px;
     height: 105px;
     border-radius: 15px;
@@ -132,10 +114,10 @@ $backgroundNavigation: rgba(0, 0, 0, 0.68);
       -ms-user-select: none; }
 
 .userSearchUser {
-  background-color: #fff;
+  background-color: #050505;
   margin: auto;
   margin-top: 5px;
-  border: 2px solid #b6b3b3;
+  border: 2px solid #000000;
   width: 98%;
   height: 110px;
   border-radius: 15px; }
@@ -147,7 +129,7 @@ $backgroundNavigation: rgba(0, 0, 0, 0.68);
     top: 10px;
     left: 5px; }
   .userSearchUser:active {
-    background: #b6b3b3; }
+    background: #000000; }
 
 .userInfoSearch {
   position: relative;
@@ -166,20 +148,20 @@ $backgroundNavigation: rgba(0, 0, 0, 0.68);
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;
-      color: #333333; }
+      color: #b6b6b6; }
 
 .nameUserSearch {
   font-size: 16px;
   font-weight: 700;
-  color: #000; }
+  color: #fff; }
 
 .usernameUserSearch {
   font-size: 15px;
   font-weight: 500;
-  color: #333333; }
+  color: #b6b6b6; }
 
 .infoFollowserSearch {
-  color: #333333;
+  color: #b6b6b6;
   font-size: 15px;
   position: relative;
   top: 20px; }
@@ -223,4 +205,4 @@ svg.allpost {
     justify-content: center;
     color: #1040e2 !important; }
     .addUserSearch button:active {
-      color: #000 !important; }
+      color: #fff !important; }

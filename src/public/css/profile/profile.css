@@ -13,25 +13,7 @@
 /*NOTE: BORDER*/
 /*NOTE: TEXT*/
 /*NOTE: BUTTON*/
-/*MOON
-$white: #fff;
-$lowlowWhite: #b6b6b6;
-$lowWhite: #e7e7e7;
-$backgroundComponent: #050505;
-$colorActiveBtn: #000000;
-$borderBlack: #0d0d0d;
-$backgrounBody: #1a1a1a;
-$backgroundScroll: #101113;
-$btnInteractionPost: #070707a1;
-$colorIconsHeadMenu: #fff;
-$backgrounWindow: #000;
-$actionBtnDefaul: #1f1f1f;
-$leftoverBoxDark: #101113;
-$boderBlurBox: rgba(255, 255, 255, 0.1);
-$backgroundFile:  radial-gradient(circle at 0% 0%, 
-    #313130 50%, #222127 66.67%, #15131e 83.33%, #080016 100%);
-$backgroundNavigation: rgba(0, 0, 0, 0.68);
-*/
+/*MOON*/
 .profile {
   width: 100%;
   height: 100%;
@@ -48,7 +30,7 @@ $backgroundNavigation: rgba(0, 0, 0, 0.68);
   justify-content: center;
   flex-direction: column;
   width: 100%;
-  border-bottom: 1px solid #cccccc;
+  border-bottom: 1px solid #0d0d0d;
   padding-bottom: 10px;
   -moz-user-select: none;
   -webkit-user-drag: none;
@@ -58,7 +40,7 @@ $backgroundNavigation: rgba(0, 0, 0, 0.68);
     width: 90px;
     height: 80px;
     border-radius: 20px;
-    background-image: radial-gradient(circle at 0% 0%, #b1b1b8 50%, #b1b1b8 66.67%, #8c8ca3 83.33%, #6e6b8f 100%);
+    background-image: radial-gradient(circle at 0% 0%, #313130 50%, #222127 66.67%, #15131e 83.33%, #080016 100%);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -93,7 +75,7 @@ $backgroundNavigation: rgba(0, 0, 0, 0.68);
   flex-direction: column;
   padding: 0;
   margin: 0;
-  color: #000; }
+  color: #fff; }
   .informationUser h4 {
     margin: 0;
     font-size: 20px; }
@@ -115,7 +97,7 @@ $backgroundNavigation: rgba(0, 0, 0, 0.68);
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #000;
+  color: #fff;
   text-align: center; }
   .listLine .elementList {
     display: inline;
@@ -133,7 +115,7 @@ $backgroundNavigation: rgba(0, 0, 0, 0.68);
     -webkit-user-select: none;
     -ms-user-select: none; }
     .listLine .elementList:active {
-      background-color: #fff; }
+      background-color: #050505; }
 
 .optionsSearchPost {
   margin-bottom: 5px; }
@@ -146,7 +128,7 @@ $backgroundNavigation: rgba(0, 0, 0, 0.68);
   flex-wrap: wrap; }
 
 .onePost {
-  background-image: radial-gradient(circle at 0% 0%, #b1b1b8 50%, #b1b1b8 66.67%, #8c8ca3 83.33%, #6e6b8f 100%);
+  background-image: radial-gradient(circle at 0% 0%, #313130 50%, #222127 66.67%, #15131e 83.33%, #080016 100%);
   width: 45%;
   height: 200px;
   border-radius: 15px;
@@ -200,7 +182,7 @@ $backgroundNavigation: rgba(0, 0, 0, 0.68);
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background-color: #fff;
+  background-color: #050505;
   color: #1040e2 !important; }
   .btnFilesUser:active {
     background-color: rgba(0, 0, 0, 0.465); }

@@ -109,9 +109,9 @@
     top: 10px;
     left: 5px;
   }
-  &:active{
+  &:active {
     background: $colorActiveBtn;
-}
+  }
 }
 
 .userInfoSearch {
@@ -154,27 +154,26 @@
   position: relative;
   top: 20px;
 
-  label{
+  label {
     display: inline-block;
     margin: 0 3px;
   }
 }
 
-
-.iconUser{
-    width: 15px;
-    float: left;
+.iconUser {
+  width: 15px;
+  float: left;
 }
 
-svg.allFollowing{
-    color:map-get($logo, fourth )!important;
+svg.allFollowing {
+  color: map-get($logo, fourth) !important;
 }
 
-svg.allpost{
-    color:map-get($logo, first )!important;
+svg.allpost {
+  color: map-get($logo, first) !important;
 }
 
-.addUserSearch{
+.addUserSearch {
   position: relative;
   bottom: 80px;
   left: 250px;
@@ -182,22 +181,21 @@ svg.allpost{
   @include roundedBorder(30px, 30px, 15px);
   @include centerPosition;
 
-  .iconUser{
+  .iconUser {
     width: 30px;
     float: none;
   }
 
-  button{
+  button {
     background-color: $transparent;
     text-decoration: none;
-    border:  none;
+    border: none;
     @include roundedBorder(30px, 30px, 15px);
     @include centerPosition;
-    color: $blueLigth!important;
+    color: $blueLigth !important;
 
-    &:active{
-      color: $white!important;
+    &:active {
+      color: $white !important;
     }
   }
-
 }

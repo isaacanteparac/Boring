@@ -17,6 +17,7 @@
 /*NOTE: BORDER*/
 /*NOTE: TEXT*/
 /*NOTE: BUTTON*/
+/*MOON*/
 .divBlur {
   position: fixed;
   width: 100%;
@@ -31,11 +32,11 @@ div.contentBoxBlur {
   position: relative;
   width: 300px;
   max-height: 450px;
-  background-color: #fff;
+  background-color: #000;
   border-radius: 30px;
-  -webkit-box-shadow: 2px 2px 5px #7b7b7b;
-  -moz-box-shadow: 2px 2px 5px #7b7b7b;
-  filter: shadow(color=#7b7b7b, direction=135, strength=2);
+  -webkit-box-shadow: 2px 2px 5px #101113;
+  -moz-box-shadow: 2px 2px 5px #101113;
+  filter: shadow(color=#101113, direction=135, strength=2);
   padding: 10px;
   margin: auto;
   margin-top: 40px; }
@@ -53,15 +54,15 @@ div.contentBoxBlur {
   -webkit-user-select: none;
   -ms-user-select: none; }
   .optionsBox:active {
-    background-color: #B9b5b5; }
+    background-color: #1f1f1f; }
   .optionsBox h4 {
-    color: #000;
+    color: #fff;
     position: relative;
     bottom: 20px; }
   .optionsBox .iconsOp {
     margin-right: 10px; }
     .optionsBox .iconsOp:active {
-      color: #000 !important; }
+      color: #fff !important; }
 
 .btnOptions {
   background-color: #ffffff00;
@@ -71,7 +72,7 @@ div.contentBoxBlur {
   margin-right: 5px; }
 
 .iconsOp {
-  color: #000 !important; }
+  color: #fff !important; }
   .iconsOp:active {
     color: #1040e2 !important; }
 

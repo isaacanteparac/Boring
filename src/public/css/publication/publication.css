@@ -13,6 +13,7 @@
 /*NOTE: BORDER*/
 /*NOTE: TEXT*/
 /*NOTE: BUTTON*/
+/*MOON*/
 div.post, div.viewPostContentuser {
   width: 96%;
   margin: auto;
@@ -33,7 +34,7 @@ div.viewPostContentuser {
   padding: 0;
   width: 326px;
   max-height: 490px;
-  box-shadow: 5px 5px 5px #7b7b7b; }
+  box-shadow: 5px 5px 5px #101113; }
 
 .information {
   border-radius: 30px;
@@ -75,7 +76,7 @@ div.viewPostContentuser {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: radial-gradient(circle at 0% 0%, #b1b1b8 50%, #b1b1b8 66.67%, #8c8ca3 83.33%, #6e6b8f 100%);
+  background-image: radial-gradient(circle at 0% 0%, #313130 50%, #222127 66.67%, #15131e 83.33%, #080016 100%);
   overflow: hidden; }
 
 .contentImagen, .contentVideo {
@@ -93,7 +94,7 @@ div.viewPostContentuser {
   height: 40px;
   border-radius: 30px;
   backdrop-filter: blur(5px);
-  border: 2px solid rgba(0, 0, 0, 0.1);
+  border: 2px solid rgba(255, 255, 255, 0.1);
   float: right;
   position: relative;
   bottom: 105px;
