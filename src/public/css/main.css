@@ -14,6 +14,25 @@
 /*NOTE: BORDER*/
 /*NOTE: TEXT*/
 /*NOTE: BUTTON*/
+/*MOON
+$white: #fff;
+$lowlowWhite: #b6b6b6;
+$lowWhite: #e7e7e7;
+$backgroundComponent: #050505;
+$colorActiveBtn: #000000;
+$borderBlack: #0d0d0d;
+$backgrounBody: #1a1a1a;
+$backgroundScroll: #101113;
+$btnInteractionPost: #070707a1;
+$colorIconsHeadMenu: #fff;
+$backgrounWindow: #000;
+$actionBtnDefaul: #1f1f1f;
+$leftoverBoxDark: #101113;
+$boderBlurBox: rgba(255, 255, 255, 0.1);
+$backgroundFile:  radial-gradient(circle at 0% 0%, 
+    #313130 50%, #222127 66.67%, #15131e 83.33%, #080016 100%);
+$backgroundNavigation: rgba(0, 0, 0, 0.68);
+*/
 /*main*/
 /** {
     --blueLigth: #1040e2;
@@ -61,6 +80,25 @@
 /*NOTE: BORDER*/
 /*NOTE: TEXT*/
 /*NOTE: BUTTON*/
+/*MOON
+$white: #fff;
+$lowlowWhite: #b6b6b6;
+$lowWhite: #e7e7e7;
+$backgroundComponent: #050505;
+$colorActiveBtn: #000000;
+$borderBlack: #0d0d0d;
+$backgrounBody: #1a1a1a;
+$backgroundScroll: #101113;
+$btnInteractionPost: #070707a1;
+$colorIconsHeadMenu: #fff;
+$backgrounWindow: #000;
+$actionBtnDefaul: #1f1f1f;
+$leftoverBoxDark: #101113;
+$boderBlurBox: rgba(255, 255, 255, 0.1);
+$backgroundFile:  radial-gradient(circle at 0% 0%, 
+    #313130 50%, #222127 66.67%, #15131e 83.33%, #080016 100%);
+$backgroundNavigation: rgba(0, 0, 0, 0.68);
+*/
 @import url(https://fonts.googleapis.com/css2?family=Azeret+Mono&display=swap);
 .head {
   display: none;
@@ -192,7 +230,7 @@
     color: #999898 !important; }
 
 #modeMoon {
-  display: block; }
+  display: none; }
 
 #modeSun {
   display: none; }
@@ -212,6 +250,25 @@
 /*NOTE: BORDER*/
 /*NOTE: TEXT*/
 /*NOTE: BUTTON*/
+/*MOON
+$white: #fff;
+$lowlowWhite: #b6b6b6;
+$lowWhite: #e7e7e7;
+$backgroundComponent: #050505;
+$colorActiveBtn: #000000;
+$borderBlack: #0d0d0d;
+$backgrounBody: #1a1a1a;
+$backgroundScroll: #101113;
+$btnInteractionPost: #070707a1;
+$colorIconsHeadMenu: #fff;
+$backgrounWindow: #000;
+$actionBtnDefaul: #1f1f1f;
+$leftoverBoxDark: #101113;
+$boderBlurBox: rgba(255, 255, 255, 0.1);
+$backgroundFile:  radial-gradient(circle at 0% 0%, 
+    #313130 50%, #222127 66.67%, #15131e 83.33%, #080016 100%);
+$backgroundNavigation: rgba(0, 0, 0, 0.68);
+*/
 body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu',  'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -291,6 +348,216 @@ code {
 /*NOTE: BORDER*/
 /*NOTE: TEXT*/
 /*NOTE: BUTTON*/
+/*MOON
+$white: #fff;
+$lowlowWhite: #b6b6b6;
+$lowWhite: #e7e7e7;
+$backgroundComponent: #050505;
+$colorActiveBtn: #000000;
+$borderBlack: #0d0d0d;
+$backgrounBody: #1a1a1a;
+$backgroundScroll: #101113;
+$btnInteractionPost: #070707a1;
+$colorIconsHeadMenu: #fff;
+$backgrounWindow: #000;
+$actionBtnDefaul: #1f1f1f;
+$leftoverBoxDark: #101113;
+$boderBlurBox: rgba(255, 255, 255, 0.1);
+$backgroundFile:  radial-gradient(circle at 0% 0%, 
+    #313130 50%, #222127 66.67%, #15131e 83.33%, #080016 100%);
+$backgroundNavigation: rgba(0, 0, 0, 0.68);
+*/
+.navInfer {
+  display: none;
+  position: fixed;
+  bottom: 15px;
+  width: 100%;
+  height: 50px;
+  transition: all 0.5s;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  border: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none; }
+  .navInfer ul.navbar-menu {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(30px);
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    width: 300px;
+    height: 100%;
+    border-radius: 50px;
+    margin: auto; }
+    .navInfer ul.navbar-menu li {
+      display: inline-block;
+      text-transform: capitalize; }
+
+.links-footer {
+  font-size: 50px;
+  margin: 0 25px;
+  text-decoration: none; }
+  .links-footer :hover {
+    color: #1040e2; }
+
+.btnFooter {
+  background-color: #ffffff00;
+  margin: 0 5px;
+  padding-top: 5px;
+  position: relative;
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  border: none; }
+
+.iconsFooter {
+  width: 30px;
+  color: #000 !important; }
+  .iconsFooter:active {
+    color: #1040e2 !important; }
+
+* {
+  cursor: default;
+  outline: none; }
+
+/*NOTE: DO NOT COPY CONTENT*/
+/*NOTE:CENTER ELEMENTS*/
+/*NOTE: PLACE ELEMENTS IN CENTERED COLUMANS*/
+/*NOTE: ROUND EDGES*/
+/*NOTE:BALL MOVEMENT*/
+/*NOTE:SIDE BODY*/
+/*NOTE: LOGO COLORS*/
+/*NOTE:BORDER RADIUS*/
+/*NOTE: FONT-SIZE*/
+/*NOTE: FONT TYPE*/
+/*NOTE: BACKGROUND*/
+/*NOTE: TRANSPARENT*/
+/*NOTE: BORDER*/
+/*NOTE: TEXT*/
+/*NOTE: BUTTON*/
+/*MOON
+$white: #fff;
+$lowlowWhite: #b6b6b6;
+$lowWhite: #e7e7e7;
+$backgroundComponent: #050505;
+$colorActiveBtn: #000000;
+$borderBlack: #0d0d0d;
+$backgrounBody: #1a1a1a;
+$backgroundScroll: #101113;
+$btnInteractionPost: #070707a1;
+$colorIconsHeadMenu: #fff;
+$backgrounWindow: #000;
+$actionBtnDefaul: #1f1f1f;
+$leftoverBoxDark: #101113;
+$boderBlurBox: rgba(255, 255, 255, 0.1);
+$backgroundFile:  radial-gradient(circle at 0% 0%, 
+    #313130 50%, #222127 66.67%, #15131e 83.33%, #080016 100%);
+$backgroundNavigation: rgba(0, 0, 0, 0.68);
+*/
+.divBlur {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 50px;
+  backdrop-filter: blur(10px); }
+
+div.contentBoxBlur {
+  position: relative;
+  width: 300px;
+  max-height: 450px;
+  background-color: #fff;
+  border-radius: 30px;
+  -webkit-box-shadow: 2px 2px 5px #7b7b7b;
+  -moz-box-shadow: 2px 2px 5px #7b7b7b;
+  filter: shadow(color=#7b7b7b, direction=135, strength=2);
+  padding: 10px;
+  margin: auto;
+  margin-top: 40px; }
+  div.contentBoxBlur .contentChat {
+    border-radius: 30px; }
+
+.optionsBox {
+  height: 40px;
+  border-radius: 30px;
+  padding-top: 10px;
+  padding-left: 10px;
+  margin: 0 10px;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none; }
+  .optionsBox:active {
+    background-color: #B9b5b5; }
+  .optionsBox h4 {
+    color: #000;
+    position: relative;
+    bottom: 20px; }
+  .optionsBox .iconsOp {
+    margin-right: 10px; }
+    .optionsBox .iconsOp:active {
+      color: #000 !important; }
+
+.btnOptions {
+  background-color: #ffffff00;
+  width: 30px;
+  height: 30px;
+  border: none;
+  margin-right: 5px; }
+
+.iconsOp {
+  color: #000 !important; }
+  .iconsOp:active {
+    color: #1040e2 !important; }
+
+#boxOptionsUserFriendChat {
+  display: none; }
+
+#viewPublication {
+  display: none; }
+
+/*LOADERS/ALERT*/
+/*NOTE: DO NOT COPY CONTENT*/
+/*NOTE:CENTER ELEMENTS*/
+/*NOTE: PLACE ELEMENTS IN CENTERED COLUMANS*/
+/*NOTE: ROUND EDGES*/
+/*NOTE:BALL MOVEMENT*/
+/*NOTE:SIDE BODY*/
+/*NOTE: LOGO COLORS*/
+/*NOTE:BORDER RADIUS*/
+/*NOTE: FONT-SIZE*/
+/*NOTE: FONT TYPE*/
+/*NOTE: BACKGROUND*/
+/*NOTE: TRANSPARENT*/
+/*NOTE: BORDER*/
+/*NOTE: TEXT*/
+/*NOTE: BUTTON*/
+/*MOON
+$white: #fff;
+$lowlowWhite: #b6b6b6;
+$lowWhite: #e7e7e7;
+$backgroundComponent: #050505;
+$colorActiveBtn: #000000;
+$borderBlack: #0d0d0d;
+$backgrounBody: #1a1a1a;
+$backgroundScroll: #101113;
+$btnInteractionPost: #070707a1;
+$colorIconsHeadMenu: #fff;
+$backgrounWindow: #000;
+$actionBtnDefaul: #1f1f1f;
+$leftoverBoxDark: #101113;
+$boderBlurBox: rgba(255, 255, 255, 0.1);
+$backgroundFile:  radial-gradient(circle at 0% 0%, 
+    #313130 50%, #222127 66.67%, #15131e 83.33%, #080016 100%);
+$backgroundNavigation: rgba(0, 0, 0, 0.68);
+*/
 .alert_message {
   background: #ffffff00;
   display: flex;
@@ -384,159 +651,25 @@ label.iconidMessageFailed {
 /*NOTE: BORDER*/
 /*NOTE: TEXT*/
 /*NOTE: BUTTON*/
-.navInfer {
-  display: none;
-  position: fixed;
-  bottom: 15px;
-  width: 100%;
-  height: 50px;
-  transition: all 0.5s;
-  align-items: center;
-  justify-content: center;
-  border-radius: 10px;
-  border: none;
-  -moz-user-select: none;
-  -webkit-user-drag: none;
-  -webkit-user-select: none;
-  -ms-user-select: none; }
-  .navInfer ul.navbar-menu {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    backdrop-filter: blur(30px);
-    border: 2px solid rgba(0, 0, 0, 0.1);
-    width: 300px;
-    height: 100%;
-    border-radius: 50px;
-    margin: auto; }
-    .navInfer ul.navbar-menu li {
-      display: inline-block;
-      text-transform: capitalize; }
-
-.links-footer {
-  font-size: 50px;
-  margin: 0 25px;
-  text-decoration: none; }
-  .links-footer :hover {
-    color: #1040e2; }
-
-.btnFooter {
-  background-color: #ffffff00;
-  margin: 0 5px;
-  padding-top: 5px;
-  position: relative;
-  width: 40px;
-  height: 40px;
-  border-radius: 10px;
-  border: none; }
-
-.iconsFooter {
-  width: 30px;
-  color: #000 !important; }
-  .iconsFooter:active {
-    color: #1040e2 !important; }
-
-* {
-  cursor: default;
-  outline: none; }
-
-/*NOTE: DO NOT COPY CONTENT*/
-/*NOTE:CENTER ELEMENTS*/
-/*NOTE: PLACE ELEMENTS IN CENTERED COLUMANS*/
-/*NOTE: ROUND EDGES*/
-/*NOTE:BALL MOVEMENT*/
-/*NOTE:SIDE BODY*/
-/*NOTE: LOGO COLORS*/
-/*NOTE:BORDER RADIUS*/
-/*NOTE: FONT-SIZE*/
-/*NOTE: FONT TYPE*/
-/*NOTE: BACKGROUND*/
-/*NOTE: TRANSPARENT*/
-/*NOTE: BORDER*/
-/*NOTE: TEXT*/
-/*NOTE: BUTTON*/
-.divBlur {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  top: 50px;
-  backdrop-filter: blur(10px); }
-
-div.contentBoxBlur {
-  position: relative;
-  width: 300px;
-  max-height: 450px;
-  background-color: #fff;
-  border-radius: 30px;
-  -webkit-box-shadow: 2px 2px 5px #7b7b7b;
-  -moz-box-shadow: 2px 2px 5px #7b7b7b;
-  filter: shadow(color=#7b7b7b, direction=135, strength=2);
-  padding: 10px;
-  margin: auto;
-  margin-top: 40px; }
-  div.contentBoxBlur .contentChat {
-    border-radius: 30px; }
-
-.optionsBox {
-  height: 40px;
-  border-radius: 30px;
-  padding-top: 10px;
-  padding-left: 10px;
-  margin: 0 10px;
-  -moz-user-select: none;
-  -webkit-user-drag: none;
-  -webkit-user-select: none;
-  -ms-user-select: none; }
-  .optionsBox:active {
-    background-color: #B9b5b5; }
-  .optionsBox h4 {
-    color: #000;
-    position: relative;
-    bottom: 20px; }
-  .optionsBox .iconsOp {
-    margin-right: 10px; }
-    .optionsBox .iconsOp:active {
-      color: #000 !important; }
-
-.btnOptions {
-  background-color: #ffffff00;
-  width: 30px;
-  height: 30px;
-  border: none;
-  margin-right: 5px; }
-
-.iconsOp {
-  color: #000 !important; }
-  .iconsOp:active {
-    color: #1040e2 !important; }
-
-#boxOptionsUserFriendChat {
-  display: none; }
-
-#viewPublication {
-  display: none; }
-
-/*LOADERS*/
-/*NOTE: DO NOT COPY CONTENT*/
-/*NOTE:CENTER ELEMENTS*/
-/*NOTE: PLACE ELEMENTS IN CENTERED COLUMANS*/
-/*NOTE: ROUND EDGES*/
-/*NOTE:BALL MOVEMENT*/
-/*NOTE:SIDE BODY*/
-/*NOTE: LOGO COLORS*/
-/*NOTE:BORDER RADIUS*/
-/*NOTE: FONT-SIZE*/
-/*NOTE: FONT TYPE*/
-/*NOTE: BACKGROUND*/
-/*NOTE: TRANSPARENT*/
-/*NOTE: BORDER*/
-/*NOTE: TEXT*/
-/*NOTE: BUTTON*/
+/*MOON
+$white: #fff;
+$lowlowWhite: #b6b6b6;
+$lowWhite: #e7e7e7;
+$backgroundComponent: #050505;
+$colorActiveBtn: #000000;
+$borderBlack: #0d0d0d;
+$backgrounBody: #1a1a1a;
+$backgroundScroll: #101113;
+$btnInteractionPost: #070707a1;
+$colorIconsHeadMenu: #fff;
+$backgrounWindow: #000;
+$actionBtnDefaul: #1f1f1f;
+$leftoverBoxDark: #101113;
+$boderBlurBox: rgba(255, 255, 255, 0.1);
+$backgroundFile:  radial-gradient(circle at 0% 0%, 
+    #313130 50%, #222127 66.67%, #15131e 83.33%, #080016 100%);
+$backgroundNavigation: rgba(0, 0, 0, 0.68);
+*/
 .containerBall {
   width: 50px;
   height: 100px;
@@ -649,6 +782,25 @@ div.contentBoxBlur {
 /*NOTE: BORDER*/
 /*NOTE: TEXT*/
 /*NOTE: BUTTON*/
+/*MOON
+$white: #fff;
+$lowlowWhite: #b6b6b6;
+$lowWhite: #e7e7e7;
+$backgroundComponent: #050505;
+$colorActiveBtn: #000000;
+$borderBlack: #0d0d0d;
+$backgrounBody: #1a1a1a;
+$backgroundScroll: #101113;
+$btnInteractionPost: #070707a1;
+$colorIconsHeadMenu: #fff;
+$backgrounWindow: #000;
+$actionBtnDefaul: #1f1f1f;
+$leftoverBoxDark: #101113;
+$boderBlurBox: rgba(255, 255, 255, 0.1);
+$backgroundFile:  radial-gradient(circle at 0% 0%, 
+    #313130 50%, #222127 66.67%, #15131e 83.33%, #080016 100%);
+$backgroundNavigation: rgba(0, 0, 0, 0.68);
+*/
 /*NOTE:VIZUALIZAR EL TIEMPO DEL AUDIO*/
 #player-track {
   background-color: #ffffff00;
@@ -824,6 +976,25 @@ div.contentBoxBlur {
 /*NOTE: BORDER*/
 /*NOTE: TEXT*/
 /*NOTE: BUTTON*/
+/*MOON
+$white: #fff;
+$lowlowWhite: #b6b6b6;
+$lowWhite: #e7e7e7;
+$backgroundComponent: #050505;
+$colorActiveBtn: #000000;
+$borderBlack: #0d0d0d;
+$backgrounBody: #1a1a1a;
+$backgroundScroll: #101113;
+$btnInteractionPost: #070707a1;
+$colorIconsHeadMenu: #fff;
+$backgrounWindow: #000;
+$actionBtnDefaul: #1f1f1f;
+$leftoverBoxDark: #101113;
+$boderBlurBox: rgba(255, 255, 255, 0.1);
+$backgroundFile:  radial-gradient(circle at 0% 0%, 
+    #313130 50%, #222127 66.67%, #15131e 83.33%, #080016 100%);
+$backgroundNavigation: rgba(0, 0, 0, 0.68);
+*/
 .video video {
   width: 250px;
   max-height: 250px;
@@ -910,6 +1081,25 @@ div.contentBoxBlur {
 /*NOTE: BORDER*/
 /*NOTE: TEXT*/
 /*NOTE: BUTTON*/
+/*MOON
+$white: #fff;
+$lowlowWhite: #b6b6b6;
+$lowWhite: #e7e7e7;
+$backgroundComponent: #050505;
+$colorActiveBtn: #000000;
+$borderBlack: #0d0d0d;
+$backgrounBody: #1a1a1a;
+$backgroundScroll: #101113;
+$btnInteractionPost: #070707a1;
+$colorIconsHeadMenu: #fff;
+$backgrounWindow: #000;
+$actionBtnDefaul: #1f1f1f;
+$leftoverBoxDark: #101113;
+$boderBlurBox: rgba(255, 255, 255, 0.1);
+$backgroundFile:  radial-gradient(circle at 0% 0%, 
+    #313130 50%, #222127 66.67%, #15131e 83.33%, #080016 100%);
+$backgroundNavigation: rgba(0, 0, 0, 0.68);
+*/
 .register {
   background-color: #ffffff00; }
 
@@ -1123,6 +1313,25 @@ div.contentBoxBlur {
 /*NOTE: BORDER*/
 /*NOTE: TEXT*/
 /*NOTE: BUTTON*/
+/*MOON
+$white: #fff;
+$lowlowWhite: #b6b6b6;
+$lowWhite: #e7e7e7;
+$backgroundComponent: #050505;
+$colorActiveBtn: #000000;
+$borderBlack: #0d0d0d;
+$backgrounBody: #1a1a1a;
+$backgroundScroll: #101113;
+$btnInteractionPost: #070707a1;
+$colorIconsHeadMenu: #fff;
+$backgrounWindow: #000;
+$actionBtnDefaul: #1f1f1f;
+$leftoverBoxDark: #101113;
+$boderBlurBox: rgba(255, 255, 255, 0.1);
+$backgroundFile:  radial-gradient(circle at 0% 0%, 
+    #313130 50%, #222127 66.67%, #15131e 83.33%, #080016 100%);
+$backgroundNavigation: rgba(0, 0, 0, 0.68);
+*/
 div.post, div.viewPostContentuser {
   width: 96%;
   margin: auto;
@@ -1251,6 +1460,25 @@ svg.iconSavePost:active {
 /*NOTE: BORDER*/
 /*NOTE: TEXT*/
 /*NOTE: BUTTON*/
+/*MOON
+$white: #fff;
+$lowlowWhite: #b6b6b6;
+$lowWhite: #e7e7e7;
+$backgroundComponent: #050505;
+$colorActiveBtn: #000000;
+$borderBlack: #0d0d0d;
+$backgrounBody: #1a1a1a;
+$backgroundScroll: #101113;
+$btnInteractionPost: #070707a1;
+$colorIconsHeadMenu: #fff;
+$backgrounWindow: #000;
+$actionBtnDefaul: #1f1f1f;
+$leftoverBoxDark: #101113;
+$boderBlurBox: rgba(255, 255, 255, 0.1);
+$backgroundFile:  radial-gradient(circle at 0% 0%, 
+    #313130 50%, #222127 66.67%, #15131e 83.33%, #080016 100%);
+$backgroundNavigation: rgba(0, 0, 0, 0.68);
+*/
 .coment {
   margin: 0;
   padding: 0;
@@ -1277,7 +1505,8 @@ svg.iconSavePost:active {
   flex-direction: column;
   align-items: center;
   margin-bottom: 50px;
-  background-color: #fff; }
+  background-color: #fff;
+  border: 2px solid #b6b3b3; }
   .comentBox .title {
     width: 100%;
     height: 30px;
@@ -1372,6 +1601,25 @@ svg.iconSavePost:active {
 /*NOTE: BORDER*/
 /*NOTE: TEXT*/
 /*NOTE: BUTTON*/
+/*MOON
+$white: #fff;
+$lowlowWhite: #b6b6b6;
+$lowWhite: #e7e7e7;
+$backgroundComponent: #050505;
+$colorActiveBtn: #000000;
+$borderBlack: #0d0d0d;
+$backgrounBody: #1a1a1a;
+$backgroundScroll: #101113;
+$btnInteractionPost: #070707a1;
+$colorIconsHeadMenu: #fff;
+$backgrounWindow: #000;
+$actionBtnDefaul: #1f1f1f;
+$leftoverBoxDark: #101113;
+$boderBlurBox: rgba(255, 255, 255, 0.1);
+$backgroundFile:  radial-gradient(circle at 0% 0%, 
+    #313130 50%, #222127 66.67%, #15131e 83.33%, #080016 100%);
+$backgroundNavigation: rgba(0, 0, 0, 0.68);
+*/
 #boxCreatePublication {
   display: none; }
 
@@ -1386,7 +1634,7 @@ svg.iconSavePost:active {
   width: 100%;
   display: flex;
   flex-direction: column;
-  background-color: #fff; }
+  background: #ffffff00; }
 
 .contentTypeFile {
   display: flex;
@@ -1487,7 +1735,7 @@ input[type="file"] {
   font-size: 16px; }
 
 .optionsContent {
-  background: #fff;
+  background: #ffffff00;
   text-decoration: none;
   border: none; }
 
@@ -1555,7 +1803,8 @@ input[type="file"] {
   -ms-user-select: none;
   display: flex;
   align-items: center;
-  justify-content: center; }
+  justify-content: center;
+  overflow: hidden; }
 
 .previewFile {
   margin: auto;
@@ -1583,7 +1832,6 @@ input[type="file"] {
   max-width: 250px;
   max-height: 250px; }
 
-/*PROFILE*/
 /*NOTE: DO NOT COPY CONTENT*/
 /*NOTE:CENTER ELEMENTS*/
 /*NOTE: PLACE ELEMENTS IN CENTERED COLUMANS*/
@@ -1599,6 +1847,25 @@ input[type="file"] {
 /*NOTE: BORDER*/
 /*NOTE: TEXT*/
 /*NOTE: BUTTON*/
+/*MOON
+$white: #fff;
+$lowlowWhite: #b6b6b6;
+$lowWhite: #e7e7e7;
+$backgroundComponent: #050505;
+$colorActiveBtn: #000000;
+$borderBlack: #0d0d0d;
+$backgrounBody: #1a1a1a;
+$backgroundScroll: #101113;
+$btnInteractionPost: #070707a1;
+$colorIconsHeadMenu: #fff;
+$backgrounWindow: #000;
+$actionBtnDefaul: #1f1f1f;
+$leftoverBoxDark: #101113;
+$boderBlurBox: rgba(255, 255, 255, 0.1);
+$backgroundFile:  radial-gradient(circle at 0% 0%, 
+    #313130 50%, #222127 66.67%, #15131e 83.33%, #080016 100%);
+$backgroundNavigation: rgba(0, 0, 0, 0.68);
+*/
 .profile {
   width: 100%;
   height: 100%;
@@ -1616,19 +1883,23 @@ input[type="file"] {
   flex-direction: column;
   width: 100%;
   border-bottom: 1px solid #cccccc;
-  padding-bottom: 10px; }
+  padding-bottom: 10px;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none; }
   .infProfile .photoUser {
     width: 90px;
-    height: 90px;
-    border-radius: 30px;
+    height: 80px;
+    border-radius: 20px;
     background-image: radial-gradient(circle at 0% 0%, #b1b1b8 50%, #b1b1b8 66.67%, #8c8ca3 83.33%, #6e6b8f 100%);
     display: flex;
     align-items: center;
-    justify-content: center; }
-  .infProfile .photo {
-    width: 85px;
-    height: 85px;
-    border-radius: 30px; }
+    justify-content: center;
+    padding: 0; }
+    .infProfile .photoUser .photo {
+      width: 100%;
+      height: auto; }
   .infProfile .btnAddUser {
     position: relative;
     bottom: 10px;
@@ -1702,6 +1973,7 @@ input[type="file"] {
   margin-bottom: 5px; }
 
 .allPost {
+  margin-top: 15px;
   width: 100%;
   height: 100%;
   display: flex;
@@ -1787,6 +2059,25 @@ input[type="file"] {
 /*NOTE: BORDER*/
 /*NOTE: TEXT*/
 /*NOTE: BUTTON*/
+/*MOON
+$white: #fff;
+$lowlowWhite: #b6b6b6;
+$lowWhite: #e7e7e7;
+$backgroundComponent: #050505;
+$colorActiveBtn: #000000;
+$borderBlack: #0d0d0d;
+$backgrounBody: #1a1a1a;
+$backgroundScroll: #101113;
+$btnInteractionPost: #070707a1;
+$colorIconsHeadMenu: #fff;
+$backgrounWindow: #000;
+$actionBtnDefaul: #1f1f1f;
+$leftoverBoxDark: #101113;
+$boderBlurBox: rgba(255, 255, 255, 0.1);
+$backgroundFile:  radial-gradient(circle at 0% 0%, 
+    #313130 50%, #222127 66.67%, #15131e 83.33%, #080016 100%);
+$backgroundNavigation: rgba(0, 0, 0, 0.68);
+*/
 #viewPublication .contentBoxBlur {
   max-height: 400px;
   padding: 3px;
@@ -1822,6 +2113,25 @@ input[type="file"] {
 /*NOTE: BORDER*/
 /*NOTE: TEXT*/
 /*NOTE: BUTTON*/
+/*MOON
+$white: #fff;
+$lowlowWhite: #b6b6b6;
+$lowWhite: #e7e7e7;
+$backgroundComponent: #050505;
+$colorActiveBtn: #000000;
+$borderBlack: #0d0d0d;
+$backgrounBody: #1a1a1a;
+$backgroundScroll: #101113;
+$btnInteractionPost: #070707a1;
+$colorIconsHeadMenu: #fff;
+$backgrounWindow: #000;
+$actionBtnDefaul: #1f1f1f;
+$leftoverBoxDark: #101113;
+$boderBlurBox: rgba(255, 255, 255, 0.1);
+$backgroundFile:  radial-gradient(circle at 0% 0%, 
+    #313130 50%, #222127 66.67%, #15131e 83.33%, #080016 100%);
+$backgroundNavigation: rgba(0, 0, 0, 0.68);
+*/
 .chat {
   width: 100%;
   height: 55px;
@@ -1835,9 +2145,8 @@ input[type="file"] {
   margin: 0 5px;
   height: 55px;
   border-radius: 15px; }
-
-.contentChat:active {
-  background-color: #b6b3b3; }
+  .contentChat:active {
+    background-color: #b6b3b3; }
 
 .photoUser {
   width: 40px;
@@ -1853,12 +2162,11 @@ input[type="file"] {
   -moz-user-select: none;
   -webkit-user-drag: none;
   -webkit-user-select: none;
-  -ms-user-select: none; }
+  -ms-user-select: none;
+  overflow: hidden; }
 
 .photoUser img {
-  width: 40px;
-  height: 40px;
-  border-radius: 20px; }
+  width: 100%; }
 
 .divTextsUserPrimary {
   display: flex;
@@ -1946,6 +2254,25 @@ input[type="file"] {
 /*NOTE: BORDER*/
 /*NOTE: TEXT*/
 /*NOTE: BUTTON*/
+/*MOON
+$white: #fff;
+$lowlowWhite: #b6b6b6;
+$lowWhite: #e7e7e7;
+$backgroundComponent: #050505;
+$colorActiveBtn: #000000;
+$borderBlack: #0d0d0d;
+$backgrounBody: #1a1a1a;
+$backgroundScroll: #101113;
+$btnInteractionPost: #070707a1;
+$colorIconsHeadMenu: #fff;
+$backgrounWindow: #000;
+$actionBtnDefaul: #1f1f1f;
+$leftoverBoxDark: #101113;
+$boderBlurBox: rgba(255, 255, 255, 0.1);
+$backgroundFile:  radial-gradient(circle at 0% 0%, 
+    #313130 50%, #222127 66.67%, #15131e 83.33%, #080016 100%);
+$backgroundNavigation: rgba(0, 0, 0, 0.68);
+*/
 .boxFriends {
   margin-bottom: 60px;
   width: 100%;
@@ -1987,6 +2314,229 @@ input[type="file"] {
   margin: 0; }
 
 /*SEARCH*/
-.search {
-  padding: 20px;
-  background-color: red; }
+/*NOTE: DO NOT COPY CONTENT*/
+/*NOTE:CENTER ELEMENTS*/
+/*NOTE: PLACE ELEMENTS IN CENTERED COLUMANS*/
+/*NOTE: ROUND EDGES*/
+/*NOTE:BALL MOVEMENT*/
+/*NOTE:SIDE BODY*/
+/*NOTE: LOGO COLORS*/
+/*NOTE:BORDER RADIUS*/
+/*NOTE: FONT-SIZE*/
+/*NOTE: FONT TYPE*/
+/*NOTE: BACKGROUND*/
+/*NOTE: TRANSPARENT*/
+/*NOTE: BORDER*/
+/*NOTE: TEXT*/
+/*NOTE: BUTTON*/
+/*MOON
+$white: #fff;
+$lowlowWhite: #b6b6b6;
+$lowWhite: #e7e7e7;
+$backgroundComponent: #050505;
+$colorActiveBtn: #000000;
+$borderBlack: #0d0d0d;
+$backgrounBody: #1a1a1a;
+$backgroundScroll: #101113;
+$btnInteractionPost: #070707a1;
+$colorIconsHeadMenu: #fff;
+$backgrounWindow: #000;
+$actionBtnDefaul: #1f1f1f;
+$leftoverBoxDark: #101113;
+$boderBlurBox: rgba(255, 255, 255, 0.1);
+$backgroundFile:  radial-gradient(circle at 0% 0%, 
+    #313130 50%, #222127 66.67%, #15131e 83.33%, #080016 100%);
+$backgroundNavigation: rgba(0, 0, 0, 0.68);
+*/
+.divSearch {
+  padding-top: 5px;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none; }
+
+.barSearch {
+  background-color: #fff;
+  margin: 0;
+  position: relative;
+  bottom: 1px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .barSearch .contenInputMessage {
+    padding: 0;
+    margin-top: 5px; }
+    .barSearch .contenInputMessage .inputMessage {
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0; }
+    .barSearch .contenInputMessage .btnPostMessage {
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+      margin: 0;
+      color: #fff !important;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+      .barSearch .contenInputMessage .btnPostMessage .iconsFooter {
+        height: 20px;
+        color: #fff !important; }
+        .barSearch .contenInputMessage .btnPostMessage .iconsFooter:active {
+          color: #fff !important;
+          background: #ffffff00; }
+      .barSearch .contenInputMessage .btnPostMessage:active {
+        background: #133297; }
+
+.optionSearch {
+  padding: 0; }
+  .optionSearch .boxOptionsList {
+    padding: 0;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%; }
+
+.options {
+  margin: 0 5px;
+  position: relative;
+  width: 45px;
+  height: 35px;
+  border-radius: 10px;
+  border: none;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #fff;
+  color: #1040e2;
+  border: 1px solid #b6b3b3;
+  padding: 2px;
+  font-size: 15px; }
+  .options:active {
+    border: 2px solid #1040e2;
+    color: #000;
+    background-color: rgba(0, 0, 0, 0.465); }
+
+.contentSearchPost {
+  display: flex;
+  flex-wrap: wrap; }
+  .contentSearchPost .postSearchUser {
+    background-image: radial-gradient(circle at 0% 0%, #b1b1b8 50%, #b1b1b8 66.67%, #8c8ca3 83.33%, #6e6b8f 100%);
+    width: 105px;
+    height: 105px;
+    border-radius: 15px;
+    margin: auto;
+    margin-top: 10px;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none; }
+    .contentSearchPost .postSearchUser .contentPostSearchUser {
+      width: 100%;
+      max-height: 200px;
+      -moz-user-select: none;
+      -webkit-user-drag: none;
+      -webkit-user-select: none;
+      -ms-user-select: none; }
+
+.userSearchUser {
+  background-color: #fff;
+  margin: auto;
+  margin-top: 5px;
+  border: 2px solid #b6b3b3;
+  width: 98%;
+  height: 110px;
+  border-radius: 15px; }
+  .userSearchUser .photoUser {
+    width: 50px;
+    height: 50px;
+    border-radius: 15px;
+    position: relative;
+    top: 10px;
+    left: 5px; }
+  .userSearchUser:active {
+    background: #b6b3b3; }
+
+.userInfoSearch {
+  position: relative;
+  left: 60px;
+  bottom: 45px;
+  width: 280px; }
+  .userInfoSearch .contentInfoSearch {
+    width: 100%;
+    height: 55px; }
+    .userInfoSearch .contentInfoSearch p {
+      position: relative;
+      bottom: 10px;
+      font-size: 15px;
+      width: 100%;
+      height: 20px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      color: #333333; }
+
+.nameUserSearch {
+  font-size: 16px;
+  font-weight: 700;
+  color: #000; }
+
+.usernameUserSearch {
+  font-size: 15px;
+  font-weight: 500;
+  color: #333333; }
+
+.infoFollowserSearch {
+  color: #333333;
+  font-size: 15px;
+  position: relative;
+  top: 20px; }
+  .infoFollowserSearch label {
+    display: inline-block;
+    margin: 0 3px; }
+
+.iconUser {
+  width: 15px;
+  float: left; }
+
+svg.allFollowing {
+  color: #D20003 !important; }
+
+svg.allpost {
+  color: #0fee7e !important; }
+
+.addUserSearch {
+  position: relative;
+  bottom: 80px;
+  left: 250px;
+  background-color: #ffffff00;
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .addUserSearch .iconUser {
+    width: 30px;
+    float: none; }
+  .addUserSearch button {
+    background-color: #ffffff00;
+    text-decoration: none;
+    border: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #1040e2 !important; }
+    .addUserSearch button:active {
+      color: #000 !important; }

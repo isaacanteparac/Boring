@@ -14,6 +14,7 @@
     width: 100%;
     border-bottom: 1px solid $borderBlack;
     padding-bottom: 10px;
+    @include notUnderline;
 
     .photoUser {
         @include roundedBorder(90px, 80px, map-get($borderRadius, big ));

@@ -173,3 +173,31 @@ svg.allFollowing{
 svg.allpost{
     color:map-get($logo, first )!important;
 }
+
+.addUserSearch{
+  position: relative;
+  bottom: 80px;
+  left: 250px;
+  background-color: $transparent;
+  @include roundedBorder(30px, 30px, 15px);
+  @include centerPosition;
+
+  .iconUser{
+    width: 30px;
+    float: none;
+  }
+
+  button{
+    background-color: $transparent;
+    text-decoration: none;
+    border:  none;
+    @include roundedBorder(30px, 30px, 15px);
+    @include centerPosition;
+    color: $blueLigth!important;
+
+    &:active{
+      color: $white!important;
+    }
+  }
+
+}
