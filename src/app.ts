@@ -28,6 +28,7 @@ import publicationRouter from "./routes/publication/publication.routes";
 import commentRouter from "./routes/comment/comments.routes";
 import profileRouter from "./routes/profile/profile.routes";
 import chatRouter from "./routes/chat/chats.routes";
+import searchRouter from "./routes/search/search.routes";
 
 
 
@@ -110,6 +111,7 @@ export class App {
         this.app.use("/comments", commentRouter);
         this.app.use("/profile", profileRouter);
         this.app.use("/chats", chatRouter);
+        this.app.use("/search", searchRouter);
     }
 
     public_(){

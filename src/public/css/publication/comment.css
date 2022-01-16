@@ -1,0 +1,120 @@
+/*NOTE: DO NOT COPY CONTENT*/
+/*NOTE:CENTER ELEMENTS*/
+/*NOTE: PLACE ELEMENTS IN CENTERED COLUMANS*/
+/*NOTE: ROUND EDGES*/
+/*NOTE:BALL MOVEMENT*/
+/*NOTE:SIDE BODY*/
+/*NOTE: LOGO COLORS*/
+/*NOTE:BORDER RADIUS*/
+/*NOTE: FONT-SIZE*/
+/*NOTE: FONT TYPE*/
+/*NOTE: BACKGROUND*/
+/*NOTE: TRANSPARENT*/
+/*NOTE: BORDER*/
+/*NOTE: TEXT*/
+/*NOTE: BUTTON*/
+.coment {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; }
+  .coment .post {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; }
+  .coment .contentComent {
+    margin: 0;
+    padding: 0;
+    width: 100%; }
+
+.comentBox {
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 50px;
+  background-color: #fff; }
+  .comentBox .title {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; }
+    .comentBox .title h4 {
+      color: #000; }
+
+.comentUser {
+  width: 100%;
+  height: 55px;
+  margin-bottom: 10px; }
+  .comentUser .photoUser {
+    position: relative;
+    bottom: 10px;
+    left: 10px;
+    width: 30px;
+    height: 30px; }
+  .comentUser .photo {
+    width: 30px;
+    height: 30px; }
+  .comentUser .divTextsUserPrimary {
+    width: 85%; }
+  .comentUser .divTextsUserPrimary .textUserLabel {
+    font-size: 13px;
+    font-weight: bold; }
+  .comentUser .divTextsUserPrimary .textUserP {
+    font-size: 13px;
+    text-overflow: ellipsis; }
+
+.boxInput {
+  width: 100%;
+  height: 50px;
+  position: fixed;
+  bottom: 0px;
+  border: none; }
+
+.contenInputMessage {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 0; }
+
+.textareMessage,
+.inputMessage {
+  width: 74%;
+  border: none;
+  border-radius: 30px;
+  padding: 0 10px;
+  font-size: 16px;
+  font-family: "Segoe UI";
+  border: 2px solid #1040e2;
+  background-color: #b6b3b3;
+  color: #000; }
+
+.inputMessage {
+  height: 30px; }
+
+.textareMessage {
+  resize: none;
+  height: 26px;
+  padding-top: 5px; }
+
+.btnPostMessage {
+  margin: 0;
+  width: 15%;
+  height: 35px;
+  border-radius: 30px;
+  margin-left: 5px;
+  background-color: #1040e2;
+  color: #fff;
+  border: none;
+  font-size: 17.6px; }
+  .btnPostMessage :active {
+    background-color: #133297; }

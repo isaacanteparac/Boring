@@ -27,6 +27,7 @@ $(document).ready( () => {
                textareaAutoResize()
                $("#navigation").show();
                $(".optionViewPreview").hide();
+               $("#divBlurid").show();
                $("#boxCreatePublication").show();
           })
 

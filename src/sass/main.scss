@@ -2,7 +2,6 @@
 @import "./abstracts/mixis.scss";
 @import "./abstracts/variables.scss";
 
-
 /*main*/
 @import "./main/head.scss";
 @import "./main/app.scss";
@@ -25,11 +24,15 @@
 @import "./publication/publication.scss";
 @import "./publication/comment.scss";
 @import "./publication/createPublication.scss";
-@import "./publication/preview.scss";
+
 
 /*PROFILE*/
 @import "./profile/profile.scss";
+@import "./profile/preview.scss";
 
 /*CHAT*/
 @import "./chat/chat.scss";
 @import "./chat/contactBook.scss";
+
+/*SEARCH*/
+@import "./search/search.scss";

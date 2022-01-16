@@ -115,8 +115,8 @@
     position: relative;
     top: 13px; }
   .logo .logoBottom {
-    border-left: 2px solid #1c1bec;
-    border-right: 2px solid #ec1c1c;
+    border-left: 2px solid #0037d2;
+    border-right: 2px solid #D20003;
     border-right-width: 12px;
     border-left-width: 12px;
     border-bottom-left-radius: 6px;
@@ -1059,13 +1059,13 @@ div.contentBoxBlur {
 
 @keyframes logoAnimatioTop {
   50% {
-    border-left: 2px solid #ec1c1c;
-    border-right: 2px solid #1c1bec;
+    border-left: 2px solid #D20003;
+    border-right: 2px solid #0037d2;
     border-left-width: 20px;
     border-right-width: 20px; } }
   .logoInf .logoIBottom {
-    border-left: 2px solid #1c1bec;
-    border-right: 2px solid #ec1c1c;
+    border-left: 2px solid #0037d2;
+    border-right: 2px solid #D20003;
     border-right-width: 20px;
     border-left-width: 20px;
     border-bottom-left-radius: 10px;
@@ -1583,26 +1583,6 @@ input[type="file"] {
   max-width: 250px;
   max-height: 250px; }
 
-/*NOTE: DO NOT COPY CONTENT*/
-/*NOTE:CENTER ELEMENTS*/
-/*NOTE: PLACE ELEMENTS IN CENTERED COLUMANS*/
-/*NOTE: ROUND EDGES*/
-/*NOTE:BALL MOVEMENT*/
-/*NOTE:SIDE BODY*/
-/*NOTE: LOGO COLORS*/
-/*NOTE:BORDER RADIUS*/
-/*NOTE: FONT-SIZE*/
-/*NOTE: FONT TYPE*/
-/*NOTE: BACKGROUND*/
-/*NOTE: TRANSPARENT*/
-/*NOTE: BORDER*/
-/*NOTE: TEXT*/
-/*NOTE: BUTTON*/
-.R {
-  top: 50PX;
-  width: 50%;
-  background-color: red; }
-
 /*PROFILE*/
 /*NOTE: DO NOT COPY CONTENT*/
 /*NOTE:CENTER ELEMENTS*/
@@ -1731,10 +1711,11 @@ input[type="file"] {
   background-image: radial-gradient(circle at 0% 0%, #b1b1b8 50%, #b1b1b8 66.67%, #8c8ca3 83.33%, #6e6b8f 100%);
   width: 45%;
   height: 200px;
-  border-radius: 10px;
+  border-radius: 15px;
   margin: auto;
   margin-top: 10px;
   padding: 0;
+  overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1742,20 +1723,35 @@ input[type="file"] {
   -webkit-user-drag: none;
   -webkit-user-select: none;
   -ms-user-select: none; }
+  .onePost:active {
+    background: #ffffff00;
+    backdrop-filter: blur(10px);
+    position: fixed;
+    bottom: 10%;
+    width: 100%;
+    height: 100%;
+    transform: scale(1.2); }
 
 .contentOnePost {
   width: 100%;
   max-height: 200px;
-  border-radius: 10px;
   -moz-user-select: none;
   -webkit-user-drag: none;
   -webkit-user-select: none;
   -ms-user-select: none; }
+  .contentOnePost:active {
+    transition-duration: 0.4s;
+    position: fixed;
+    bottom: 25%;
+    left: 25%;
+    max-width: 50%;
+    max-height: 300px;
+    transform: scale(1.2);
+    border-radius: 10px; }
 
 .btnFilesUser {
-  background-color: #ffffff00;
   margin: 0 5px;
-  padding-top: 5px;
+  margin-top: 10px;
   position: relative;
   width: 55px;
   height: 50px;
@@ -1766,17 +1762,49 @@ input[type="file"] {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  color: #000; }
+  background-color: #fff;
+  color: #1040e2 !important; }
   .btnFilesUser:active {
-    background-color: #fff;
-    color: #1040e2 !important; }
+    background-color: rgba(0, 0, 0, 0.465); }
 
 .FilesUser {
   width: 55px;
   height: 50px;
-  color: #000 !important; }
-  .FilesUser:active {
-    color: #1040e2 !important; }
+  color: #1040e2 !important; }
+
+/*NOTE: DO NOT COPY CONTENT*/
+/*NOTE:CENTER ELEMENTS*/
+/*NOTE: PLACE ELEMENTS IN CENTERED COLUMANS*/
+/*NOTE: ROUND EDGES*/
+/*NOTE:BALL MOVEMENT*/
+/*NOTE:SIDE BODY*/
+/*NOTE: LOGO COLORS*/
+/*NOTE:BORDER RADIUS*/
+/*NOTE: FONT-SIZE*/
+/*NOTE: FONT TYPE*/
+/*NOTE: BACKGROUND*/
+/*NOTE: TRANSPARENT*/
+/*NOTE: BORDER*/
+/*NOTE: TEXT*/
+/*NOTE: BUTTON*/
+#viewPublication .contentBoxBlur {
+  max-height: 400px;
+  padding: 3px;
+  top: 40px;
+  border-radius: 10px; }
+
+#viewPublication .contentPreview {
+  width: 100%;
+  max-height: 400px;
+  border-radius: 10px; }
+
+#viewPublication .contentPreview:active {
+  transform: scale(1.2); }
+
+#viewPublication .btnClose {
+  position: fixed;
+  top: 450px;
+  right: 50%; }
 
 /*CHAT*/
 /*NOTE: DO NOT COPY CONTENT*/
@@ -1957,3 +1985,8 @@ input[type="file"] {
 .photoContact {
   width: 100%;
   margin: 0; }
+
+/*SEARCH*/
+.search {
+  padding: 20px;
+  background-color: red; }

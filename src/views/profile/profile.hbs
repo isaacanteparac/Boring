@@ -95,7 +95,8 @@
             <!--NOTE:hacer un mapa que contenga todos los post del user-->
             {{#each userContent}}
                 <div class="onePost" id="previewPublication">
-                    <img src={{decFile file_content}} class="contentOnePost" />
+                    <img src={{decFile file_content}} class="contentOnePost"
+                     onmousedown="mouseDown()" onmouseup="mouseUp()"/>
                 </div>
             {{/each}}
         </div>

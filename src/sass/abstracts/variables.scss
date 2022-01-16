@@ -7,7 +7,9 @@ $post:(
     maxWidth: 326px,
     maxHeight: 490px,
     maxCreateWidth: 300px,
-    maxCreateHeigth: 450px
+    maxCreateHeigth: 450px,
+    maxPreviewWidth: 50%,
+    maxPreviewHeigth: 300px
 );
 
 
@@ -21,8 +23,8 @@ $loaders:(
 $logo: (
     first: #0fee7e,
     second: #ffff00,
-    third: #1c1bec,
-    fourth: #ec1c1c,
+    third: #0037d2,
+    fourth: #D20003,
     leftRigthWidth: 12px,
     leftRigthRadius: 6px,
     heigth_: 12px,

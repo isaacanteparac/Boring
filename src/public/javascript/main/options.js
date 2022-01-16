@@ -2,6 +2,7 @@ $(document).ready( () =>{
     
     $("#windowCreatePublication").click( () => {
         $('#navigation').show();
+        $("#divBlurid").hide();
         $("#boxCreatePublication").hide();
         $(".preview").hide();
         $(".optionViewPreview").hide();
@@ -181,4 +182,5 @@ function viewImage(){
     $imagenPrevisualizacion.src = objectURL;
     });
 }
+
 
