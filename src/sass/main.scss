@@ -5,17 +5,17 @@
 /*main*/
 @import "./main/head.scss";
 @import "./main/app.scss";
-@import "./main/alert.scss";
 @import "./main/navigation.scss";
-
 @import "./main/options.scss";
 
-/*LOADERS*/
-@import "./main/animationLoader.scss";
+
+/*LOADERS/ALERT*/
+@import "./loadersAlert/alert.scss";
+@import "./loadersAlert/animationLoader.scss";
 
 /*view content files*/
-@import "./main/sound.scss";
-@import "./main/videoPlayer.scss";
+@import "./multimedia/sound.scss";
+@import "./multimedia/videoPlayer.scss";
 
 /*REGISTER*/
 @import "./register/register.scss";
@@ -25,14 +25,13 @@
 @import "./publication/comment.scss";
 @import "./publication/createPublication.scss";
 
-
-/*PROFILE*/
 @import "./profile/profile.scss";
 @import "./profile/preview.scss";
 
 /*CHAT*/
-@import "./chat/chat.scss";
-@import "./chat/contactBook.scss";
+@import "./userChat/chat.scss";
+@import "./userChat/contactBook.scss";
 
 /*SEARCH*/
 @import "./search/search.scss";
+

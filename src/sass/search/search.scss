@@ -1,5 +1,175 @@
-.search{
-    padding: 20px;
-    background-color: red;
+@import "../abstracts/mixis.scss";
+@import "../abstracts/variables.scss";
 
+.divSearch {
+  padding-top: 5px;
+  @include notUnderline;
+}
+
+.barSearch {
+  background-color: $backgroundComponent;
+  margin: 0;
+  position: relative;
+  bottom: 1px;
+  height: 50px;
+  @include centerPosition;
+  .contenInputMessage {
+    padding: 0;
+    margin-top: 5px;
+
+    .inputMessage {
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+
+    .btnPostMessage {
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+      margin: 0;
+      color: #fff !important;
+      overflow: hidden;
+      @include centerPosition;
+
+      .iconsFooter {
+        height: 20px;
+        color: #fff !important;
+        &:active {
+          color: #fff !important;
+          background: $transparent;
+        }
+      }
+      &:active {
+        background: $blueDark;
+      }
+    }
+  }
+}
+
+.optionSearch {
+  padding: 0;
+  .boxOptionsList {
+    padding: 0;
+    height: 40px;
+    @include centerPosition;
+    width: 100%;
+  }
+}
+
+.options {
+  margin: 0 5px;
+  position: relative;
+  @include roundedBorder(45px, 35px, map-get($borderRadius, small));
+  border: map-get($borderRadius, null);
+  text-align: center;
+  @include centerPositionColumn;
+  background-color: $backgroundComponent;
+  color: $blueLigth;
+  border: 1px solid $colorActiveBtn;
+  padding: 2px;
+  font-size: map-get($fontSize, medium);
+
+  &:active {
+    border: 2px solid $blueLigth;
+    color: $white;
+    background-color: $transparentGray;
+  }
+}
+
+.contentSearchPost {
+  display: flex;
+  flex-wrap: wrap;
+
+  .postSearchUser {
+    background-image: $backgroundFile;
+    @include roundedBorder(105px, 105px, map-get($borderRadius, medium));
+    margin: auto;
+    margin-top: 10px;
+    padding: 0;
+    overflow: hidden;
+    @include centerPosition;
+    @include notUnderline;
+
+    .contentPostSearchUser {
+      width: 100%;
+      max-height: 200px;
+      @include notUnderline;
+    }
+  }
+}
+
+.userSearchUser {
+  background-color: $backgroundComponent;
+  margin: auto;
+  margin-top: 5px;
+  border: 2px solid $colorActiveBtn;
+  @include roundedBorder(98%, 110px, map-get($borderRadius, medium));
+  .photoUser {
+    @include roundedBorder(50px, 50px, map-get($borderRadius, medium));
+    position: relative;
+    top: 10px;
+    left: 5px;
+  }
+  &:active{
+    background: $colorActiveBtn;
+}
+}
+
+.userInfoSearch {
+  position: relative;
+  left: 60px;
+  bottom: 45px;
+  width: 280px;
+  .contentInfoSearch {
+    width: 100%;
+    height: 55px;
+    p {
+      position: relative;
+      bottom: 10px;
+      font-size: map-get($fontSize, medium);
+      width: 100%;
+      height: 20px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      color: $lowlowWhite;
+    }
+  }
+}
+
+.nameUserSearch {
+  font-size: map-get($fontSize, rem);
+  font-weight: 700;
+  color: $white;
+}
+
+.usernameUserSearch {
+  font-size: map-get($fontSize, medium);
+  font-weight: 500;
+  color: $lowlowWhite;
+}
+
+.infoFollowserSearch {
+  color: $lowlowWhite;
+  font-size: map-get($fontSize, medium);
+  position: relative;
+  top: 20px;
+
+  label{
+    display: inline-block;
+    margin: 0 3px;
+  }
+}
+
+
+.iconUser{
+    width: 15px;
+    float: left;
+}
+
+svg.allFollowing{
+    color:map-get($logo, fourth )!important;
+}
+
+svg.allpost{
+    color:map-get($logo, first )!important;
 }

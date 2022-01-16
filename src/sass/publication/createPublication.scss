@@ -11,6 +11,7 @@
     width: map-get($post, maxWidth );
     display: flex;
     justify-content: center;
+    
 }
 
 
@@ -18,7 +19,7 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-    background-color: $backgroundComponent;
+    background: $transparent;
 }
 
 .contentTypeFile {
@@ -137,7 +138,7 @@ input[type="file"] {
 }
 
 .optionsContent {
-    background: $backgroundComponent;
+    background: $transparent;
     text-decoration: none;
     border: none;
 }
@@ -210,6 +211,7 @@ input[type="file"] {
     margin: auto;
     @include notUnderline;
     @include centerPosition;
+    overflow: hidden;
 
 }
 

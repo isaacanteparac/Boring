@@ -16,14 +16,18 @@
     padding-bottom: 10px;
 
     .photoUser {
-        @include roundedBorder(90px, 90px, map-get($borderRadius, extrabig ));
+        @include roundedBorder(90px, 80px, map-get($borderRadius, big ));
         background-image: $backgroundFile;
         @include centerPosition;
+        padding: 0;
+
+        .photo {
+            width: 100%;
+            height: auto;
+        }
     }
 
-    .photo {
-        @include roundedBorder(85px, 85px, map-get($borderRadius, extrabig ))
-    }
+    
 
     .btnAddUser {
         position: relative;
@@ -106,10 +110,11 @@
 }
 
 .allPost {
+    margin-top: 15px;
     width: 100%;
     height: 100%;
-    display: flex;
-    flex-wrap: wrap;
+
+    @include wrapPosition;
 }
 
 .onePost {
@@ -140,7 +145,6 @@
     @include notUnderline;
     
     &:active{
-        
         transition-duration: 0.4s;
         position: fixed;
         bottom: 25%;

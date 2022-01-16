@@ -15,11 +15,13 @@
     margin: 0 5px;
     height: 55px;
     border-radius: map-get($borderRadius, medium);
+
+    &:active {
+        background-color: $colorActiveBtn;
+    }
 }
 
-.contentChat:active {
-    background-color: $colorActiveBtn;
-}
+
 
 .photoUser {
     @include roundedBorder(40px, 40px, map-get($borderRadius, big));
@@ -28,10 +30,11 @@
     top: 3px;
     @include centerPositionColumn;
     @include notUnderline;
+    overflow: hidden;
 }
 
 .photoUser img {
-    @include roundedBorder(40px, 40px, map-get($borderRadius, big));
+    width: 100%;
 }
 
 .divTextsUserPrimary {

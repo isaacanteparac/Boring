@@ -25,6 +25,11 @@
     flex-direction: column;
 }
 
+@mixin wrapPosition {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 /*NOTE: ROUND EDGES*/
 @mixin roundedBorder($width_, $heigth_, $border) {
     width: $width_;
