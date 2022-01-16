@@ -64,10 +64,11 @@
 
 
 # DISPLAY
-![image](https://user-images.githubusercontent.com/69361351/148141378-12c6f928-6acf-4174-9781-90c13a134b09.png)
-![image](https://user-images.githubusercontent.com/69361351/148141466-404b2045-7d9c-4ce4-8747-287eba789188.png)
-![image](https://user-images.githubusercontent.com/69361351/148417459-987c8a5c-797f-4469-9add-51afc3db7e5c.png)
-![image](https://user-images.githubusercontent.com/69361351/148417677-e678ec16-9bbf-4fb8-8372-674f944b48bf.png)
+![image](https://user-images.githubusercontent.com/69361351/149650240-e46a97f9-c7e0-4cb1-8cf9-bf6b068ac434.png)
+![image](https://user-images.githubusercontent.com/69361351/149650252-4e2d92d5-4c11-4145-abc4-127de27bac8e.png)
+![image](https://user-images.githubusercontent.com/69361351/149650270-5dea7876-1958-4d12-9243-068ab82d78b4.png)
+![image](https://user-images.githubusercontent.com/69361351/149650276-37b0186d-d822-4b30-91ea-5d7427d48066.png)
+![image](https://user-images.githubusercontent.com/69361351/149650317-4f969477-6502-4692-945c-f66fc1931c63.png)
 
 
 
