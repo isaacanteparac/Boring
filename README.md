@@ -100,8 +100,9 @@ SEARCH
 
 
 PROFILE
-![image](https://user-images.githubusercontent.com/69361351/149796451-106935da-aa37-4058-a18b-cf9ae9a685dc.png)
-    
+![image](https://user-images.githubusercontent.com/69361351/149801302-915af6cf-6b4c-4188-99ca-a1a31e733f3e.png)
+![image](https://user-images.githubusercontent.com/69361351/149801410-4b75ffeb-4e95-4bee-8448-035c4810e378.png)
+
 
 
 
