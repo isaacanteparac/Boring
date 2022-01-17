@@ -83,14 +83,15 @@
     float: right;
     position: relative;
     bottom: 130px;
+
+    button {
+        background-color: $transparent;
+        border: 1px solid $transparent;
+        @include roundedBorder(20px, 20px, map-get($borderRadius, small ));
+        @include centerPositionColumn;
+    }
 }
 
-.divBtnPlus button {
-    background-color: $transparent;
-    border: 1px solid $transparent;
-    @include roundedBorder(20px, 20px, map-get($borderRadius, small ));
-    @include centerPositionColumn;
-}
 
 .allchats {
     width: 100%;

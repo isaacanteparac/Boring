@@ -98,17 +98,16 @@
   float: right;
   position: relative;
   bottom: 130px; }
-
-.divBtnPlus button {
-  background-color: #ffffff00;
-  border: 1px solid #ffffff00;
-  width: 20px;
-  height: 20px;
-  border-radius: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column; }
+  .divBtnPlus button {
+    background-color: #ffffff00;
+    border: 1px solid #ffffff00;
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; }
 
 .allchats {
   width: 100%;

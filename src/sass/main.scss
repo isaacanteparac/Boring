@@ -19,6 +19,7 @@
 
 /*REGISTER*/
 @import "./register/register.scss";
+@import "./register/logo.scss";
 
 /*PUBLIC*/
 @import "./publication/publication.scss";
@@ -26,6 +27,7 @@
 @import "./publication/createPublication.scss";
 
 @import "./profile/profile.scss";
+@import "./profile/post.scss";
 @import "./profile/preview.scss";
 
 /*CHAT*/
@@ -34,3 +36,9 @@
 
 /*SEARCH*/
 @import "./search/search.scss";
+@import "./search/boxPostUser.scss";
+@import "./search/boxUser.scss";
+
+
+
+

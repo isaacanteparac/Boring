@@ -15,13 +15,14 @@ div.viewPostContentuser{
 }
 
 .userPost {
-    margin-top: 20px;
-    border-radius: map-get($borderRadius, extrabig);
+    border-radius: map-get($borderRadius, big);
     background-color: $transparent;
     padding: 0;
-    width: map-get($post, maxWidth );
+    width: 100%;
+    margin: auto;
+    margin-top: 10px;
     max-height: map-get($post, maxHeight );
-    box-shadow: 5px 5px 5px $leftoverBoxDark; 
+    /*box-shadow: 5px 5px 5px $leftoverBoxDark; */
 }
 
 
@@ -31,9 +32,8 @@ div.viewPostContentuser{
     width: 60%;
     height: 50px;
     border: none;
-    //background: var(--backgrounNavigation);
     backdrop-filter: map-get($blurEffect, nano );
-    border: 2px solid rgba(0, 0, 0, 0.1);
+    border: 2px solid $boderBlurBox;
     float: left;
     left: 20%;
     position: relative;
@@ -46,7 +46,7 @@ div.viewPostContentuser{
         position: relative;
         left: 55px;
         bottom: 57px;
-        color: #fff;
+        color: $white;
     }
 
     .messageUser {
@@ -54,7 +54,7 @@ div.viewPostContentuser{
         position: relative;
         left: 55px;
         bottom: 78px;
-        color: #fff;
+        color: $white;
     }
 
     .photoUser {
@@ -73,9 +73,10 @@ div.viewPostContentuser{
 .fileUser {
     width: 100%;
     height: map-get($post, maxHeight );   
-    border-radius: map-get($borderRadius, extrabig);
+    border-radius: map-get($borderRadius, big);
     @include centerPosition;
-    background-image: $backgroundFile;
+    background: $backgroundComponent;
+    /*border: 1px solid $borderBlack;*/
     overflow: hidden;
 }
 
@@ -91,7 +92,6 @@ div.viewPostContentuser{
 .interactionPost {
     @include centerPosition;
     @include roundedBorder(50%, 40px, map-get($borderRadius, extrabig));
-    //background: var(--backgrounNavigation);
     backdrop-filter: map-get($blurEffect, nano );
     border: 2px solid $boderBlurBox;
     float:right;
