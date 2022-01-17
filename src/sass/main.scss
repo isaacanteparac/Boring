@@ -3,11 +3,12 @@
 @import "./abstracts/variables.scss";
 
 /*main*/
-@import "./main/head.scss";
-@import "./main/app.scss";
-@import "./main/navigation.scss";
 @import "./main/options.scss";
+@import "./main/app.scss";
 
+/*navigatios*/
+@import "./navigations/navigation.scss";
+@import "./navigations/head.scss";
 
 /*LOADERS/ALERT*/
 @import "./loadersAlert/alert.scss";
@@ -38,4 +39,3 @@
 @import "./search/search.scss";
 @import "./search/boxPostUser.scss";
 @import "./search/boxUser.scss";
-

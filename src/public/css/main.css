@@ -34,6 +34,296 @@ $backgroundFile:  radial-gradient(circle at 0% 0%,
 $backgroundNavigation: rgba(0, 0, 0, 0.68);
 */
 /*main*/
+@import url(https://fonts.googleapis.com/css2?family=Azeret+Mono&display=swap);
+* {
+  cursor: default;
+  outline: none; }
+
+/*NOTE: DO NOT COPY CONTENT*/
+/*NOTE:CENTER ELEMENTS*/
+/*NOTE: PLACE ELEMENTS IN CENTERED COLUMANS*/
+/*NOTE: ROUND EDGES*/
+/*NOTE:BALL MOVEMENT*/
+/*NOTE:SIDE BODY*/
+/*NOTE: LOGO COLORS*/
+/*NOTE:BORDER RADIUS*/
+/*NOTE: FONT-SIZE*/
+/*NOTE: FONT TYPE*/
+/*NOTE: BACKGROUND*/
+/*NOTE: TRANSPARENT*/
+/*NOTE: BORDER*/
+/*NOTE: TEXT*/
+/*NOTE: BUTTON*/
+/*MOON
+$white: #fff;
+$lowlowWhite: #b6b6b6;
+$lowWhite: #e7e7e7;
+$backgroundComponent: #050505;
+$colorActiveBtn: #000000;
+$borderBlack: #0d0d0d;
+$backgrounBody: #1a1a1a;
+$backgroundScroll: #101113;
+$btnInteractionPost: #070707a1;
+$colorIconsHeadMenu: #fff;
+$backgrounWindow: #000;
+$actionBtnDefaul: #1f1f1f;
+$leftoverBoxDark: #101113;
+$boderBlurBox: rgba(255, 255, 255, 0.1);
+$backgroundFile:  radial-gradient(circle at 0% 0%, 
+    #313130 50%, #222127 66.67%, #15131e 83.33%, #080016 100%);
+$backgroundNavigation: rgba(0, 0, 0, 0.68);
+*/
+.divBlur {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 50px;
+  backdrop-filter: blur(10px); }
+
+div.contentBoxBlur {
+  position: relative;
+  width: 300px;
+  max-height: 450px;
+  background-color: #fff;
+  border-radius: 30px;
+  -webkit-box-shadow: 2px 2px 5px #7b7b7b;
+  -moz-box-shadow: 2px 2px 5px #7b7b7b;
+  filter: shadow(color=#7b7b7b, direction=135, strength=2);
+  padding: 10px;
+  margin: auto;
+  margin-top: 40px; }
+  div.contentBoxBlur .contentChat {
+    border-radius: 30px; }
+
+.optionsBox {
+  height: 40px;
+  border-radius: 30px;
+  padding-top: 10px;
+  padding-left: 10px;
+  margin: 0 10px;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none; }
+  .optionsBox:active {
+    background-color: #B9b5b5; }
+  .optionsBox h4 {
+    color: #000;
+    position: relative;
+    bottom: 20px; }
+  .optionsBox .iconsOp {
+    margin-right: 10px; }
+    .optionsBox .iconsOp:active {
+      color: #000 !important; }
+
+.btnOptions {
+  background-color: #ffffff00;
+  width: 30px;
+  height: 30px;
+  border: none;
+  margin-right: 5px; }
+
+.iconsOp {
+  color: #000 !important; }
+  .iconsOp:active {
+    color: #1040e2 !important; }
+
+#boxOptionsUserFriendChat {
+  display: none; }
+
+#viewPublication {
+  display: none; }
+
+/*NOTE: DO NOT COPY CONTENT*/
+/*NOTE:CENTER ELEMENTS*/
+/*NOTE: PLACE ELEMENTS IN CENTERED COLUMANS*/
+/*NOTE: ROUND EDGES*/
+/*NOTE:BALL MOVEMENT*/
+/*NOTE:SIDE BODY*/
+/*NOTE: LOGO COLORS*/
+/*NOTE:BORDER RADIUS*/
+/*NOTE: FONT-SIZE*/
+/*NOTE: FONT TYPE*/
+/*NOTE: BACKGROUND*/
+/*NOTE: TRANSPARENT*/
+/*NOTE: BORDER*/
+/*NOTE: TEXT*/
+/*NOTE: BUTTON*/
+/*MOON
+$white: #fff;
+$lowlowWhite: #b6b6b6;
+$lowWhite: #e7e7e7;
+$backgroundComponent: #050505;
+$colorActiveBtn: #000000;
+$borderBlack: #0d0d0d;
+$backgrounBody: #1a1a1a;
+$backgroundScroll: #101113;
+$btnInteractionPost: #070707a1;
+$colorIconsHeadMenu: #fff;
+$backgrounWindow: #000;
+$actionBtnDefaul: #1f1f1f;
+$leftoverBoxDark: #101113;
+$boderBlurBox: rgba(255, 255, 255, 0.1);
+$backgroundFile:  radial-gradient(circle at 0% 0%, 
+    #313130 50%, #222127 66.67%, #15131e 83.33%, #080016 100%);
+$backgroundNavigation: rgba(0, 0, 0, 0.68);
+*/
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu',  'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #e6e6e6;
+  margin: 0;
+  padding: 0; }
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace; }
+
+::-webkit-scrollbar {
+  width: 2px;
+  height: 2px;
+  border-radius: 50px;
+  background-color: #e6e6e6; }
+
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background-color: #20212400; }
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #1040e2; }
+
+.content-Center {
+  margin-left: 20%;
+  margin-top: 70px;
+  width: 60%; }
+
+.content-Left {
+  display: block;
+  position: fixed;
+  top: 70px;
+  width: 20%;
+  height: 100%;
+  background-color: #000; }
+
+.content-Right {
+  left: 80%;
+  display: block;
+  position: fixed;
+  top: 70px;
+  width: 20%;
+  height: 100%;
+  background-color: #000; }
+
+.contentApp {
+  margin: 0;
+  margin-top: 50px;
+  width: 100%; }
+
+@media only screen and (max-width: 414px) {
+  .content-Left {
+    display: none;
+    width: 100%; }
+  .content-Right {
+    left: 0;
+    display: none;
+    width: 100%; }
+  .content-Center {
+    margin-left: 0;
+    width: 100%; } }
+
+/*navigatios*/
+/*NOTE: DO NOT COPY CONTENT*/
+/*NOTE:CENTER ELEMENTS*/
+/*NOTE: PLACE ELEMENTS IN CENTERED COLUMANS*/
+/*NOTE: ROUND EDGES*/
+/*NOTE:BALL MOVEMENT*/
+/*NOTE:SIDE BODY*/
+/*NOTE: LOGO COLORS*/
+/*NOTE:BORDER RADIUS*/
+/*NOTE: FONT-SIZE*/
+/*NOTE: FONT TYPE*/
+/*NOTE: BACKGROUND*/
+/*NOTE: TRANSPARENT*/
+/*NOTE: BORDER*/
+/*NOTE: TEXT*/
+/*NOTE: BUTTON*/
+/*MOON
+$white: #fff;
+$lowlowWhite: #b6b6b6;
+$lowWhite: #e7e7e7;
+$backgroundComponent: #050505;
+$colorActiveBtn: #000000;
+$borderBlack: #0d0d0d;
+$backgrounBody: #1a1a1a;
+$backgroundScroll: #101113;
+$btnInteractionPost: #070707a1;
+$colorIconsHeadMenu: #fff;
+$backgrounWindow: #000;
+$actionBtnDefaul: #1f1f1f;
+$leftoverBoxDark: #101113;
+$boderBlurBox: rgba(255, 255, 255, 0.1);
+$backgroundFile:  radial-gradient(circle at 0% 0%, 
+    #313130 50%, #222127 66.67%, #15131e 83.33%, #080016 100%);
+$backgroundNavigation: rgba(0, 0, 0, 0.68);
+*/
+.navInfer {
+  display: none;
+  position: fixed;
+  bottom: 15px;
+  width: 100%;
+  height: 50px;
+  transition: all 0.5s;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  border: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none; }
+  .navInfer ul.navbar-menu {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(30px);
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    width: 300px;
+    height: 100%;
+    border-radius: 50px;
+    margin: auto; }
+    .navInfer ul.navbar-menu li {
+      display: inline-block;
+      text-transform: capitalize; }
+
+.links-footer {
+  font-size: 50px;
+  margin: 0 25px;
+  text-decoration: none; }
+  .links-footer :hover {
+    color: #1040e2; }
+
+.btnFooter {
+  background-color: #ffffff00;
+  margin: 0 5px;
+  padding-top: 5px;
+  position: relative;
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  border: none; }
+
+.iconsFooter {
+  width: 30px;
+  color: #000 !important; }
+  .iconsFooter:active {
+    color: #1040e2 !important; }
+
 /** {
     --blueLigth: #1040e2;
     --blueDark: #133297;
@@ -99,7 +389,6 @@ $backgroundFile:  radial-gradient(circle at 0% 0%,
     #313130 50%, #222127 66.67%, #15131e 83.33%, #080016 100%);
 $backgroundNavigation: rgba(0, 0, 0, 0.68);
 */
-@import url(https://fonts.googleapis.com/css2?family=Azeret+Mono&display=swap);
 .head {
   display: none;
   position: fixed;
@@ -233,294 +522,6 @@ $backgroundNavigation: rgba(0, 0, 0, 0.68);
   display: none; }
 
 #modeSun {
-  display: none; }
-
-/*NOTE: DO NOT COPY CONTENT*/
-/*NOTE:CENTER ELEMENTS*/
-/*NOTE: PLACE ELEMENTS IN CENTERED COLUMANS*/
-/*NOTE: ROUND EDGES*/
-/*NOTE:BALL MOVEMENT*/
-/*NOTE:SIDE BODY*/
-/*NOTE: LOGO COLORS*/
-/*NOTE:BORDER RADIUS*/
-/*NOTE: FONT-SIZE*/
-/*NOTE: FONT TYPE*/
-/*NOTE: BACKGROUND*/
-/*NOTE: TRANSPARENT*/
-/*NOTE: BORDER*/
-/*NOTE: TEXT*/
-/*NOTE: BUTTON*/
-/*MOON
-$white: #fff;
-$lowlowWhite: #b6b6b6;
-$lowWhite: #e7e7e7;
-$backgroundComponent: #050505;
-$colorActiveBtn: #000000;
-$borderBlack: #0d0d0d;
-$backgrounBody: #1a1a1a;
-$backgroundScroll: #101113;
-$btnInteractionPost: #070707a1;
-$colorIconsHeadMenu: #fff;
-$backgrounWindow: #000;
-$actionBtnDefaul: #1f1f1f;
-$leftoverBoxDark: #101113;
-$boderBlurBox: rgba(255, 255, 255, 0.1);
-$backgroundFile:  radial-gradient(circle at 0% 0%, 
-    #313130 50%, #222127 66.67%, #15131e 83.33%, #080016 100%);
-$backgroundNavigation: rgba(0, 0, 0, 0.68);
-*/
-body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu',  'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  background-color: #e6e6e6;
-  margin: 0;
-  padding: 0; }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace; }
-
-::-webkit-scrollbar {
-  width: 2px;
-  height: 2px;
-  border-radius: 50px;
-  background-color: #e6e6e6; }
-
-::-webkit-scrollbar-track {
-  border-radius: 10px;
-  background-color: #20212400; }
-
-::-webkit-scrollbar-thumb {
-  border-radius: 10px;
-  background-color: #1040e2; }
-
-.content-Center {
-  margin-left: 20%;
-  margin-top: 70px;
-  width: 60%; }
-
-.content-Left {
-  display: block;
-  position: fixed;
-  top: 70px;
-  width: 20%;
-  height: 100%;
-  background-color: #000; }
-
-.content-Right {
-  left: 80%;
-  display: block;
-  position: fixed;
-  top: 70px;
-  width: 20%;
-  height: 100%;
-  background-color: #000; }
-
-.contentApp {
-  margin: 0;
-  margin-top: 50px;
-  width: 100%; }
-
-@media only screen and (max-width: 414px) {
-  .content-Left {
-    display: none;
-    width: 100%; }
-  .content-Right {
-    left: 0;
-    display: none;
-    width: 100%; }
-  .content-Center {
-    margin-left: 0;
-    width: 100%; } }
-
-/*NOTE: DO NOT COPY CONTENT*/
-/*NOTE:CENTER ELEMENTS*/
-/*NOTE: PLACE ELEMENTS IN CENTERED COLUMANS*/
-/*NOTE: ROUND EDGES*/
-/*NOTE:BALL MOVEMENT*/
-/*NOTE:SIDE BODY*/
-/*NOTE: LOGO COLORS*/
-/*NOTE:BORDER RADIUS*/
-/*NOTE: FONT-SIZE*/
-/*NOTE: FONT TYPE*/
-/*NOTE: BACKGROUND*/
-/*NOTE: TRANSPARENT*/
-/*NOTE: BORDER*/
-/*NOTE: TEXT*/
-/*NOTE: BUTTON*/
-/*MOON
-$white: #fff;
-$lowlowWhite: #b6b6b6;
-$lowWhite: #e7e7e7;
-$backgroundComponent: #050505;
-$colorActiveBtn: #000000;
-$borderBlack: #0d0d0d;
-$backgrounBody: #1a1a1a;
-$backgroundScroll: #101113;
-$btnInteractionPost: #070707a1;
-$colorIconsHeadMenu: #fff;
-$backgrounWindow: #000;
-$actionBtnDefaul: #1f1f1f;
-$leftoverBoxDark: #101113;
-$boderBlurBox: rgba(255, 255, 255, 0.1);
-$backgroundFile:  radial-gradient(circle at 0% 0%, 
-    #313130 50%, #222127 66.67%, #15131e 83.33%, #080016 100%);
-$backgroundNavigation: rgba(0, 0, 0, 0.68);
-*/
-.navInfer {
-  display: none;
-  position: fixed;
-  bottom: 15px;
-  width: 100%;
-  height: 50px;
-  transition: all 0.5s;
-  align-items: center;
-  justify-content: center;
-  border-radius: 10px;
-  border: none;
-  -moz-user-select: none;
-  -webkit-user-drag: none;
-  -webkit-user-select: none;
-  -ms-user-select: none; }
-  .navInfer ul.navbar-menu {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    backdrop-filter: blur(30px);
-    border: 2px solid rgba(0, 0, 0, 0.1);
-    width: 300px;
-    height: 100%;
-    border-radius: 50px;
-    margin: auto; }
-    .navInfer ul.navbar-menu li {
-      display: inline-block;
-      text-transform: capitalize; }
-
-.links-footer {
-  font-size: 50px;
-  margin: 0 25px;
-  text-decoration: none; }
-  .links-footer :hover {
-    color: #1040e2; }
-
-.btnFooter {
-  background-color: #ffffff00;
-  margin: 0 5px;
-  padding-top: 5px;
-  position: relative;
-  width: 40px;
-  height: 40px;
-  border-radius: 10px;
-  border: none; }
-
-.iconsFooter {
-  width: 30px;
-  color: #000 !important; }
-  .iconsFooter:active {
-    color: #1040e2 !important; }
-
-* {
-  cursor: default;
-  outline: none; }
-
-/*NOTE: DO NOT COPY CONTENT*/
-/*NOTE:CENTER ELEMENTS*/
-/*NOTE: PLACE ELEMENTS IN CENTERED COLUMANS*/
-/*NOTE: ROUND EDGES*/
-/*NOTE:BALL MOVEMENT*/
-/*NOTE:SIDE BODY*/
-/*NOTE: LOGO COLORS*/
-/*NOTE:BORDER RADIUS*/
-/*NOTE: FONT-SIZE*/
-/*NOTE: FONT TYPE*/
-/*NOTE: BACKGROUND*/
-/*NOTE: TRANSPARENT*/
-/*NOTE: BORDER*/
-/*NOTE: TEXT*/
-/*NOTE: BUTTON*/
-/*MOON
-$white: #fff;
-$lowlowWhite: #b6b6b6;
-$lowWhite: #e7e7e7;
-$backgroundComponent: #050505;
-$colorActiveBtn: #000000;
-$borderBlack: #0d0d0d;
-$backgrounBody: #1a1a1a;
-$backgroundScroll: #101113;
-$btnInteractionPost: #070707a1;
-$colorIconsHeadMenu: #fff;
-$backgrounWindow: #000;
-$actionBtnDefaul: #1f1f1f;
-$leftoverBoxDark: #101113;
-$boderBlurBox: rgba(255, 255, 255, 0.1);
-$backgroundFile:  radial-gradient(circle at 0% 0%, 
-    #313130 50%, #222127 66.67%, #15131e 83.33%, #080016 100%);
-$backgroundNavigation: rgba(0, 0, 0, 0.68);
-*/
-.divBlur {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  top: 50px;
-  backdrop-filter: blur(10px); }
-
-div.contentBoxBlur {
-  position: relative;
-  width: 300px;
-  max-height: 450px;
-  background-color: #fff;
-  border-radius: 30px;
-  -webkit-box-shadow: 2px 2px 5px #7b7b7b;
-  -moz-box-shadow: 2px 2px 5px #7b7b7b;
-  filter: shadow(color=#7b7b7b, direction=135, strength=2);
-  padding: 10px;
-  margin: auto;
-  margin-top: 40px; }
-  div.contentBoxBlur .contentChat {
-    border-radius: 30px; }
-
-.optionsBox {
-  height: 40px;
-  border-radius: 30px;
-  padding-top: 10px;
-  padding-left: 10px;
-  margin: 0 10px;
-  -moz-user-select: none;
-  -webkit-user-drag: none;
-  -webkit-user-select: none;
-  -ms-user-select: none; }
-  .optionsBox:active {
-    background-color: #B9b5b5; }
-  .optionsBox h4 {
-    color: #000;
-    position: relative;
-    bottom: 20px; }
-  .optionsBox .iconsOp {
-    margin-right: 10px; }
-    .optionsBox .iconsOp:active {
-      color: #000 !important; }
-
-.btnOptions {
-  background-color: #ffffff00;
-  width: 30px;
-  height: 30px;
-  border: none;
-  margin-right: 5px; }
-
-.iconsOp {
-  color: #000 !important; }
-  .iconsOp:active {
-    color: #1040e2 !important; }
-
-#boxOptionsUserFriendChat {
-  display: none; }
-
-#viewPublication {
   display: none; }
 
 /*LOADERS/ALERT*/
