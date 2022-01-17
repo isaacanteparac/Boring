@@ -91,7 +91,7 @@ CREATE POST
 
 
 ALERT
-![image](https://user-images.githubusercontent.com/69361351/149795548-aa37d32c-9c8c-4401-9ee9-71c9f8ab7265.png)
+![image](https://user-images.githubusercontent.com/69361351/149801791-5eb5f612-15a8-4a9a-b908-34246c7e6502.png)
 
 
 SEARCH
@@ -100,8 +100,9 @@ SEARCH
 
 
 PROFILE
-![image](https://user-images.githubusercontent.com/69361351/149801302-915af6cf-6b4c-4188-99ca-a1a31e733f3e.png)
-![image](https://user-images.githubusercontent.com/69361351/149801410-4b75ffeb-4e95-4bee-8448-035c4810e378.png)
+![image](https://user-images.githubusercontent.com/69361351/149801629-297a536e-6425-4815-8d54-2abf3a0a27be.png)
+![image](https://user-images.githubusercontent.com/69361351/149801672-f35c49d3-2fe0-4b6b-bf09-cfe8eeec1d8b.png)
+![image](https://user-images.githubusercontent.com/69361351/149801719-6e4e26be-af50-4e52-b451-74025c636fb6.png)
 
 
 
