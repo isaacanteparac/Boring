@@ -1,0 +1,143 @@
+@import url(https://fonts.googleapis.com/css2?family=Azeret+Mono&display=swap);
+/*NOTE: DO NOT COPY CONTENT*/
+/*NOTE:CENTER ELEMENTS*/
+/*NOTE: PLACE ELEMENTS IN CENTERED COLUMANS*/
+/*NOTE: ROUND EDGES*/
+/*NOTE:BALL MOVEMENT*/
+/*NOTE:SIDE BODY*/
+/*NOTE: LOGO COLORS*/
+/*NOTE:BORDER RADIUS*/
+/*NOTE: FONT-SIZE*/
+/*NOTE: FONT TYPE*/
+/*NOTE: BACKGROUND*/
+/*NOTE: TRANSPARENT*/
+/*NOTE: BORDER*/
+/*NOTE: TEXT*/
+/*NOTE: BUTTON*/
+/*MOON*/
+.register {
+  background-color: #ffffff00; }
+
+.contenRegister {
+  width: 100%;
+  margin: 0;
+  padding: 0; }
+
+.link {
+  text-decoration: none; }
+
+.bannerLogin,
+.bannerSingup {
+  width: 100%;
+  height: 250px;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none; }
+
+.bannerSingup {
+  height: 140px; }
+  .bannerSingup .titleLabel {
+    font-size: 43px; }
+
+.titleLabel {
+  color: #fff;
+  text-decoration: none;
+  text-align: left;
+  font-weight: 700;
+  font-size: 48px;
+  position: relative;
+  top: 20%;
+  left: 15px; }
+
+.contentForm {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  width: 100%; }
+
+.boxInputRegistre {
+  display: flex;
+  justify-content: center;
+  padding: 10px 0; }
+  .boxInputRegistre input {
+    background-color: #ffffff00;
+    width: 80%;
+    height: 35px;
+    border: none;
+    border-bottom: 1px solid #999898;
+    margin-top: 5px;
+    color: #fff;
+    font-size: 19.2px; }
+
+#signup .contentForm {
+  margin-top: 50px; }
+
+#signup .boxInputRegistre {
+  height: 35px; }
+
+.boxBtnForm {
+  display: flex;
+  justify-content: center; }
+
+.btnOk {
+  width: 75%;
+  height: 50px;
+  border-radius: 10px;
+  margin: 10px 0;
+  border: none;
+  background: #1040e2;
+  color: white;
+  font-size: 19.2px; }
+  .btnOk:active {
+    background-color: #133297; }
+
+.btnNo {
+  width: 75%;
+  height: 50px;
+  border-radius: 10px;
+  margin: 10px 0;
+  border: none;
+  background: #ffffff00;
+  color: #999898;
+  border: 1px solid #999898;
+  font-size: 19.2px; }
+  .btnNo:active {
+    background-color: #000000; }
+
+.separationLine {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none; }
+  .separationLine label {
+    color: #fff;
+    font-size: 15px; }
+  .separationLine hr {
+    width: 38%;
+    height: 1px;
+    background-color: #999898;
+    border: none; }
+
+.primary {
+  width: 100%;
+  height: 100%;
+  padding-bottom: 50px; }
+
+.contentText {
+  display: flex;
+  flex-direction: column;
+  height: 350px;
+  width: 100%; }
+  .contentText p {
+    color: #fff;
+    font-size: 15px;
+    position: relative;
+    width: 90%;
+    margin: 0 auto; }
+
+.doubleBtnDiv {
+  position: relative; }

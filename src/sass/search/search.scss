@@ -62,7 +62,7 @@
   border: map-get($borderRadius, null);
   text-align: center;
   @include centerPositionColumn;
-  background-color: $backgroundComponent;
+  background: $backgroundComponent;
   color: $blueLigth;
   border: 1px solid $colorActiveBtn;
   padding: 2px;

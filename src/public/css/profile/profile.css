@@ -24,18 +24,19 @@
   flex-direction: column; }
 
 .infProfile {
-  margin-top: 10px;
+  padding-top: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   width: 100%;
-  border-bottom: 1px solid #0d0d0d;
+  border: none;
   padding-bottom: 10px;
   -moz-user-select: none;
   -webkit-user-drag: none;
   -webkit-user-select: none;
-  -ms-user-select: none; }
+  -ms-user-select: none;
+  background: #050505; }
   .infProfile .photoUser {
     width: 90px;
     height: 80px;
@@ -93,7 +94,6 @@
   margin: 0;
   padding: 0;
   height: 40px;
-  padding-top: 5px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -102,8 +102,7 @@
   .listLine .elementList {
     display: inline;
     padding: 5px;
-    margin: 5px;
-    border-radius: var(--borderRadioBig);
+    margin: 0 5px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -118,4 +117,11 @@
       background-color: #050505; }
 
 .optionsSearchPost {
-  margin-bottom: 5px; }
+  background: #050505;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 10px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px; }

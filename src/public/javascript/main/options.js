@@ -13,11 +13,13 @@ $(document).ready( () =>{
     });
 
     $("#windowOptionUserFriendChat").click( () => {
+        $("#divBlurid").hide();
         $("#boxOptionsUserFriendChat").hide();
         $('#navigation').show();
     });
 
     $("#userFriendPhoto").click( () => {
+        $("#divBlurid").show();
         $("#boxOptionsUserFriendChat").show();
         $('#navigation').hide();
     });

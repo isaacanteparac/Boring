@@ -3,7 +3,7 @@
     flex-wrap: wrap;
   
     .postSearchUser {
-      background-image: $backgroundComponent;
+      background: $backgroundComponent;
       @include roundedBorder(105px, 105px, map-get($borderRadius, medium));
       margin: auto;
       margin-top: 10px;

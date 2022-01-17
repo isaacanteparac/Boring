@@ -9,13 +9,13 @@
 }
 
 .infProfile {
-    margin-top: 10px;
+    padding-top:10px; 
     @include centerPositionColumn;
     width: 100%;
-    border-bottom: 1px solid $borderBlack;
+    border: none;
     padding-bottom: 10px;
     @include notUnderline;
-
+    background: $backgroundComponent;
     .photoUser {
         @include roundedBorder(90px, 80px, map-get($borderRadius, big ));
         background-image: $backgroundFile;
@@ -83,7 +83,7 @@
     margin: 0;
     padding: 0;
     height: 40px;
-    padding-top: 5px;
+ 
     @include centerPosition;
     color: $white;
     text-align: center;
@@ -91,9 +91,7 @@
     .elementList {
         display: inline;
         padding: 5px;
-        margin: 5px;
-        border-radius: var(--borderRadioBig);
-        
+        margin: 0 5px;      
         @include centerPosition;
         font-weight: 400;
         height: 30px;
@@ -107,5 +105,11 @@
 }
 
 .optionsSearchPost {
-    margin-bottom: 5px;
+    background: $backgroundComponent;
+    height: 55px;
+    @include centerPosition;
+    padding-bottom: 10px;
+    border-bottom-left-radius: map-get($borderRadius, big );
+    border-bottom-right-radius: map-get($borderRadius, big );
+
 }
