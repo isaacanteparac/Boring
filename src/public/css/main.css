@@ -14,7 +14,25 @@
 /*NOTE: BORDER*/
 /*NOTE: TEXT*/
 /*NOTE: BUTTON*/
-/*MOON*/
+/*MOON
+$white: #fff;
+$lowlowWhite: #b6b6b6;
+$lowWhite: #e7e7e7;
+$backgroundComponent: #050505;
+$colorActiveBtn: #000000;
+$borderBlack: #0d0d0d;
+$backgrounBody: #1a1a1a;
+$backgroundScroll: #101113;
+$btnInteractionPost: #070707a1;
+$colorIconsHeadMenu: #fff;
+$backgrounWindow: #000;
+$actionBtnDefaul: #1f1f1f;
+$leftoverBoxDark: #101113;
+$boderBlurBox: rgba(255, 255, 255, 0.1);
+$backgroundFile:  radial-gradient(circle at 0% 0%, 
+    #313130 50%, #222127 66.67%, #15131e 83.33%, #080016 100%);
+$backgroundNavigation: rgba(0, 0, 0, 0.68);
+*/
 /*main*/
 /** {
     --blueLigth: #1040e2;
@@ -62,7 +80,25 @@
 /*NOTE: BORDER*/
 /*NOTE: TEXT*/
 /*NOTE: BUTTON*/
-/*MOON*/
+/*MOON
+$white: #fff;
+$lowlowWhite: #b6b6b6;
+$lowWhite: #e7e7e7;
+$backgroundComponent: #050505;
+$colorActiveBtn: #000000;
+$borderBlack: #0d0d0d;
+$backgrounBody: #1a1a1a;
+$backgroundScroll: #101113;
+$btnInteractionPost: #070707a1;
+$colorIconsHeadMenu: #fff;
+$backgrounWindow: #000;
+$actionBtnDefaul: #1f1f1f;
+$leftoverBoxDark: #101113;
+$boderBlurBox: rgba(255, 255, 255, 0.1);
+$backgroundFile:  radial-gradient(circle at 0% 0%, 
+    #313130 50%, #222127 66.67%, #15131e 83.33%, #080016 100%);
+$backgroundNavigation: rgba(0, 0, 0, 0.68);
+*/
 @import url(https://fonts.googleapis.com/css2?family=Azeret+Mono&display=swap);
 .head {
   display: none;
@@ -74,7 +110,7 @@
   transition: all 0.5s; }
 
 .content-head {
-  background: #050505;
+  background: #fff;
   width: 100%;
   height: 50px;
   margin: 0 auto;
@@ -82,7 +118,7 @@
   padding-top: 5px;
   display: flex;
   justify-content: center;
-  border-bottom: 1px solid #0d0d0d; }
+  border-bottom: 1px solid #cccccc; }
 
 .head ul.subContent-head {
   margin: 0;
@@ -93,7 +129,7 @@
     margin: 0 10px; }
 
 .links {
-  color: #fff;
+  color: #000;
   font-size: 20px; }
 
 .logo-head {
@@ -134,7 +170,7 @@
   float: left;
   font-weight: 700;
   font-size: 30px;
-  color: #fff;
+  color: #000;
   -moz-user-select: none;
   -webkit-user-drag: none;
   -webkit-user-select: none;
@@ -162,11 +198,11 @@
   border: none; }
 
 .iconHead {
-  color: #fff !important;
+  color: #000 !important;
   width: 20px;
   height: 20px; }
   .iconHead:active {
-    color: #fff !important; }
+    color: #000 !important; }
 
 .LoaderBall {
   width: 75%;
@@ -187,7 +223,7 @@
   right: 1px; }
 
 .modeDarkLigth {
-  color: #fff !important;
+  color: #000 !important;
   width: 20px;
   height: 20px; }
   .modeDarkLigth:active {
@@ -214,12 +250,30 @@
 /*NOTE: BORDER*/
 /*NOTE: TEXT*/
 /*NOTE: BUTTON*/
-/*MOON*/
+/*MOON
+$white: #fff;
+$lowlowWhite: #b6b6b6;
+$lowWhite: #e7e7e7;
+$backgroundComponent: #050505;
+$colorActiveBtn: #000000;
+$borderBlack: #0d0d0d;
+$backgrounBody: #1a1a1a;
+$backgroundScroll: #101113;
+$btnInteractionPost: #070707a1;
+$colorIconsHeadMenu: #fff;
+$backgrounWindow: #000;
+$actionBtnDefaul: #1f1f1f;
+$leftoverBoxDark: #101113;
+$boderBlurBox: rgba(255, 255, 255, 0.1);
+$backgroundFile:  radial-gradient(circle at 0% 0%, 
+    #313130 50%, #222127 66.67%, #15131e 83.33%, #080016 100%);
+$backgroundNavigation: rgba(0, 0, 0, 0.68);
+*/
 body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu',  'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #1a1a1a;
+  background-color: #e6e6e6;
   margin: 0;
   padding: 0; }
 
@@ -230,7 +284,7 @@ code {
   width: 2px;
   height: 2px;
   border-radius: 50px;
-  background-color: #101113; }
+  background-color: #e6e6e6; }
 
 ::-webkit-scrollbar-track {
   border-radius: 10px;
@@ -294,7 +348,25 @@ code {
 /*NOTE: BORDER*/
 /*NOTE: TEXT*/
 /*NOTE: BUTTON*/
-/*MOON*/
+/*MOON
+$white: #fff;
+$lowlowWhite: #b6b6b6;
+$lowWhite: #e7e7e7;
+$backgroundComponent: #050505;
+$colorActiveBtn: #000000;
+$borderBlack: #0d0d0d;
+$backgrounBody: #1a1a1a;
+$backgroundScroll: #101113;
+$btnInteractionPost: #070707a1;
+$colorIconsHeadMenu: #fff;
+$backgrounWindow: #000;
+$actionBtnDefaul: #1f1f1f;
+$leftoverBoxDark: #101113;
+$boderBlurBox: rgba(255, 255, 255, 0.1);
+$backgroundFile:  radial-gradient(circle at 0% 0%, 
+    #313130 50%, #222127 66.67%, #15131e 83.33%, #080016 100%);
+$backgroundNavigation: rgba(0, 0, 0, 0.68);
+*/
 .navInfer {
   display: none;
   position: fixed;
@@ -317,7 +389,7 @@ code {
     align-items: center;
     justify-content: center;
     backdrop-filter: blur(30px);
-    border: 2px solid rgba(255, 255, 255, 0.1);
+    border: 2px solid rgba(0, 0, 0, 0.1);
     width: 300px;
     height: 100%;
     border-radius: 50px;
@@ -345,7 +417,7 @@ code {
 
 .iconsFooter {
   width: 30px;
-  color: #fff !important; }
+  color: #000 !important; }
   .iconsFooter:active {
     color: #1040e2 !important; }
 
@@ -368,7 +440,25 @@ code {
 /*NOTE: BORDER*/
 /*NOTE: TEXT*/
 /*NOTE: BUTTON*/
-/*MOON*/
+/*MOON
+$white: #fff;
+$lowlowWhite: #b6b6b6;
+$lowWhite: #e7e7e7;
+$backgroundComponent: #050505;
+$colorActiveBtn: #000000;
+$borderBlack: #0d0d0d;
+$backgrounBody: #1a1a1a;
+$backgroundScroll: #101113;
+$btnInteractionPost: #070707a1;
+$colorIconsHeadMenu: #fff;
+$backgrounWindow: #000;
+$actionBtnDefaul: #1f1f1f;
+$leftoverBoxDark: #101113;
+$boderBlurBox: rgba(255, 255, 255, 0.1);
+$backgroundFile:  radial-gradient(circle at 0% 0%, 
+    #313130 50%, #222127 66.67%, #15131e 83.33%, #080016 100%);
+$backgroundNavigation: rgba(0, 0, 0, 0.68);
+*/
 .divBlur {
   position: fixed;
   width: 100%;
@@ -383,11 +473,11 @@ div.contentBoxBlur {
   position: relative;
   width: 300px;
   max-height: 450px;
-  background-color: #000;
+  background-color: #fff;
   border-radius: 30px;
-  -webkit-box-shadow: 2px 2px 5px #101113;
-  -moz-box-shadow: 2px 2px 5px #101113;
-  filter: shadow(color=#101113, direction=135, strength=2);
+  -webkit-box-shadow: 2px 2px 5px #7b7b7b;
+  -moz-box-shadow: 2px 2px 5px #7b7b7b;
+  filter: shadow(color=#7b7b7b, direction=135, strength=2);
   padding: 10px;
   margin: auto;
   margin-top: 40px; }
@@ -405,15 +495,15 @@ div.contentBoxBlur {
   -webkit-user-select: none;
   -ms-user-select: none; }
   .optionsBox:active {
-    background-color: #1f1f1f; }
+    background-color: #B9b5b5; }
   .optionsBox h4 {
-    color: #fff;
+    color: #000;
     position: relative;
     bottom: 20px; }
   .optionsBox .iconsOp {
     margin-right: 10px; }
     .optionsBox .iconsOp:active {
-      color: #fff !important; }
+      color: #000 !important; }
 
 .btnOptions {
   background-color: #ffffff00;
@@ -423,7 +513,7 @@ div.contentBoxBlur {
   margin-right: 5px; }
 
 .iconsOp {
-  color: #fff !important; }
+  color: #000 !important; }
   .iconsOp:active {
     color: #1040e2 !important; }
 
@@ -449,7 +539,25 @@ div.contentBoxBlur {
 /*NOTE: BORDER*/
 /*NOTE: TEXT*/
 /*NOTE: BUTTON*/
-/*MOON*/
+/*MOON
+$white: #fff;
+$lowlowWhite: #b6b6b6;
+$lowWhite: #e7e7e7;
+$backgroundComponent: #050505;
+$colorActiveBtn: #000000;
+$borderBlack: #0d0d0d;
+$backgrounBody: #1a1a1a;
+$backgroundScroll: #101113;
+$btnInteractionPost: #070707a1;
+$colorIconsHeadMenu: #fff;
+$backgrounWindow: #000;
+$actionBtnDefaul: #1f1f1f;
+$leftoverBoxDark: #101113;
+$boderBlurBox: rgba(255, 255, 255, 0.1);
+$backgroundFile:  radial-gradient(circle at 0% 0%, 
+    #313130 50%, #222127 66.67%, #15131e 83.33%, #080016 100%);
+$backgroundNavigation: rgba(0, 0, 0, 0.68);
+*/
 .alert_message {
   background: #ffffff00;
   display: flex;
@@ -543,7 +651,25 @@ label.iconidMessageFailed {
 /*NOTE: BORDER*/
 /*NOTE: TEXT*/
 /*NOTE: BUTTON*/
-/*MOON*/
+/*MOON
+$white: #fff;
+$lowlowWhite: #b6b6b6;
+$lowWhite: #e7e7e7;
+$backgroundComponent: #050505;
+$colorActiveBtn: #000000;
+$borderBlack: #0d0d0d;
+$backgrounBody: #1a1a1a;
+$backgroundScroll: #101113;
+$btnInteractionPost: #070707a1;
+$colorIconsHeadMenu: #fff;
+$backgrounWindow: #000;
+$actionBtnDefaul: #1f1f1f;
+$leftoverBoxDark: #101113;
+$boderBlurBox: rgba(255, 255, 255, 0.1);
+$backgroundFile:  radial-gradient(circle at 0% 0%, 
+    #313130 50%, #222127 66.67%, #15131e 83.33%, #080016 100%);
+$backgroundNavigation: rgba(0, 0, 0, 0.68);
+*/
 .containerBall {
   width: 50px;
   height: 100px;
@@ -656,7 +782,25 @@ label.iconidMessageFailed {
 /*NOTE: BORDER*/
 /*NOTE: TEXT*/
 /*NOTE: BUTTON*/
-/*MOON*/
+/*MOON
+$white: #fff;
+$lowlowWhite: #b6b6b6;
+$lowWhite: #e7e7e7;
+$backgroundComponent: #050505;
+$colorActiveBtn: #000000;
+$borderBlack: #0d0d0d;
+$backgrounBody: #1a1a1a;
+$backgroundScroll: #101113;
+$btnInteractionPost: #070707a1;
+$colorIconsHeadMenu: #fff;
+$backgrounWindow: #000;
+$actionBtnDefaul: #1f1f1f;
+$leftoverBoxDark: #101113;
+$boderBlurBox: rgba(255, 255, 255, 0.1);
+$backgroundFile:  radial-gradient(circle at 0% 0%, 
+    #313130 50%, #222127 66.67%, #15131e 83.33%, #080016 100%);
+$backgroundNavigation: rgba(0, 0, 0, 0.68);
+*/
 /*NOTE:VIZUALIZAR EL TIEMPO DEL AUDIO*/
 #player-track {
   background-color: #ffffff00;
@@ -668,7 +812,7 @@ label.iconidMessageFailed {
     top: -92px; }
 
 #track-name {
-  color: #fff;
+  color: #000;
   font-size: 17px;
   text-align: center; }
 
@@ -691,12 +835,12 @@ label.iconidMessageFailed {
 #current-time,
 #track-length {
   font-size: 15px;
-  color: #fff;
+  color: #000;
   background-color: #ffffff00;
   border-radius: 10px; }
 
 #s-area {
-  background-color: #fff;
+  background-color: #000;
   width: 160px;
   position: relative;
   top: 6px;
@@ -716,7 +860,7 @@ label.iconidMessageFailed {
 #player-content {
   position: relative;
   height: 100%;
-  background-image: radial-gradient(circle at 0% 0%, #313130 50%, #222127 66.67%, #15131e 83.33%, #080016 100%);
+  background-image: radial-gradient(circle at 0% 0%, #b1b1b8 50%, #b1b1b8 66.67%, #8c8ca3 83.33%, #6e6b8f 100%);
   border-radius: 15px;
   z-index: 2; }
 
@@ -758,7 +902,7 @@ label.iconidMessageFailed {
 #discSound {
   width: 60px;
   height: 60px;
-  color: #fff !important; }
+  color: #000 !important; }
 
 #album-art {
   position: relative;
@@ -766,17 +910,17 @@ label.iconidMessageFailed {
   left: 15px;
   width: 50px;
   height: 50px;
-  background-color: #050505;
+  background-color: #fff;
   transform: rotateZ(0);
   transition: 0.3s ease all;
-  box-shadow: 0 0 0 6px #fff;
+  box-shadow: 0 0 0 6px #000;
   border-radius: 50%;
   overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center; }
   #album-art .active {
-    box-shadow: 0 0 0 12px #fff; }
+    box-shadow: 0 0 0 12px #000; }
   #album-art:before {
     top: 50%;
     right: 0;
@@ -832,7 +976,25 @@ label.iconidMessageFailed {
 /*NOTE: BORDER*/
 /*NOTE: TEXT*/
 /*NOTE: BUTTON*/
-/*MOON*/
+/*MOON
+$white: #fff;
+$lowlowWhite: #b6b6b6;
+$lowWhite: #e7e7e7;
+$backgroundComponent: #050505;
+$colorActiveBtn: #000000;
+$borderBlack: #0d0d0d;
+$backgrounBody: #1a1a1a;
+$backgroundScroll: #101113;
+$btnInteractionPost: #070707a1;
+$colorIconsHeadMenu: #fff;
+$backgrounWindow: #000;
+$actionBtnDefaul: #1f1f1f;
+$leftoverBoxDark: #101113;
+$boderBlurBox: rgba(255, 255, 255, 0.1);
+$backgroundFile:  radial-gradient(circle at 0% 0%, 
+    #313130 50%, #222127 66.67%, #15131e 83.33%, #080016 100%);
+$backgroundNavigation: rgba(0, 0, 0, 0.68);
+*/
 .video video {
   width: 250px;
   max-height: 250px;
@@ -862,7 +1024,7 @@ label.iconidMessageFailed {
   height: 20px; }
 
 .ProgressContainer {
-  color: #1a1a1a;
+  color: #e6e6e6;
   font-size: 15px; }
   .ProgressContainer .fullTime {
     position: relative;
@@ -919,7 +1081,25 @@ label.iconidMessageFailed {
 /*NOTE: BORDER*/
 /*NOTE: TEXT*/
 /*NOTE: BUTTON*/
-/*MOON*/
+/*MOON
+$white: #fff;
+$lowlowWhite: #b6b6b6;
+$lowWhite: #e7e7e7;
+$backgroundComponent: #050505;
+$colorActiveBtn: #000000;
+$borderBlack: #0d0d0d;
+$backgrounBody: #1a1a1a;
+$backgroundScroll: #101113;
+$btnInteractionPost: #070707a1;
+$colorIconsHeadMenu: #fff;
+$backgrounWindow: #000;
+$actionBtnDefaul: #1f1f1f;
+$leftoverBoxDark: #101113;
+$boderBlurBox: rgba(255, 255, 255, 0.1);
+$backgroundFile:  radial-gradient(circle at 0% 0%, 
+    #313130 50%, #222127 66.67%, #15131e 83.33%, #080016 100%);
+$backgroundNavigation: rgba(0, 0, 0, 0.68);
+*/
 .register {
   background-color: #ffffff00; }
 
@@ -946,7 +1126,7 @@ label.iconidMessageFailed {
     font-size: 43px; }
 
 .titleLabel {
-  color: #fff;
+  color: #000;
   text-decoration: none;
   text-align: left;
   font-weight: 700;
@@ -972,7 +1152,7 @@ label.iconidMessageFailed {
     border: none;
     border-bottom: 1px solid #999898;
     margin-top: 5px;
-    color: #fff;
+    color: #000;
     font-size: 19.2px; }
 
 #signup .contentForm {
@@ -1008,7 +1188,7 @@ label.iconidMessageFailed {
   border: 1px solid #999898;
   font-size: 19.2px; }
   .btnNo:active {
-    background-color: #000000; }
+    background-color: #b6b3b3; }
 
 .separationLine {
   display: flex;
@@ -1019,7 +1199,7 @@ label.iconidMessageFailed {
   -webkit-user-select: none;
   -ms-user-select: none; }
   .separationLine label {
-    color: #fff;
+    color: #000;
     font-size: 15px; }
   .separationLine hr {
     width: 38%;
@@ -1038,7 +1218,7 @@ label.iconidMessageFailed {
   height: 350px;
   width: 100%; }
   .contentText p {
-    color: #fff;
+    color: #000;
     font-size: 15px;
     position: relative;
     width: 90%;
@@ -1101,7 +1281,7 @@ label.iconidMessageFailed {
   float: left;
   font-weight: 700;
   font-size: 50px;
-  color: #fff;
+  color: #000;
   -moz-user-select: none;
   -webkit-user-drag: none;
   -webkit-user-select: none;
@@ -1133,7 +1313,25 @@ label.iconidMessageFailed {
 /*NOTE: BORDER*/
 /*NOTE: TEXT*/
 /*NOTE: BUTTON*/
-/*MOON*/
+/*MOON
+$white: #fff;
+$lowlowWhite: #b6b6b6;
+$lowWhite: #e7e7e7;
+$backgroundComponent: #050505;
+$colorActiveBtn: #000000;
+$borderBlack: #0d0d0d;
+$backgrounBody: #1a1a1a;
+$backgroundScroll: #101113;
+$btnInteractionPost: #070707a1;
+$colorIconsHeadMenu: #fff;
+$backgrounWindow: #000;
+$actionBtnDefaul: #1f1f1f;
+$leftoverBoxDark: #101113;
+$boderBlurBox: rgba(255, 255, 255, 0.1);
+$backgroundFile:  radial-gradient(circle at 0% 0%, 
+    #313130 50%, #222127 66.67%, #15131e 83.33%, #080016 100%);
+$backgroundNavigation: rgba(0, 0, 0, 0.68);
+*/
 div.post, div.viewPostContentuser {
   width: 96%;
   margin: auto;
@@ -1163,7 +1361,7 @@ div.viewPostContentuser {
   height: 50px;
   border: none;
   backdrop-filter: blur(5px);
-  border: 2px solid rgba(255, 255, 255, 0.1);
+  border: 2px solid rgba(0, 0, 0, 0.1);
   float: left;
   left: 20%;
   position: relative;
@@ -1175,13 +1373,13 @@ div.viewPostContentuser {
     position: relative;
     left: 55px;
     bottom: 57px;
-    color: #fff; }
+    color: #000; }
   .information .messageUser {
     width: 250px;
     position: relative;
     left: 55px;
     bottom: 78px;
-    color: #fff; }
+    color: #000; }
   .information .photoUser {
     position: relative;
     top: 5px;
@@ -1197,7 +1395,7 @@ div.viewPostContentuser {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #050505;
+  background: #fff;
   /*border: 1px solid $borderBlack;*/
   overflow: hidden; }
 
@@ -1216,7 +1414,7 @@ div.viewPostContentuser {
   height: 40px;
   border-radius: 30px;
   backdrop-filter: blur(5px);
-  border: 2px solid rgba(255, 255, 255, 0.1);
+  border: 2px solid rgba(0, 0, 0, 0.1);
   float: right;
   position: relative;
   bottom: 105px;
@@ -1264,7 +1462,25 @@ svg.iconSavePost:active {
 /*NOTE: BORDER*/
 /*NOTE: TEXT*/
 /*NOTE: BUTTON*/
-/*MOON*/
+/*MOON
+$white: #fff;
+$lowlowWhite: #b6b6b6;
+$lowWhite: #e7e7e7;
+$backgroundComponent: #050505;
+$colorActiveBtn: #000000;
+$borderBlack: #0d0d0d;
+$backgrounBody: #1a1a1a;
+$backgroundScroll: #101113;
+$btnInteractionPost: #070707a1;
+$colorIconsHeadMenu: #fff;
+$backgrounWindow: #000;
+$actionBtnDefaul: #1f1f1f;
+$leftoverBoxDark: #101113;
+$boderBlurBox: rgba(255, 255, 255, 0.1);
+$backgroundFile:  radial-gradient(circle at 0% 0%, 
+    #313130 50%, #222127 66.67%, #15131e 83.33%, #080016 100%);
+$backgroundNavigation: rgba(0, 0, 0, 0.68);
+*/
 .coment {
   margin: 0;
   padding: 0;
@@ -1291,7 +1507,7 @@ svg.iconSavePost:active {
   flex-direction: column;
   align-items: center;
   margin-bottom: 50px;
-  background-color: #050505;
+  background-color: #fff;
   border: none; }
   .comentBox .title {
     width: 100%;
@@ -1301,7 +1517,7 @@ svg.iconSavePost:active {
     justify-content: center;
     flex-direction: column; }
     .comentBox .title h4 {
-      color: #fff; }
+      color: #000; }
 
 .comentUser {
   width: 100%;
@@ -1348,8 +1564,8 @@ svg.iconSavePost:active {
   font-size: 16px;
   font-family: "Segoe UI";
   border: 2px solid #1040e2;
-  background-color: #000000;
-  color: #fff; }
+  background-color: #b6b3b3;
+  color: #000; }
 
 .inputMessage {
   height: 30px; }
@@ -1387,7 +1603,25 @@ svg.iconSavePost:active {
 /*NOTE: BORDER*/
 /*NOTE: TEXT*/
 /*NOTE: BUTTON*/
-/*MOON*/
+/*MOON
+$white: #fff;
+$lowlowWhite: #b6b6b6;
+$lowWhite: #e7e7e7;
+$backgroundComponent: #050505;
+$colorActiveBtn: #000000;
+$borderBlack: #0d0d0d;
+$backgrounBody: #1a1a1a;
+$backgroundScroll: #101113;
+$btnInteractionPost: #070707a1;
+$colorIconsHeadMenu: #fff;
+$backgrounWindow: #000;
+$actionBtnDefaul: #1f1f1f;
+$leftoverBoxDark: #101113;
+$boderBlurBox: rgba(255, 255, 255, 0.1);
+$backgroundFile:  radial-gradient(circle at 0% 0%, 
+    #313130 50%, #222127 66.67%, #15131e 83.33%, #080016 100%);
+$backgroundNavigation: rgba(0, 0, 0, 0.68);
+*/
 #boxCreatePublication {
   display: none; }
 
@@ -1443,7 +1677,7 @@ input[type="file"] {
   bottom: 100%; }
 
 .custom-file-upload {
-  border: 1px solid #b6b6b6;
+  border: 1px solid #333333;
   display: inline-block;
   padding: 6px 12px;
   cursor: pointer; }
@@ -1479,7 +1713,7 @@ input[type="file"] {
   align-items: center;
   padding-left: 10px; }
   .divTypeExclusi label {
-    color: #fff;
+    color: #000;
     margin-left: 5px;
     margin-right: 10px;
     font-size: 16px; }
@@ -1511,7 +1745,7 @@ input[type="file"] {
   background-color: #ffffff00;
   margin-left: 10px;
   border: none;
-  color: #fff;
+  color: #000;
   width: 90%;
   font-size: 16px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -1522,7 +1756,7 @@ input[type="file"] {
   max-height: 76px; }
 
 .subtitle {
-  color: #fff;
+  color: #000;
   width: 80%;
   margin: 10px 0;
   margin-left: 10px; }
@@ -1556,11 +1790,11 @@ input[type="file"] {
   left: 8px;
   color: #999898 !important; }
   #eliminarFileCreatePublication:active {
-    color: #fff !important; }
+    color: #000 !important; }
 
 .preview {
   display: none;
-  background-image: radial-gradient(circle at 0% 0%, #313130 50%, #222127 66.67%, #15131e 83.33%, #080016 100%);
+  background-image: radial-gradient(circle at 0% 0%, #b1b1b8 50%, #b1b1b8 66.67%, #8c8ca3 83.33%, #6e6b8f 100%);
   max-width: 250px;
   max-height: 250px;
   border-radius: 10px;
@@ -1593,7 +1827,7 @@ input[type="file"] {
   margin-top: 5px;
   display: flex;
   align-items: center;
-  background-color: #fff; }
+  background-color: #000; }
 
 #viewImagen, #viewVideo {
   display: none;
@@ -1615,7 +1849,25 @@ input[type="file"] {
 /*NOTE: BORDER*/
 /*NOTE: TEXT*/
 /*NOTE: BUTTON*/
-/*MOON*/
+/*MOON
+$white: #fff;
+$lowlowWhite: #b6b6b6;
+$lowWhite: #e7e7e7;
+$backgroundComponent: #050505;
+$colorActiveBtn: #000000;
+$borderBlack: #0d0d0d;
+$backgrounBody: #1a1a1a;
+$backgroundScroll: #101113;
+$btnInteractionPost: #070707a1;
+$colorIconsHeadMenu: #fff;
+$backgrounWindow: #000;
+$actionBtnDefaul: #1f1f1f;
+$leftoverBoxDark: #101113;
+$boderBlurBox: rgba(255, 255, 255, 0.1);
+$backgroundFile:  radial-gradient(circle at 0% 0%, 
+    #313130 50%, #222127 66.67%, #15131e 83.33%, #080016 100%);
+$backgroundNavigation: rgba(0, 0, 0, 0.68);
+*/
 .profile {
   width: 100%;
   height: 100%;
@@ -1638,12 +1890,12 @@ input[type="file"] {
   -webkit-user-drag: none;
   -webkit-user-select: none;
   -ms-user-select: none;
-  background: #050505; }
+  background: #fff; }
   .infProfile .photoUser {
     width: 90px;
     height: 80px;
     border-radius: 20px;
-    background-image: radial-gradient(circle at 0% 0%, #313130 50%, #222127 66.67%, #15131e 83.33%, #080016 100%);
+    background-image: radial-gradient(circle at 0% 0%, #b1b1b8 50%, #b1b1b8 66.67%, #8c8ca3 83.33%, #6e6b8f 100%);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1678,7 +1930,7 @@ input[type="file"] {
   flex-direction: column;
   padding: 0;
   margin: 0;
-  color: #fff; }
+  color: #000; }
   .informationUser h4 {
     margin: 0;
     font-size: 20px; }
@@ -1699,7 +1951,7 @@ input[type="file"] {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #fff;
+  color: #000;
   text-align: center; }
   .listLine .elementList {
     display: inline;
@@ -1716,10 +1968,10 @@ input[type="file"] {
     -webkit-user-select: none;
     -ms-user-select: none; }
     .listLine .elementList:active {
-      background-color: #050505; }
+      background-color: #fff; }
 
 .optionsSearchPost {
-  background: #050505;
+  background: #fff;
   height: 55px;
   display: flex;
   align-items: center;
@@ -1736,7 +1988,7 @@ input[type="file"] {
   flex-wrap: wrap; }
 
 .onePost {
-  background: #050505;
+  background: #fff;
   width: 105px;
   height: 105px;
   border-radius: 15px;
@@ -1790,7 +2042,7 @@ input[type="file"] {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background-color: #050505;
+  background-color: #fff;
   color: #1040e2 !important; }
   .btnFilesUser:active {
     background-color: rgba(0, 0, 0, 0.465); }
@@ -1815,7 +2067,25 @@ input[type="file"] {
 /*NOTE: BORDER*/
 /*NOTE: TEXT*/
 /*NOTE: BUTTON*/
-/*MOON*/
+/*MOON
+$white: #fff;
+$lowlowWhite: #b6b6b6;
+$lowWhite: #e7e7e7;
+$backgroundComponent: #050505;
+$colorActiveBtn: #000000;
+$borderBlack: #0d0d0d;
+$backgrounBody: #1a1a1a;
+$backgroundScroll: #101113;
+$btnInteractionPost: #070707a1;
+$colorIconsHeadMenu: #fff;
+$backgrounWindow: #000;
+$actionBtnDefaul: #1f1f1f;
+$leftoverBoxDark: #101113;
+$boderBlurBox: rgba(255, 255, 255, 0.1);
+$backgroundFile:  radial-gradient(circle at 0% 0%, 
+    #313130 50%, #222127 66.67%, #15131e 83.33%, #080016 100%);
+$backgroundNavigation: rgba(0, 0, 0, 0.68);
+*/
 #viewPublication .contentBoxBlur {
   max-height: 400px;
   padding: 3px;
@@ -1851,7 +2121,25 @@ input[type="file"] {
 /*NOTE: BORDER*/
 /*NOTE: TEXT*/
 /*NOTE: BUTTON*/
-/*MOON*/
+/*MOON
+$white: #fff;
+$lowlowWhite: #b6b6b6;
+$lowWhite: #e7e7e7;
+$backgroundComponent: #050505;
+$colorActiveBtn: #000000;
+$borderBlack: #0d0d0d;
+$backgrounBody: #1a1a1a;
+$backgroundScroll: #101113;
+$btnInteractionPost: #070707a1;
+$colorIconsHeadMenu: #fff;
+$backgrounWindow: #000;
+$actionBtnDefaul: #1f1f1f;
+$leftoverBoxDark: #101113;
+$boderBlurBox: rgba(255, 255, 255, 0.1);
+$backgroundFile:  radial-gradient(circle at 0% 0%, 
+    #313130 50%, #222127 66.67%, #15131e 83.33%, #080016 100%);
+$backgroundNavigation: rgba(0, 0, 0, 0.68);
+*/
 .chat {
   width: 100%;
   height: 55px;
@@ -1866,13 +2154,13 @@ input[type="file"] {
   height: 55px;
   border-radius: 15px; }
   .contentChat:active {
-    background-color: #000000; }
+    background-color: #b6b3b3; }
 
 .photoUser {
   width: 40px;
   height: 40px;
   border-radius: 20px;
-  background-color: #b6b6b6;
+  background-color: #333333;
   position: relative;
   top: 3px;
   display: flex;
@@ -1910,10 +2198,10 @@ input[type="file"] {
   padding: 0; }
 
 .textNameUser {
-  color: #fff; }
+  color: #000; }
 
 .textUserP {
-  color: #b6b6b6;
+  color: #333333;
   font-size: 15px;
   width: 100%;
   margin: 0;
@@ -1923,7 +2211,7 @@ input[type="file"] {
   -ms-user-select: none; }
 
 .textUserLabel {
-  color: #b6b6b6;
+  color: #333333;
   font-size: 15px;
   margin: 0; }
 
@@ -1973,7 +2261,25 @@ input[type="file"] {
 /*NOTE: BORDER*/
 /*NOTE: TEXT*/
 /*NOTE: BUTTON*/
-/*MOON*/
+/*MOON
+$white: #fff;
+$lowlowWhite: #b6b6b6;
+$lowWhite: #e7e7e7;
+$backgroundComponent: #050505;
+$colorActiveBtn: #000000;
+$borderBlack: #0d0d0d;
+$backgrounBody: #1a1a1a;
+$backgroundScroll: #101113;
+$btnInteractionPost: #070707a1;
+$colorIconsHeadMenu: #fff;
+$backgrounWindow: #000;
+$actionBtnDefaul: #1f1f1f;
+$leftoverBoxDark: #101113;
+$boderBlurBox: rgba(255, 255, 255, 0.1);
+$backgroundFile:  radial-gradient(circle at 0% 0%, 
+    #313130 50%, #222127 66.67%, #15131e 83.33%, #080016 100%);
+$backgroundNavigation: rgba(0, 0, 0, 0.68);
+*/
 .boxFriends {
   margin-bottom: 60px;
   width: 100%;
@@ -1990,11 +2296,11 @@ input[type="file"] {
   margin-top: 15px;
   width: 34%;
   border-radius: 20px;
-  border: 1px solid #0d0d0d;
+  border: 1px solid #cccccc;
   padding: 0;
-  background-color: #050505; }
+  background-color: #fff; }
   .contentFriend:active {
-    background-color: #000000; }
+    background-color: #b6b3b3; }
   .contentFriend.contentOnePost {
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px; }
@@ -2002,12 +2308,12 @@ input[type="file"] {
 .nameFriend {
   margin: 0;
   font-size: 17.6px;
-  color: #fff;
+  color: #000;
   margin-bottom: 3px;
   text-align: center; }
 
 .usernameFriend {
-  color: #fff;
+  color: #000;
   margin-bottom: 5px; }
 
 .photoContact {
@@ -2030,7 +2336,25 @@ input[type="file"] {
 /*NOTE: BORDER*/
 /*NOTE: TEXT*/
 /*NOTE: BUTTON*/
-/*MOON*/
+/*MOON
+$white: #fff;
+$lowlowWhite: #b6b6b6;
+$lowWhite: #e7e7e7;
+$backgroundComponent: #050505;
+$colorActiveBtn: #000000;
+$borderBlack: #0d0d0d;
+$backgrounBody: #1a1a1a;
+$backgroundScroll: #101113;
+$btnInteractionPost: #070707a1;
+$colorIconsHeadMenu: #fff;
+$backgrounWindow: #000;
+$actionBtnDefaul: #1f1f1f;
+$leftoverBoxDark: #101113;
+$boderBlurBox: rgba(255, 255, 255, 0.1);
+$backgroundFile:  radial-gradient(circle at 0% 0%, 
+    #313130 50%, #222127 66.67%, #15131e 83.33%, #080016 100%);
+$backgroundNavigation: rgba(0, 0, 0, 0.68);
+*/
 .divSearch {
   padding-top: 5px;
   -moz-user-select: none;
@@ -2039,7 +2363,7 @@ input[type="file"] {
   -ms-user-select: none; }
 
 .barSearch {
-  background-color: #050505;
+  background-color: #fff;
   margin: 0;
   position: relative;
   bottom: 1px;
@@ -2093,21 +2417,21 @@ input[type="file"] {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background: #050505;
+  background: #fff;
   color: #1040e2;
-  border: 1px solid #000000;
+  border: 1px solid #b6b3b3;
   padding: 2px;
   font-size: 15px; }
   .options:active {
     border: 2px solid #1040e2;
-    color: #fff;
+    color: #000;
     background-color: rgba(0, 0, 0, 0.465); }
 
 .contentSearchPost {
   display: flex;
   flex-wrap: wrap; }
   .contentSearchPost .postSearchUser {
-    background: #050505;
+    background: #fff;
     width: 105px;
     height: 105px;
     border-radius: 15px;
@@ -2131,7 +2455,7 @@ input[type="file"] {
       -ms-user-select: none; }
 
 .userSearchUser {
-  background-color: #050505;
+  background-color: #fff;
   margin: auto;
   margin-top: 5px;
   border: none;
@@ -2146,7 +2470,7 @@ input[type="file"] {
     top: 10px;
     left: 5px; }
   .userSearchUser:active {
-    background: #000000; }
+    background: #b6b3b3; }
 
 .userInfoSearch {
   position: relative;
@@ -2165,20 +2489,20 @@ input[type="file"] {
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;
-      color: #b6b6b6; }
+      color: #333333; }
 
 .nameUserSearch {
   font-size: 16px;
   font-weight: 700;
-  color: #fff; }
+  color: #000; }
 
 .usernameUserSearch {
   font-size: 15px;
   font-weight: 500;
-  color: #b6b6b6; }
+  color: #333333; }
 
 .infoFollowserSearch {
-  color: #b6b6b6;
+  color: #333333;
   font-size: 15px;
   position: relative;
   top: 20px; }
@@ -2223,4 +2547,4 @@ svg.allpost {
     justify-content: center;
     color: #1040e2 !important; }
     .addUserSearch button:active {
-      color: #fff !important; }
+      color: #000 !important; }

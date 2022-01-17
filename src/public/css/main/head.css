@@ -1,0 +1,199 @@
+/** {
+    --blueLigth: #1040e2;
+    --blueDark: #133297;
+    --redLigth: #df1937;
+    --redDark: #b1162d;
+    --maxHeightContentPost: 490px;
+    --maxWidthContentPost: 326px;
+    --borderRadioBig: 30px;
+    --borderGrayLigth: #999898;
+    --colorBallLoaser: #fff;
+    --heightNav: 50px;
+    --white: #000;
+    --lowlowWhite: #333333;
+    --lowWhite: #191919;
+    --backgroundComponent: #fff;
+    --colorActiveBtn: #b6b3b3;
+    --borderBlack: #cccccc;
+    --backgrounBody: #e6e6e6;
+    --backgroundScroll: #e6e6e6;
+    --btnInteractionPost: #d6d2d2a1;
+    --colorIconsHeadMenu: #000;
+    --backgrounWindow: #fff;
+    --actionBtnDefaul: #B9b5b5;
+    --leftoverBoxDark: #7b7b7b;
+    --boderBlurBox: rgba(0, 0, 0, 0.1);
+    --backgroundFile:  radial-gradient(circle at 0% 0%,
+    #dcdacf 50%, #b1b1b8 66.67%, #8c8ca3 83.33%, #6e6b8f 100%);
+    --backgroundNavigation: rgba(255, 255, 255, 0.68);
+    outline: none;
+    cursor: default;
+}*/
+/*NOTE: DO NOT COPY CONTENT*/
+/*NOTE:CENTER ELEMENTS*/
+/*NOTE: PLACE ELEMENTS IN CENTERED COLUMANS*/
+/*NOTE: ROUND EDGES*/
+/*NOTE:BALL MOVEMENT*/
+/*NOTE:SIDE BODY*/
+/*NOTE: LOGO COLORS*/
+/*NOTE:BORDER RADIUS*/
+/*NOTE: FONT-SIZE*/
+/*NOTE: FONT TYPE*/
+/*NOTE: BACKGROUND*/
+/*NOTE: TRANSPARENT*/
+/*NOTE: BORDER*/
+/*NOTE: TEXT*/
+/*NOTE: BUTTON*/
+/*MOON
+$white: #fff;
+$lowlowWhite: #b6b6b6;
+$lowWhite: #e7e7e7;
+$backgroundComponent: #050505;
+$colorActiveBtn: #000000;
+$borderBlack: #0d0d0d;
+$backgrounBody: #1a1a1a;
+$backgroundScroll: #101113;
+$btnInteractionPost: #070707a1;
+$colorIconsHeadMenu: #fff;
+$backgrounWindow: #000;
+$actionBtnDefaul: #1f1f1f;
+$leftoverBoxDark: #101113;
+$boderBlurBox: rgba(255, 255, 255, 0.1);
+$backgroundFile:  radial-gradient(circle at 0% 0%, 
+    #313130 50%, #222127 66.67%, #15131e 83.33%, #080016 100%);
+$backgroundNavigation: rgba(0, 0, 0, 0.68);
+*/
+.head {
+  display: none;
+  position: fixed;
+  height: 50px;
+  width: 100%;
+  top: 0;
+  z-index: 9998;
+  transition: all 0.5s; }
+
+.content-head {
+  background: #fff;
+  width: 100%;
+  height: 50px;
+  margin: 0 auto;
+  clear: both;
+  padding-top: 5px;
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid #cccccc; }
+
+.head ul.subContent-head {
+  margin: 0;
+  padding: 0;
+  display: inline-block; }
+  .head ul.subContent-head li {
+    display: inline-block;
+    margin: 0 10px; }
+
+.links {
+  color: #000;
+  font-size: 20px; }
+
+.logo-head {
+  margin: 0;
+  margin-top: 4px;
+  padding: 0;
+  text-align: center; }
+
+.logo {
+  display: block;
+  text-decoration: none;
+  float: left; }
+  .logo .logoTop {
+    border-left: 2px solid #0fee7e;
+    border-right: 2px solid #ffff00;
+    border-right-width: 12px;
+    border-left-width: 12px;
+    border-top-right-radius: 6px;
+    border-top-left-radius: 6px;
+    height: 12px;
+    position: relative;
+    top: 13px; }
+  .logo .logoBottom {
+    border-left: 2px solid #0037d2;
+    border-right: 2px solid #D20003;
+    border-right-width: 12px;
+    border-left-width: 12px;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    height: 12px;
+    position: relative;
+    top: 13px; }
+
+.logo-letter {
+  display: block;
+  text-decoration: none;
+  text-transform: uppercase;
+  float: left;
+  font-weight: 700;
+  font-size: 30px;
+  color: #000;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none; }
+
+.divbtnRight {
+  display: block;
+  float: right;
+  position: relative;
+  bottom: 45px;
+  right: 1px; }
+
+.divbtnLeft {
+  display: none;
+  float: left;
+  position: relative;
+  bottom: 45px;
+  left: 1px; }
+
+.btnHead {
+  background-color: #ffffff00;
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  border: none; }
+
+.iconHead {
+  color: #000 !important;
+  width: 20px;
+  height: 20px; }
+  .iconHead:active {
+    color: #000 !important; }
+
+.LoaderBall {
+  width: 75%;
+  height: 50px;
+  border-radius: 10px;
+  margin: 10px 0;
+  border: none;
+  background: #1040e2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: none; }
+
+.positionModeDarkLigth {
+  float: right;
+  position: relative;
+  bottom: 45px;
+  right: 1px; }
+
+.modeDarkLigth {
+  color: #000 !important;
+  width: 20px;
+  height: 20px; }
+  .modeDarkLigth:active {
+    color: #999898 !important; }
+
+#modeMoon {
+  display: none; }
+
+#modeSun {
+  display: none; }

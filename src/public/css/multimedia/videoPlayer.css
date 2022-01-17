@@ -1,0 +1,103 @@
+/*NOTE: DO NOT COPY CONTENT*/
+/*NOTE:CENTER ELEMENTS*/
+/*NOTE: PLACE ELEMENTS IN CENTERED COLUMANS*/
+/*NOTE: ROUND EDGES*/
+/*NOTE:BALL MOVEMENT*/
+/*NOTE:SIDE BODY*/
+/*NOTE: LOGO COLORS*/
+/*NOTE:BORDER RADIUS*/
+/*NOTE: FONT-SIZE*/
+/*NOTE: FONT TYPE*/
+/*NOTE: BACKGROUND*/
+/*NOTE: TRANSPARENT*/
+/*NOTE: BORDER*/
+/*NOTE: TEXT*/
+/*NOTE: BUTTON*/
+/*MOON
+$white: #fff;
+$lowlowWhite: #b6b6b6;
+$lowWhite: #e7e7e7;
+$backgroundComponent: #050505;
+$colorActiveBtn: #000000;
+$borderBlack: #0d0d0d;
+$backgrounBody: #1a1a1a;
+$backgroundScroll: #101113;
+$btnInteractionPost: #070707a1;
+$colorIconsHeadMenu: #fff;
+$backgrounWindow: #000;
+$actionBtnDefaul: #1f1f1f;
+$leftoverBoxDark: #101113;
+$boderBlurBox: rgba(255, 255, 255, 0.1);
+$backgroundFile:  radial-gradient(circle at 0% 0%, 
+    #313130 50%, #222127 66.67%, #15131e 83.33%, #080016 100%);
+$backgroundNavigation: rgba(0, 0, 0, 0.68);
+*/
+.video video {
+  width: 250px;
+  max-height: 250px;
+  border-radius: 10px; }
+
+.controlsVideo {
+  display: none;
+  width: 250px;
+  height: 20px;
+  margin: 0;
+  padding: 0 4px; }
+
+.overlay .button {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  background: url(../../iconos/videoplayer/videoPlay.svg);
+  background-size: 100% 100%;
+  transform: translate(-50%, calc(-50% - 30px));
+  cursor: pointer;
+  transition: width 0.2s, height 0.2s; }
+
+.ProgressContainer {
+  background: #ffffff00;
+  height: 20px; }
+
+.ProgressContainer {
+  color: #e6e6e6;
+  font-size: 15px; }
+  .ProgressContainer .fullTime {
+    position: relative;
+    bottom: 30px;
+    float: right; }
+  .ProgressContainer .progressBar {
+    width: 140px;
+    height: 10px;
+    border-radius: 20px;
+    background: #999898;
+    cursor: pointer;
+    position: relative;
+    bottom: 14px;
+    left: 40px; }
+    .ProgressContainer .progressBar:hover + .time {
+      opacity: 1;
+      transform: translateY(0); }
+    .ProgressContainer .progressBar .progress {
+      width: 0%;
+      height: 100%;
+      background: #1040e2;
+      border-radius: 20px; }
+
+.volume {
+  width: 100px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  position: relative; }
+  .volume .icon {
+    width: 14px;
+    height: 14px;
+    background: url(../../iconos/videoplayer/volumeActive.svg);
+    background-size: 100% 100%;
+    cursor: pointer;
+    position: relative;
+    bottom: 18px;
+    left: 100px; }

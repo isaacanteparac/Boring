@@ -1,0 +1,145 @@
+/*NOTE: DO NOT COPY CONTENT*/
+/*NOTE:CENTER ELEMENTS*/
+/*NOTE: PLACE ELEMENTS IN CENTERED COLUMANS*/
+/*NOTE: ROUND EDGES*/
+/*NOTE:BALL MOVEMENT*/
+/*NOTE:SIDE BODY*/
+/*NOTE: LOGO COLORS*/
+/*NOTE:BORDER RADIUS*/
+/*NOTE: FONT-SIZE*/
+/*NOTE: FONT TYPE*/
+/*NOTE: BACKGROUND*/
+/*NOTE: TRANSPARENT*/
+/*NOTE: BORDER*/
+/*NOTE: TEXT*/
+/*NOTE: BUTTON*/
+/*MOON
+$white: #fff;
+$lowlowWhite: #b6b6b6;
+$lowWhite: #e7e7e7;
+$backgroundComponent: #050505;
+$colorActiveBtn: #000000;
+$borderBlack: #0d0d0d;
+$backgrounBody: #1a1a1a;
+$backgroundScroll: #101113;
+$btnInteractionPost: #070707a1;
+$colorIconsHeadMenu: #fff;
+$backgrounWindow: #000;
+$actionBtnDefaul: #1f1f1f;
+$leftoverBoxDark: #101113;
+$boderBlurBox: rgba(255, 255, 255, 0.1);
+$backgroundFile:  radial-gradient(circle at 0% 0%, 
+    #313130 50%, #222127 66.67%, #15131e 83.33%, #080016 100%);
+$backgroundNavigation: rgba(0, 0, 0, 0.68);
+*/
+.profile {
+  width: 100%;
+  height: 100%;
+  /* background-color: var(--backgroundDark);*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; }
+
+.infProfile {
+  padding-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  border: none;
+  padding-bottom: 10px;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  background: #fff; }
+  .infProfile .photoUser {
+    width: 90px;
+    height: 80px;
+    border-radius: 20px;
+    background-image: radial-gradient(circle at 0% 0%, #b1b1b8 50%, #b1b1b8 66.67%, #8c8ca3 83.33%, #6e6b8f 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0; }
+    .infProfile .photoUser .photo {
+      width: 100%;
+      height: auto; }
+  .infProfile .btnAddUser {
+    position: relative;
+    bottom: 10px;
+    background-color: #df1937;
+    width: 30px;
+    height: 30px;
+    border-radius: 25px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; }
+    .infProfile .btnAddUser:active {
+      background-color: #b1162d; }
+
+.iconsProfile {
+  width: 20px;
+  filter: invert(100%); }
+
+.informationUser {
+  width: 100%;
+  /*background-image: var(--backgroundFile);*/
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+  color: #000; }
+  .informationUser h4 {
+    margin: 0;
+    font-size: 20px; }
+  .informationUser h5 {
+    margin: 0; }
+  .informationUser p {
+    margin: 0;
+    font-size: 13px; }
+
+.postFollowLike {
+  margin-top: 10px;
+  padding: 0; }
+
+.listLine {
+  margin: 0;
+  padding: 0;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000;
+  text-align: center; }
+  .listLine .elementList {
+    display: inline;
+    padding: 5px;
+    margin: 0 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 400;
+    height: 30px;
+    border-radius: 10px;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none; }
+    .listLine .elementList:active {
+      background-color: #fff; }
+
+.optionsSearchPost {
+  background: #fff;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 10px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px; }
