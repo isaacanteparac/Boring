@@ -82,8 +82,8 @@ HOME POST
 
 
 CHAT
-![image](https://user-images.githubusercontent.com/69361351/149797524-4c6a9f13-5ed2-43cb-8000-5ca2ba92497b.png)
-![image](https://user-images.githubusercontent.com/69361351/149797590-ed69bd91-298f-4dcf-bf06-2b689a36b13f.png)
+![image](https://user-images.githubusercontent.com/69361351/149993663-cea08707-cc5e-4a48-a7ec-f40d80b99c3e.png)
+![image](https://user-images.githubusercontent.com/69361351/149993731-c3f18707-8bf3-4147-a9fd-db767fc53899.png)
 
 
 CREATE POST
@@ -95,14 +95,15 @@ ALERT
 
 
 SEARCH
-![image](https://user-images.githubusercontent.com/69361351/149795629-d7468b86-2a21-412c-b404-7c0476b5330d.png)
+![image](https://user-images.githubusercontent.com/69361351/149994309-d4f8c474-0b73-4728-87d7-7320c28c59db.png)
 ![image](https://user-images.githubusercontent.com/69361351/149796117-cd8fd5ef-cdcc-4c71-8a2f-7a22d97a69e8.png)
 
 
 PROFILE
-![image](https://user-images.githubusercontent.com/69361351/149801629-297a536e-6425-4815-8d54-2abf3a0a27be.png)
-![image](https://user-images.githubusercontent.com/69361351/149801672-f35c49d3-2fe0-4b6b-bf09-cfe8eeec1d8b.png)
-![image](https://user-images.githubusercontent.com/69361351/149801719-6e4e26be-af50-4e52-b451-74025c636fb6.png)
+![image](https://user-images.githubusercontent.com/69361351/149993896-733533a9-8c57-49a4-8859-04c92bcf07d9.png)
+![image](https://user-images.githubusercontent.com/69361351/149994062-13fc8635-fd79-4a58-81ba-0cebd7835524.png)
+![image](https://user-images.githubusercontent.com/69361351/149994095-28f5113e-d4ef-4a1d-9428-e98aef563f3b.png)
+![image](https://user-images.githubusercontent.com/69361351/149994118-24504601-fd80-4224-9a2e-dc9c5ecbe040.png)
 
 
 
