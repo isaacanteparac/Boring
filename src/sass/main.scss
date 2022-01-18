@@ -23,13 +23,12 @@
 @import "./register/logo.scss";
 
 /*PUBLIC*/
-@import "./publication/publication.scss";
+@import "./publication/index.scss";
 @import "./publication/comment.scss";
 @import "./publication/createPublication.scss";
 
 @import "./profile/profile.scss";
 @import "./profile/post.scss";
-@import "./profile/preview.scss";
 
 /*CHAT*/
 @import "./userChat/chat.scss";
@@ -37,5 +36,11 @@
 
 /*SEARCH*/
 @import "./search/search.scss";
-@import "./search/boxPostUser.scss";
-@import "./search/boxUser.scss";
+
+
+/*NOTE:BOX*/
+@import "./box/user.scss";
+@import "./box/post.home.scss";
+@import "./box/post.search.scss";
+
+

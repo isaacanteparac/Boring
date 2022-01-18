@@ -1,13 +1,51 @@
 @import "../abstracts/mixis.scss";
 @import "../abstracts/variables.scss";
 
-.chat {
+div.allchats {
     width: 100%;
-    height: 55px;
-    margin-top: 1px;
-    padding-bottom: 5px;
-    border: map-get($borderRadius, null );
+    padding: 0;
+    padding-top:10px;
+    margin: 0;
+    margin-bottom: 60px;
+    background-color: $transparent;
+    @include centerPositionColumn;
 }
+
+div.chat {
+    width: 100%;
+    height: 60px;
+    margin: auto;
+    margin-top: 5px;
+    border: map-get($borderRadius, null );
+
+    div.user_{
+        width: 100%;
+        height: 60px;
+        margin: auto;
+    }
+
+    div.user_photo{
+        @include roundedBorder(40px, 40px, map-get($borderRadius, medium));
+        top:5px;
+    }
+
+    p.user_information{
+        left: 55px;
+        height: 50px;
+        width: 270px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
 
 .contentChat {
     padding: 5px 10px;
@@ -93,11 +131,3 @@
 }
 
 
-.allchats {
-    width: 100%;
-    padding: 0;
-    margin: 0;
-    margin-bottom: 60px;
-    background-color: $transparent;
-    @include centerPositionColumn;
-}

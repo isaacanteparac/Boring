@@ -51,36 +51,48 @@ div.contentBoxBlur {
   width: 300px;
   max-height: 450px;
   background-color: #fff;
-  border-radius: 30px;
-  -webkit-box-shadow: 2px 2px 5px #7b7b7b;
-  -moz-box-shadow: 2px 2px 5px #7b7b7b;
+  border-radius: 20px;
+  /*-webkit-box-shadow: 2px 2px 5px $leftoverBoxDark;
+  -moz-box-shadow: 2px 2px 5px $leftoverBoxDark;*/
+  border: 1px solid #cccccc;
   filter: shadow(color=#7b7b7b, direction=135, strength=2);
   padding: 10px;
   margin: auto;
   margin-top: 40px; }
-  div.contentBoxBlur .contentChat {
-    border-radius: 30px; }
+  div.contentBoxBlur div.user_ {
+    background-color: #fff;
+    height: 80px; }
+    div.contentBoxBlur div.user_:active {
+      background-color: #fff; }
+  div.contentBoxBlur div.user_photo {
+    top: 6px; }
+  div.contentBoxBlur div.user_information {
+    width: 225px;
+    bottom: 50px; }
 
 .optionsBox {
   height: 40px;
-  border-radius: 30px;
+  border-radius: 15px;
   padding-top: 10px;
   padding-left: 10px;
   margin: 0 10px;
+  color: #000;
   -moz-user-select: none;
   -webkit-user-drag: none;
   -webkit-user-select: none;
   -ms-user-select: none; }
   .optionsBox:active {
-    background-color: #B9b5b5; }
+    background: #b6b3b3;
+    border: 1px solid #cccccc; }
   .optionsBox h4 {
-    color: #000;
     position: relative;
-    bottom: 20px; }
-  .optionsBox .iconsOp {
-    margin-right: 10px; }
-    .optionsBox .iconsOp:active {
-      color: #000 !important; }
+    bottom: 25px; }
+    .optionsBox h4 .iconsOp {
+      margin-right: 10px;
+      color: #000 !important;
+      width: 20px;
+      position: relative;
+      top: 5px; }
 
 .btnOptions {
   background-color: #ffffff00;
@@ -88,11 +100,6 @@ div.contentBoxBlur {
   height: 30px;
   border: none;
   margin-right: 5px; }
-
-.iconsOp {
-  color: #000 !important; }
-  .iconsOp:active {
-    color: #1040e2 !important; }
 
 #boxOptionsUserFriendChat {
   display: none; }

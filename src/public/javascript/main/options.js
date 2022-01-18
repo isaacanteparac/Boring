@@ -18,7 +18,7 @@ $(document).ready( () =>{
         $('#navigation').show();
     });
 
-    $("#userFriendPhoto").click( () => {
+    $(".userPhotoChat").click( () => {
         $("#divBlurid").show();
         $("#boxOptionsUserFriendChat").show();
         $('#navigation').hide();

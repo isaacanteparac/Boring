@@ -1,88 +1,94 @@
 * {
-    cursor: default;
-    outline: none;
+  cursor: default;
+  outline: none;
 }
 @import "../abstracts/mixis.scss";
 @import "../abstracts/variables.scss";
 
 .divBlur {
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    @include centerPosition;
-    top: 50px;
-    //background: var(--backgrounNavigation);
-    backdrop-filter: map-get($blurEffect, small );
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  @include centerPosition;
+  top: 50px;
+  //background: var(--backgrounNavigation);
+  backdrop-filter: map-get($blurEffect, small);
 }
 
 div.contentBoxBlur {
-    position: relative;
-    width: map-get($post, maxCreateWidth );
-    max-height: map-get($post, maxCreateHeigth);
-    background-color: $backgrounWindow;
-    border-radius: map-get($borderRadius, extrabig );
-    -webkit-box-shadow: 2px 2px 5px $leftoverBoxDark;
-    -moz-box-shadow: 2px 2px 5px $leftoverBoxDark;
-    filter: shadow(color=$leftoverBoxDark, direction=135, strength=2);
-    padding: 10px;
-    margin: auto;
-    margin-top: 40px;
+  position: relative;
+  width: map-get($post, maxCreateWidth);
+  max-height: map-get($post, maxCreateHeigth);
+  background-color: $backgroundComponent;
+  border-radius: map-get($borderRadius, big);
+  /*-webkit-box-shadow: 2px 2px 5px $leftoverBoxDark;
+  -moz-box-shadow: 2px 2px 5px $leftoverBoxDark;*/
+  border: 1px solid $borderBlack;
+  filter: shadow(color=$leftoverBoxDark, direction=135, strength=2);
+  padding: 10px;
+  margin: auto;
+  margin-top: 40px;
 
-    .contentChat {
-        border-radius: map-get($borderRadius, extrabig );
+  div.user_ {
+    background-color: $backgroundComponent;
+    height: 80px;
+    &:active {
+      background-color: $backgroundComponent;
     }
+  }
+
+  div.user_photo {
+    top: 6px;
+  }
+
+  div.user_information {
+    width: 225px;
+    bottom: 50px;
+  }
 }
 
-
 .optionsBox {
-    height: 40px;
-    border-radius: map-get($borderRadius, extrabig );
-    padding-top: 10px;
-    padding-left: 10px;
-    margin: 0 10px;
-    @include notUnderline;
+  height: 40px;
+  border-radius: map-get($borderRadius, medium);
+  padding-top: 10px;
+  padding-left: 10px;
+  margin: 0 10px;
+  color: $white;
+  @include notUnderline;
 
-    &:active {
-        background-color: $actionBtnDefaul;
-    }
+  &:active {
+    background: $colorActiveBtn;
+    border: 1px solid $borderBlack;
+  }
 
-    h4 {
-        color: $white;
-        position: relative;
-        bottom: 20px;
-    }
-
+  h4 {
+    position: relative;
+    bottom: 25px;
     .iconsOp {
         margin-right: 10px;
-    
-        &:active {
-                color: $white!important;
-        }
-    }
+        color: $white!important;
+        width: 20px;
+        position: relative;
+        top:5px;
+      }
+  }
+
+  
 }
 
 
 .btnOptions {
-    background-color: $transparent;
-    width: 30px;
-    height: 30px;
-    border: none;
-    margin-right: 5px;
+  background-color: $transparent;
+  width: 30px;
+  height: 30px;
+  border: none;
+  margin-right: 5px;
 }
 
-.iconsOp {
-    color: $white!important;
-
-    &:active {
-        color: $blueLigth!important;
-    }
+#boxOptionsUserFriendChat {
+  display: none;
 }
 
-
-#boxOptionsUserFriendChat{
-    display: none;
-}
-
-#viewPublication{
-    display: none;
+#viewPublication {
+  display: none;
 }

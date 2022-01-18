@@ -1,0 +1,123 @@
+div.user_ {
+  background-color: $backgroundComponent;
+  margin: auto;
+  margin-top: 10px;
+  border: none;
+  @include roundedBorder(98%, 110px, map-get($borderRadius, medium));
+  &:active {
+    background: $colorActiveBtn;
+  }
+}
+
+div.user_photo{
+    @include roundedBorder(50px, 50px, map-get($borderRadius, medium));
+    border-left: 2px solid map-get($logo, first );
+    border-right: 2px solid map-get($logo, second );
+    border-top: 2px solid map-get($logo, third );
+    border-bottom: 2px solid map-get($logo, fourth );
+    background-color: $lowlowWhite;
+    position: relative;
+    top:15px;
+    left:5px;
+    @include centerPositionColumn;
+    @include notUnderline;
+    overflow: hidden;
+}
+
+img.user_contentPhoto{
+  width: 100%;
+}
+
+div.user_information {
+  position: relative;
+  width: 250px;
+  left: 65px;
+  bottom: 40px;
+}
+
+
+div.user_contentInformation {
+  width: 100%;
+  height: 70px;
+}
+
+label.user_name {
+  font-size: map-get($fontSize, rem);
+  font-weight: 700;
+  color: $white;
+}
+
+label.user_username {
+  font-size: map-get($fontSize, medium);
+  font-weight: 500;
+  color: $lowlowWhite;
+}
+
+p.user_description {
+  position: relative;
+  font-size: map-get($fontSize, medium);
+  width: 100%;
+  height: 23px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: $lowlowWhite;
+  margin: 0;
+}
+
+div.user_informationAccount {
+  color: $lowlowWhite;
+  font-size: map-get($fontSize, medium);
+  position: relative;
+}
+
+label.user_contentItemsAccount {
+  display: inline-block;
+  margin: 0 3px;
+}
+
+svg.user_icon {
+  width: 15px;
+  float: left;
+}
+
+svg.user_iconFollowing {
+  color: map-get($logo, fourth) !important;
+}
+
+svg.user_iconPost {
+  width: 12px;
+  color: map-get($logo, first) !important;
+}
+
+svg.user_iconAdd {
+  width: 30px;
+  float: none;
+}
+
+
+div.user_add {
+  position: relative;
+  float: right;
+  bottom: 115px;
+  background-color: $transparent;
+  @include roundedBorder(30px, 30px, 15px);
+  @include centerPosition;
+
+  button {
+    background-color: $transparent;
+    text-decoration: none;
+    border: none;
+    @include roundedBorder(30px, 30px, 15px);
+    @include centerPosition;
+    color: $blueLigth !important;
+
+    &:active {
+      color: $white !important;
+    }
+  }
+}
+
+
+
+

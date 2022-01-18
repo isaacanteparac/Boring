@@ -1,0 +1,15 @@
+@import "../abstracts/mixis.scss";
+@import "../abstracts/variables.scss";
+
+
+div.post, div.viewPostContentuser {
+    width: 96%;
+    margin: auto;
+    margin-top: 65px;
+    margin-bottom: 10px;
+    @include centerPositionColumn;
+}
+
+div.viewPostContentuser{
+    margin-top: 0;
+}

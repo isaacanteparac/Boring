@@ -66,28 +66,26 @@
     </div>
     -->
     {{#each content}}
-    <div class="userSearchUser">
-        <div class="photoUser">
-            <img src="/iconos/monkey.png" />
+    <div class="user_">
+        <div class="user_photo">
+            <img src="/iconos/monkey.png" class="user_contentPhoto"/>
         </div>
-        <div class="userInfoSearch">
-            <div class="contentInfoSearch">
-                <label class="nameUserSearch">Isaac Antepara{{id}}</label></br>
-                <label class="usernameUserSearch">@thisisisaacac{{id}}</label>
-                <p>Invented, transformed, created and destroyed 💻💛</p>
-            </div>
-            <div class="infoFollowserSearch">
-                <label>
-                 <svg class="iconUser allFollowing"  xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+        <div class="user_information">
+            <div class="user_contentInformation">
+                <label class="user_name">Isaac Antepara{{id}}</label></br>
+                <label class="user_username">@thisisisaacac{{id}}</label>
+                <p class="user_description">Invented, transformed, created and destroyed 💻💛</p>
+                <div class="user_informationAccount">
+                <label class="user_contentItemsAccount">
+                 <svg class="user_icon user_iconFollowing"  xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                     viewBox="0 0 24 24">
                     <path fill="currentcolor"
                         d="M 17.828125 2.328125 C 14.570312 2.328125 12.503906 5.957031 12.015625 5.957031 C 11.585938 5.957031 9.605469 2.328125 6.203125 2.328125 C 2.890625 2.328125 0.1875 5.058594 0.0117188 8.363281 C -0.0898438 10.230469 0.511719 11.652344 1.363281 12.9375 C 3.054688 15.511719 10.46875 21.703125 12.027344 21.703125 C 13.617188 21.703125 20.960938 15.535156 22.667969 12.9375 C 23.519531 11.644531 24.117188 10.230469 24.019531 8.363281 C 23.839844 5.058594 21.140625 2.328125 17.828125 2.328125 "/>
                   </svg>
                   1000
                 </label>
-
-                <label>
-                  <svg class="iconUser allpost"  xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                <label class="user_contentItemsAccount">
+                  <svg class="user_icon user_iconPost"  xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                     viewBox="0 0 24 24">
                     <path fill="currentcolor"
                         d="M11 11h-11v-11h11v11zm13 0h-11v-11h11v11zm-13 13h-11v-11h11v11zm13 0h-11v-11h11v11z"/>
@@ -95,26 +93,20 @@
                   5000
                 </label>
             </div>
-            <div class="addUserSearch">
+            </div>
+        </div>
+         <div class="user_add">
               <button>
-                <svg class="iconUser"  xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                <svg class="user_icon user_iconAdd" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                   viewBox="0 0 24 24">
                   <path fill="currentcolor"
                       d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6 13h-5v5h-2v-5h-5v-2h5v-5h2v5h5v2z"/>
                 </svg>
               </button>
             </div>
-        </div>
-        
     </div>
-
     {{/each}}
-    
-    
-
-
-
-
+  
   </div>
 
 </div>
