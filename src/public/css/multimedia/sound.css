@@ -16,25 +16,7 @@
 /*NOTE: BORDER*/
 /*NOTE: TEXT*/
 /*NOTE: BUTTON*/
-/*MOON
-$white: #fff;
-$lowlowWhite: #b6b6b6;
-$lowWhite: #e7e7e7;
-$backgroundComponent: #050505;
-$colorActiveBtn: #000000;
-$borderBlack: #0d0d0d;
-$backgrounBody: #1a1a1a;
-$backgroundScroll: #101113;
-$btnInteractionPost: #070707a1;
-$colorIconsHeadMenu: #fff;
-$backgrounWindow: #000;
-$actionBtnDefaul: #1f1f1f;
-$leftoverBoxDark: #101113;
-$boderBlurBox: rgba(255, 255, 255, 0.1);
-$backgroundFile:  radial-gradient(circle at 0% 0%, 
-    #313130 50%, #222127 66.67%, #15131e 83.33%, #080016 100%);
-$backgroundNavigation: rgba(0, 0, 0, 0.68);
-*/
+/*MOON*/
 /*NOTE:VIZUALIZAR EL TIEMPO DEL AUDIO*/
 #player-track {
   background-color: #ffffff00;
@@ -46,7 +28,7 @@ $backgroundNavigation: rgba(0, 0, 0, 0.68);
     top: -92px; }
 
 #track-name {
-  color: #000;
+  color: #fff;
   font-size: 17px;
   text-align: center; }
 
@@ -69,12 +51,12 @@ $backgroundNavigation: rgba(0, 0, 0, 0.68);
 #current-time,
 #track-length {
   font-size: 15px;
-  color: #000;
+  color: #fff;
   background-color: #ffffff00;
   border-radius: 10px; }
 
 #s-area {
-  background-color: #000;
+  background-color: #fff;
   width: 160px;
   position: relative;
   top: 6px;
@@ -94,7 +76,7 @@ $backgroundNavigation: rgba(0, 0, 0, 0.68);
 #player-content {
   position: relative;
   height: 100%;
-  background-image: radial-gradient(circle at 0% 0%, #b1b1b8 50%, #b1b1b8 66.67%, #8c8ca3 83.33%, #6e6b8f 100%);
+  background-image: radial-gradient(circle at 0% 0%, #313130 50%, #222127 66.67%, #15131e 83.33%, #080016 100%);
   border-radius: 15px;
   z-index: 2; }
 
@@ -136,7 +118,7 @@ $backgroundNavigation: rgba(0, 0, 0, 0.68);
 #discSound {
   width: 60px;
   height: 60px;
-  color: #000 !important; }
+  color: #fff !important; }
 
 #album-art {
   position: relative;
@@ -144,17 +126,17 @@ $backgroundNavigation: rgba(0, 0, 0, 0.68);
   left: 15px;
   width: 50px;
   height: 50px;
-  background-color: #fff;
+  background-color: #050505;
   transform: rotateZ(0);
   transition: 0.3s ease all;
-  box-shadow: 0 0 0 6px #000;
+  box-shadow: 0 0 0 6px #fff;
   border-radius: 50%;
   overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center; }
   #album-art .active {
-    box-shadow: 0 0 0 12px #000; }
+    box-shadow: 0 0 0 12px #fff; }
   #album-art:before {
     top: 50%;
     right: 0;

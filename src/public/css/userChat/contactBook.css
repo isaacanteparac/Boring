@@ -13,25 +13,7 @@
 /*NOTE: BORDER*/
 /*NOTE: TEXT*/
 /*NOTE: BUTTON*/
-/*MOON
-$white: #fff;
-$lowlowWhite: #b6b6b6;
-$lowWhite: #e7e7e7;
-$backgroundComponent: #050505;
-$colorActiveBtn: #000000;
-$borderBlack: #0d0d0d;
-$backgrounBody: #1a1a1a;
-$backgroundScroll: #101113;
-$btnInteractionPost: #070707a1;
-$colorIconsHeadMenu: #fff;
-$backgrounWindow: #000;
-$actionBtnDefaul: #1f1f1f;
-$leftoverBoxDark: #101113;
-$boderBlurBox: rgba(255, 255, 255, 0.1);
-$backgroundFile:  radial-gradient(circle at 0% 0%, 
-    #313130 50%, #222127 66.67%, #15131e 83.33%, #080016 100%);
-$backgroundNavigation: rgba(0, 0, 0, 0.68);
-*/
+/*MOON*/
 .boxFriends {
   margin-bottom: 60px;
   width: 100%;
@@ -48,11 +30,11 @@ $backgroundNavigation: rgba(0, 0, 0, 0.68);
   margin-top: 15px;
   width: 34%;
   border-radius: 20px;
-  border: 1px solid #cccccc;
+  border: 1px solid #0d0d0d;
   padding: 0;
-  background-color: #fff; }
+  background-color: #050505; }
   .contentFriend:active {
-    background-color: #b6b3b3; }
+    background-color: #000000; }
   .contentFriend.contentOnePost {
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px; }
@@ -60,12 +42,12 @@ $backgroundNavigation: rgba(0, 0, 0, 0.68);
 .nameFriend {
   margin: 0;
   font-size: 17.6px;
-  color: #000;
+  color: #fff;
   margin-bottom: 3px;
   text-align: center; }
 
 .usernameFriend {
-  color: #000;
+  color: #fff;
   margin-bottom: 5px; }
 
 .photoContact {

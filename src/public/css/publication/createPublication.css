@@ -13,25 +13,7 @@
 /*NOTE: BORDER*/
 /*NOTE: TEXT*/
 /*NOTE: BUTTON*/
-/*MOON
-$white: #fff;
-$lowlowWhite: #b6b6b6;
-$lowWhite: #e7e7e7;
-$backgroundComponent: #050505;
-$colorActiveBtn: #000000;
-$borderBlack: #0d0d0d;
-$backgrounBody: #1a1a1a;
-$backgroundScroll: #101113;
-$btnInteractionPost: #070707a1;
-$colorIconsHeadMenu: #fff;
-$backgrounWindow: #000;
-$actionBtnDefaul: #1f1f1f;
-$leftoverBoxDark: #101113;
-$boderBlurBox: rgba(255, 255, 255, 0.1);
-$backgroundFile:  radial-gradient(circle at 0% 0%, 
-    #313130 50%, #222127 66.67%, #15131e 83.33%, #080016 100%);
-$backgroundNavigation: rgba(0, 0, 0, 0.68);
-*/
+/*MOON*/
 #boxCreatePublication {
   display: none; }
 
@@ -87,7 +69,7 @@ input[type="file"] {
   bottom: 100%; }
 
 .custom-file-upload {
-  border: 1px solid #333333;
+  border: 1px solid #b6b6b6;
   display: inline-block;
   padding: 6px 12px;
   cursor: pointer; }
@@ -123,7 +105,7 @@ input[type="file"] {
   align-items: center;
   padding-left: 10px; }
   .divTypeExclusi label {
-    color: #000;
+    color: #fff;
     margin-left: 5px;
     margin-right: 10px;
     font-size: 16px; }
@@ -155,7 +137,7 @@ input[type="file"] {
   background-color: #ffffff00;
   margin-left: 10px;
   border: none;
-  color: #000;
+  color: #fff;
   width: 90%;
   font-size: 16px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -166,7 +148,7 @@ input[type="file"] {
   max-height: 76px; }
 
 .subtitle {
-  color: #000;
+  color: #fff;
   width: 80%;
   margin: 10px 0;
   margin-left: 10px; }
@@ -200,11 +182,11 @@ input[type="file"] {
   left: 8px;
   color: #999898 !important; }
   #eliminarFileCreatePublication:active {
-    color: #000 !important; }
+    color: #fff !important; }
 
 .preview {
   display: none;
-  background-image: radial-gradient(circle at 0% 0%, #b1b1b8 50%, #b1b1b8 66.67%, #8c8ca3 83.33%, #6e6b8f 100%);
+  background-image: radial-gradient(circle at 0% 0%, #313130 50%, #222127 66.67%, #15131e 83.33%, #080016 100%);
   max-width: 250px;
   max-height: 250px;
   border-radius: 10px;
@@ -237,7 +219,7 @@ input[type="file"] {
   margin-top: 5px;
   display: flex;
   align-items: center;
-  background-color: #000; }
+  background-color: #fff; }
 
 #viewImagen, #viewVideo {
   display: none;

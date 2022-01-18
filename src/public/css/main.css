@@ -14,25 +14,7 @@
 /*NOTE: BORDER*/
 /*NOTE: TEXT*/
 /*NOTE: BUTTON*/
-/*MOON
-$white: #fff;
-$lowlowWhite: #b6b6b6;
-$lowWhite: #e7e7e7;
-$backgroundComponent: #050505;
-$colorActiveBtn: #000000;
-$borderBlack: #0d0d0d;
-$backgrounBody: #1a1a1a;
-$backgroundScroll: #101113;
-$btnInteractionPost: #070707a1;
-$colorIconsHeadMenu: #fff;
-$backgrounWindow: #000;
-$actionBtnDefaul: #1f1f1f;
-$leftoverBoxDark: #101113;
-$boderBlurBox: rgba(255, 255, 255, 0.1);
-$backgroundFile:  radial-gradient(circle at 0% 0%, 
-    #313130 50%, #222127 66.67%, #15131e 83.33%, #080016 100%);
-$backgroundNavigation: rgba(0, 0, 0, 0.68);
-*/
+/*MOON*/
 /*main*/
 @import url(https://fonts.googleapis.com/css2?family=Azeret+Mono&display=swap);
 * {
@@ -54,25 +36,7 @@ $backgroundNavigation: rgba(0, 0, 0, 0.68);
 /*NOTE: BORDER*/
 /*NOTE: TEXT*/
 /*NOTE: BUTTON*/
-/*MOON
-$white: #fff;
-$lowlowWhite: #b6b6b6;
-$lowWhite: #e7e7e7;
-$backgroundComponent: #050505;
-$colorActiveBtn: #000000;
-$borderBlack: #0d0d0d;
-$backgrounBody: #1a1a1a;
-$backgroundScroll: #101113;
-$btnInteractionPost: #070707a1;
-$colorIconsHeadMenu: #fff;
-$backgrounWindow: #000;
-$actionBtnDefaul: #1f1f1f;
-$leftoverBoxDark: #101113;
-$boderBlurBox: rgba(255, 255, 255, 0.1);
-$backgroundFile:  radial-gradient(circle at 0% 0%, 
-    #313130 50%, #222127 66.67%, #15131e 83.33%, #080016 100%);
-$backgroundNavigation: rgba(0, 0, 0, 0.68);
-*/
+/*MOON*/
 .divBlur {
   position: fixed;
   width: 100%;
@@ -87,20 +51,20 @@ div.contentBoxBlur {
   position: relative;
   width: 300px;
   max-height: 450px;
-  background-color: #fff;
+  background-color: #050505;
   border-radius: 20px;
   /*-webkit-box-shadow: 2px 2px 5px $leftoverBoxDark;
   -moz-box-shadow: 2px 2px 5px $leftoverBoxDark;*/
-  border: 1px solid #cccccc;
-  filter: shadow(color=#7b7b7b, direction=135, strength=2);
+  border: 1px solid #0d0d0d;
+  filter: shadow(color=#101113, direction=135, strength=2);
   padding: 10px;
   margin: auto;
   margin-top: 40px; }
   div.contentBoxBlur div.user_ {
-    background-color: #fff;
+    background-color: #050505;
     height: 80px; }
     div.contentBoxBlur div.user_:active {
-      background-color: #fff; }
+      background-color: #050505; }
   div.contentBoxBlur div.user_photo {
     top: 6px; }
   div.contentBoxBlur div.user_information {
@@ -113,20 +77,20 @@ div.contentBoxBlur {
   padding-top: 10px;
   padding-left: 10px;
   margin: 0 10px;
-  color: #000;
+  color: #fff;
   -moz-user-select: none;
   -webkit-user-drag: none;
   -webkit-user-select: none;
   -ms-user-select: none; }
   .optionsBox:active {
-    background: #b6b3b3;
-    border: 1px solid #cccccc; }
+    background: #000000;
+    border: 1px solid #0d0d0d; }
   .optionsBox h4 {
     position: relative;
     bottom: 25px; }
     .optionsBox h4 .iconsOp {
       margin-right: 10px;
-      color: #000 !important;
+      color: #fff !important;
       width: 20px;
       position: relative;
       top: 5px; }
@@ -159,30 +123,12 @@ div.contentBoxBlur {
 /*NOTE: BORDER*/
 /*NOTE: TEXT*/
 /*NOTE: BUTTON*/
-/*MOON
-$white: #fff;
-$lowlowWhite: #b6b6b6;
-$lowWhite: #e7e7e7;
-$backgroundComponent: #050505;
-$colorActiveBtn: #000000;
-$borderBlack: #0d0d0d;
-$backgrounBody: #1a1a1a;
-$backgroundScroll: #101113;
-$btnInteractionPost: #070707a1;
-$colorIconsHeadMenu: #fff;
-$backgrounWindow: #000;
-$actionBtnDefaul: #1f1f1f;
-$leftoverBoxDark: #101113;
-$boderBlurBox: rgba(255, 255, 255, 0.1);
-$backgroundFile:  radial-gradient(circle at 0% 0%, 
-    #313130 50%, #222127 66.67%, #15131e 83.33%, #080016 100%);
-$backgroundNavigation: rgba(0, 0, 0, 0.68);
-*/
+/*MOON*/
 body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu',  'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #e6e6e6;
+  background-color: #1a1a1a;
   margin: 0;
   padding: 0; }
 
@@ -193,7 +139,7 @@ code {
   width: 2px;
   height: 2px;
   border-radius: 50px;
-  background-color: #e6e6e6; }
+  background-color: #101113; }
 
 ::-webkit-scrollbar-track {
   border-radius: 10px;
@@ -258,25 +204,7 @@ code {
 /*NOTE: BORDER*/
 /*NOTE: TEXT*/
 /*NOTE: BUTTON*/
-/*MOON
-$white: #fff;
-$lowlowWhite: #b6b6b6;
-$lowWhite: #e7e7e7;
-$backgroundComponent: #050505;
-$colorActiveBtn: #000000;
-$borderBlack: #0d0d0d;
-$backgrounBody: #1a1a1a;
-$backgroundScroll: #101113;
-$btnInteractionPost: #070707a1;
-$colorIconsHeadMenu: #fff;
-$backgrounWindow: #000;
-$actionBtnDefaul: #1f1f1f;
-$leftoverBoxDark: #101113;
-$boderBlurBox: rgba(255, 255, 255, 0.1);
-$backgroundFile:  radial-gradient(circle at 0% 0%, 
-    #313130 50%, #222127 66.67%, #15131e 83.33%, #080016 100%);
-$backgroundNavigation: rgba(0, 0, 0, 0.68);
-*/
+/*MOON*/
 .navInfer {
   display: none;
   position: fixed;
@@ -299,7 +227,7 @@ $backgroundNavigation: rgba(0, 0, 0, 0.68);
     align-items: center;
     justify-content: center;
     backdrop-filter: blur(30px);
-    border: 2px solid rgba(0, 0, 0, 0.1);
+    border: 2px solid rgba(255, 255, 255, 0.1);
     width: 300px;
     height: 100%;
     border-radius: 50px;
@@ -327,7 +255,7 @@ $backgroundNavigation: rgba(0, 0, 0, 0.68);
 
 .iconsFooter {
   width: 30px;
-  color: #000 !important; }
+  color: #fff !important; }
   .iconsFooter:active {
     color: #1040e2 !important; }
 
@@ -377,25 +305,7 @@ $backgroundNavigation: rgba(0, 0, 0, 0.68);
 /*NOTE: BORDER*/
 /*NOTE: TEXT*/
 /*NOTE: BUTTON*/
-/*MOON
-$white: #fff;
-$lowlowWhite: #b6b6b6;
-$lowWhite: #e7e7e7;
-$backgroundComponent: #050505;
-$colorActiveBtn: #000000;
-$borderBlack: #0d0d0d;
-$backgrounBody: #1a1a1a;
-$backgroundScroll: #101113;
-$btnInteractionPost: #070707a1;
-$colorIconsHeadMenu: #fff;
-$backgrounWindow: #000;
-$actionBtnDefaul: #1f1f1f;
-$leftoverBoxDark: #101113;
-$boderBlurBox: rgba(255, 255, 255, 0.1);
-$backgroundFile:  radial-gradient(circle at 0% 0%, 
-    #313130 50%, #222127 66.67%, #15131e 83.33%, #080016 100%);
-$backgroundNavigation: rgba(0, 0, 0, 0.68);
-*/
+/*MOON*/
 .head {
   display: none;
   position: fixed;
@@ -406,7 +316,7 @@ $backgroundNavigation: rgba(0, 0, 0, 0.68);
   transition: all 0.5s; }
 
 .content-head {
-  background: #fff;
+  background: #050505;
   width: 100%;
   height: 50px;
   margin: 0 auto;
@@ -414,7 +324,7 @@ $backgroundNavigation: rgba(0, 0, 0, 0.68);
   padding-top: 5px;
   display: flex;
   justify-content: center;
-  border-bottom: 1px solid #cccccc; }
+  border-bottom: 1px solid #0d0d0d; }
 
 .head ul.subContent-head {
   margin: 0;
@@ -425,7 +335,7 @@ $backgroundNavigation: rgba(0, 0, 0, 0.68);
     margin: 0 10px; }
 
 .links {
-  color: #000;
+  color: #fff;
   font-size: 20px; }
 
 .logo-head {
@@ -466,7 +376,7 @@ $backgroundNavigation: rgba(0, 0, 0, 0.68);
   float: left;
   font-weight: 700;
   font-size: 30px;
-  color: #000;
+  color: #fff;
   -moz-user-select: none;
   -webkit-user-drag: none;
   -webkit-user-select: none;
@@ -494,11 +404,11 @@ $backgroundNavigation: rgba(0, 0, 0, 0.68);
   border: none; }
 
 .iconHead {
-  color: #000 !important;
+  color: #fff !important;
   width: 20px;
   height: 20px; }
   .iconHead:active {
-    color: #000 !important; }
+    color: #fff !important; }
 
 .LoaderBall {
   width: 75%;
@@ -519,7 +429,7 @@ $backgroundNavigation: rgba(0, 0, 0, 0.68);
   right: 1px; }
 
 .modeDarkLigth {
-  color: #000 !important;
+  color: #fff !important;
   width: 20px;
   height: 20px; }
   .modeDarkLigth:active {
@@ -547,25 +457,7 @@ $backgroundNavigation: rgba(0, 0, 0, 0.68);
 /*NOTE: BORDER*/
 /*NOTE: TEXT*/
 /*NOTE: BUTTON*/
-/*MOON
-$white: #fff;
-$lowlowWhite: #b6b6b6;
-$lowWhite: #e7e7e7;
-$backgroundComponent: #050505;
-$colorActiveBtn: #000000;
-$borderBlack: #0d0d0d;
-$backgrounBody: #1a1a1a;
-$backgroundScroll: #101113;
-$btnInteractionPost: #070707a1;
-$colorIconsHeadMenu: #fff;
-$backgrounWindow: #000;
-$actionBtnDefaul: #1f1f1f;
-$leftoverBoxDark: #101113;
-$boderBlurBox: rgba(255, 255, 255, 0.1);
-$backgroundFile:  radial-gradient(circle at 0% 0%, 
-    #313130 50%, #222127 66.67%, #15131e 83.33%, #080016 100%);
-$backgroundNavigation: rgba(0, 0, 0, 0.68);
-*/
+/*MOON*/
 .alert_message {
   background: #ffffff00;
   display: flex;
@@ -659,25 +551,7 @@ label.iconidMessageFailed {
 /*NOTE: BORDER*/
 /*NOTE: TEXT*/
 /*NOTE: BUTTON*/
-/*MOON
-$white: #fff;
-$lowlowWhite: #b6b6b6;
-$lowWhite: #e7e7e7;
-$backgroundComponent: #050505;
-$colorActiveBtn: #000000;
-$borderBlack: #0d0d0d;
-$backgrounBody: #1a1a1a;
-$backgroundScroll: #101113;
-$btnInteractionPost: #070707a1;
-$colorIconsHeadMenu: #fff;
-$backgrounWindow: #000;
-$actionBtnDefaul: #1f1f1f;
-$leftoverBoxDark: #101113;
-$boderBlurBox: rgba(255, 255, 255, 0.1);
-$backgroundFile:  radial-gradient(circle at 0% 0%, 
-    #313130 50%, #222127 66.67%, #15131e 83.33%, #080016 100%);
-$backgroundNavigation: rgba(0, 0, 0, 0.68);
-*/
+/*MOON*/
 .containerBall {
   width: 50px;
   height: 100px;
@@ -790,25 +664,7 @@ $backgroundNavigation: rgba(0, 0, 0, 0.68);
 /*NOTE: BORDER*/
 /*NOTE: TEXT*/
 /*NOTE: BUTTON*/
-/*MOON
-$white: #fff;
-$lowlowWhite: #b6b6b6;
-$lowWhite: #e7e7e7;
-$backgroundComponent: #050505;
-$colorActiveBtn: #000000;
-$borderBlack: #0d0d0d;
-$backgrounBody: #1a1a1a;
-$backgroundScroll: #101113;
-$btnInteractionPost: #070707a1;
-$colorIconsHeadMenu: #fff;
-$backgrounWindow: #000;
-$actionBtnDefaul: #1f1f1f;
-$leftoverBoxDark: #101113;
-$boderBlurBox: rgba(255, 255, 255, 0.1);
-$backgroundFile:  radial-gradient(circle at 0% 0%, 
-    #313130 50%, #222127 66.67%, #15131e 83.33%, #080016 100%);
-$backgroundNavigation: rgba(0, 0, 0, 0.68);
-*/
+/*MOON*/
 /*NOTE:VIZUALIZAR EL TIEMPO DEL AUDIO*/
 #player-track {
   background-color: #ffffff00;
@@ -820,7 +676,7 @@ $backgroundNavigation: rgba(0, 0, 0, 0.68);
     top: -92px; }
 
 #track-name {
-  color: #000;
+  color: #fff;
   font-size: 17px;
   text-align: center; }
 
@@ -843,12 +699,12 @@ $backgroundNavigation: rgba(0, 0, 0, 0.68);
 #current-time,
 #track-length {
   font-size: 15px;
-  color: #000;
+  color: #fff;
   background-color: #ffffff00;
   border-radius: 10px; }
 
 #s-area {
-  background-color: #000;
+  background-color: #fff;
   width: 160px;
   position: relative;
   top: 6px;
@@ -868,7 +724,7 @@ $backgroundNavigation: rgba(0, 0, 0, 0.68);
 #player-content {
   position: relative;
   height: 100%;
-  background-image: radial-gradient(circle at 0% 0%, #b1b1b8 50%, #b1b1b8 66.67%, #8c8ca3 83.33%, #6e6b8f 100%);
+  background-image: radial-gradient(circle at 0% 0%, #313130 50%, #222127 66.67%, #15131e 83.33%, #080016 100%);
   border-radius: 15px;
   z-index: 2; }
 
@@ -910,7 +766,7 @@ $backgroundNavigation: rgba(0, 0, 0, 0.68);
 #discSound {
   width: 60px;
   height: 60px;
-  color: #000 !important; }
+  color: #fff !important; }
 
 #album-art {
   position: relative;
@@ -918,17 +774,17 @@ $backgroundNavigation: rgba(0, 0, 0, 0.68);
   left: 15px;
   width: 50px;
   height: 50px;
-  background-color: #fff;
+  background-color: #050505;
   transform: rotateZ(0);
   transition: 0.3s ease all;
-  box-shadow: 0 0 0 6px #000;
+  box-shadow: 0 0 0 6px #fff;
   border-radius: 50%;
   overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center; }
   #album-art .active {
-    box-shadow: 0 0 0 12px #000; }
+    box-shadow: 0 0 0 12px #fff; }
   #album-art:before {
     top: 50%;
     right: 0;
@@ -984,25 +840,7 @@ $backgroundNavigation: rgba(0, 0, 0, 0.68);
 /*NOTE: BORDER*/
 /*NOTE: TEXT*/
 /*NOTE: BUTTON*/
-/*MOON
-$white: #fff;
-$lowlowWhite: #b6b6b6;
-$lowWhite: #e7e7e7;
-$backgroundComponent: #050505;
-$colorActiveBtn: #000000;
-$borderBlack: #0d0d0d;
-$backgrounBody: #1a1a1a;
-$backgroundScroll: #101113;
-$btnInteractionPost: #070707a1;
-$colorIconsHeadMenu: #fff;
-$backgrounWindow: #000;
-$actionBtnDefaul: #1f1f1f;
-$leftoverBoxDark: #101113;
-$boderBlurBox: rgba(255, 255, 255, 0.1);
-$backgroundFile:  radial-gradient(circle at 0% 0%, 
-    #313130 50%, #222127 66.67%, #15131e 83.33%, #080016 100%);
-$backgroundNavigation: rgba(0, 0, 0, 0.68);
-*/
+/*MOON*/
 .video video {
   width: 250px;
   max-height: 250px;
@@ -1032,7 +870,7 @@ $backgroundNavigation: rgba(0, 0, 0, 0.68);
   height: 20px; }
 
 .ProgressContainer {
-  color: #e6e6e6;
+  color: #1a1a1a;
   font-size: 15px; }
   .ProgressContainer .fullTime {
     position: relative;
@@ -1089,25 +927,7 @@ $backgroundNavigation: rgba(0, 0, 0, 0.68);
 /*NOTE: BORDER*/
 /*NOTE: TEXT*/
 /*NOTE: BUTTON*/
-/*MOON
-$white: #fff;
-$lowlowWhite: #b6b6b6;
-$lowWhite: #e7e7e7;
-$backgroundComponent: #050505;
-$colorActiveBtn: #000000;
-$borderBlack: #0d0d0d;
-$backgrounBody: #1a1a1a;
-$backgroundScroll: #101113;
-$btnInteractionPost: #070707a1;
-$colorIconsHeadMenu: #fff;
-$backgrounWindow: #000;
-$actionBtnDefaul: #1f1f1f;
-$leftoverBoxDark: #101113;
-$boderBlurBox: rgba(255, 255, 255, 0.1);
-$backgroundFile:  radial-gradient(circle at 0% 0%, 
-    #313130 50%, #222127 66.67%, #15131e 83.33%, #080016 100%);
-$backgroundNavigation: rgba(0, 0, 0, 0.68);
-*/
+/*MOON*/
 .register {
   background-color: #ffffff00; }
 
@@ -1134,7 +954,7 @@ $backgroundNavigation: rgba(0, 0, 0, 0.68);
     font-size: 43px; }
 
 .titleLabel {
-  color: #000;
+  color: #fff;
   text-decoration: none;
   text-align: left;
   font-weight: 700;
@@ -1160,7 +980,7 @@ $backgroundNavigation: rgba(0, 0, 0, 0.68);
     border: none;
     border-bottom: 1px solid #999898;
     margin-top: 5px;
-    color: #000;
+    color: #fff;
     font-size: 19.2px; }
 
 #signup .contentForm {
@@ -1196,7 +1016,7 @@ $backgroundNavigation: rgba(0, 0, 0, 0.68);
   border: 1px solid #999898;
   font-size: 19.2px; }
   .btnNo:active {
-    background-color: #b6b3b3; }
+    background-color: #000000; }
 
 .separationLine {
   display: flex;
@@ -1207,7 +1027,7 @@ $backgroundNavigation: rgba(0, 0, 0, 0.68);
   -webkit-user-select: none;
   -ms-user-select: none; }
   .separationLine label {
-    color: #000;
+    color: #fff;
     font-size: 15px; }
   .separationLine hr {
     width: 38%;
@@ -1226,7 +1046,7 @@ $backgroundNavigation: rgba(0, 0, 0, 0.68);
   height: 350px;
   width: 100%; }
   .contentText p {
-    color: #000;
+    color: #fff;
     font-size: 15px;
     position: relative;
     width: 90%;
@@ -1289,7 +1109,7 @@ $backgroundNavigation: rgba(0, 0, 0, 0.68);
   float: left;
   font-weight: 700;
   font-size: 50px;
-  color: #000;
+  color: #fff;
   -moz-user-select: none;
   -webkit-user-drag: none;
   -webkit-user-select: none;
@@ -1321,25 +1141,7 @@ $backgroundNavigation: rgba(0, 0, 0, 0.68);
 /*NOTE: BORDER*/
 /*NOTE: TEXT*/
 /*NOTE: BUTTON*/
-/*MOON
-$white: #fff;
-$lowlowWhite: #b6b6b6;
-$lowWhite: #e7e7e7;
-$backgroundComponent: #050505;
-$colorActiveBtn: #000000;
-$borderBlack: #0d0d0d;
-$backgrounBody: #1a1a1a;
-$backgroundScroll: #101113;
-$btnInteractionPost: #070707a1;
-$colorIconsHeadMenu: #fff;
-$backgrounWindow: #000;
-$actionBtnDefaul: #1f1f1f;
-$leftoverBoxDark: #101113;
-$boderBlurBox: rgba(255, 255, 255, 0.1);
-$backgroundFile:  radial-gradient(circle at 0% 0%, 
-    #313130 50%, #222127 66.67%, #15131e 83.33%, #080016 100%);
-$backgroundNavigation: rgba(0, 0, 0, 0.68);
-*/
+/*MOON*/
 div.post, div.viewPostContentuser {
   width: 96%;
   margin: auto;
@@ -1368,25 +1170,7 @@ div.viewPostContentuser {
 /*NOTE: BORDER*/
 /*NOTE: TEXT*/
 /*NOTE: BUTTON*/
-/*MOON
-$white: #fff;
-$lowlowWhite: #b6b6b6;
-$lowWhite: #e7e7e7;
-$backgroundComponent: #050505;
-$colorActiveBtn: #000000;
-$borderBlack: #0d0d0d;
-$backgrounBody: #1a1a1a;
-$backgroundScroll: #101113;
-$btnInteractionPost: #070707a1;
-$colorIconsHeadMenu: #fff;
-$backgrounWindow: #000;
-$actionBtnDefaul: #1f1f1f;
-$leftoverBoxDark: #101113;
-$boderBlurBox: rgba(255, 255, 255, 0.1);
-$backgroundFile:  radial-gradient(circle at 0% 0%, 
-    #313130 50%, #222127 66.67%, #15131e 83.33%, #080016 100%);
-$backgroundNavigation: rgba(0, 0, 0, 0.68);
-*/
+/*MOON*/
 .coment {
   margin: 0;
   padding: 0;
@@ -1413,7 +1197,7 @@ $backgroundNavigation: rgba(0, 0, 0, 0.68);
   flex-direction: column;
   align-items: center;
   margin-bottom: 50px;
-  background-color: #fff;
+  background-color: #050505;
   border: none; }
   .comentBox .title {
     width: 100%;
@@ -1423,7 +1207,7 @@ $backgroundNavigation: rgba(0, 0, 0, 0.68);
     justify-content: center;
     flex-direction: column; }
     .comentBox .title h4 {
-      color: #000; }
+      color: #fff; }
 
 .comentUser {
   width: 100%;
@@ -1470,8 +1254,8 @@ $backgroundNavigation: rgba(0, 0, 0, 0.68);
   font-size: 16px;
   font-family: "Segoe UI";
   border: 2px solid #1040e2;
-  background-color: #b6b3b3;
-  color: #000; }
+  background-color: #000000;
+  color: #fff; }
 
 .inputMessage {
   height: 30px; }
@@ -1509,25 +1293,7 @@ $backgroundNavigation: rgba(0, 0, 0, 0.68);
 /*NOTE: BORDER*/
 /*NOTE: TEXT*/
 /*NOTE: BUTTON*/
-/*MOON
-$white: #fff;
-$lowlowWhite: #b6b6b6;
-$lowWhite: #e7e7e7;
-$backgroundComponent: #050505;
-$colorActiveBtn: #000000;
-$borderBlack: #0d0d0d;
-$backgrounBody: #1a1a1a;
-$backgroundScroll: #101113;
-$btnInteractionPost: #070707a1;
-$colorIconsHeadMenu: #fff;
-$backgrounWindow: #000;
-$actionBtnDefaul: #1f1f1f;
-$leftoverBoxDark: #101113;
-$boderBlurBox: rgba(255, 255, 255, 0.1);
-$backgroundFile:  radial-gradient(circle at 0% 0%, 
-    #313130 50%, #222127 66.67%, #15131e 83.33%, #080016 100%);
-$backgroundNavigation: rgba(0, 0, 0, 0.68);
-*/
+/*MOON*/
 #boxCreatePublication {
   display: none; }
 
@@ -1583,7 +1349,7 @@ input[type="file"] {
   bottom: 100%; }
 
 .custom-file-upload {
-  border: 1px solid #333333;
+  border: 1px solid #b6b6b6;
   display: inline-block;
   padding: 6px 12px;
   cursor: pointer; }
@@ -1619,7 +1385,7 @@ input[type="file"] {
   align-items: center;
   padding-left: 10px; }
   .divTypeExclusi label {
-    color: #000;
+    color: #fff;
     margin-left: 5px;
     margin-right: 10px;
     font-size: 16px; }
@@ -1651,7 +1417,7 @@ input[type="file"] {
   background-color: #ffffff00;
   margin-left: 10px;
   border: none;
-  color: #000;
+  color: #fff;
   width: 90%;
   font-size: 16px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -1662,7 +1428,7 @@ input[type="file"] {
   max-height: 76px; }
 
 .subtitle {
-  color: #000;
+  color: #fff;
   width: 80%;
   margin: 10px 0;
   margin-left: 10px; }
@@ -1696,11 +1462,11 @@ input[type="file"] {
   left: 8px;
   color: #999898 !important; }
   #eliminarFileCreatePublication:active {
-    color: #000 !important; }
+    color: #fff !important; }
 
 .preview {
   display: none;
-  background-image: radial-gradient(circle at 0% 0%, #b1b1b8 50%, #b1b1b8 66.67%, #8c8ca3 83.33%, #6e6b8f 100%);
+  background-image: radial-gradient(circle at 0% 0%, #313130 50%, #222127 66.67%, #15131e 83.33%, #080016 100%);
   max-width: 250px;
   max-height: 250px;
   border-radius: 10px;
@@ -1733,7 +1499,7 @@ input[type="file"] {
   margin-top: 5px;
   display: flex;
   align-items: center;
-  background-color: #000; }
+  background-color: #fff; }
 
 #viewImagen, #viewVideo {
   display: none;
@@ -1755,25 +1521,7 @@ input[type="file"] {
 /*NOTE: BORDER*/
 /*NOTE: TEXT*/
 /*NOTE: BUTTON*/
-/*MOON
-$white: #fff;
-$lowlowWhite: #b6b6b6;
-$lowWhite: #e7e7e7;
-$backgroundComponent: #050505;
-$colorActiveBtn: #000000;
-$borderBlack: #0d0d0d;
-$backgrounBody: #1a1a1a;
-$backgroundScroll: #101113;
-$btnInteractionPost: #070707a1;
-$colorIconsHeadMenu: #fff;
-$backgrounWindow: #000;
-$actionBtnDefaul: #1f1f1f;
-$leftoverBoxDark: #101113;
-$boderBlurBox: rgba(255, 255, 255, 0.1);
-$backgroundFile:  radial-gradient(circle at 0% 0%, 
-    #313130 50%, #222127 66.67%, #15131e 83.33%, #080016 100%);
-$backgroundNavigation: rgba(0, 0, 0, 0.68);
-*/
+/*MOON*/
 .profile {
   width: 100%;
   height: 100%;
@@ -1796,12 +1544,12 @@ $backgroundNavigation: rgba(0, 0, 0, 0.68);
   -webkit-user-drag: none;
   -webkit-user-select: none;
   -ms-user-select: none;
-  background: #fff; }
+  background: #050505; }
   .infProfile .user_photo {
     width: 90px;
     height: 80px;
     border-radius: 20px;
-    background-image: radial-gradient(circle at 0% 0%, #b1b1b8 50%, #b1b1b8 66.67%, #8c8ca3 83.33%, #6e6b8f 100%);
+    background-image: radial-gradient(circle at 0% 0%, #313130 50%, #222127 66.67%, #15131e 83.33%, #080016 100%);
     left: 0; }
   .infProfile .btnAddUser {
     position: relative;
@@ -1830,7 +1578,7 @@ $backgroundNavigation: rgba(0, 0, 0, 0.68);
   flex-direction: column;
   padding: 0;
   margin: 0;
-  color: #000; }
+  color: #fff; }
   .informationUser h4 {
     margin: 0;
     font-size: 20px; }
@@ -1852,7 +1600,7 @@ $backgroundNavigation: rgba(0, 0, 0, 0.68);
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #000;
+  color: #fff;
   text-align: center; }
   .listLine .elementList {
     display: inline;
@@ -1869,10 +1617,10 @@ $backgroundNavigation: rgba(0, 0, 0, 0.68);
     -webkit-user-select: none;
     -ms-user-select: none; }
     .listLine .elementList:active {
-      background: #b6b3b3; }
+      background: #000000; }
 
 .optionsSearchPost {
-  background: #fff;
+  background: #050505;
   height: 55px;
   display: flex;
   align-items: center;
@@ -1893,7 +1641,7 @@ $backgroundNavigation: rgba(0, 0, 0, 0.68);
   flex-wrap: wrap; }
 
 .onePost {
-  background: #fff;
+  background: #050505;
   width: 30%;
   height: 105px;
   border-radius: 15px;
@@ -1950,7 +1698,7 @@ $backgroundNavigation: rgba(0, 0, 0, 0.68);
   background-color: #ffffff00;
   color: #1040e2 !important; }
   .btnFilesUser:active {
-    background: #b6b3b3; }
+    background: #000000; }
 
 .FilesUser {
   width: 30px;
@@ -1973,25 +1721,7 @@ $backgroundNavigation: rgba(0, 0, 0, 0.68);
 /*NOTE: BORDER*/
 /*NOTE: TEXT*/
 /*NOTE: BUTTON*/
-/*MOON
-$white: #fff;
-$lowlowWhite: #b6b6b6;
-$lowWhite: #e7e7e7;
-$backgroundComponent: #050505;
-$colorActiveBtn: #000000;
-$borderBlack: #0d0d0d;
-$backgrounBody: #1a1a1a;
-$backgroundScroll: #101113;
-$btnInteractionPost: #070707a1;
-$colorIconsHeadMenu: #fff;
-$backgrounWindow: #000;
-$actionBtnDefaul: #1f1f1f;
-$leftoverBoxDark: #101113;
-$boderBlurBox: rgba(255, 255, 255, 0.1);
-$backgroundFile:  radial-gradient(circle at 0% 0%, 
-    #313130 50%, #222127 66.67%, #15131e 83.33%, #080016 100%);
-$backgroundNavigation: rgba(0, 0, 0, 0.68);
-*/
+/*MOON*/
 div.allchats {
   width: 100%;
   padding: 0;
@@ -2039,25 +1769,7 @@ div.chat {
 /*NOTE: BORDER*/
 /*NOTE: TEXT*/
 /*NOTE: BUTTON*/
-/*MOON
-$white: #fff;
-$lowlowWhite: #b6b6b6;
-$lowWhite: #e7e7e7;
-$backgroundComponent: #050505;
-$colorActiveBtn: #000000;
-$borderBlack: #0d0d0d;
-$backgrounBody: #1a1a1a;
-$backgroundScroll: #101113;
-$btnInteractionPost: #070707a1;
-$colorIconsHeadMenu: #fff;
-$backgrounWindow: #000;
-$actionBtnDefaul: #1f1f1f;
-$leftoverBoxDark: #101113;
-$boderBlurBox: rgba(255, 255, 255, 0.1);
-$backgroundFile:  radial-gradient(circle at 0% 0%, 
-    #313130 50%, #222127 66.67%, #15131e 83.33%, #080016 100%);
-$backgroundNavigation: rgba(0, 0, 0, 0.68);
-*/
+/*MOON*/
 .boxFriends {
   margin-bottom: 60px;
   width: 100%;
@@ -2074,11 +1786,11 @@ $backgroundNavigation: rgba(0, 0, 0, 0.68);
   margin-top: 15px;
   width: 34%;
   border-radius: 20px;
-  border: 1px solid #cccccc;
+  border: 1px solid #0d0d0d;
   padding: 0;
-  background-color: #fff; }
+  background-color: #050505; }
   .contentFriend:active {
-    background-color: #b6b3b3; }
+    background-color: #000000; }
   .contentFriend.contentOnePost {
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px; }
@@ -2086,12 +1798,12 @@ $backgroundNavigation: rgba(0, 0, 0, 0.68);
 .nameFriend {
   margin: 0;
   font-size: 17.6px;
-  color: #000;
+  color: #fff;
   margin-bottom: 3px;
   text-align: center; }
 
 .usernameFriend {
-  color: #000;
+  color: #fff;
   margin-bottom: 5px; }
 
 .photoContact {
@@ -2114,25 +1826,7 @@ $backgroundNavigation: rgba(0, 0, 0, 0.68);
 /*NOTE: BORDER*/
 /*NOTE: TEXT*/
 /*NOTE: BUTTON*/
-/*MOON
-$white: #fff;
-$lowlowWhite: #b6b6b6;
-$lowWhite: #e7e7e7;
-$backgroundComponent: #050505;
-$colorActiveBtn: #000000;
-$borderBlack: #0d0d0d;
-$backgrounBody: #1a1a1a;
-$backgroundScroll: #101113;
-$btnInteractionPost: #070707a1;
-$colorIconsHeadMenu: #fff;
-$backgrounWindow: #000;
-$actionBtnDefaul: #1f1f1f;
-$leftoverBoxDark: #101113;
-$boderBlurBox: rgba(255, 255, 255, 0.1);
-$backgroundFile:  radial-gradient(circle at 0% 0%, 
-    #313130 50%, #222127 66.67%, #15131e 83.33%, #080016 100%);
-$backgroundNavigation: rgba(0, 0, 0, 0.68);
-*/
+/*MOON*/
 .divSearch {
   padding-top: 5px;
   -moz-user-select: none;
@@ -2141,7 +1835,7 @@ $backgroundNavigation: rgba(0, 0, 0, 0.68);
   -ms-user-select: none; }
 
 .barSearch {
-  background-color: #fff;
+  background-color: #050505;
   margin: 0;
   position: relative;
   bottom: 1px;
@@ -2195,19 +1889,19 @@ $backgroundNavigation: rgba(0, 0, 0, 0.68);
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background: #fff;
+  background: #050505;
   color: #1040e2;
-  border: 1px solid #b6b3b3;
+  border: 1px solid #000000;
   padding: 2px;
   font-size: 15px; }
   .options:active {
     border: 2px solid #1040e2;
-    color: #000;
+    color: #fff;
     background-color: rgba(0, 0, 0, 0.465); }
 
 /*NOTE:BOX*/
 div.user_ {
-  background-color: #fff;
+  background-color: #050505;
   margin: auto;
   margin-top: 10px;
   border: none;
@@ -2215,7 +1909,7 @@ div.user_ {
   height: 110px;
   border-radius: 15px; }
   div.user_:active {
-    background: #b6b3b3; }
+    background: #000000; }
 
 div.user_photo {
   width: 50px;
@@ -2225,7 +1919,7 @@ div.user_photo {
   border-right: 2px solid #ffff00;
   border-top: 2px solid #0037d2;
   border-bottom: 2px solid #8c0fee;
-  background-color: #333333;
+  background-color: #b6b6b6;
   position: relative;
   top: 15px;
   left: 5px;
@@ -2255,12 +1949,12 @@ div.user_contentInformation {
 label.user_name {
   font-size: 16px;
   font-weight: 700;
-  color: #000; }
+  color: #fff; }
 
 label.user_username {
   font-size: 15px;
   font-weight: 500;
-  color: #333333; }
+  color: #b6b6b6; }
 
 p.user_description {
   position: relative;
@@ -2270,11 +1964,11 @@ p.user_description {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  color: #333333;
+  color: #b6b6b6;
   margin: 0; }
 
 div.user_informationAccount {
-  color: #333333;
+  color: #b6b6b6;
   font-size: 15px;
   position: relative; }
 
@@ -2320,13 +2014,130 @@ div.user_add {
     justify-content: center;
     color: #1040e2 !important; }
     div.user_add button:active {
-      color: #000 !important; }
+      color: #fff !important; }
+
+.userPost {
+  border-radius: 20px;
+  background-color: #ffffff00;
+  padding: 0;
+  width: 100%;
+  margin: auto;
+  margin-top: 10px;
+  max-height: 490px;
+  /*box-shadow: 5px 5px 5px $leftoverBoxDark; */ }
+
+.information {
+  border-radius: 30px;
+  width: 60%;
+  height: 50px;
+  border: none;
+  backdrop-filter: blur(5px);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  float: left;
+  left: 20%;
+  position: relative;
+  bottom: 485px; }
+  .information .nameUser {
+    margin: 0;
+    padding: 0;
+    width: 250px;
+    position: relative;
+    left: 55px;
+    bottom: 57px;
+    color: #fff; }
+  .information .usernamePost {
+    width: 250px;
+    position: relative;
+    left: 55px;
+    bottom: 78px;
+    color: #fff; }
+  .information .photoUser {
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: #b6b6b6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    overflow: hidden;
+    position: relative;
+    top: 5px;
+    left: 10px; }
+    .information .photoUser img {
+      width: 100%; }
+
+.linkdec {
+  text-decoration: none; }
+
+.fileUser {
+  width: 100%;
+  height: 490px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #050505;
+  /*border: 1px solid $borderBlack;*/
+  overflow: hidden; }
+
+.contentImagen, .contentVideo {
+  width: 100%;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none; }
+
+.interactionPost {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  height: 40px;
+  border-radius: 30px;
+  backdrop-filter: blur(5px);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  float: right;
+  position: relative;
+  bottom: 105px;
+  right: 25%; }
+
+.btnInteraction {
+  background-color: #ffffff00;
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  border: none;
+  padding: 0;
+  margin: 0 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+svg.iconInterac {
+  color: #b6b3b3 !important; }
+
+svg.iconLikesPost:active {
+  color: rgba(255, 0, 0, 0.59) !important; }
+
+svg.iconDisLikesPost:active {
+  color: rgba(112, 108, 113, 0.59) !important; }
+
+svg.iconCommentPost:active {
+  color: rgba(255, 255, 255, 0.59) !important; }
+
+svg.iconSavePost:active {
+  color: rgba(0, 64, 255, 0.56) !important; }
 
 .contentSearchPost {
   display: flex;
   flex-wrap: wrap; }
   .contentSearchPost .postSearchUser {
-    background: #fff;
+    background: #050505;
     width: 105px;
     height: 105px;
     border-radius: 15px;
