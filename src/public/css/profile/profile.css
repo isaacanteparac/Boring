@@ -55,18 +55,12 @@ $backgroundNavigation: rgba(0, 0, 0, 0.68);
   -webkit-user-select: none;
   -ms-user-select: none;
   background: #fff; }
-  .infProfile .photoUser {
+  .infProfile .user_photo {
     width: 90px;
     height: 80px;
     border-radius: 20px;
     background-image: radial-gradient(circle at 0% 0%, #b1b1b8 50%, #b1b1b8 66.67%, #8c8ca3 83.33%, #6e6b8f 100%);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0; }
-    .infProfile .photoUser .photo {
-      width: 100%;
-      height: auto; }
+    left: 0; }
   .infProfile .btnAddUser {
     position: relative;
     bottom: 10px;
@@ -99,6 +93,7 @@ $backgroundNavigation: rgba(0, 0, 0, 0.68);
     margin: 0;
     font-size: 20px; }
   .informationUser h5 {
+    font-size: 15px;
     margin: 0; }
   .informationUser p {
     margin: 0;
@@ -132,7 +127,7 @@ $backgroundNavigation: rgba(0, 0, 0, 0.68);
     -webkit-user-select: none;
     -ms-user-select: none; }
     .listLine .elementList:active {
-      background-color: #fff; }
+      background: #b6b3b3; }
 
 .optionsSearchPost {
   background: #fff;

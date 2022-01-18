@@ -33,7 +33,7 @@
         color: $white;
     }
 
-    .messageUser {
+    .usernamePost {
         width: 250px;
         position: relative;
         left: 55px;
@@ -42,9 +42,18 @@
     }
 
     .photoUser {
+        @include roundedBorder(40px, 40px, map-get($borderRadius, big));
+        background-color: $lowlowWhite;
+        @include centerPositionColumn;
+        @include notUnderline;
+        overflow: hidden;
         position: relative;
         top: 5px;
         left: 10px;
+
+        img {
+            width: 100%;
+        }
     }
 }
 

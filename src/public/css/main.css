@@ -1797,18 +1797,12 @@ $backgroundNavigation: rgba(0, 0, 0, 0.68);
   -webkit-user-select: none;
   -ms-user-select: none;
   background: #fff; }
-  .infProfile .photoUser {
+  .infProfile .user_photo {
     width: 90px;
     height: 80px;
     border-radius: 20px;
     background-image: radial-gradient(circle at 0% 0%, #b1b1b8 50%, #b1b1b8 66.67%, #8c8ca3 83.33%, #6e6b8f 100%);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0; }
-    .infProfile .photoUser .photo {
-      width: 100%;
-      height: auto; }
+    left: 0; }
   .infProfile .btnAddUser {
     position: relative;
     bottom: 10px;
@@ -1841,6 +1835,7 @@ $backgroundNavigation: rgba(0, 0, 0, 0.68);
     margin: 0;
     font-size: 20px; }
   .informationUser h5 {
+    font-size: 15px;
     margin: 0; }
   .informationUser p {
     margin: 0;
@@ -1874,7 +1869,7 @@ $backgroundNavigation: rgba(0, 0, 0, 0.68);
     -webkit-user-select: none;
     -ms-user-select: none; }
     .listLine .elementList:active {
-      background-color: #fff; }
+      background: #b6b3b3; }
 
 .optionsSearchPost {
   background: #fff;
@@ -1889,13 +1884,17 @@ $backgroundNavigation: rgba(0, 0, 0, 0.68);
 .allPost {
   margin-top: 5px;
   width: 100%;
-  height: 100%;
+  height: 600px;
+  padding-bottom: 10px;
+  overflow: hidden;
+  overflow: scroll;
+  overflow-x: hidden;
   display: flex;
   flex-wrap: wrap; }
 
 .onePost {
   background: #fff;
-  width: 105px;
+  width: 30%;
   height: 105px;
   border-radius: 15px;
   margin: auto;
@@ -1948,14 +1947,14 @@ $backgroundNavigation: rgba(0, 0, 0, 0.68);
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background-color: #fff;
+  background-color: #ffffff00;
   color: #1040e2 !important; }
   .btnFilesUser:active {
-    background-color: rgba(0, 0, 0, 0.465); }
+    background: #b6b3b3; }
 
 .FilesUser {
-  width: 55px;
-  height: 50px;
+  width: 30px;
+  margin-bottom: 5px;
   color: #1040e2 !important; }
 
 /*CHAT*/
@@ -2024,94 +2023,6 @@ div.chat {
     left: 55px;
     height: 50px;
     width: 270px; }
-
-.contentChat {
-  padding: 5px 10px;
-  padding-bottom: 0;
-  margin: 0 5px;
-  height: 55px;
-  border-radius: 15px; }
-  .contentChat:active {
-    background-color: #b6b3b3; }
-
-.photoUser {
-  width: 40px;
-  height: 40px;
-  border-radius: 20px;
-  background-color: #333333;
-  position: relative;
-  top: 3px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  -moz-user-select: none;
-  -webkit-user-drag: none;
-  -webkit-user-select: none;
-  -ms-user-select: none;
-  overflow: hidden; }
-
-.photoUser img {
-  width: 100%; }
-
-.divTextsUserPrimary {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  bottom: 35px;
-  left: 45px;
-  float: left;
-  width: 80%; }
-
-.divTextnameUser {
-  margin: 0;
-  padding: 0;
-  -moz-user-select: none;
-  -webkit-user-drag: none;
-  -webkit-user-select: none;
-  -ms-user-select: none; }
-
-.divTextUser {
-  margin: 0;
-  padding: 0; }
-
-.textNameUser {
-  color: #000; }
-
-.textUserP {
-  color: #333333;
-  font-size: 15px;
-  width: 100%;
-  margin: 0;
-  -moz-user-select: none;
-  -webkit-user-drag: none;
-  -webkit-user-select: none;
-  -ms-user-select: none; }
-
-.textUserLabel {
-  color: #333333;
-  font-size: 15px;
-  margin: 0; }
-
-.divBtnPlus {
-  background-color: #ffffff00;
-  margin: 0;
-  width: 20px;
-  height: 20px;
-  border-radius: 10px;
-  float: right;
-  position: relative;
-  bottom: 130px; }
-  .divBtnPlus button {
-    background-color: #ffffff00;
-    border: 1px solid #ffffff00;
-    width: 20px;
-    height: 20px;
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column; }
 
 /*NOTE: DO NOT COPY CONTENT*/
 /*NOTE:CENTER ELEMENTS*/
@@ -2410,108 +2321,6 @@ div.user_add {
     color: #1040e2 !important; }
     div.user_add button:active {
       color: #000 !important; }
-
-.userPost {
-  border-radius: 20px;
-  background-color: #ffffff00;
-  padding: 0;
-  width: 100%;
-  margin: auto;
-  margin-top: 10px;
-  max-height: 490px;
-  /*box-shadow: 5px 5px 5px $leftoverBoxDark; */ }
-
-.information {
-  border-radius: 30px;
-  width: 60%;
-  height: 50px;
-  border: none;
-  backdrop-filter: blur(5px);
-  border: 2px solid rgba(0, 0, 0, 0.1);
-  float: left;
-  left: 20%;
-  position: relative;
-  bottom: 485px; }
-  .information .nameUser {
-    margin: 0;
-    padding: 0;
-    width: 250px;
-    position: relative;
-    left: 55px;
-    bottom: 57px;
-    color: #000; }
-  .information .messageUser {
-    width: 250px;
-    position: relative;
-    left: 55px;
-    bottom: 78px;
-    color: #000; }
-  .information .photoUser {
-    position: relative;
-    top: 5px;
-    left: 10px; }
-
-.linkdec {
-  text-decoration: none; }
-
-.fileUser {
-  width: 100%;
-  height: 490px;
-  border-radius: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: #fff;
-  /*border: 1px solid $borderBlack;*/
-  overflow: hidden; }
-
-.contentImagen, .contentVideo {
-  width: 100%;
-  -moz-user-select: none;
-  -webkit-user-drag: none;
-  -webkit-user-select: none;
-  -ms-user-select: none; }
-
-.interactionPost {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 50%;
-  height: 40px;
-  border-radius: 30px;
-  backdrop-filter: blur(5px);
-  border: 2px solid rgba(0, 0, 0, 0.1);
-  float: right;
-  position: relative;
-  bottom: 105px;
-  right: 25%; }
-
-.btnInteraction {
-  background-color: #ffffff00;
-  width: 40px;
-  height: 40px;
-  border-radius: 20px;
-  border: none;
-  padding: 0;
-  margin: 0 5px;
-  display: flex;
-  align-items: center;
-  justify-content: center; }
-
-svg.iconInterac {
-  color: #b6b3b3 !important; }
-
-svg.iconLikesPost:active {
-  color: rgba(255, 0, 0, 0.59) !important; }
-
-svg.iconDisLikesPost:active {
-  color: rgba(112, 108, 113, 0.59) !important; }
-
-svg.iconCommentPost:active {
-  color: rgba(255, 255, 255, 0.59) !important; }
-
-svg.iconSavePost:active {
-  color: rgba(0, 64, 255, 0.56) !important; }
 
 .contentSearchPost {
   display: flex;
