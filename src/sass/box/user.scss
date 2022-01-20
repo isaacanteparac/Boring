@@ -1,5 +1,5 @@
-@import "../abstracts/mixis.scss";
-@import "../abstracts/variables.scss";
+
+
 
 div.user_ {
   background-color: $backgroundComponent;
@@ -14,7 +14,7 @@ div.user_ {
 
 div.user_photo{
     @include roundedBorder(50px, 50px, map-get($borderRadius, medium));
-    border: 2px solid map-get($logo, first );
+    border: 2px solid map-get($color, eilish_ );
     background-color: $lowlowWhite;
     position: relative;
     top:15px;
@@ -73,29 +73,8 @@ div.user_informationAccount {
   position: relative;
 }
 
-label.user_contentItemsAccount {
-  display: inline-block;
-  margin: 0 3px;
-}
 
-svg.user_icon {
-  width: 15px;
-  float: left;
-}
 
-svg.user_iconFollowing {
-  color: map-get($logo, fourth) !important;
-}
-
-svg.user_iconPost {
-  width: 12px;
-  color: map-get($logo, first) !important;
-}
-
-svg.user_iconAdd {
-  width: 30px;
-  float: none;
-}
 
 
 div.user_add {
@@ -112,10 +91,10 @@ div.user_add {
     border: none;
     @include roundedBorder(30px, 30px, 15px);
     @include centerPosition;
-    color: $blueLigth !important;
+    color: map-get($color, blue_ )!important;
 
     &:active {
-      color: $white !important;
+      color: map-get($color, blueD_ ) !important;
     }
   }
 }

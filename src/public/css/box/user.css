@@ -14,6 +14,27 @@
 /*NOTE: TEXT*/
 /*NOTE: BUTTON*/
 /*MOON*/
+label.contentIconf {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 3px; }
+
+svg.icon_ {
+  width: 15px;
+  float: left; }
+
+svg.icon_heart {
+  color: #FFD700 !important; }
+
+svg.icon_publication {
+  width: 12px;
+  color: #0fee7e !important; }
+
+svg.icon_add {
+  width: 30px;
+  float: none; }
+
 div.user_ {
   background-color: #050505;
   margin: auto;
@@ -88,25 +109,6 @@ div.user_informationAccount {
   font-size: 15px;
   position: relative; }
 
-label.user_contentItemsAccount {
-  display: inline-block;
-  margin: 0 3px; }
-
-svg.user_icon {
-  width: 15px;
-  float: left; }
-
-svg.user_iconFollowing {
-  color: #8c0fee !important; }
-
-svg.user_iconPost {
-  width: 12px;
-  color: #0fee7e !important; }
-
-svg.user_iconAdd {
-  width: 30px;
-  float: none; }
-
 div.user_add {
   position: relative;
   float: right;
@@ -128,6 +130,6 @@ div.user_add {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #1040e2 !important; }
+    color: #0055ff !important; }
     div.user_add button:active {
-      color: #fff !important; }
+      color: #003cb4 !important; }

@@ -103,21 +103,21 @@
 }
 
 svg.iconInterac {
-    color:  #b6b3b3!important;
+    color: map-get($color, gray_ )!important;
 }
 
 svg.iconLikesPost:active{
-    color: rgba(255, 0, 0, 0.59)!important;
+    color: map-get($color, pink_ )!important;
 }
 
 svg.iconDisLikesPost:active{
-    color: rgba(112, 108, 113, 0.59)!important;
+    color: map-get($color, black_ )!important;
 }
 
 svg.iconCommentPost:active{
-    color: rgba(255, 255, 255, 0.59)!important;
+    color: map-get($color, white_ )!important;
 }
 
 svg.iconSavePost:active{
-    color: rgba(0, 64, 255, 0.56)!important;
+    color: map-get($color, blue_ )!important;
 }

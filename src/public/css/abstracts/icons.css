@@ -1,0 +1,24 @@
+/*NOTE: LOGO COLORS*/
+/*NOTE:BORDER RADIUS*/
+/*NOTE: FONT-SIZE*/
+/*NOTE: FONT TYPE*/
+/*NOTE: BACKGROUND*/
+/*NOTE: TRANSPARENT*/
+/*NOTE: BORDER*/
+/*NOTE: TEXT*/
+/*NOTE: BUTTON*/
+/*MOON*/
+svg.icon_ {
+  width: 15px;
+  float: left; }
+
+svg.icon_heart {
+  color: #FFD700 !important; }
+
+svg.icon_publication {
+  width: 12px;
+  color: #0fee7e !important; }
+
+svg.icon_add {
+  width: 30px;
+  float: none; }

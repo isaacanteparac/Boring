@@ -1,6 +1,7 @@
 /*NOTE: MIXIS AND VARIABLRS*/
 @import "./abstracts/mixis.scss";
 @import "./abstracts/variables.scss";
+@import "./abstracts/icons.scss";
 
 /*main*/
 @import "./main/options.scss";
@@ -41,7 +42,9 @@
 /*NOTE:BOX*/
 @import "./box/user.scss";
 @import "./box/post.home.scss";
-@import "./box/post.search.scss";
+
+
+
 
 
 
