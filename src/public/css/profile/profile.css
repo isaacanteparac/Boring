@@ -38,18 +38,20 @@
   -ms-user-select: none;
   background: #050505; }
   .infProfile .user_photo {
-    width: 90px;
+    width: 80px;
     height: 80px;
-    border-radius: 20px;
+    border-radius: 30px;
     background-image: radial-gradient(circle at 0% 0%, #313130 50%, #222127 66.67%, #15131e 83.33%, #080016 100%);
+    margin-bottom: 10px;
     left: 0; }
   .infProfile .btnAddUser {
     position: relative;
-    bottom: 10px;
+    bottom: 5px;
+    padding: 3px;
     background-color: #df1937;
-    width: 30px;
-    height: 30px;
-    border-radius: 25px;
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
     border: none;
     display: flex;
     align-items: center;
@@ -57,6 +59,9 @@
     flex-direction: column; }
     .infProfile .btnAddUser:active {
       background-color: #b1162d; }
+    .infProfile .btnAddUser svg.user_iconAdd {
+      width: 30px;
+      color: white !important; }
 
 .iconsProfile {
   width: 20px;
@@ -72,14 +77,28 @@
   margin: 0;
   color: #fff; }
   .informationUser h4 {
+    width: 80%;
+    overflow: hidden;
     margin: 0;
-    font-size: 20px; }
+    font-size: 20px;
+    text-align: center; }
   .informationUser h5 {
+    width: 80%;
+    overflow: hidden;
     font-size: 15px;
-    margin: 0; }
+    margin: 0;
+    text-align: center; }
   .informationUser p {
     margin: 0;
-    font-size: 13px; }
+    margin-top: 10px;
+    font-size: 13px;
+    width: 80%;
+    max-height: 104px;
+    text-align: justify;
+    height: auto;
+    overflow: hidden;
+    overflow: scroll;
+    overflow-x: hidden; }
 
 .postFollowLike {
   margin-top: 10px;
@@ -87,6 +106,7 @@
 
 .listLine {
   margin: 0;
+  margin-top: 10px;
   padding: 0;
   height: 40px;
   display: flex;
@@ -96,27 +116,82 @@
   text-align: center; }
   .listLine .elementList {
     display: inline;
-    padding: 5px;
     margin: 0 5px;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-weight: 400;
-    height: 30px;
+    text-align: center;
+    padding: 5px;
+    font-weight: 500;
+    max-width: auto;
+    max-height: 40px;
     border-radius: 10px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
     -moz-user-select: none;
     -webkit-user-drag: none;
     -webkit-user-select: none;
     -ms-user-select: none; }
+    .listLine .elementList:hover {
+      border-bottom: 2px solid #0055ff; }
     .listLine .elementList:active {
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+      border: none;
       background: #000000; }
+    .listLine .elementList label {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column; }
+      .listLine .elementList label .user_icon {
+        width: 15px;
+        margin: 0;
+        padding: 0;
+        position: relative; }
+      .listLine .elementList label svg.user_iconPost {
+        width: 12px;
+        color: #0fee7e !important; }
+      .listLine .elementList label svg.user_iconFollowing {
+        width: 25px;
+        color: #8c0fee !important; }
+      .listLine .elementList label svg.user_iconHeart {
+        color: #ffff00 !important; }
 
 .optionsSearchPost {
   background: #050505;
-  height: 55px;
+  height: 60px;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-bottom: 10px;
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px; }
+  padding-bottom: 5px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border-bottom: 1px solid #3f3e3e; }
+
+.btnFilesUser {
+  margin: 0 5px;
+  margin-top: 10px;
+  position: relative;
+  width: 55px;
+  height: 50px;
+  border-radius: 10px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  border: none;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #ffffff00; }
+  .btnFilesUser:hover {
+    border-bottom: 2px solid #ffff00;
+    color: #0fee7e !important; }
+  .btnFilesUser:active {
+    background: #000000; }
+
+.FilesUser {
+  width: 30px;
+  margin-bottom: 5px;
+  color: #0055ff !important; }

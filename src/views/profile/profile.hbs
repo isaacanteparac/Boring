@@ -1,104 +1,174 @@
 <div class="profile">
-    <div class="infProfile">
-        <div class="user_photo">
-            <img class="user_contentPhoto" src="/iconos/monkey.png" />
-        </div>
+  <div class="infProfile">
+    <div class="user_photo">
+      <img class="user_contentPhoto" src="/iconos/monkey.png" />
+    </div>
 
-        <button class="btnAddUser">
-            <!--NOTE:PONER EN EL SRC IMAGEN DE UN ICONO DE + -->
-            <img class="iconsProfile" src="#" />
+    <button class="btnAddUser">
+      <!--NOTE:PONER EN EL SRC IMAGEN DE UN ICONO DE + -->
+      <svg class="user_icon user_iconAdd"  xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+        viewBox="0 0 24 24">
+        <path fill="currentcolor"
+          d="M24 10h-10v-10h-4v10h-10v4h10v10h4v-10h10z"/>
+      </svg>
+      
+    </button>
+
+    <div class="informationUser">
+      <h4>
+        {{user.username}}
+        isaac antepara
+      </h4>
+      <h5>
+        {{user.fullname}}
+        @thisisisaacantepara
+      </h5>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+         Consequuntur deserunt perferendis minima officia placeat
+          libero accusamus id dolores doloremque, neque hic voluptatibus 
+          ab expedita in assumenda molestiae temporibus pariatur? Eveniet.
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+         Consequuntur deserunt perferendis minima officia placeat
+          libero accusamus id dolores doloremque, neque hic voluptatibus 
+          ab expedita in assumenda molestiae temporibus pariatur? Eveniet. </p>
+      <div class="postFollowLike">
+        <ul class="listLine">
+          <li class="elementList">
+            <label>
+              <svg class="user_icon user_iconPost"  xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                viewBox="0 0 24 24">
+                <path fill="currentcolor"
+                    d="M11 11h-11v-11h11v11zm13 0h-11v-11h11v11zm-13 13h-11v-11h11v11zm13 0h-11v-11h11v11z"/>
+              </svg>
+                  5000
+            </label>
+          </li>
+          <li class="elementList">
+            <label>
+              <svg
+                class="user_icon user_iconFollowing"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="currentcolor"
+                  d="M17.997 18h-11.995l-.002-.623c0-1.259.1-1.986 1.588-2.33 1.684-.389 3.344-.736 2.545-2.209-2.366-4.363-.674-6.838 1.866-6.838 2.491 0 4.226 2.383 1.866 6.839-.775 1.464.826 1.812 2.545 2.209 1.49.344 1.589 1.072 1.589 2.333l-.002.619zm4.811-2.214c-1.29-.298-2.49-.559-1.909-1.657 1.769-3.342.469-5.129-1.4-5.129-1.265 0-2.248.817-2.248 2.324 0 3.903 2.268 1.77 2.246 6.676h4.501l.002-.463c0-.946-.074-1.493-1.192-1.751zm-22.806 2.214h4.501c-.021-4.906 2.246-2.772 2.246-6.676 0-1.507-.983-2.324-2.248-2.324-1.869 0-3.169 1.787-1.399 5.129.581 1.099-.619 1.359-1.909 1.657-1.119.258-1.193.805-1.193 1.751l.002.463z"/>
+                </path>
+              </svg>
+              1000
+            </label>
+          </li>
+          <li class="elementList">
+            <label>
+              <svg
+              class="user_icon user_iconHeart"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              >
+                <path
+                  fill="currentcolor"
+                  d="M 17.828125 2.328125 C 14.570312 2.328125 12.503906 5.957031 12.015625 5.957031 C 11.585938 5.957031 9.605469 2.328125 6.203125 2.328125 C 2.890625 2.328125 0.1875 5.058594 0.0117188 8.363281 C -0.0898438 10.230469 0.511719 11.652344 1.363281 12.9375 C 3.054688 15.511719 10.46875 21.703125 12.027344 21.703125 C 13.617188 21.703125 20.960938 15.535156 22.667969 12.9375 C 23.519531 11.644531 24.117188 10.230469 24.019531 8.363281 C 23.839844 5.058594 21.140625 2.328125 17.828125 2.328125 "
+                ></path>
+              </svg>
+              1000
+            </label>
+            
+          </li>
+        </ul>
+
+      </div>
+    </div>
+  </div>
+  <!---OTE:MENU DE CONTENIDO DEL USUARIO -->
+  <div class="postProfile">
+    <div class="optionsSearchPost">
+      <ul class="listLine">
+
+        <!--NOTE:PHOTO-->
+        <button class="btnFilesUser">
+          <svg
+            class="FilesUser"
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+          >
+            <path
+              fill="currentcolor"
+              d="M9 12c0-.552.448-1 1.001-1s.999.448.999 1-.446 1-.999 1-1.001-.448-1.001-1zm6.2 0l-1.7 2.6-1.3-1.6-3.2 4h10l-3.8-5zm5.8-7v-2h-21v15h2v-13h19zm3 2v14h-20v-14h20zm-2 2h-16v10h16v-10z"
+            ></path>
+          </svg>
         </button>
 
+        <!---OTE:VIDEO-->
+        <button class="btnFilesUser">
+          <svg
+            class="FilesUser"
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+          >
+            <path
+              fill="currentcolor"
+              d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-3 17v-10l9 5.146-9 4.854z"
+            ></path>
+          </svg>
+        </button>
 
-        <div class="informationUser">
-            <h4>
-                {{user.username}}
-                isaac antepara
-            </h4>
-            <h5>
-                {{user.fullname}}
-                @thisisisaacantepara
-            </h5>
-            <p>Invented, transformed, created and destroyed</p>
-            <div class="postFollowLike">
-                <ul class="listLine">
-                    <li class="elementList">
-                        Post<br/>732
-                    </li>
-                    <li class="elementList">
-                        followings<br/>732k
-                    </li>
-                    <li class="elementList">
-                        likes<br/>732k
-                    </li>
-                </ul>
+        <!---OTE:SOUND-->
+        <button class="btnFilesUser">
+          <svg
+            class="FilesUser"
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+          >
+            <path
+              fill="currentcolor"
+              d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-1.141 16.566l1.081-6.964 1.104 4.742c.109.486.784.541.968.073l1.001-2.557.934 2.176c.155.361.644.417.876.1l.85-1.156h1.837c.271 0 .49-.22.49-.49s-.22-.49-.49-.49h-2.099c-.162 0-.315.078-.41.208l-.472.611-1.071-2.496c-.179-.417-.773-.408-.939.016l-.848 2.168-1.308-6.102c-.123-.548-.907-.517-.996.03l-1.084 7-1.108-4.118c-.124-.492-.818-.52-.975-.032l-.825 2.715h-2.885c-.27 0-.49.22-.49.49s.22.49.49.49h3.284c.184 0 .382-.148.434-.324l.411-1.387 1.247 5.338c.135.537.905.501.993-.041z"
+            ></path>
+          </svg>
+        </button>
 
-            </div>
-        </div>
+        <!--NOTE:FILE-->
+        <button class="btnFilesUser">
+          <svg
+            class="FilesUser"
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+          >
+            <path
+              fill="currentcolor"
+              d="M13 6c3.469 0 2 5 2 5s5-1.594 5 2v9h-12v-16h5zm.827-2h-7.827v20h16v-11.842c0-2.392-5.011-8.158-8.173-8.158zm.173-2l-3-2h-9v22h2v-20h10z"
+            ></path>
+          </svg>
+        </button>
+
+      </ul>
     </div>
-    <!---NOTE:MENU DE CONTENIDO DEL USUARIO -->
-    <div class="postProfile">
-        <div class="optionsSearchPost">
-            <ul class="listLine">
 
-                <!--NOTE:PHOTO-->
-                <button class="btnFilesUser">
-                    <svg class="FilesUser" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                        viewBox="0 0 24 24">
-                        <path fill="currentcolor"
-                            d="M9 12c0-.552.448-1 1.001-1s.999.448.999 1-.446 1-.999 1-1.001-.448-1.001-1zm6.2 0l-1.7 2.6-1.3-1.6-3.2 4h10l-3.8-5zm5.8-7v-2h-21v15h2v-13h19zm3 2v14h-20v-14h20zm-2 2h-16v10h16v-10z" />
-                    </svg>
-                    Photos
-                </button>
-      
-
-
-                <!---NOTE:VIDEO-->
-                <button class="btnFilesUser">
-                    <svg class="FilesUser" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                        viewBox="0 0 24 24">
-                        <path fill="currentcolor"
-                            d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-3 17v-10l9 5.146-9 4.854z" />
-                    </svg>
-                    Videos
-                </button>
-
-                <!---NOTE:SOUND-->
-                <button class="btnFilesUser">
-                    <svg class="FilesUser" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                        viewBox="0 0 24 24">
-                        <path fill="currentcolor" 
-                            d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-1.141 16.566l1.081-6.964 1.104 4.742c.109.486.784.541.968.073l1.001-2.557.934 2.176c.155.361.644.417.876.1l.85-1.156h1.837c.271 0 .49-.22.49-.49s-.22-.49-.49-.49h-2.099c-.162 0-.315.078-.41.208l-.472.611-1.071-2.496c-.179-.417-.773-.408-.939.016l-.848 2.168-1.308-6.102c-.123-.548-.907-.517-.996.03l-1.084 7-1.108-4.118c-.124-.492-.818-.52-.975-.032l-.825 2.715h-2.885c-.27 0-.49.22-.49.49s.22.49.49.49h3.284c.184 0 .382-.148.434-.324l.411-1.387 1.247 5.338c.135.537.905.501.993-.041z"/>
-                    </svg>
-                    Sounds
-                </button>
-
-                <!--NOTE:FILE-->
-                <button class="btnFilesUser">
-                    <svg class="FilesUser" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                        viewBox="0 0 24 24">
-                        <path fill="currentcolor"
-                            d="M13 6c3.469 0 2 5 2 5s5-1.594 5 2v9h-12v-16h5zm.827-2h-7.827v20h16v-11.842c0-2.392-5.011-8.158-8.173-8.158zm.173-2l-3-2h-9v22h2v-20h10z" />
-                    </svg>
-                    Files
-                </button>
-
-            </ul>
+    <!--NOTE: TODOS LOS POST POR EL MOMENTO SOLO IMAGENES-->
+    <div class="allPost">
+      <!--NOTE:hacer un mapa que contenga todos los post del user-->
+      {{#each userContent}}
+        <div class="onePost" id="previewPublication">
+          <img
+            src={{decFile file_content}}
+            class="contentOnePost"
+            onmousedown="mouseDown()"
+            onmouseup="mouseUp()"
+          />
         </div>
-
-
-
-
-        <!--NOTE: TODOS LOS POST POR EL MOMENTO SOLO IMAGENES-->
-        <div class="allPost">
-            <!--NOTE:hacer un mapa que contenga todos los post del user-->
-            {{#each userContent}}
-                <div class="onePost" id="previewPublication">
-                    <img src={{decFile file_content}} class="contentOnePost"
-                     onmousedown="mouseDown()" onmouseup="mouseUp()"/>
-                </div>
-            {{/each}}
-        </div>
+      {{/each}}
     </div>
+  </div>
 
 </div>

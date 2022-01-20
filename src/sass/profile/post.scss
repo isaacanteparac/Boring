@@ -1,8 +1,10 @@
+@import "../abstracts/mixis.scss";
+@import "../abstracts/variables.scss";
 
 .allPost {
-    margin-top: 5px;
     width: 100%;
     height: 600px;
+    padding: 0;
     padding-bottom: 10px;
     overflow: hidden;
     overflow:scroll;
@@ -12,7 +14,8 @@
 
 .onePost {
     background: $backgroundComponent;
-    @include roundedBorder(30%, 105px, map-get($borderRadius, medium));
+    @include roundedBorder(28%, 105px, map-get($borderRadius, medium));
+    max-height: 200px;
     margin: auto;
     margin-top: 10px;
     padding: 0;
@@ -49,24 +52,3 @@
     }
 }
 
-.btnFilesUser {
-    margin: 0 5px;
-    margin-top: 10px;
-    position: relative;
-    @include roundedBorder(55px, 50px, map-get($borderRadius, small));
-    border: map-get($borderRadius, null);
-    text-align: center;
-    @include centerPositionColumn;
-    background-color: $transparent;
-    color: $blueLigth!important;
-
-    &:active {
-        background: $colorActiveBtn;
-    }
-}
-
-.FilesUser{
-    width: 30px;
-    margin-bottom: 5px;
-    color: $blueLigth!important;
-}

@@ -55,7 +55,7 @@ div.contentBoxBlur {
   border-radius: 20px;
   /*-webkit-box-shadow: 2px 2px 5px $leftoverBoxDark;
   -moz-box-shadow: 2px 2px 5px $leftoverBoxDark;*/
-  border: 1px solid #0d0d0d;
+  border: 1px solid #3f3e3e;
   filter: shadow(color=#101113, direction=135, strength=2);
   padding: 10px;
   margin: auto;
@@ -84,7 +84,7 @@ div.contentBoxBlur {
   -ms-user-select: none; }
   .optionsBox:active {
     background: #000000;
-    border: 1px solid #0d0d0d; }
+    border: 1px solid #3f3e3e; }
   .optionsBox h4 {
     position: relative;
     bottom: 25px; }
@@ -128,7 +128,7 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu',  'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #1a1a1a;
+  background-color: #0e0d0d;
   margin: 0;
   padding: 0; }
 
@@ -324,7 +324,7 @@ code {
   padding-top: 5px;
   display: flex;
   justify-content: center;
-  border-bottom: 1px solid #0d0d0d; }
+  border-bottom: 1px solid #3f3e3e; }
 
 .head ul.subContent-head {
   margin: 0;
@@ -359,7 +359,7 @@ code {
     position: relative;
     top: 13px; }
   .logo .logoBottom {
-    border-left: 2px solid #0037d2;
+    border-left: 2px solid #0055ff;
     border-right: 2px solid #8c0fee;
     border-right-width: 12px;
     border-left-width: 12px;
@@ -870,7 +870,7 @@ label.iconidMessageFailed {
   height: 20px; }
 
 .ProgressContainer {
-  color: #1a1a1a;
+  color: #0e0d0d;
   font-size: 15px; }
   .ProgressContainer .fullTime {
     position: relative;
@@ -1078,11 +1078,11 @@ label.iconidMessageFailed {
 @keyframes logoAnimatioTop {
   50% {
     border-left: 2px solid #8c0fee;
-    border-right: 2px solid #0037d2;
+    border-right: 2px solid #0055ff;
     border-left-width: 20px;
     border-right-width: 20px; } }
   .logoInf .logoIBottom {
-    border-left: 2px solid #0037d2;
+    border-left: 2px solid #0055ff;
     border-right: 2px solid #8c0fee;
     border-right-width: 20px;
     border-left-width: 20px;
@@ -1546,18 +1546,20 @@ input[type="file"] {
   -ms-user-select: none;
   background: #050505; }
   .infProfile .user_photo {
-    width: 90px;
+    width: 80px;
     height: 80px;
-    border-radius: 20px;
+    border-radius: 30px;
     background-image: radial-gradient(circle at 0% 0%, #313130 50%, #222127 66.67%, #15131e 83.33%, #080016 100%);
+    margin-bottom: 10px;
     left: 0; }
   .infProfile .btnAddUser {
     position: relative;
-    bottom: 10px;
+    bottom: 5px;
+    padding: 3px;
     background-color: #df1937;
-    width: 30px;
-    height: 30px;
-    border-radius: 25px;
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
     border: none;
     display: flex;
     align-items: center;
@@ -1565,6 +1567,9 @@ input[type="file"] {
     flex-direction: column; }
     .infProfile .btnAddUser:active {
       background-color: #b1162d; }
+    .infProfile .btnAddUser svg.user_iconAdd {
+      width: 30px;
+      color: white !important; }
 
 .iconsProfile {
   width: 20px;
@@ -1580,14 +1585,28 @@ input[type="file"] {
   margin: 0;
   color: #fff; }
   .informationUser h4 {
+    width: 80%;
+    overflow: hidden;
     margin: 0;
-    font-size: 20px; }
+    font-size: 20px;
+    text-align: center; }
   .informationUser h5 {
+    width: 80%;
+    overflow: hidden;
     font-size: 15px;
-    margin: 0; }
+    margin: 0;
+    text-align: center; }
   .informationUser p {
     margin: 0;
-    font-size: 13px; }
+    margin-top: 10px;
+    font-size: 13px;
+    width: 80%;
+    max-height: 104px;
+    text-align: justify;
+    height: auto;
+    overflow: hidden;
+    overflow: scroll;
+    overflow-x: hidden; }
 
 .postFollowLike {
   margin-top: 10px;
@@ -1595,6 +1614,7 @@ input[type="file"] {
 
 .listLine {
   margin: 0;
+  margin-top: 10px;
   padding: 0;
   height: 40px;
   display: flex;
@@ -1604,35 +1624,106 @@ input[type="file"] {
   text-align: center; }
   .listLine .elementList {
     display: inline;
-    padding: 5px;
     margin: 0 5px;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-weight: 400;
-    height: 30px;
+    text-align: center;
+    padding: 5px;
+    font-weight: 500;
+    max-width: auto;
+    max-height: 40px;
     border-radius: 10px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
     -moz-user-select: none;
     -webkit-user-drag: none;
     -webkit-user-select: none;
     -ms-user-select: none; }
+    .listLine .elementList:hover {
+      border-bottom: 2px solid #0055ff; }
     .listLine .elementList:active {
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+      border: none;
       background: #000000; }
+    .listLine .elementList label {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column; }
+      .listLine .elementList label .user_icon {
+        width: 15px;
+        margin: 0;
+        padding: 0;
+        position: relative; }
+      .listLine .elementList label svg.user_iconPost {
+        width: 12px;
+        color: #0fee7e !important; }
+      .listLine .elementList label svg.user_iconFollowing {
+        width: 25px;
+        color: #8c0fee !important; }
+      .listLine .elementList label svg.user_iconHeart {
+        color: #ffff00 !important; }
 
 .optionsSearchPost {
   background: #050505;
-  height: 55px;
+  height: 60px;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-bottom: 10px;
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px; }
+  padding-bottom: 5px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border-bottom: 1px solid #3f3e3e; }
 
+.btnFilesUser {
+  margin: 0 5px;
+  margin-top: 10px;
+  position: relative;
+  width: 55px;
+  height: 50px;
+  border-radius: 10px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  border: none;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #ffffff00; }
+  .btnFilesUser:hover {
+    border-bottom: 2px solid #ffff00;
+    color: #0fee7e !important; }
+  .btnFilesUser:active {
+    background: #000000; }
+
+.FilesUser {
+  width: 30px;
+  margin-bottom: 5px;
+  color: #0055ff !important; }
+
+/*NOTE: DO NOT COPY CONTENT*/
+/*NOTE:CENTER ELEMENTS*/
+/*NOTE: PLACE ELEMENTS IN CENTERED COLUMANS*/
+/*NOTE: ROUND EDGES*/
+/*NOTE:BALL MOVEMENT*/
+/*NOTE:SIDE BODY*/
+/*NOTE: LOGO COLORS*/
+/*NOTE:BORDER RADIUS*/
+/*NOTE: FONT-SIZE*/
+/*NOTE: FONT TYPE*/
+/*NOTE: BACKGROUND*/
+/*NOTE: TRANSPARENT*/
+/*NOTE: BORDER*/
+/*NOTE: TEXT*/
+/*NOTE: BUTTON*/
+/*MOON*/
 .allPost {
-  margin-top: 5px;
   width: 100%;
   height: 600px;
+  padding: 0;
   padding-bottom: 10px;
   overflow: hidden;
   overflow: scroll;
@@ -1642,9 +1733,10 @@ input[type="file"] {
 
 .onePost {
   background: #050505;
-  width: 30%;
+  width: 28%;
   height: 105px;
   border-radius: 15px;
+  max-height: 200px;
   margin: auto;
   margin-top: 10px;
   padding: 0;
@@ -1681,29 +1773,6 @@ input[type="file"] {
     max-height: 300px;
     transform: scale(1.2);
     border-radius: 10px; }
-
-.btnFilesUser {
-  margin: 0 5px;
-  margin-top: 10px;
-  position: relative;
-  width: 55px;
-  height: 50px;
-  border-radius: 10px;
-  border: none;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  background-color: #ffffff00;
-  color: #1040e2 !important; }
-  .btnFilesUser:active {
-    background: #000000; }
-
-.FilesUser {
-  width: 30px;
-  margin-bottom: 5px;
-  color: #1040e2 !important; }
 
 /*CHAT*/
 /*NOTE: DO NOT COPY CONTENT*/
@@ -1786,7 +1855,7 @@ div.chat {
   margin-top: 15px;
   width: 34%;
   border-radius: 20px;
-  border: 1px solid #0d0d0d;
+  border: 1px solid #3f3e3e;
   padding: 0;
   background-color: #050505; }
   .contentFriend:active {
@@ -1900,6 +1969,22 @@ div.chat {
     background-color: rgba(0, 0, 0, 0.465); }
 
 /*NOTE:BOX*/
+/*NOTE: DO NOT COPY CONTENT*/
+/*NOTE:CENTER ELEMENTS*/
+/*NOTE: PLACE ELEMENTS IN CENTERED COLUMANS*/
+/*NOTE: ROUND EDGES*/
+/*NOTE:BALL MOVEMENT*/
+/*NOTE:SIDE BODY*/
+/*NOTE: LOGO COLORS*/
+/*NOTE:BORDER RADIUS*/
+/*NOTE: FONT-SIZE*/
+/*NOTE: FONT TYPE*/
+/*NOTE: BACKGROUND*/
+/*NOTE: TRANSPARENT*/
+/*NOTE: BORDER*/
+/*NOTE: TEXT*/
+/*NOTE: BUTTON*/
+/*MOON*/
 div.user_ {
   background-color: #050505;
   margin: auto;
@@ -1915,10 +2000,7 @@ div.user_photo {
   width: 50px;
   height: 50px;
   border-radius: 15px;
-  border-left: 2px solid #0fee7e;
-  border-right: 2px solid #ffff00;
-  border-top: 2px solid #0037d2;
-  border-bottom: 2px solid #8c0fee;
+  border: 2px solid #0fee7e;
   background-color: #b6b6b6;
   position: relative;
   top: 15px;
@@ -1934,6 +2016,11 @@ div.user_photo {
   overflow: hidden; }
 
 img.user_contentPhoto {
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  margin: auto;
   width: 100%; }
 
 div.user_information {

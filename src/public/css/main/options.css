@@ -36,7 +36,7 @@ div.contentBoxBlur {
   border-radius: 20px;
   /*-webkit-box-shadow: 2px 2px 5px $leftoverBoxDark;
   -moz-box-shadow: 2px 2px 5px $leftoverBoxDark;*/
-  border: 1px solid #0d0d0d;
+  border: 1px solid #3f3e3e;
   filter: shadow(color=#101113, direction=135, strength=2);
   padding: 10px;
   margin: auto;
@@ -65,7 +65,7 @@ div.contentBoxBlur {
   -ms-user-select: none; }
   .optionsBox:active {
     background: #000000;
-    border: 1px solid #0d0d0d; }
+    border: 1px solid #3f3e3e; }
   .optionsBox h4 {
     position: relative;
     bottom: 25px; }

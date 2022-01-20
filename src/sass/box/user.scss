@@ -1,3 +1,6 @@
+@import "../abstracts/mixis.scss";
+@import "../abstracts/variables.scss";
+
 div.user_ {
   background-color: $backgroundComponent;
   margin: auto;
@@ -11,10 +14,7 @@ div.user_ {
 
 div.user_photo{
     @include roundedBorder(50px, 50px, map-get($borderRadius, medium));
-    border-left: 2px solid map-get($logo, first );
-    border-right: 2px solid map-get($logo, second );
-    border-top: 2px solid map-get($logo, third );
-    border-bottom: 2px solid map-get($logo, fourth );
+    border: 2px solid map-get($logo, first );
     background-color: $lowlowWhite;
     position: relative;
     top:15px;
@@ -25,6 +25,8 @@ div.user_photo{
 }
 
 img.user_contentPhoto{
+  @include notUnderline;
+  margin: auto;
   width: 100%;
 }
 

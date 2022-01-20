@@ -17,9 +17,9 @@
     @include notUnderline;
     background: $backgroundComponent;
     .user_photo {
-        @include roundedBorder(90px, 80px, map-get($borderRadius, big ));
+        @include roundedBorder(80px, 80px, map-get($borderRadius, extrabig ));
         background-image: $backgroundFile;
-
+        margin-bottom: 10px;
         left: 0;
     }
 
@@ -27,14 +27,20 @@
 
     .btnAddUser {
         position: relative;
-        bottom: 10px;
+        bottom: 5px;
+        padding: 3px;
         background-color: $redLigth;
-        @include roundedBorder(30px, 30px, 25px);
+        @include roundedBorder(20px, 20px, 10px);
         border: map-get($borderRadius, null );
         @include centerPositionColumn;
 
         &:active {
             background-color: $redDark;
+        }
+
+        svg.user_iconAdd{
+            width: 30px;
+            color: white!important;
         }
     }
 }
@@ -55,18 +61,32 @@
     color: $white;
 
     h4 {
+        width: 80%;
+        overflow: hidden;
         margin: 0;
         font-size: map-get($fontSize, big);
+        text-align: center;
     }
 
     h5 {
+        width: 80%;
+        overflow: hidden;
         font-size: map-get($fontSize, medium);
         margin: 0;
+        text-align: center;
     }
 
     p {
         margin: 0;
+        margin-top: 10px;
         font-size: map-get($fontSize, small);
+        width: 80%;
+        max-height: 104px;
+        text-align: justify;
+        height: auto;
+        overflow: hidden;
+        overflow:scroll;
+        overflow-x:hidden;
     }
 }
 
@@ -77,6 +97,7 @@
 
 .listLine {
     margin: 0;
+    margin-top: 10px;
     padding: 0;
     height: 40px;
  
@@ -86,26 +107,90 @@
 
     .elementList {
         display: inline;
-        padding: 5px;
         margin: 0 5px;      
         @include centerPosition;
-        font-weight: 400;
-        height: 30px;
-        border-radius: map-get($borderRadius, small );
+        text-align: center;
+        padding: 5px;
+        font-weight: 500;
+        @include roundedBorderMax(auto,40px,map-get($borderRadius, small ));
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
         @include notUnderline;
 
-        &:active {
+        &:hover {
+            border-bottom: 2px solid map-get($logo, third );
+        }
+
+        &:active{
+            border-bottom-left-radius: map-get($borderRadius, small );
+            border-bottom-right-radius: map-get($borderRadius, small );
+            border: none;
             background: $colorActiveBtn;
         }
+
+        label{
+            @include centerPositionColumn;
+            .user_icon{
+                width: 15px;
+                margin: 0;
+                padding: 0;
+                position: relative;
+            }
+            svg.user_iconPost{
+                width: 12px;
+                color: map-get($logo, first )!important;
+            }
+    
+            svg.user_iconFollowing{
+                width: 25px;
+                color: map-get($logo, fourth )!important;
+            }
+    
+            svg.user_iconHeart{
+                color: map-get($logo, second )!important;
+            }
+        }
+
+       
     }
 }
 
 .optionsSearchPost {
     background: $backgroundComponent;
-    height: 55px;
+    height: 60px;
     @include centerPosition;
-    padding-bottom: 10px;
-    border-bottom-left-radius: map-get($borderRadius, big );
-    border-bottom-right-radius: map-get($borderRadius, big );
+    padding-bottom: 5px;
+    border-bottom-left-radius: map-get($borderRadius, medium );
+    border-bottom-right-radius: map-get($borderRadius, medium );
+    border-bottom: 1px solid $borderBlack;
 
+}
+
+
+.btnFilesUser {
+    margin: 0 5px;
+    margin-top: 10px;
+    position: relative;
+    @include roundedBorder(55px, 50px, map-get($borderRadius, small));
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    border: map-get($borderRadius, null);
+    text-align: center;
+    @include centerPositionColumn;
+    background-color: $transparent;
+
+    &:hover {
+        border-bottom: 2px solid map-get($logo, second );
+        color:map-get($logo, first )!important;
+    }
+
+    &:active {
+        background: $colorActiveBtn;
+    }
+}
+
+.FilesUser{
+    width: 30px;
+    margin-bottom: 5px;
+    color:map-get($logo, third )!important;
 }
