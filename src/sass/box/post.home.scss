@@ -1,123 +1,120 @@
 .userPost {
-    border-radius: map-get($borderRadius, big);
-    background-color: $transparent;
-    padding: 0;
-    width: 100%;
-    margin: auto;
-    margin-top: 10px;
-    max-height: map-get($post, maxHeight );
-    /*box-shadow: 5px 5px 5px $leftoverBoxDark; */
+  border-radius: map-get($borderRadius, big);
+  background-color: $transparent;
+  padding: 0;
+  width: 100%;
+  margin: auto;
+  margin-top: 10px;
+  max-height: map-get($post, maxHeight);
+  /*box-shadow: 5px 5px 5px $leftoverBoxDark; */
 }
-
-
 
 .information {
-    border-radius:map-get($borderRadius, extrabig);
-    width: 60%;
-    height: 50px;
-    border: none;
-    backdrop-filter: map-get($blurEffect, nano );
-    border: 2px solid $boderBlurBox;
-    float: left;
-    left: 20%;
+  border-radius: map-get($borderRadius, extrabig);
+  width: 60%;
+  height: 50px;
+  border: none;
+  backdrop-filter: map-get($blurEffect, nano);
+  border: 2px solid $boderBlurBox;
+  float: left;
+  left: 20%;
+  position: relative;
+  bottom: 485px;
+
+  .nameUser {
+    margin: 0;
+    padding: 0;
+    width: 250px;
     position: relative;
-    bottom: 485px;
+    left: 55px;
+    bottom: 57px;
+    color: $white;
+  }
 
-    .nameUser {
-        margin: 0;
-        padding: 0;
-        width: 250px;
-        position: relative;
-        left: 55px;
-        bottom: 57px;
-        color: $white;
+  .usernamePost {
+    width: 250px;
+    position: relative;
+    left: 55px;
+    bottom: 78px;
+    color: $white;
+  }
+
+  .photoUser {
+    @include roundedBorder(40px, 40px, map-get($borderRadius, big));
+    background-color: $lowlowWhite;
+    @include centerPositionColumn;
+    @include notUnderline;
+    overflow: hidden;
+    position: relative;
+    top: 5px;
+    left: 10px;
+
+    img {
+      width: 100%;
     }
-
-    .usernamePost {
-        width: 250px;
-        position: relative;
-        left: 55px;
-        bottom: 78px;
-        color: $white;
-    }
-
-    .photoUser {
-        @include roundedBorder(40px, 40px, map-get($borderRadius, big));
-        background-color: $lowlowWhite;
-        @include centerPositionColumn;
-        @include notUnderline;
-        overflow: hidden;
-        position: relative;
-        top: 5px;
-        left: 10px;
-
-        img {
-            width: 100%;
-        }
-    }
+  }
 }
-
 
 .linkdec {
-    text-decoration: none;
+  text-decoration: none;
 }
-
 
 .fileUser {
-    width: 100%;
-    height: map-get($post, maxHeight );   
-    border-radius: map-get($borderRadius, big);
-    @include centerPosition;
-    background: $backgroundComponent;
-    /*border: 1px solid $borderBlack;*/
-    overflow: hidden;
+  width: 100%;
+  height: map-get($post, maxHeight);
+  border-radius: map-get($borderRadius, big);
+  @include centerPosition;
+  background: $backgroundComponent;
+  /*border: 1px solid $borderBlack;*/
+  overflow: hidden;
 }
 
-
-
-.contentImagen, .contentVideo{
-    width: 100%;
-    @include notUnderline;
+.contentImagen,
+.contentVideo {
+  width: 100%;
+  @include notUnderline;
 }
-
-
 
 .interactionPost {
-    @include centerPosition;
-    @include roundedBorder(50%, 40px, map-get($borderRadius, extrabig));
-    backdrop-filter: map-get($blurEffect, nano );
-    border: 2px solid $boderBlurBox;
-    float:right;
-    position: relative;
-    bottom: 105px;
-    right: 25%;
+  @include centerPosition;
+  @include roundedBorder(50%, 40px, map-get($borderRadius, extrabig));
+  backdrop-filter: map-get($blurEffect, nano);
+  border: 2px solid $boderBlurBox;
+  float: right;
+  padding: 0 5px;
+  position: relative;
+  bottom: 105px;
+  right: 25%;
 }
 
 .btnInteraction {
-    background-color: $transparent;
-    @include roundedBorder(40px, 40px, map-get($borderRadius, big));
-    border: none;
-    padding: 0;
-    margin: 0 5px;
-    @include centerPosition;
-}
+  background-color: $transparent;
+  @include roundedBorder(40px, 40px, map-get($borderRadius, big));
+  border: none;
+  padding: 0;
+  margin: 0 5px;
+  @include centerPosition;
 
-svg.iconInterac {
-    color: map-get($color, gray_ )!important;
-}
+  svg.icon_ {
+    width: 30px;
+    margin: auto;
+    color: map-get($color, gray_) !important;
+  }
 
-svg.iconLikesPost:active{
-    color: map-get($color, pink_ )!important;
-}
+  svg.icon_heart:active {
+    color: map-get($color, pink_) !important;
+  }
 
-svg.iconDisLikesPost:active{
-    color: map-get($color, black_ )!important;
-}
+  svg.icon_noHeart:active {
+    color: map-get($color, black_) !important;
+  }
 
-svg.iconCommentPost:active{
-    color: map-get($color, white_ )!important;
-}
+  svg.icon_publication:active {
+    width: 12px;
+    color: map-get($color, eilish_) !important;
+  }
 
-svg.iconSavePost:active{
-    color: map-get($color, blue_ )!important;
+  svg.icon_save:active {
+    color: map-get($color, blue_) !important;
+  }
 }

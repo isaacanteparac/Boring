@@ -96,8 +96,7 @@ export class App {
             this.app.locals.message = req.flash('message');
             this.app.locals.success = req.flash('success');
             this.app.locals.failed = req.flash('failed');
-            this.n+=1;
-
+            this.app.locals.failed = req.flash('warning');
 
             this.app.locals.user = req.user;
             next();

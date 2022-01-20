@@ -35,16 +35,20 @@ $logo: (
 
 $color:(
     eilish_:#0fee7e,
+    green_: #3fee0f,
     pruple_:#8c0fee,
-    yellow_:#ffff00,
-    gold_:#FFD700,
     blue_:#0055ff,
     blueD_: #003cb4,
     red_:#ff002b,
     redD: #cb0022,
-    pink_:#Fb4958,
     gray_: #a19e9e,
-    black_: #353232
+    black_: #353232,
+    yelow_:#ffff00,
+    white_: #ffffff,
+    pink_:#Fb4958,
+    violet_:#6849fb,
+    goldenfizz_:#Fbf849
+    
 );
 
 /*NOTE:BORDER RADIUS*/
@@ -81,11 +85,13 @@ $blurEffect:(
 
 $alertMessage:(
     message: #177bee8f,
-    success: #4dee178f,
+    success: #58ee178f,
     failed: #ee1e178f,
-    iconmessage: #0f74bc,
-    iconsuccess: #3abc0f,
-    iconfailed: #bc0f0f
+    warning: #c6b70ec6,
+    iconMessage: #d3d5d7,
+    iconSuccess: #3abc0f,
+    iconFailed: #bc0f0f,
+    iconWarning:#e3e309,
 );
 
 $navigation:(

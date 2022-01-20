@@ -40,19 +40,19 @@
       border-top-left-radius: 0;
       border-bottom-left-radius: 0;
       margin: 0;
-      color: #fff !important;
+      color: #ffffff !important;
       overflow: hidden;
       display: flex;
       align-items: center;
       justify-content: center; }
       .barSearch .contenInputMessage .btnPostMessage .iconsFooter {
         height: 20px;
-        color: #fff !important; }
+        color: #ffffff !important; }
         .barSearch .contenInputMessage .btnPostMessage .iconsFooter:active {
-          color: #fff !important;
+          color: #ffffff !important;
           background: #ffffff00; }
       .barSearch .contenInputMessage .btnPostMessage:active {
-        background: #133297; }
+        background: #003cb4; }
 
 .optionSearch {
   padding: 0; }
@@ -77,11 +77,10 @@
   justify-content: center;
   flex-direction: column;
   background: #050505;
-  color: #1040e2;
+  color: #fff;
   border: 1px solid #000000;
   padding: 2px;
   font-size: 15px; }
   .options:active {
-    border: 2px solid #1040e2;
-    color: #fff;
+    border: 2px solid #0055ff;
     background-color: rgba(0, 0, 0, 0.465); }

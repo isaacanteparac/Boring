@@ -26,20 +26,20 @@
       border-top-left-radius: 0;
       border-bottom-left-radius: 0;
       margin: 0;
-      color: #fff !important;
+      color: map-get($color, white_ )!important;
       overflow: hidden;
       @include centerPosition;
 
       .iconsFooter {
         height: 20px;
-        color: #fff !important;
+        color: map-get($color, white_ )!important;
         &:active {
-          color: #fff !important;
+          color: map-get($color, white_ )!important;
           background: $transparent;
         }
       }
       &:active {
-        background: $blueDark;
+        background: map-get($color, blueD_ )
       }
     }
   }
@@ -63,14 +63,13 @@
   text-align: center;
   @include centerPositionColumn;
   background: $backgroundComponent;
-  color: $blueLigth;
+  color: $white;
   border: 1px solid $colorActiveBtn;
   padding: 2px;
   font-size: map-get($fontSize, medium);
 
   &:active {
-    border: 2px solid $blueLigth;
-    color: $white;
+    border: 2px solid map-get($color, blue_ );
     background-color: $transparentGray;
   }
 }

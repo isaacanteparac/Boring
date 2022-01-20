@@ -118,7 +118,7 @@
         @include notUnderline;
 
         &:hover {
-            border-bottom: 2px solid map-get($logo, third );
+            border-bottom: 2px solid map-get($color, eilish_ );
         }
 
         &:active{
@@ -180,17 +180,16 @@
     background-color: $transparent;
 
     &:hover {
-        border-bottom: 2px solid map-get($logo, second );
-        color:map-get($logo, first )!important;
+        border-bottom: 2px solid map-get($color, yelow_ );
     }
 
     &:active {
         background: $colorActiveBtn;
     }
+
+    .icon_file{
+        width: 30px;
+        margin-bottom: 5px;
+    }
 }
 
-.FilesUser{
-    width: 30px;
-    margin-bottom: 5px;
-    color:map-get($logo, third )!important;
-}

@@ -62,21 +62,21 @@ div.messageAlert {
   backdrop-filter: blur(30px); }
 
 label.iconidMessageAlert {
-  color: #0f74bc !important; }
+  color: !important; }
 
 div.messageSuccess {
   background-color: #4dee178f;
   backdrop-filter: blur(30px); }
 
 label.iconidMessageSuccess {
-  color: #3abc0f !important; }
+  color: !important; }
 
 div.messageFailed {
   background-color: #ee1e178f;
   backdrop-filter: blur(30px); }
 
 label.iconidMessageFailed {
-  color: #bc0f0f !important; }
+  color: !important; }
 
 .btnClosrMessage {
   position: relative;

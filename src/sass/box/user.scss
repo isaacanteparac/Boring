@@ -1,6 +1,5 @@
 
 
-
 div.user_ {
   background-color: $backgroundComponent;
   margin: auto;
@@ -68,9 +67,13 @@ p.user_description {
 }
 
 div.user_informationAccount {
-  color: $lowlowWhite;
-  font-size: map-get($fontSize, medium);
   position: relative;
+  label{
+    font-size: map-get($fontSize, rem);
+    font-weight: 700;
+    color: $lowlowWhite;
+    text-align: right;
+  }
 }
 
 

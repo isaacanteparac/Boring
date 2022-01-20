@@ -133,7 +133,7 @@
     -webkit-user-select: none;
     -ms-user-select: none; }
     .listLine .elementList:hover {
-      border-bottom: 2px solid #0055ff; }
+      border-bottom: 2px solid #0fee7e; }
     .listLine .elementList:active {
       border-bottom-left-radius: 10px;
       border-bottom-right-radius: 10px;
@@ -186,12 +186,9 @@
   flex-direction: column;
   background-color: #ffffff00; }
   .btnFilesUser:hover {
-    border-bottom: 2px solid #ffff00;
-    color: #0fee7e !important; }
+    border-bottom: 2px solid #ffff00; }
   .btnFilesUser:active {
     background: #000000; }
-
-.FilesUser {
-  width: 30px;
-  margin-bottom: 5px;
-  color: #0055ff !important; }
+  .btnFilesUser .icon_file {
+    width: 30px;
+    margin-bottom: 5px; }

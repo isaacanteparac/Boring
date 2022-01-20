@@ -1,5 +1,4 @@
-@import "../abstracts/mixis.scss";
-@import "../abstracts/variables.scss";
+
 
 .alert_message{
     background: $transparent;
@@ -17,11 +16,14 @@
 div.content_message{
     @include roundedBorder(100%, 50px, 50px);
     @include centerPosition;
+    padding: 0 3px;
+    overflow: hidden;
+    backdrop-filter: map-get($blurEffect, nano );
 }
 
 label.iconAlert{
-    @include centerPosition;
     @include roundedBorder(30px, 30px, map-get($borderRadius, medium));
+    @include centerPosition;
 }
 
 
@@ -29,9 +31,10 @@ p.textMessage{
     font-family: map-get($fontFamily, first );
     background: $transparent;
     width: 80%;
-    font-weight: 700;
+    font-weight: 500;
     max-height: 40px;
     margin-left: 1px;
+    overflow: hidden;
 }
 
 p.textalertMessage{
@@ -40,30 +43,21 @@ p.textalertMessage{
 
 div.messageAlert{
     background-color: map-get($alertMessage, message );
-    backdrop-filter: map-get($blurEffect, big );
 }
 
-label.iconidMessageAlert{
-    color: map-get($alertMessage, iconmessage )!important;
-}
 
 div.messageSuccess{
     background-color: map-get($alertMessage, success );
-    backdrop-filter: map-get($blurEffect, big );
-}
-
-label.iconidMessageSuccess{
-    color: map-get($alertMessage, iconsuccess )!important;
 }
 
 div.messageFailed{
     background-color: map-get($alertMessage, failed );
-    backdrop-filter: map-get($blurEffect, big );
 }
 
-label.iconidMessageFailed{
-    color: map-get($alertMessage, iconfailed )!important;
+div.messageWarning{
+    background-color: map-get($alertMessage, warning );
 }
+
 
 .btnClosrMessage{
     position: relative;
