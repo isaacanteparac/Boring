@@ -100,7 +100,7 @@ SEARCH
 
 
 PROFILE
-![image](https://user-images.githubusercontent.com/69361351/149993896-733533a9-8c57-49a4-8859-04c92bcf07d9.png)
+![image](https://user-images.githubusercontent.com/69361351/150287624-5ce35aff-43cc-430e-b2eb-b3e08c33918f.png)
 ![image](https://user-images.githubusercontent.com/69361351/149994062-13fc8635-fd79-4a58-81ba-0cebd7835524.png)
 ![image](https://user-images.githubusercontent.com/69361351/149994095-28f5113e-d4ef-4a1d-9428-e98aef563f3b.png)
 ![image](https://user-images.githubusercontent.com/69361351/149994118-24504601-fd80-4224-9a2e-dc9c5ecbe040.png)
