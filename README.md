@@ -100,7 +100,9 @@ SEARCH
 
 
 PROFILE
-![image](https://user-images.githubusercontent.com/69361351/150287663-2bbcfaa3-a350-474a-b59b-2a9ad3438f76.png)
+![image](https://user-images.githubusercontent.com/69361351/150423583-d33730b6-b9b6-43e0-b472-1dd4cd1329fe.png)
+![image](https://user-images.githubusercontent.com/69361351/150423605-c693160d-f9c0-4bfc-bb7d-3c23f6799a40.png)
+![image](https://user-images.githubusercontent.com/69361351/150423650-5328de78-0050-4524-95cc-efd59fd1415b.png)
 ![image](https://user-images.githubusercontent.com/69361351/149994062-13fc8635-fd79-4a58-81ba-0cebd7835524.png)
 ![image](https://user-images.githubusercontent.com/69361351/149994095-28f5113e-d4ef-4a1d-9428-e98aef563f3b.png)
 ![image](https://user-images.githubusercontent.com/69361351/149994118-24504601-fd80-4224-9a2e-dc9c5ecbe040.png)
