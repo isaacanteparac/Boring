@@ -16,17 +16,17 @@ code {
 
 ::-webkit-scrollbar {
     @include roundedBorder(2px, 2px, 50px);
-    background-color: $backgroundScroll;
+    background-color: $transparent;
 }
 
 ::-webkit-scrollbar-track {
     border-radius: map-get($borderRadius, small );
-    background-color: #20212400;
+    background-color: $transparent;
 }
 
 ::-webkit-scrollbar-thumb {
     border-radius:  map-get($borderRadius, small );
-    background-color: $blueLigth;
+    background-color: map-get($color, blue_ );
 }
 
 .content-Center {

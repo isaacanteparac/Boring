@@ -98,7 +98,7 @@
     padding: 0 10px;
     font-size: map-get($fontSize, rem );
     font-family: map-get($fontFamily, first );
-    border: 2px solid $blueLigth;
+    border: 2px solid map-get($color, blue_ );
     background-color: $colorActiveBtn;
     color: $white;
 }
@@ -117,12 +117,12 @@
     margin: 0;
     @include roundedBorder(15%, 35px, map-get($borderRadius, extrabig));
     margin-left: 5px;
-    background-color: $blueLigth;
-    color: #fff;
+    background-color: map-get($color, blue_ );
+    color: map-get($color, whie_ );
     border: map-get($borderRadius, null);
     font-size: map-get($fontSize, rem_1 );
 
     :active {
-        background-color: $blueDark;
+        background-color: map-get($color, blueD_ );
     }
 }

@@ -60,7 +60,7 @@
     .progress {
       width: 0%;
       height: 100%;
-      background: $blueLigth;
+      background: map-get($color, blue_ );
       border-radius: map-get($borderRadius, big );
     }
   }

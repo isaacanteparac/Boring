@@ -92,12 +92,12 @@
     @include roundedBorder(75%, 50px, map-get($borderRadius, small));
     margin: 10px 0;
     border: map-get($borderRadius, null);
-    background: $blueLigth;
-    color: white;
+    background: map-get($color, blue_ );
+    color: map-get($color, whie_ );
     font-size: map-get($fontSize, rem_2 );
 
     &:active {
-        background-color: $blueDark;
+        background: map-get($color, blueD_ );
     }
 }
 

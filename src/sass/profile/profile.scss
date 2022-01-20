@@ -26,21 +26,18 @@
     
 
     .btnAddUser {
-        position: relative;
-        bottom: 5px;
-        padding: 3px;
-        background-color: $redLigth;
-        @include roundedBorder(20px, 20px, 10px);
+        margin: 5px 0;
+        padding: 5px;
+        background-color: map-get($color, pink_ );
+        @include roundedBorder(auto, 25px, map-get($borderRadius, small));
         border: map-get($borderRadius, null );
         @include centerPositionColumn;
+        font-size: map-get($fontSize, rem );
+        color: map-get($color, white_ );
+        font-weight: 600;
 
-        &:active {
-            background-color: $redDark;
-        }
-
-        svg.user_iconAdd{
-            width: 30px;
-            color: white!important;
+        &:active{
+            background-color: map-get($color, eilishD_ );
         }
     }
 }
@@ -59,6 +56,7 @@
     padding: 0;
     margin: 0;
     color: $white;
+    margin-top: 10px;
 
     h4 {
         width: 80%;

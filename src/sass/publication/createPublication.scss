@@ -1,5 +1,3 @@
-@import "../abstracts/mixis.scss";
-@import "../abstracts/variables.scss";
 
 #boxCreatePublication{
     display: none;
@@ -73,10 +71,10 @@ input[type="file"] {
 
 .iconsNewPost {
     width: 30px;
-    color: $blueLigth!important;
+    color: map-get($color, blue_ )!important;
 
     &:hover {
-        color: black!important;
+        color: map-get($color, blackD_ )!important;
     }
 }
 
@@ -87,9 +85,9 @@ input[type="file"] {
 
 .btnNewPost {
     border: none;
-    background-color: $blueLigth;
+    background-color: map-get($color, blue_ );
     float: right;
-    color: white;
+    color: map-get($color, white_ );
     font-size: 20px;
     text-align: center;
     @include roundedBorder(70px, 30px, 20px);
@@ -97,7 +95,7 @@ input[type="file"] {
     margin-top: 30px;
 
     &:active {
-        background-color: $blueDark;
+        background-color: map-get($color, blueD_ );
     }
 }
 
@@ -131,7 +129,7 @@ input[type="file"] {
     position: relative;
     background-color: $transparent;
     border: none;
-    color: white;
+    color: map-get($color, white_ );
     border-bottom: 1px solid $borderGrayLigth;
     text-transform: capitalize;
     font-size: 16px;
@@ -185,10 +183,10 @@ input[type="file"] {
     max-width:50px;
     max-height: 50px;
     @include notUnderline;
-    color: $redLigth!important;
+    color: map-get($color, red_ )!important;
 
     &:active {
-        color: $redDark!important;
+        color: map-get($color, redD_ )!important;
     }
 }
 

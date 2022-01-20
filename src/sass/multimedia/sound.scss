@@ -65,7 +65,7 @@
 }
 
 #seek-bar {
-    background-color: $blueLigth;
+    background-color: map-get($color, blue_ );
     transition: 0.2s ease width;
     z-index: 1;
 }

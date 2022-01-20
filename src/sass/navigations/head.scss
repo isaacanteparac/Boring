@@ -1,5 +1,5 @@
 /** {
-    --blueLigth: #1040e2;
+    --map-get($color, blue_ ): #1040e2;
     --blueDark: #133297;
     --redLigth: #df1937;
     --redDark: #b1162d;
@@ -159,7 +159,7 @@
     @include roundedBorder(75%, 50px, map-get($borderRadius, small));
     margin: 10px 0;
     border: map-get($borderRadius, null);
-    background: $blueLigth;
+    background: map-get($color, blue_ );
     @include centerPosition;
     display: none;
 }

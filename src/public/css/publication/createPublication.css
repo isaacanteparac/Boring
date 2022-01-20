@@ -76,9 +76,9 @@ input[type="file"] {
 
 .iconsNewPost {
   width: 30px;
-  color: #1040e2 !important; }
+  color: #0055ff !important; }
   .iconsNewPost:hover {
-    color: black !important; }
+    color: #000000 !important; }
 
 .divBtnUpadateBottom {
   position: relative;
@@ -86,9 +86,9 @@ input[type="file"] {
 
 .btnNewPost {
   border: none;
-  background-color: #1040e2;
+  background-color: #0055ff;
   float: right;
-  color: white;
+  color: #ffffff;
   font-size: 20px;
   text-align: center;
   width: 70px;
@@ -97,7 +97,7 @@ input[type="file"] {
   margin-right: 5px;
   margin-top: 30px; }
   .btnNewPost:active {
-    background-color: #133297; }
+    background-color: #003cb4; }
 
 .divTypeExclusi {
   margin-top: 10px;
@@ -123,7 +123,7 @@ input[type="file"] {
   position: relative;
   background-color: #ffffff00;
   border: none;
-  color: white;
+  color: #ffffff;
   border-bottom: 1px solid #999898;
   text-transform: capitalize;
   font-size: 16px; }
@@ -172,9 +172,9 @@ input[type="file"] {
   -webkit-user-drag: none;
   -webkit-user-select: none;
   -ms-user-select: none;
-  color: #df1937 !important; }
+  color: #ff002b !important; }
   .btnClose:active {
-    color: #b1162d !important; }
+    color: !important; }
 
 #eliminarFileCreatePublication {
   float: left;

@@ -7,6 +7,7 @@ CREATE TABLE users (
     password VARCHAR(60) NOT NULL,
     email VARCHAR(100) NOT NULL,
     photo VARCHAR(255) NULL,
+    phrase VARCHAR(255) NULL,
     create_  timestamp NOT NULL DEFAULT current_timestamp,
     updatee_ timestamp NOT NULL DEFAULT current_timestamp ON UPDATE CURRENT_TIMESTAMP,
     delete_  timestamp NOT NULL DEFAULT current_timestamp,

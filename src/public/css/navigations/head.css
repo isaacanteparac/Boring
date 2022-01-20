@@ -1,5 +1,5 @@
 /** {
-    --blueLigth: #1040e2;
+    --map-get($color, blue_ ): #1040e2;
     --blueDark: #133297;
     --redLigth: #df1937;
     --redDark: #b1162d;
@@ -155,7 +155,7 @@
   border-radius: 10px;
   margin: 10px 0;
   border: none;
-  background: #1040e2;
+  background: #0055ff;
   display: flex;
   align-items: center;
   justify-content: center;

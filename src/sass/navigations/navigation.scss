@@ -1,5 +1,3 @@
-@import "../abstracts/mixis.scss";
-@import "../abstracts/variables.scss";
 
 .navInfer {
     display: none;
@@ -39,7 +37,7 @@
     text-decoration: none;
 
     :hover {
-        color: $blueLigth;
+        color: map-get($color, blue_ );
     }
 
 }
@@ -59,6 +57,6 @@
     color: $colorIconsHeadMenu!important;
 
     &:active {
-        color: $blueLigth!important;
+        color: map-get($color, blue_ )!important;
     }
 }

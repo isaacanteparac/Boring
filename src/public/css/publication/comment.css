@@ -96,7 +96,7 @@
   padding: 0 10px;
   font-size: 16px;
   font-family: "Segoe UI";
-  border: 2px solid #1040e2;
+  border: 2px solid #0055ff;
   background-color: #000000;
   color: #fff; }
 
@@ -114,9 +114,8 @@
   height: 35px;
   border-radius: 30px;
   margin-left: 5px;
-  background-color: #1040e2;
-  color: #fff;
+  background-color: #0055ff;
   border: none;
   font-size: 17.6px; }
   .btnPostMessage :active {
-    background-color: #133297; }
+    background-color: #003cb4; }

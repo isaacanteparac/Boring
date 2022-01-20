@@ -177,15 +177,15 @@ code {
   width: 2px;
   height: 2px;
   border-radius: 50px;
-  background-color: #101113; }
+  background-color: #ffffff00; }
 
 ::-webkit-scrollbar-track {
   border-radius: 10px;
-  background-color: #20212400; }
+  background-color: #ffffff00; }
 
 ::-webkit-scrollbar-thumb {
   border-radius: 10px;
-  background-color: #1040e2; }
+  background-color: #0055ff; }
 
 .content-Center {
   margin-left: 20%;
@@ -227,22 +227,6 @@ code {
     width: 100%; } }
 
 /*navigatios*/
-/*NOTE: DO NOT COPY CONTENT*/
-/*NOTE:CENTER ELEMENTS*/
-/*NOTE: PLACE ELEMENTS IN CENTERED COLUMANS*/
-/*NOTE: ROUND EDGES*/
-/*NOTE:BALL MOVEMENT*/
-/*NOTE:SIDE BODY*/
-/*NOTE: LOGO COLORS*/
-/*NOTE:BORDER RADIUS*/
-/*NOTE: FONT-SIZE*/
-/*NOTE: FONT TYPE*/
-/*NOTE: BACKGROUND*/
-/*NOTE: TRANSPARENT*/
-/*NOTE: BORDER*/
-/*NOTE: TEXT*/
-/*NOTE: BUTTON*/
-/*MOON*/
 .navInfer {
   display: none;
   position: fixed;
@@ -279,7 +263,7 @@ code {
   margin: 0 25px;
   text-decoration: none; }
   .links-footer :hover {
-    color: #1040e2; }
+    color: #0055ff; }
 
 .btnFooter {
   background-color: #ffffff00;
@@ -295,10 +279,10 @@ code {
   width: 30px;
   color: #fff !important; }
   .iconsFooter:active {
-    color: #1040e2 !important; }
+    color: #0055ff !important; }
 
 /** {
-    --blueLigth: #1040e2;
+    --map-get($color, blue_ ): #1040e2;
     --blueDark: #133297;
     --redLigth: #df1937;
     --redDark: #b1162d;
@@ -454,7 +438,7 @@ code {
   border-radius: 10px;
   margin: 10px 0;
   border: none;
-  background: #1040e2;
+  background: #0055ff;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -717,7 +701,7 @@ div.messageWarning {
   height: 6px; }
 
 #seek-bar {
-  background-color: #1040e2;
+  background-color: #0055ff;
   transition: 0.2s ease width;
   z-index: 1; }
 
@@ -892,7 +876,7 @@ div.messageWarning {
     .ProgressContainer .progressBar .progress {
       width: 0%;
       height: 100%;
-      background: #1040e2;
+      background: #0055ff;
       border-radius: 20px; }
 
 .volume {
@@ -1000,11 +984,10 @@ div.messageWarning {
   border-radius: 10px;
   margin: 10px 0;
   border: none;
-  background: #1040e2;
-  color: white;
+  background: #0055ff;
   font-size: 19.2px; }
   .btnOk:active {
-    background-color: #133297; }
+    background: #003cb4; }
 
 .btnNo {
   width: 75%;
@@ -1254,7 +1237,7 @@ div.viewPostContentuser {
   padding: 0 10px;
   font-size: 16px;
   font-family: "Segoe UI";
-  border: 2px solid #1040e2;
+  border: 2px solid #0055ff;
   background-color: #000000;
   color: #fff; }
 
@@ -1272,29 +1255,12 @@ div.viewPostContentuser {
   height: 35px;
   border-radius: 30px;
   margin-left: 5px;
-  background-color: #1040e2;
-  color: #fff;
+  background-color: #0055ff;
   border: none;
   font-size: 17.6px; }
   .btnPostMessage :active {
-    background-color: #133297; }
+    background-color: #003cb4; }
 
-/*NOTE: DO NOT COPY CONTENT*/
-/*NOTE:CENTER ELEMENTS*/
-/*NOTE: PLACE ELEMENTS IN CENTERED COLUMANS*/
-/*NOTE: ROUND EDGES*/
-/*NOTE:BALL MOVEMENT*/
-/*NOTE:SIDE BODY*/
-/*NOTE: LOGO COLORS*/
-/*NOTE:BORDER RADIUS*/
-/*NOTE: FONT-SIZE*/
-/*NOTE: FONT TYPE*/
-/*NOTE: BACKGROUND*/
-/*NOTE: TRANSPARENT*/
-/*NOTE: BORDER*/
-/*NOTE: TEXT*/
-/*NOTE: BUTTON*/
-/*MOON*/
 #boxCreatePublication {
   display: none; }
 
@@ -1357,9 +1323,9 @@ input[type="file"] {
 
 .iconsNewPost {
   width: 30px;
-  color: #1040e2 !important; }
+  color: #0055ff !important; }
   .iconsNewPost:hover {
-    color: black !important; }
+    color: #000000 !important; }
 
 .divBtnUpadateBottom {
   position: relative;
@@ -1367,9 +1333,9 @@ input[type="file"] {
 
 .btnNewPost {
   border: none;
-  background-color: #1040e2;
+  background-color: #0055ff;
   float: right;
-  color: white;
+  color: #ffffff;
   font-size: 20px;
   text-align: center;
   width: 70px;
@@ -1378,7 +1344,7 @@ input[type="file"] {
   margin-right: 5px;
   margin-top: 30px; }
   .btnNewPost:active {
-    background-color: #133297; }
+    background-color: #003cb4; }
 
 .divTypeExclusi {
   margin-top: 10px;
@@ -1404,7 +1370,7 @@ input[type="file"] {
   position: relative;
   background-color: #ffffff00;
   border: none;
-  color: white;
+  color: #ffffff;
   border-bottom: 1px solid #999898;
   text-transform: capitalize;
   font-size: 16px; }
@@ -1453,9 +1419,9 @@ input[type="file"] {
   -webkit-user-drag: none;
   -webkit-user-select: none;
   -ms-user-select: none;
-  color: #df1937 !important; }
+  color: #ff002b !important; }
   .btnClose:active {
-    color: #b1162d !important; }
+    color: !important; }
 
 #eliminarFileCreatePublication {
   float: left;
@@ -1554,23 +1520,22 @@ input[type="file"] {
     margin-bottom: 10px;
     left: 0; }
   .infProfile .btnAddUser {
-    position: relative;
-    bottom: 5px;
-    padding: 3px;
-    background-color: #df1937;
-    width: 20px;
-    height: 20px;
+    margin: 5px 0;
+    padding: 5px;
+    background-color: #Fb4958;
+    width: auto;
+    height: 25px;
     border-radius: 10px;
     border: none;
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column; }
+    flex-direction: column;
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: 600; }
     .infProfile .btnAddUser:active {
-      background-color: #b1162d; }
-    .infProfile .btnAddUser svg.user_iconAdd {
-      width: 30px;
-      color: white !important; }
+      background-color: #0cbe65; }
 
 .iconsProfile {
   width: 20px;
@@ -1584,7 +1549,8 @@ input[type="file"] {
   flex-direction: column;
   padding: 0;
   margin: 0;
-  color: #fff; }
+  color: #fff;
+  margin-top: 10px; }
   .informationUser h4 {
     width: 80%;
     overflow: hidden;
