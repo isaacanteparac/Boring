@@ -69,9 +69,12 @@ svg.icon_failed{
 
 
 svg.icon_file{
-  color:$white!important;
+  color:map-get($color, eilish_ )!important;
 }
 
+svg.svgContent{
+  color:map-get($color, blue_ )!important;
+}
 
 
 

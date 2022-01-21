@@ -14,7 +14,24 @@
 /*NOTE: BORDER*/
 /*NOTE: TEXT*/
 /*NOTE: BUTTON*/
-/*MOON*/
+/*MOON
+$white: #fff;
+$lowlowWhite: #b6b6b6;
+$lowWhite: #e7e7e7;
+$backgroundComponent: #050505;
+$colorActiveBtn: #000000;
+$borderBlack: #3f3e3e;
+$backgrounBody: #0e0d0d;
+$btnInteractionPost: #070707a1;
+$colorIconsHeadMenu: #fff;
+$backgrounWindow: #0e0d0d;
+$actionBtnDefaul: #1f1f1f;
+$leftoverBoxDark: #101113;
+$boderBlurBox: rgba(255, 255, 255, 0.1);
+$backgroundFile:  radial-gradient(circle at 0% 0%, 
+    #313130 50%, #222127 66.67%, #15131e 83.33%, #080016 100%);
+$backgroundNavigation: rgba(0, 0, 0, 0.68);
+*/
 @import url(https://fonts.googleapis.com/css2?family=Azeret+Mono&display=swap);
 label.contentIcon {
   display: inline-block;
@@ -68,7 +85,10 @@ svg.icon_failed {
   color: #bc0f0f !important; }
 
 svg.icon_file {
-  color: #fff !important; }
+  color: #0fee7e !important; }
+
+svg.svgContent {
+  color: #0055ff !important; }
 
 /*main*/
 * {
@@ -90,7 +110,24 @@ svg.icon_file {
 /*NOTE: BORDER*/
 /*NOTE: TEXT*/
 /*NOTE: BUTTON*/
-/*MOON*/
+/*MOON
+$white: #fff;
+$lowlowWhite: #b6b6b6;
+$lowWhite: #e7e7e7;
+$backgroundComponent: #050505;
+$colorActiveBtn: #000000;
+$borderBlack: #3f3e3e;
+$backgrounBody: #0e0d0d;
+$btnInteractionPost: #070707a1;
+$colorIconsHeadMenu: #fff;
+$backgrounWindow: #0e0d0d;
+$actionBtnDefaul: #1f1f1f;
+$leftoverBoxDark: #101113;
+$boderBlurBox: rgba(255, 255, 255, 0.1);
+$backgroundFile:  radial-gradient(circle at 0% 0%, 
+    #313130 50%, #222127 66.67%, #15131e 83.33%, #080016 100%);
+$backgroundNavigation: rgba(0, 0, 0, 0.68);
+*/
 .divBlur {
   position: fixed;
   width: 100%;
@@ -105,20 +142,20 @@ div.contentBoxBlur {
   position: relative;
   width: 300px;
   max-height: 450px;
-  background-color: #050505;
+  background-color: #fff;
   border-radius: 20px;
   /*-webkit-box-shadow: 2px 2px 5px $leftoverBoxDark;
   -moz-box-shadow: 2px 2px 5px $leftoverBoxDark;*/
-  border: 1px solid #3f3e3e;
-  filter: shadow(color=#101113, direction=135, strength=2);
+  border: 1px solid #cccccc;
+  filter: shadow(color=#7b7b7b, direction=135, strength=2);
   padding: 10px;
   margin: auto;
   margin-top: 40px; }
   div.contentBoxBlur div.user_ {
-    background-color: #050505;
+    background-color: #fff;
     height: 80px; }
     div.contentBoxBlur div.user_:active {
-      background-color: #050505; }
+      background-color: #fff; }
   div.contentBoxBlur div.user_photo {
     top: 6px; }
   div.contentBoxBlur div.user_information {
@@ -127,24 +164,25 @@ div.contentBoxBlur {
 
 .optionsBox {
   height: 40px;
-  border-radius: 15px;
+  padding-top: 10px;
+  border-radius: 10px;
   padding-top: 10px;
   padding-left: 10px;
   margin: 0 10px;
-  color: #fff;
+  color: #000;
   -moz-user-select: none;
   -webkit-user-drag: none;
   -webkit-user-select: none;
   -ms-user-select: none; }
   .optionsBox:active {
-    background: #000000;
-    border: 1px solid #3f3e3e; }
+    background: #b6b3b3;
+    border: 1px solid #999898; }
   .optionsBox h4 {
     position: relative;
     bottom: 25px; }
     .optionsBox h4 .iconsOp {
       margin-right: 10px;
-      color: #fff !important;
+      color: #000 !important;
       width: 20px;
       position: relative;
       top: 5px; }
@@ -166,7 +204,7 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu',  'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #0e0d0d;
+  background-color: #e6e6e6;
   margin: 0;
   padding: 0; }
 
@@ -249,7 +287,7 @@ code {
     align-items: center;
     justify-content: center;
     backdrop-filter: blur(30px);
-    border: 2px solid rgba(255, 255, 255, 0.1);
+    border: 2px solid rgba(0, 0, 0, 0.1);
     width: 300px;
     height: 100%;
     border-radius: 50px;
@@ -277,7 +315,7 @@ code {
 
 .iconsFooter {
   width: 30px;
-  color: #fff !important; }
+  color: #000 !important; }
   .iconsFooter:active {
     color: #0055ff !important; }
 
@@ -327,7 +365,24 @@ code {
 /*NOTE: BORDER*/
 /*NOTE: TEXT*/
 /*NOTE: BUTTON*/
-/*MOON*/
+/*MOON
+$white: #fff;
+$lowlowWhite: #b6b6b6;
+$lowWhite: #e7e7e7;
+$backgroundComponent: #050505;
+$colorActiveBtn: #000000;
+$borderBlack: #3f3e3e;
+$backgrounBody: #0e0d0d;
+$btnInteractionPost: #070707a1;
+$colorIconsHeadMenu: #fff;
+$backgrounWindow: #0e0d0d;
+$actionBtnDefaul: #1f1f1f;
+$leftoverBoxDark: #101113;
+$boderBlurBox: rgba(255, 255, 255, 0.1);
+$backgroundFile:  radial-gradient(circle at 0% 0%, 
+    #313130 50%, #222127 66.67%, #15131e 83.33%, #080016 100%);
+$backgroundNavigation: rgba(0, 0, 0, 0.68);
+*/
 .head {
   display: none;
   position: fixed;
@@ -338,7 +393,7 @@ code {
   transition: all 0.5s; }
 
 .content-head {
-  background: #050505;
+  background: #fff;
   width: 100%;
   height: 50px;
   margin: 0 auto;
@@ -346,7 +401,7 @@ code {
   padding-top: 5px;
   display: flex;
   justify-content: center;
-  border-bottom: 1px solid #3f3e3e; }
+  border-bottom: 1px solid #cccccc; }
 
 .head ul.subContent-head {
   margin: 0;
@@ -357,7 +412,7 @@ code {
     margin: 0 10px; }
 
 .links {
-  color: #fff;
+  color: #000;
   font-size: 20px; }
 
 .logo-head {
@@ -398,7 +453,7 @@ code {
   float: left;
   font-weight: 700;
   font-size: 30px;
-  color: #fff;
+  color: #000;
   -moz-user-select: none;
   -webkit-user-drag: none;
   -webkit-user-select: none;
@@ -426,11 +481,11 @@ code {
   border: none; }
 
 .iconHead {
-  color: #fff !important;
+  color: #000 !important;
   width: 20px;
   height: 20px; }
   .iconHead:active {
-    color: #fff !important; }
+    color: #000 !important; }
 
 .LoaderBall {
   width: 75%;
@@ -451,7 +506,7 @@ code {
   right: 1px; }
 
 .modeDarkLigth {
-  color: #fff !important;
+  color: #000 !important;
   width: 20px;
   height: 20px; }
   .modeDarkLigth:active {
@@ -649,7 +704,24 @@ div.messageWarning {
 /*NOTE: BORDER*/
 /*NOTE: TEXT*/
 /*NOTE: BUTTON*/
-/*MOON*/
+/*MOON
+$white: #fff;
+$lowlowWhite: #b6b6b6;
+$lowWhite: #e7e7e7;
+$backgroundComponent: #050505;
+$colorActiveBtn: #000000;
+$borderBlack: #3f3e3e;
+$backgrounBody: #0e0d0d;
+$btnInteractionPost: #070707a1;
+$colorIconsHeadMenu: #fff;
+$backgrounWindow: #0e0d0d;
+$actionBtnDefaul: #1f1f1f;
+$leftoverBoxDark: #101113;
+$boderBlurBox: rgba(255, 255, 255, 0.1);
+$backgroundFile:  radial-gradient(circle at 0% 0%, 
+    #313130 50%, #222127 66.67%, #15131e 83.33%, #080016 100%);
+$backgroundNavigation: rgba(0, 0, 0, 0.68);
+*/
 /*NOTE:VIZUALIZAR EL TIEMPO DEL AUDIO*/
 #player-track {
   background-color: #ffffff00;
@@ -661,7 +733,7 @@ div.messageWarning {
     top: -92px; }
 
 #track-name {
-  color: #fff;
+  color: #000;
   font-size: 17px;
   text-align: center; }
 
@@ -684,12 +756,12 @@ div.messageWarning {
 #current-time,
 #track-length {
   font-size: 15px;
-  color: #fff;
+  color: #000;
   background-color: #ffffff00;
   border-radius: 10px; }
 
 #s-area {
-  background-color: #fff;
+  background-color: #000;
   width: 160px;
   position: relative;
   top: 6px;
@@ -709,7 +781,7 @@ div.messageWarning {
 #player-content {
   position: relative;
   height: 100%;
-  background-image: radial-gradient(circle at 0% 0%, #313130 50%, #222127 66.67%, #15131e 83.33%, #080016 100%);
+  background-image: radial-gradient(circle at 0% 0%, #b1b1b8 50%, #b1b1b8 66.67%, #8c8ca3 83.33%, #6e6b8f 100%);
   border-radius: 15px;
   z-index: 2; }
 
@@ -751,7 +823,7 @@ div.messageWarning {
 #discSound {
   width: 60px;
   height: 60px;
-  color: #fff !important; }
+  color: #000 !important; }
 
 #album-art {
   position: relative;
@@ -759,17 +831,17 @@ div.messageWarning {
   left: 15px;
   width: 50px;
   height: 50px;
-  background-color: #050505;
+  background-color: #fff;
   transform: rotateZ(0);
   transition: 0.3s ease all;
-  box-shadow: 0 0 0 6px #fff;
+  box-shadow: 0 0 0 6px #000;
   border-radius: 50%;
   overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center; }
   #album-art .active {
-    box-shadow: 0 0 0 12px #fff; }
+    box-shadow: 0 0 0 12px #000; }
   #album-art:before {
     top: 50%;
     right: 0;
@@ -825,7 +897,24 @@ div.messageWarning {
 /*NOTE: BORDER*/
 /*NOTE: TEXT*/
 /*NOTE: BUTTON*/
-/*MOON*/
+/*MOON
+$white: #fff;
+$lowlowWhite: #b6b6b6;
+$lowWhite: #e7e7e7;
+$backgroundComponent: #050505;
+$colorActiveBtn: #000000;
+$borderBlack: #3f3e3e;
+$backgrounBody: #0e0d0d;
+$btnInteractionPost: #070707a1;
+$colorIconsHeadMenu: #fff;
+$backgrounWindow: #0e0d0d;
+$actionBtnDefaul: #1f1f1f;
+$leftoverBoxDark: #101113;
+$boderBlurBox: rgba(255, 255, 255, 0.1);
+$backgroundFile:  radial-gradient(circle at 0% 0%, 
+    #313130 50%, #222127 66.67%, #15131e 83.33%, #080016 100%);
+$backgroundNavigation: rgba(0, 0, 0, 0.68);
+*/
 .video video {
   width: 250px;
   max-height: 250px;
@@ -855,7 +944,7 @@ div.messageWarning {
   height: 20px; }
 
 .ProgressContainer {
-  color: #0e0d0d;
+  color: #e6e6e6;
   font-size: 15px; }
   .ProgressContainer .fullTime {
     position: relative;
@@ -912,7 +1001,24 @@ div.messageWarning {
 /*NOTE: BORDER*/
 /*NOTE: TEXT*/
 /*NOTE: BUTTON*/
-/*MOON*/
+/*MOON
+$white: #fff;
+$lowlowWhite: #b6b6b6;
+$lowWhite: #e7e7e7;
+$backgroundComponent: #050505;
+$colorActiveBtn: #000000;
+$borderBlack: #3f3e3e;
+$backgrounBody: #0e0d0d;
+$btnInteractionPost: #070707a1;
+$colorIconsHeadMenu: #fff;
+$backgrounWindow: #0e0d0d;
+$actionBtnDefaul: #1f1f1f;
+$leftoverBoxDark: #101113;
+$boderBlurBox: rgba(255, 255, 255, 0.1);
+$backgroundFile:  radial-gradient(circle at 0% 0%, 
+    #313130 50%, #222127 66.67%, #15131e 83.33%, #080016 100%);
+$backgroundNavigation: rgba(0, 0, 0, 0.68);
+*/
 .register {
   background-color: #ffffff00; }
 
@@ -939,7 +1045,7 @@ div.messageWarning {
     font-size: 43px; }
 
 .titleLabel {
-  color: #fff;
+  color: #000;
   text-decoration: none;
   text-align: left;
   font-weight: 700;
@@ -965,7 +1071,7 @@ div.messageWarning {
     border: none;
     border-bottom: 1px solid #999898;
     margin-top: 5px;
-    color: #fff;
+    color: #000;
     font-size: 19.2px; }
 
 #signup .contentForm {
@@ -985,6 +1091,7 @@ div.messageWarning {
   margin: 10px 0;
   border: none;
   background: #0055ff;
+  color: #ffffff;
   font-size: 19.2px; }
   .btnOk:active {
     background: #003cb4; }
@@ -1000,7 +1107,7 @@ div.messageWarning {
   border: 1px solid #999898;
   font-size: 19.2px; }
   .btnNo:active {
-    background-color: #000000; }
+    background-color: #b6b3b3; }
 
 .separationLine {
   display: flex;
@@ -1011,7 +1118,7 @@ div.messageWarning {
   -webkit-user-select: none;
   -ms-user-select: none; }
   .separationLine label {
-    color: #fff;
+    color: #000;
     font-size: 15px; }
   .separationLine hr {
     width: 38%;
@@ -1030,7 +1137,7 @@ div.messageWarning {
   height: 350px;
   width: 100%; }
   .contentText p {
-    color: #fff;
+    color: #000;
     font-size: 15px;
     position: relative;
     width: 90%;
@@ -1093,7 +1200,7 @@ div.messageWarning {
   float: left;
   font-weight: 700;
   font-size: 50px;
-  color: #fff;
+  color: #000;
   -moz-user-select: none;
   -webkit-user-drag: none;
   -webkit-user-select: none;
@@ -1125,7 +1232,24 @@ div.messageWarning {
 /*NOTE: BORDER*/
 /*NOTE: TEXT*/
 /*NOTE: BUTTON*/
-/*MOON*/
+/*MOON
+$white: #fff;
+$lowlowWhite: #b6b6b6;
+$lowWhite: #e7e7e7;
+$backgroundComponent: #050505;
+$colorActiveBtn: #000000;
+$borderBlack: #3f3e3e;
+$backgrounBody: #0e0d0d;
+$btnInteractionPost: #070707a1;
+$colorIconsHeadMenu: #fff;
+$backgrounWindow: #0e0d0d;
+$actionBtnDefaul: #1f1f1f;
+$leftoverBoxDark: #101113;
+$boderBlurBox: rgba(255, 255, 255, 0.1);
+$backgroundFile:  radial-gradient(circle at 0% 0%, 
+    #313130 50%, #222127 66.67%, #15131e 83.33%, #080016 100%);
+$backgroundNavigation: rgba(0, 0, 0, 0.68);
+*/
 div.post, div.viewPostContentuser {
   width: 96%;
   margin: auto;
@@ -1154,7 +1278,24 @@ div.viewPostContentuser {
 /*NOTE: BORDER*/
 /*NOTE: TEXT*/
 /*NOTE: BUTTON*/
-/*MOON*/
+/*MOON
+$white: #fff;
+$lowlowWhite: #b6b6b6;
+$lowWhite: #e7e7e7;
+$backgroundComponent: #050505;
+$colorActiveBtn: #000000;
+$borderBlack: #3f3e3e;
+$backgrounBody: #0e0d0d;
+$btnInteractionPost: #070707a1;
+$colorIconsHeadMenu: #fff;
+$backgrounWindow: #0e0d0d;
+$actionBtnDefaul: #1f1f1f;
+$leftoverBoxDark: #101113;
+$boderBlurBox: rgba(255, 255, 255, 0.1);
+$backgroundFile:  radial-gradient(circle at 0% 0%, 
+    #313130 50%, #222127 66.67%, #15131e 83.33%, #080016 100%);
+$backgroundNavigation: rgba(0, 0, 0, 0.68);
+*/
 .coment {
   margin: 0;
   padding: 0;
@@ -1181,7 +1322,7 @@ div.viewPostContentuser {
   flex-direction: column;
   align-items: center;
   margin-bottom: 50px;
-  background-color: #050505;
+  background-color: #fff;
   border: none; }
   .comentBox .title {
     width: 100%;
@@ -1191,7 +1332,7 @@ div.viewPostContentuser {
     justify-content: center;
     flex-direction: column; }
     .comentBox .title h4 {
-      color: #fff; }
+      color: #000; }
 
 .comentUser {
   width: 100%;
@@ -1238,8 +1379,8 @@ div.viewPostContentuser {
   font-size: 16px;
   font-family: "Segoe UI";
   border: 2px solid #0055ff;
-  background-color: #000000;
-  color: #fff; }
+  background-color: #b6b3b3;
+  color: #000; }
 
 .inputMessage {
   height: 30px; }
@@ -1316,7 +1457,7 @@ input[type="file"] {
   bottom: 100%; }
 
 .custom-file-upload {
-  border: 1px solid #b6b6b6;
+  border: 1px solid #333333;
   display: inline-block;
   padding: 6px 12px;
   cursor: pointer; }
@@ -1352,7 +1493,7 @@ input[type="file"] {
   align-items: center;
   padding-left: 10px; }
   .divTypeExclusi label {
-    color: #fff;
+    color: #000;
     margin-left: 5px;
     margin-right: 10px;
     font-size: 16px; }
@@ -1384,7 +1525,7 @@ input[type="file"] {
   background-color: #ffffff00;
   margin-left: 10px;
   border: none;
-  color: #fff;
+  color: #000;
   width: 90%;
   font-size: 16px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -1395,7 +1536,7 @@ input[type="file"] {
   max-height: 76px; }
 
 .subtitle {
-  color: #fff;
+  color: #000;
   width: 80%;
   margin: 10px 0;
   margin-left: 10px; }
@@ -1429,11 +1570,11 @@ input[type="file"] {
   left: 8px;
   color: #999898 !important; }
   #eliminarFileCreatePublication:active {
-    color: #fff !important; }
+    color: #000 !important; }
 
 .preview {
   display: none;
-  background-image: radial-gradient(circle at 0% 0%, #313130 50%, #222127 66.67%, #15131e 83.33%, #080016 100%);
+  background-image: radial-gradient(circle at 0% 0%, #b1b1b8 50%, #b1b1b8 66.67%, #8c8ca3 83.33%, #6e6b8f 100%);
   max-width: 250px;
   max-height: 250px;
   border-radius: 10px;
@@ -1466,7 +1607,7 @@ input[type="file"] {
   margin-top: 5px;
   display: flex;
   align-items: center;
-  background-color: #fff; }
+  background-color: #000; }
 
 #viewImagen, #viewVideo {
   display: none;
@@ -1488,7 +1629,24 @@ input[type="file"] {
 /*NOTE: BORDER*/
 /*NOTE: TEXT*/
 /*NOTE: BUTTON*/
-/*MOON*/
+/*MOON
+$white: #fff;
+$lowlowWhite: #b6b6b6;
+$lowWhite: #e7e7e7;
+$backgroundComponent: #050505;
+$colorActiveBtn: #000000;
+$borderBlack: #3f3e3e;
+$backgrounBody: #0e0d0d;
+$btnInteractionPost: #070707a1;
+$colorIconsHeadMenu: #fff;
+$backgrounWindow: #0e0d0d;
+$actionBtnDefaul: #1f1f1f;
+$leftoverBoxDark: #101113;
+$boderBlurBox: rgba(255, 255, 255, 0.1);
+$backgroundFile:  radial-gradient(circle at 0% 0%, 
+    #313130 50%, #222127 66.67%, #15131e 83.33%, #080016 100%);
+$backgroundNavigation: rgba(0, 0, 0, 0.68);
+*/
 .profile {
   width: 100%;
   height: 100%;
@@ -1511,12 +1669,12 @@ input[type="file"] {
   -webkit-user-drag: none;
   -webkit-user-select: none;
   -ms-user-select: none;
-  background: #050505; }
+  background: #fff; }
   .infProfile .user_photo {
     width: 80px;
     height: 80px;
     border-radius: 30px;
-    background-image: radial-gradient(circle at 0% 0%, #313130 50%, #222127 66.67%, #15131e 83.33%, #080016 100%);
+    background-image: radial-gradient(circle at 0% 0%, #b1b1b8 50%, #b1b1b8 66.67%, #8c8ca3 83.33%, #6e6b8f 100%);
     margin-bottom: 10px;
     left: 0; }
   .infProfile .btnAddUser {
@@ -1549,7 +1707,7 @@ input[type="file"] {
   flex-direction: column;
   padding: 0;
   margin: 0;
-  color: #fff;
+  color: #000;
   margin-top: 10px; }
   .informationUser h4 {
     width: 80%;
@@ -1587,7 +1745,7 @@ input[type="file"] {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #fff;
+  color: #000;
   text-align: center; }
   .listLine .elementList {
     display: inline;
@@ -1613,7 +1771,7 @@ input[type="file"] {
       border-bottom-left-radius: 10px;
       border-bottom-right-radius: 10px;
       border: none;
-      background: #000000; }
+      background: #b6b3b3; }
     .listLine .elementList label {
       display: flex;
       align-items: center;
@@ -1634,7 +1792,7 @@ input[type="file"] {
         color: #ffff00 !important; }
 
 .optionsSearchPost {
-  background: #050505;
+  background: #fff;
   height: 60px;
   display: flex;
   align-items: center;
@@ -1642,7 +1800,7 @@ input[type="file"] {
   padding-bottom: 5px;
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
-  border-bottom: 1px solid #3f3e3e; }
+  border-bottom: 1px solid #cccccc; }
 
 .btnFilesUser {
   margin: 0 5px;
@@ -1663,7 +1821,7 @@ input[type="file"] {
   .btnFilesUser:hover {
     border-bottom: 2px solid #ffff00; }
   .btnFilesUser:active {
-    background: #000000; }
+    background: #b6b3b3; }
   .btnFilesUser .icon_file {
     width: 30px;
     margin-bottom: 5px; }
@@ -1683,7 +1841,24 @@ input[type="file"] {
 /*NOTE: BORDER*/
 /*NOTE: TEXT*/
 /*NOTE: BUTTON*/
-/*MOON*/
+/*MOON
+$white: #fff;
+$lowlowWhite: #b6b6b6;
+$lowWhite: #e7e7e7;
+$backgroundComponent: #050505;
+$colorActiveBtn: #000000;
+$borderBlack: #3f3e3e;
+$backgrounBody: #0e0d0d;
+$btnInteractionPost: #070707a1;
+$colorIconsHeadMenu: #fff;
+$backgrounWindow: #0e0d0d;
+$actionBtnDefaul: #1f1f1f;
+$leftoverBoxDark: #101113;
+$boderBlurBox: rgba(255, 255, 255, 0.1);
+$backgroundFile:  radial-gradient(circle at 0% 0%, 
+    #313130 50%, #222127 66.67%, #15131e 83.33%, #080016 100%);
+$backgroundNavigation: rgba(0, 0, 0, 0.68);
+*/
 .allPost {
   width: 100%;
   padding: 0;
@@ -1693,7 +1868,7 @@ input[type="file"] {
   flex-wrap: wrap; }
 
 .onePost {
-  background: #050505;
+  background: #fff;
   width: 28%;
   height: 105px;
   border-radius: 15px;
@@ -1751,7 +1926,24 @@ input[type="file"] {
 /*NOTE: BORDER*/
 /*NOTE: TEXT*/
 /*NOTE: BUTTON*/
-/*MOON*/
+/*MOON
+$white: #fff;
+$lowlowWhite: #b6b6b6;
+$lowWhite: #e7e7e7;
+$backgroundComponent: #050505;
+$colorActiveBtn: #000000;
+$borderBlack: #3f3e3e;
+$backgrounBody: #0e0d0d;
+$btnInteractionPost: #070707a1;
+$colorIconsHeadMenu: #fff;
+$backgrounWindow: #0e0d0d;
+$actionBtnDefaul: #1f1f1f;
+$leftoverBoxDark: #101113;
+$boderBlurBox: rgba(255, 255, 255, 0.1);
+$backgroundFile:  radial-gradient(circle at 0% 0%, 
+    #313130 50%, #222127 66.67%, #15131e 83.33%, #080016 100%);
+$backgroundNavigation: rgba(0, 0, 0, 0.68);
+*/
 div.allchats {
   width: 100%;
   padding: 0;
@@ -1765,15 +1957,17 @@ div.allchats {
   flex-direction: column; }
 
 div.chat {
-  width: 100%;
+  width: 95%;
   height: 60px;
   margin: auto;
-  margin-top: 5px;
-  border: none; }
+  margin-top: 1px; }
   div.chat div.user_ {
     width: 100%;
     height: 60px;
-    margin: auto; }
+    margin: auto;
+    background-color: #ffffff00; }
+    div.chat div.user_:active {
+      background-color: #b6b3b3; }
   div.chat div.user_photo {
     width: 40px;
     height: 40px;
@@ -1799,7 +1993,24 @@ div.chat {
 /*NOTE: BORDER*/
 /*NOTE: TEXT*/
 /*NOTE: BUTTON*/
-/*MOON*/
+/*MOON
+$white: #fff;
+$lowlowWhite: #b6b6b6;
+$lowWhite: #e7e7e7;
+$backgroundComponent: #050505;
+$colorActiveBtn: #000000;
+$borderBlack: #3f3e3e;
+$backgrounBody: #0e0d0d;
+$btnInteractionPost: #070707a1;
+$colorIconsHeadMenu: #fff;
+$backgrounWindow: #0e0d0d;
+$actionBtnDefaul: #1f1f1f;
+$leftoverBoxDark: #101113;
+$boderBlurBox: rgba(255, 255, 255, 0.1);
+$backgroundFile:  radial-gradient(circle at 0% 0%, 
+    #313130 50%, #222127 66.67%, #15131e 83.33%, #080016 100%);
+$backgroundNavigation: rgba(0, 0, 0, 0.68);
+*/
 .boxFriends {
   margin-bottom: 60px;
   width: 100%;
@@ -1816,11 +2027,11 @@ div.chat {
   margin-top: 15px;
   width: 34%;
   border-radius: 20px;
-  border: 1px solid #3f3e3e;
+  border: 1px solid #cccccc;
   padding: 0;
-  background-color: #050505; }
+  background-color: #fff; }
   .contentFriend:active {
-    background-color: #000000; }
+    background-color: #b6b3b3; }
   .contentFriend.contentOnePost {
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px; }
@@ -1828,12 +2039,12 @@ div.chat {
 .nameFriend {
   margin: 0;
   font-size: 17.6px;
-  color: #fff;
+  color: #000;
   margin-bottom: 3px;
   text-align: center; }
 
 .usernameFriend {
-  color: #fff;
+  color: #000;
   margin-bottom: 5px; }
 
 .photoContact {
@@ -1856,7 +2067,24 @@ div.chat {
 /*NOTE: BORDER*/
 /*NOTE: TEXT*/
 /*NOTE: BUTTON*/
-/*MOON*/
+/*MOON
+$white: #fff;
+$lowlowWhite: #b6b6b6;
+$lowWhite: #e7e7e7;
+$backgroundComponent: #050505;
+$colorActiveBtn: #000000;
+$borderBlack: #3f3e3e;
+$backgrounBody: #0e0d0d;
+$btnInteractionPost: #070707a1;
+$colorIconsHeadMenu: #fff;
+$backgrounWindow: #0e0d0d;
+$actionBtnDefaul: #1f1f1f;
+$leftoverBoxDark: #101113;
+$boderBlurBox: rgba(255, 255, 255, 0.1);
+$backgroundFile:  radial-gradient(circle at 0% 0%, 
+    #313130 50%, #222127 66.67%, #15131e 83.33%, #080016 100%);
+$backgroundNavigation: rgba(0, 0, 0, 0.68);
+*/
 .divSearch {
   padding-top: 5px;
   -moz-user-select: none;
@@ -1865,7 +2093,7 @@ div.chat {
   -ms-user-select: none; }
 
 .barSearch {
-  background-color: #050505;
+  background-color: #fff;
   margin: 0;
   position: relative;
   bottom: 1px;
@@ -1919,9 +2147,9 @@ div.chat {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background: #050505;
-  color: #fff;
-  border: 1px solid #000000;
+  background: #fff;
+  color: #000;
+  border: 1px solid #b6b3b3;
   padding: 2px;
   font-size: 15px; }
   .options:active {
@@ -1930,22 +2158,26 @@ div.chat {
 
 /*NOTE:BOX*/
 div.user_ {
-  background-color: #050505;
+  background-color: #fff;
   margin: auto;
   margin-top: 10px;
   border: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
   width: 98%;
   height: 110px;
   border-radius: 15px; }
   div.user_:active {
-    background: #000000; }
+    background: #b6b3b3; }
 
 div.user_photo {
   width: 50px;
   height: 50px;
   border-radius: 15px;
   border: 2px solid #0fee7e;
-  background-color: #b6b6b6;
+  background-color: #333333;
   position: relative;
   top: 15px;
   left: 5px;
@@ -1980,12 +2212,12 @@ div.user_contentInformation {
 label.user_name {
   font-size: 16px;
   font-weight: 700;
-  color: #fff; }
+  color: #000; }
 
 label.user_username {
   font-size: 15px;
   font-weight: 500;
-  color: #b6b6b6; }
+  color: #333333; }
 
 p.user_description {
   position: relative;
@@ -1995,7 +2227,7 @@ p.user_description {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  color: #b6b6b6;
+  color: #333333;
   margin: 0; }
 
 div.user_informationAccount {
@@ -2003,7 +2235,7 @@ div.user_informationAccount {
   div.user_informationAccount label {
     font-size: 16px;
     font-weight: 700;
-    color: #b6b6b6;
+    color: #333333;
     text-align: right; }
 
 div.user_add {
@@ -2047,7 +2279,7 @@ div.user_add {
   height: 50px;
   border: none;
   backdrop-filter: blur(5px);
-  border: 2px solid rgba(255, 255, 255, 0.1);
+  border: 2px solid rgba(0, 0, 0, 0.1);
   float: left;
   left: 20%;
   position: relative;
@@ -2059,18 +2291,18 @@ div.user_add {
     position: relative;
     left: 55px;
     bottom: 57px;
-    color: #fff; }
+    color: #000; }
   .information .usernamePost {
     width: 250px;
     position: relative;
     left: 55px;
     bottom: 78px;
-    color: #fff; }
+    color: #000; }
   .information .photoUser {
     width: 40px;
     height: 40px;
     border-radius: 20px;
-    background-color: #b6b6b6;
+    background-color: #333333;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -2096,7 +2328,7 @@ div.user_add {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #050505;
+  background: #fff;
   /*border: 1px solid $borderBlack;*/
   overflow: hidden; }
 
@@ -2116,7 +2348,7 @@ div.user_add {
   height: 40px;
   border-radius: 30px;
   backdrop-filter: blur(5px);
-  border: 2px solid rgba(255, 255, 255, 0.1);
+  border: 2px solid rgba(0, 0, 0, 0.1);
   float: right;
   padding: 0 5px;
   position: relative;

@@ -5,6 +5,7 @@ div.user_ {
   margin: auto;
   margin-top: 10px;
   border: none;
+  @include notUnderline;
   @include roundedBorder(98%, 110px, map-get($borderRadius, medium));
   &:active {
     background: $colorActiveBtn;

@@ -66,7 +66,7 @@
         width: 80%;
         height: 35px;
         border: none;
-        border-bottom: 1px solid $borderGrayLigth;
+        border-bottom: 1px solid map-get($color, grayL_ );;
         margin-top: 5px;
         color: $white;
         font-size: map-get($fontSize, rem_2 );
@@ -93,7 +93,7 @@
     margin: 10px 0;
     border: map-get($borderRadius, null);
     background: map-get($color, blue_ );
-    color: map-get($color, whie_ );
+    color: map-get($color, white_ );
     font-size: map-get($fontSize, rem_2 );
 
     &:active {
@@ -106,8 +106,8 @@
     margin: 10px 0;
     border: none;
     background: $transparent;
-    color: $borderGrayLigth;
-    border: 1px solid $borderGrayLigth;
+    color: map-get($color, grayL_ );
+    border: 1px solid map-get($color, grayL_ );
     font-size: map-get($fontSize, rem_2 );
 
     &:active {
@@ -127,7 +127,7 @@
     hr {
         width: 38%;
         height: 1px;
-        background-color: $borderGrayLigth;
+        background-color: map-get($color, grayL_ );;
         border: none;
     }
 

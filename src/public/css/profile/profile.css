@@ -13,7 +13,24 @@
 /*NOTE: BORDER*/
 /*NOTE: TEXT*/
 /*NOTE: BUTTON*/
-/*MOON*/
+/*MOON
+$white: #fff;
+$lowlowWhite: #b6b6b6;
+$lowWhite: #e7e7e7;
+$backgroundComponent: #050505;
+$colorActiveBtn: #000000;
+$borderBlack: #3f3e3e;
+$backgrounBody: #0e0d0d;
+$btnInteractionPost: #070707a1;
+$colorIconsHeadMenu: #fff;
+$backgrounWindow: #0e0d0d;
+$actionBtnDefaul: #1f1f1f;
+$leftoverBoxDark: #101113;
+$boderBlurBox: rgba(255, 255, 255, 0.1);
+$backgroundFile:  radial-gradient(circle at 0% 0%, 
+    #313130 50%, #222127 66.67%, #15131e 83.33%, #080016 100%);
+$backgroundNavigation: rgba(0, 0, 0, 0.68);
+*/
 .profile {
   width: 100%;
   height: 100%;
@@ -36,12 +53,12 @@
   -webkit-user-drag: none;
   -webkit-user-select: none;
   -ms-user-select: none;
-  background: #050505; }
+  background: #fff; }
   .infProfile .user_photo {
     width: 80px;
     height: 80px;
     border-radius: 30px;
-    background-image: radial-gradient(circle at 0% 0%, #313130 50%, #222127 66.67%, #15131e 83.33%, #080016 100%);
+    background-image: radial-gradient(circle at 0% 0%, #b1b1b8 50%, #b1b1b8 66.67%, #8c8ca3 83.33%, #6e6b8f 100%);
     margin-bottom: 10px;
     left: 0; }
   .infProfile .btnAddUser {
@@ -74,7 +91,7 @@
   flex-direction: column;
   padding: 0;
   margin: 0;
-  color: #fff;
+  color: #000;
   margin-top: 10px; }
   .informationUser h4 {
     width: 80%;
@@ -112,7 +129,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #fff;
+  color: #000;
   text-align: center; }
   .listLine .elementList {
     display: inline;
@@ -138,7 +155,7 @@
       border-bottom-left-radius: 10px;
       border-bottom-right-radius: 10px;
       border: none;
-      background: #000000; }
+      background: #b6b3b3; }
     .listLine .elementList label {
       display: flex;
       align-items: center;
@@ -159,7 +176,7 @@
         color: #ffff00 !important; }
 
 .optionsSearchPost {
-  background: #050505;
+  background: #fff;
   height: 60px;
   display: flex;
   align-items: center;
@@ -167,7 +184,7 @@
   padding-bottom: 5px;
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
-  border-bottom: 1px solid #3f3e3e; }
+  border-bottom: 1px solid #cccccc; }
 
 .btnFilesUser {
   margin: 0 5px;
@@ -188,7 +205,7 @@
   .btnFilesUser:hover {
     border-bottom: 2px solid #ffff00; }
   .btnFilesUser:active {
-    background: #000000; }
+    background: #b6b3b3; }
   .btnFilesUser .icon_file {
     width: 30px;
     margin-bottom: 5px; }
