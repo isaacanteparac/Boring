@@ -14,24 +14,7 @@
 /*NOTE: BORDER*/
 /*NOTE: TEXT*/
 /*NOTE: BUTTON*/
-/*MOON
-$white: #fff;
-$lowlowWhite: #b6b6b6;
-$lowWhite: #e7e7e7;
-$backgroundComponent: #050505;
-$colorActiveBtn: #000000;
-$borderBlack: #3f3e3e;
-$backgrounBody: #0e0d0d;
-$btnInteractionPost: #070707a1;
-$colorIconsHeadMenu: #fff;
-$backgrounWindow: #0e0d0d;
-$actionBtnDefaul: #1f1f1f;
-$leftoverBoxDark: #101113;
-$boderBlurBox: rgba(255, 255, 255, 0.1);
-$backgroundFile:  radial-gradient(circle at 0% 0%, 
-    #313130 50%, #222127 66.67%, #15131e 83.33%, #080016 100%);
-$backgroundNavigation: rgba(0, 0, 0, 0.68);
-*/
+/*MOON*/
 @import url(https://fonts.googleapis.com/css2?family=Azeret+Mono&display=swap);
 label.contentIcon {
   display: inline-block;
@@ -87,9 +70,6 @@ svg.icon_failed {
 svg.icon_file {
   color: #0fee7e !important; }
 
-svg.svgContent {
-  color: #0055ff !important; }
-
 /*main*/
 * {
   cursor: default;
@@ -110,24 +90,7 @@ svg.svgContent {
 /*NOTE: BORDER*/
 /*NOTE: TEXT*/
 /*NOTE: BUTTON*/
-/*MOON
-$white: #fff;
-$lowlowWhite: #b6b6b6;
-$lowWhite: #e7e7e7;
-$backgroundComponent: #050505;
-$colorActiveBtn: #000000;
-$borderBlack: #3f3e3e;
-$backgrounBody: #0e0d0d;
-$btnInteractionPost: #070707a1;
-$colorIconsHeadMenu: #fff;
-$backgrounWindow: #0e0d0d;
-$actionBtnDefaul: #1f1f1f;
-$leftoverBoxDark: #101113;
-$boderBlurBox: rgba(255, 255, 255, 0.1);
-$backgroundFile:  radial-gradient(circle at 0% 0%, 
-    #313130 50%, #222127 66.67%, #15131e 83.33%, #080016 100%);
-$backgroundNavigation: rgba(0, 0, 0, 0.68);
-*/
+/*MOON*/
 .divBlur {
   position: fixed;
   width: 100%;
@@ -142,20 +105,17 @@ div.contentBoxBlur {
   position: relative;
   width: 300px;
   max-height: 450px;
-  background-color: #fff;
+  background-color: #0e0d0d;
   border-radius: 20px;
-  /*-webkit-box-shadow: 2px 2px 5px $leftoverBoxDark;
-  -moz-box-shadow: 2px 2px 5px $leftoverBoxDark;*/
-  border: 1px solid #cccccc;
-  filter: shadow(color=#7b7b7b, direction=135, strength=2);
+  filter: shadow(color=#101113, direction=135, strength=2);
   padding: 10px;
   margin: auto;
   margin-top: 40px; }
   div.contentBoxBlur div.user_ {
-    background-color: #fff;
+    background-color: #050505;
     height: 80px; }
     div.contentBoxBlur div.user_:active {
-      background-color: #fff; }
+      background-color: #050505; }
   div.contentBoxBlur div.user_photo {
     top: 6px; }
   div.contentBoxBlur div.user_information {
@@ -169,20 +129,20 @@ div.contentBoxBlur {
   padding-top: 10px;
   padding-left: 10px;
   margin: 0 10px;
-  color: #000;
+  color: #fff;
   -moz-user-select: none;
   -webkit-user-drag: none;
   -webkit-user-select: none;
   -ms-user-select: none; }
   .optionsBox:active {
-    background: #b6b3b3;
+    background: #000000;
     border: 1px solid #999898; }
   .optionsBox h4 {
     position: relative;
     bottom: 25px; }
     .optionsBox h4 .iconsOp {
       margin-right: 10px;
-      color: #000 !important;
+      color: #fff !important;
       width: 20px;
       position: relative;
       top: 5px; }
@@ -204,7 +164,7 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu',  'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #e6e6e6;
+  background-color: #0e0d0d;
   margin: 0;
   padding: 0; }
 
@@ -287,7 +247,7 @@ code {
     align-items: center;
     justify-content: center;
     backdrop-filter: blur(30px);
-    border: 2px solid rgba(0, 0, 0, 0.1);
+    border: 2px solid rgba(255, 255, 255, 0.1);
     width: 300px;
     height: 100%;
     border-radius: 50px;
@@ -315,7 +275,7 @@ code {
 
 .iconsFooter {
   width: 30px;
-  color: #000 !important; }
+  color: #fff !important; }
   .iconsFooter:active {
     color: #0055ff !important; }
 
@@ -365,24 +325,7 @@ code {
 /*NOTE: BORDER*/
 /*NOTE: TEXT*/
 /*NOTE: BUTTON*/
-/*MOON
-$white: #fff;
-$lowlowWhite: #b6b6b6;
-$lowWhite: #e7e7e7;
-$backgroundComponent: #050505;
-$colorActiveBtn: #000000;
-$borderBlack: #3f3e3e;
-$backgrounBody: #0e0d0d;
-$btnInteractionPost: #070707a1;
-$colorIconsHeadMenu: #fff;
-$backgrounWindow: #0e0d0d;
-$actionBtnDefaul: #1f1f1f;
-$leftoverBoxDark: #101113;
-$boderBlurBox: rgba(255, 255, 255, 0.1);
-$backgroundFile:  radial-gradient(circle at 0% 0%, 
-    #313130 50%, #222127 66.67%, #15131e 83.33%, #080016 100%);
-$backgroundNavigation: rgba(0, 0, 0, 0.68);
-*/
+/*MOON*/
 .head {
   display: none;
   position: fixed;
@@ -393,7 +336,7 @@ $backgroundNavigation: rgba(0, 0, 0, 0.68);
   transition: all 0.5s; }
 
 .content-head {
-  background: #fff;
+  background: #050505;
   width: 100%;
   height: 50px;
   margin: 0 auto;
@@ -401,7 +344,7 @@ $backgroundNavigation: rgba(0, 0, 0, 0.68);
   padding-top: 5px;
   display: flex;
   justify-content: center;
-  border-bottom: 1px solid #cccccc; }
+  border-bottom: 1px solid #3f3e3e; }
 
 .head ul.subContent-head {
   margin: 0;
@@ -412,7 +355,7 @@ $backgroundNavigation: rgba(0, 0, 0, 0.68);
     margin: 0 10px; }
 
 .links {
-  color: #000;
+  color: #fff;
   font-size: 20px; }
 
 .logo-head {
@@ -453,7 +396,7 @@ $backgroundNavigation: rgba(0, 0, 0, 0.68);
   float: left;
   font-weight: 700;
   font-size: 30px;
-  color: #000;
+  color: #fff;
   -moz-user-select: none;
   -webkit-user-drag: none;
   -webkit-user-select: none;
@@ -481,11 +424,11 @@ $backgroundNavigation: rgba(0, 0, 0, 0.68);
   border: none; }
 
 .iconHead {
-  color: #000 !important;
+  color: #fff !important;
   width: 20px;
   height: 20px; }
   .iconHead:active {
-    color: #000 !important; }
+    color: #fff !important; }
 
 .LoaderBall {
   width: 75%;
@@ -506,7 +449,7 @@ $backgroundNavigation: rgba(0, 0, 0, 0.68);
   right: 1px; }
 
 .modeDarkLigth {
-  color: #000 !important;
+  color: #fff !important;
   width: 20px;
   height: 20px; }
   .modeDarkLigth:active {
@@ -704,24 +647,7 @@ div.messageWarning {
 /*NOTE: BORDER*/
 /*NOTE: TEXT*/
 /*NOTE: BUTTON*/
-/*MOON
-$white: #fff;
-$lowlowWhite: #b6b6b6;
-$lowWhite: #e7e7e7;
-$backgroundComponent: #050505;
-$colorActiveBtn: #000000;
-$borderBlack: #3f3e3e;
-$backgrounBody: #0e0d0d;
-$btnInteractionPost: #070707a1;
-$colorIconsHeadMenu: #fff;
-$backgrounWindow: #0e0d0d;
-$actionBtnDefaul: #1f1f1f;
-$leftoverBoxDark: #101113;
-$boderBlurBox: rgba(255, 255, 255, 0.1);
-$backgroundFile:  radial-gradient(circle at 0% 0%, 
-    #313130 50%, #222127 66.67%, #15131e 83.33%, #080016 100%);
-$backgroundNavigation: rgba(0, 0, 0, 0.68);
-*/
+/*MOON*/
 /*NOTE:VIZUALIZAR EL TIEMPO DEL AUDIO*/
 #player-track {
   background-color: #ffffff00;
@@ -733,7 +659,7 @@ $backgroundNavigation: rgba(0, 0, 0, 0.68);
     top: -92px; }
 
 #track-name {
-  color: #000;
+  color: #fff;
   font-size: 17px;
   text-align: center; }
 
@@ -756,12 +682,12 @@ $backgroundNavigation: rgba(0, 0, 0, 0.68);
 #current-time,
 #track-length {
   font-size: 15px;
-  color: #000;
+  color: #fff;
   background-color: #ffffff00;
   border-radius: 10px; }
 
 #s-area {
-  background-color: #000;
+  background-color: #fff;
   width: 160px;
   position: relative;
   top: 6px;
@@ -781,7 +707,7 @@ $backgroundNavigation: rgba(0, 0, 0, 0.68);
 #player-content {
   position: relative;
   height: 100%;
-  background-image: radial-gradient(circle at 0% 0%, #b1b1b8 50%, #b1b1b8 66.67%, #8c8ca3 83.33%, #6e6b8f 100%);
+  background-image: radial-gradient(circle at 0% 0%, #313130 50%, #222127 66.67%, #15131e 83.33%, #080016 100%);
   border-radius: 15px;
   z-index: 2; }
 
@@ -823,7 +749,7 @@ $backgroundNavigation: rgba(0, 0, 0, 0.68);
 #discSound {
   width: 60px;
   height: 60px;
-  color: #000 !important; }
+  color: #fff !important; }
 
 #album-art {
   position: relative;
@@ -831,17 +757,17 @@ $backgroundNavigation: rgba(0, 0, 0, 0.68);
   left: 15px;
   width: 50px;
   height: 50px;
-  background-color: #fff;
+  background-color: #050505;
   transform: rotateZ(0);
   transition: 0.3s ease all;
-  box-shadow: 0 0 0 6px #000;
+  box-shadow: 0 0 0 6px #fff;
   border-radius: 50%;
   overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center; }
   #album-art .active {
-    box-shadow: 0 0 0 12px #000; }
+    box-shadow: 0 0 0 12px #fff; }
   #album-art:before {
     top: 50%;
     right: 0;
@@ -897,24 +823,7 @@ $backgroundNavigation: rgba(0, 0, 0, 0.68);
 /*NOTE: BORDER*/
 /*NOTE: TEXT*/
 /*NOTE: BUTTON*/
-/*MOON
-$white: #fff;
-$lowlowWhite: #b6b6b6;
-$lowWhite: #e7e7e7;
-$backgroundComponent: #050505;
-$colorActiveBtn: #000000;
-$borderBlack: #3f3e3e;
-$backgrounBody: #0e0d0d;
-$btnInteractionPost: #070707a1;
-$colorIconsHeadMenu: #fff;
-$backgrounWindow: #0e0d0d;
-$actionBtnDefaul: #1f1f1f;
-$leftoverBoxDark: #101113;
-$boderBlurBox: rgba(255, 255, 255, 0.1);
-$backgroundFile:  radial-gradient(circle at 0% 0%, 
-    #313130 50%, #222127 66.67%, #15131e 83.33%, #080016 100%);
-$backgroundNavigation: rgba(0, 0, 0, 0.68);
-*/
+/*MOON*/
 .video video {
   width: 250px;
   max-height: 250px;
@@ -944,7 +853,7 @@ $backgroundNavigation: rgba(0, 0, 0, 0.68);
   height: 20px; }
 
 .ProgressContainer {
-  color: #e6e6e6;
+  color: #0e0d0d;
   font-size: 15px; }
   .ProgressContainer .fullTime {
     position: relative;
@@ -1001,24 +910,7 @@ $backgroundNavigation: rgba(0, 0, 0, 0.68);
 /*NOTE: BORDER*/
 /*NOTE: TEXT*/
 /*NOTE: BUTTON*/
-/*MOON
-$white: #fff;
-$lowlowWhite: #b6b6b6;
-$lowWhite: #e7e7e7;
-$backgroundComponent: #050505;
-$colorActiveBtn: #000000;
-$borderBlack: #3f3e3e;
-$backgrounBody: #0e0d0d;
-$btnInteractionPost: #070707a1;
-$colorIconsHeadMenu: #fff;
-$backgrounWindow: #0e0d0d;
-$actionBtnDefaul: #1f1f1f;
-$leftoverBoxDark: #101113;
-$boderBlurBox: rgba(255, 255, 255, 0.1);
-$backgroundFile:  radial-gradient(circle at 0% 0%, 
-    #313130 50%, #222127 66.67%, #15131e 83.33%, #080016 100%);
-$backgroundNavigation: rgba(0, 0, 0, 0.68);
-*/
+/*MOON*/
 .register {
   background-color: #ffffff00; }
 
@@ -1045,7 +937,7 @@ $backgroundNavigation: rgba(0, 0, 0, 0.68);
     font-size: 43px; }
 
 .titleLabel {
-  color: #000;
+  color: #fff;
   text-decoration: none;
   text-align: left;
   font-weight: 700;
@@ -1071,7 +963,7 @@ $backgroundNavigation: rgba(0, 0, 0, 0.68);
     border: none;
     border-bottom: 1px solid #999898;
     margin-top: 5px;
-    color: #000;
+    color: #fff;
     font-size: 19.2px; }
 
 #signup .contentForm {
@@ -1107,7 +999,7 @@ $backgroundNavigation: rgba(0, 0, 0, 0.68);
   border: 1px solid #999898;
   font-size: 19.2px; }
   .btnNo:active {
-    background-color: #b6b3b3; }
+    background-color: #000000; }
 
 .separationLine {
   display: flex;
@@ -1118,7 +1010,7 @@ $backgroundNavigation: rgba(0, 0, 0, 0.68);
   -webkit-user-select: none;
   -ms-user-select: none; }
   .separationLine label {
-    color: #000;
+    color: #fff;
     font-size: 15px; }
   .separationLine hr {
     width: 38%;
@@ -1137,7 +1029,7 @@ $backgroundNavigation: rgba(0, 0, 0, 0.68);
   height: 350px;
   width: 100%; }
   .contentText p {
-    color: #000;
+    color: #fff;
     font-size: 15px;
     position: relative;
     width: 90%;
@@ -1200,7 +1092,7 @@ $backgroundNavigation: rgba(0, 0, 0, 0.68);
   float: left;
   font-weight: 700;
   font-size: 50px;
-  color: #000;
+  color: #fff;
   -moz-user-select: none;
   -webkit-user-drag: none;
   -webkit-user-select: none;
@@ -1232,24 +1124,7 @@ $backgroundNavigation: rgba(0, 0, 0, 0.68);
 /*NOTE: BORDER*/
 /*NOTE: TEXT*/
 /*NOTE: BUTTON*/
-/*MOON
-$white: #fff;
-$lowlowWhite: #b6b6b6;
-$lowWhite: #e7e7e7;
-$backgroundComponent: #050505;
-$colorActiveBtn: #000000;
-$borderBlack: #3f3e3e;
-$backgrounBody: #0e0d0d;
-$btnInteractionPost: #070707a1;
-$colorIconsHeadMenu: #fff;
-$backgrounWindow: #0e0d0d;
-$actionBtnDefaul: #1f1f1f;
-$leftoverBoxDark: #101113;
-$boderBlurBox: rgba(255, 255, 255, 0.1);
-$backgroundFile:  radial-gradient(circle at 0% 0%, 
-    #313130 50%, #222127 66.67%, #15131e 83.33%, #080016 100%);
-$backgroundNavigation: rgba(0, 0, 0, 0.68);
-*/
+/*MOON*/
 div.post, div.viewPostContentuser {
   width: 96%;
   margin: auto;
@@ -1278,24 +1153,7 @@ div.viewPostContentuser {
 /*NOTE: BORDER*/
 /*NOTE: TEXT*/
 /*NOTE: BUTTON*/
-/*MOON
-$white: #fff;
-$lowlowWhite: #b6b6b6;
-$lowWhite: #e7e7e7;
-$backgroundComponent: #050505;
-$colorActiveBtn: #000000;
-$borderBlack: #3f3e3e;
-$backgrounBody: #0e0d0d;
-$btnInteractionPost: #070707a1;
-$colorIconsHeadMenu: #fff;
-$backgrounWindow: #0e0d0d;
-$actionBtnDefaul: #1f1f1f;
-$leftoverBoxDark: #101113;
-$boderBlurBox: rgba(255, 255, 255, 0.1);
-$backgroundFile:  radial-gradient(circle at 0% 0%, 
-    #313130 50%, #222127 66.67%, #15131e 83.33%, #080016 100%);
-$backgroundNavigation: rgba(0, 0, 0, 0.68);
-*/
+/*MOON*/
 .coment {
   margin: 0;
   padding: 0;
@@ -1322,7 +1180,7 @@ $backgroundNavigation: rgba(0, 0, 0, 0.68);
   flex-direction: column;
   align-items: center;
   margin-bottom: 50px;
-  background-color: #fff;
+  background-color: #050505;
   border: none; }
   .comentBox .title {
     width: 100%;
@@ -1332,7 +1190,7 @@ $backgroundNavigation: rgba(0, 0, 0, 0.68);
     justify-content: center;
     flex-direction: column; }
     .comentBox .title h4 {
-      color: #000; }
+      color: #fff; }
 
 .comentUser {
   width: 100%;
@@ -1379,8 +1237,8 @@ $backgroundNavigation: rgba(0, 0, 0, 0.68);
   font-size: 16px;
   font-family: "Segoe UI";
   border: 2px solid #0055ff;
-  background-color: #b6b3b3;
-  color: #000; }
+  background-color: #000000;
+  color: #fff; }
 
 .inputMessage {
   height: 30px; }
@@ -1397,11 +1255,28 @@ $backgroundNavigation: rgba(0, 0, 0, 0.68);
   border-radius: 30px;
   margin-left: 5px;
   background-color: #0055ff;
+  color: #ffffff;
   border: none;
   font-size: 17.6px; }
   .btnPostMessage :active {
     background-color: #003cb4; }
 
+/*NOTE: LOGO COLORS*/
+/*NOTE:BORDER RADIUS*/
+/*NOTE: FONT-SIZE*/
+/*NOTE: FONT TYPE*/
+/*NOTE: BACKGROUND*/
+/*NOTE: TRANSPARENT*/
+/*NOTE: BORDER*/
+/*NOTE: TEXT*/
+/*NOTE: BUTTON*/
+/*MOON*/
+/*NOTE: DO NOT COPY CONTENT*/
+/*NOTE:CENTER ELEMENTS*/
+/*NOTE: PLACE ELEMENTS IN CENTERED COLUMANS*/
+/*NOTE: ROUND EDGES*/
+/*NOTE:BALL MOVEMENT*/
+/*NOTE:SIDE BODY*/
 #boxCreatePublication {
   display: none; }
 
@@ -1427,17 +1302,22 @@ $backgroundNavigation: rgba(0, 0, 0, 0.68);
 
 .fileUpload {
   background: #ffffff00;
-  width: 30px;
-  height: 30px;
-  border-radius: 10px;
+  width: 40px;
+  height: 35px;
   overflow: hidden;
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
   cursor: pointer;
   margin: 0 1px; }
+  .fileUpload:hover {
+    border-bottom-left-radius: 0;
+    border-bottom: 2px solid #Fbf849; }
+  .fileUpload:active {
+    border: none;
+    border-radius: 10px;
+    background-color: #000000; }
   .fileUpload input.upload {
     position: absolute;
     top: 0;
@@ -1457,16 +1337,10 @@ input[type="file"] {
   bottom: 100%; }
 
 .custom-file-upload {
-  border: 1px solid #333333;
+  border: 1px solid #b6b6b6;
   display: inline-block;
   padding: 6px 12px;
   cursor: pointer; }
-
-.iconsNewPost {
-  width: 30px;
-  color: #0055ff !important; }
-  .iconsNewPost:hover {
-    color: #000000 !important; }
 
 .divBtnUpadateBottom {
   position: relative;
@@ -1480,10 +1354,11 @@ input[type="file"] {
   font-size: 20px;
   text-align: center;
   width: 70px;
-  height: 30px;
+  height: 35px;
   border-radius: 20px;
   margin-right: 5px;
-  margin-top: 30px; }
+  position: relative;
+  top: 5px; }
   .btnNewPost:active {
     background-color: #003cb4; }
 
@@ -1493,7 +1368,7 @@ input[type="file"] {
   align-items: center;
   padding-left: 10px; }
   .divTypeExclusi label {
-    color: #000;
+    color: #fff;
     margin-left: 5px;
     margin-right: 10px;
     font-size: 16px; }
@@ -1525,7 +1400,7 @@ input[type="file"] {
   background-color: #ffffff00;
   margin-left: 10px;
   border: none;
-  color: #000;
+  color: #fff;
   width: 90%;
   font-size: 16px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -1536,7 +1411,7 @@ input[type="file"] {
   max-height: 76px; }
 
 .subtitle {
-  color: #000;
+  color: #fff;
   width: 80%;
   margin: 10px 0;
   margin-left: 10px; }
@@ -1570,11 +1445,11 @@ input[type="file"] {
   left: 8px;
   color: #999898 !important; }
   #eliminarFileCreatePublication:active {
-    color: #000 !important; }
+    color: #fff !important; }
 
 .preview {
   display: none;
-  background-image: radial-gradient(circle at 0% 0%, #b1b1b8 50%, #b1b1b8 66.67%, #8c8ca3 83.33%, #6e6b8f 100%);
+  background-image: radial-gradient(circle at 0% 0%, #313130 50%, #222127 66.67%, #15131e 83.33%, #080016 100%);
   max-width: 250px;
   max-height: 250px;
   border-radius: 10px;
@@ -1607,7 +1482,7 @@ input[type="file"] {
   margin-top: 5px;
   display: flex;
   align-items: center;
-  background-color: #000; }
+  background-color: #fff; }
 
 #viewImagen, #viewVideo {
   display: none;
@@ -1629,24 +1504,7 @@ input[type="file"] {
 /*NOTE: BORDER*/
 /*NOTE: TEXT*/
 /*NOTE: BUTTON*/
-/*MOON
-$white: #fff;
-$lowlowWhite: #b6b6b6;
-$lowWhite: #e7e7e7;
-$backgroundComponent: #050505;
-$colorActiveBtn: #000000;
-$borderBlack: #3f3e3e;
-$backgrounBody: #0e0d0d;
-$btnInteractionPost: #070707a1;
-$colorIconsHeadMenu: #fff;
-$backgrounWindow: #0e0d0d;
-$actionBtnDefaul: #1f1f1f;
-$leftoverBoxDark: #101113;
-$boderBlurBox: rgba(255, 255, 255, 0.1);
-$backgroundFile:  radial-gradient(circle at 0% 0%, 
-    #313130 50%, #222127 66.67%, #15131e 83.33%, #080016 100%);
-$backgroundNavigation: rgba(0, 0, 0, 0.68);
-*/
+/*MOON*/
 .profile {
   width: 100%;
   height: 100%;
@@ -1669,12 +1527,12 @@ $backgroundNavigation: rgba(0, 0, 0, 0.68);
   -webkit-user-drag: none;
   -webkit-user-select: none;
   -ms-user-select: none;
-  background: #fff; }
+  background: #050505; }
   .infProfile .user_photo {
     width: 80px;
     height: 80px;
     border-radius: 30px;
-    background-image: radial-gradient(circle at 0% 0%, #b1b1b8 50%, #b1b1b8 66.67%, #8c8ca3 83.33%, #6e6b8f 100%);
+    background-image: radial-gradient(circle at 0% 0%, #313130 50%, #222127 66.67%, #15131e 83.33%, #080016 100%);
     margin-bottom: 10px;
     left: 0; }
   .infProfile .btnAddUser {
@@ -1707,7 +1565,7 @@ $backgroundNavigation: rgba(0, 0, 0, 0.68);
   flex-direction: column;
   padding: 0;
   margin: 0;
-  color: #000;
+  color: #fff;
   margin-top: 10px; }
   .informationUser h4 {
     width: 80%;
@@ -1745,7 +1603,7 @@ $backgroundNavigation: rgba(0, 0, 0, 0.68);
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #000;
+  color: #fff;
   text-align: center; }
   .listLine .elementList {
     display: inline;
@@ -1771,7 +1629,7 @@ $backgroundNavigation: rgba(0, 0, 0, 0.68);
       border-bottom-left-radius: 10px;
       border-bottom-right-radius: 10px;
       border: none;
-      background: #b6b3b3; }
+      background: #000000; }
     .listLine .elementList label {
       display: flex;
       align-items: center;
@@ -1792,7 +1650,7 @@ $backgroundNavigation: rgba(0, 0, 0, 0.68);
         color: #ffff00 !important; }
 
 .optionsSearchPost {
-  background: #fff;
+  background: #050505;
   height: 60px;
   display: flex;
   align-items: center;
@@ -1800,7 +1658,7 @@ $backgroundNavigation: rgba(0, 0, 0, 0.68);
   padding-bottom: 5px;
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
-  border-bottom: 1px solid #cccccc; }
+  border-bottom: 1px solid #3f3e3e; }
 
 .btnFilesUser {
   margin: 0 5px;
@@ -1821,7 +1679,7 @@ $backgroundNavigation: rgba(0, 0, 0, 0.68);
   .btnFilesUser:hover {
     border-bottom: 2px solid #ffff00; }
   .btnFilesUser:active {
-    background: #b6b3b3; }
+    background: #000000; }
   .btnFilesUser .icon_file {
     width: 30px;
     margin-bottom: 5px; }
@@ -1841,24 +1699,7 @@ $backgroundNavigation: rgba(0, 0, 0, 0.68);
 /*NOTE: BORDER*/
 /*NOTE: TEXT*/
 /*NOTE: BUTTON*/
-/*MOON
-$white: #fff;
-$lowlowWhite: #b6b6b6;
-$lowWhite: #e7e7e7;
-$backgroundComponent: #050505;
-$colorActiveBtn: #000000;
-$borderBlack: #3f3e3e;
-$backgrounBody: #0e0d0d;
-$btnInteractionPost: #070707a1;
-$colorIconsHeadMenu: #fff;
-$backgrounWindow: #0e0d0d;
-$actionBtnDefaul: #1f1f1f;
-$leftoverBoxDark: #101113;
-$boderBlurBox: rgba(255, 255, 255, 0.1);
-$backgroundFile:  radial-gradient(circle at 0% 0%, 
-    #313130 50%, #222127 66.67%, #15131e 83.33%, #080016 100%);
-$backgroundNavigation: rgba(0, 0, 0, 0.68);
-*/
+/*MOON*/
 .allPost {
   width: 100%;
   padding: 0;
@@ -1868,7 +1709,7 @@ $backgroundNavigation: rgba(0, 0, 0, 0.68);
   flex-wrap: wrap; }
 
 .onePost {
-  background: #fff;
+  background: #050505;
   width: 28%;
   height: 105px;
   border-radius: 15px;
@@ -1926,24 +1767,7 @@ $backgroundNavigation: rgba(0, 0, 0, 0.68);
 /*NOTE: BORDER*/
 /*NOTE: TEXT*/
 /*NOTE: BUTTON*/
-/*MOON
-$white: #fff;
-$lowlowWhite: #b6b6b6;
-$lowWhite: #e7e7e7;
-$backgroundComponent: #050505;
-$colorActiveBtn: #000000;
-$borderBlack: #3f3e3e;
-$backgrounBody: #0e0d0d;
-$btnInteractionPost: #070707a1;
-$colorIconsHeadMenu: #fff;
-$backgrounWindow: #0e0d0d;
-$actionBtnDefaul: #1f1f1f;
-$leftoverBoxDark: #101113;
-$boderBlurBox: rgba(255, 255, 255, 0.1);
-$backgroundFile:  radial-gradient(circle at 0% 0%, 
-    #313130 50%, #222127 66.67%, #15131e 83.33%, #080016 100%);
-$backgroundNavigation: rgba(0, 0, 0, 0.68);
-*/
+/*MOON*/
 div.allchats {
   width: 100%;
   padding: 0;
@@ -1967,7 +1791,7 @@ div.chat {
     margin: auto;
     background-color: #ffffff00; }
     div.chat div.user_:active {
-      background-color: #b6b3b3; }
+      background-color: #000000; }
   div.chat div.user_photo {
     width: 40px;
     height: 40px;
@@ -1993,24 +1817,7 @@ div.chat {
 /*NOTE: BORDER*/
 /*NOTE: TEXT*/
 /*NOTE: BUTTON*/
-/*MOON
-$white: #fff;
-$lowlowWhite: #b6b6b6;
-$lowWhite: #e7e7e7;
-$backgroundComponent: #050505;
-$colorActiveBtn: #000000;
-$borderBlack: #3f3e3e;
-$backgrounBody: #0e0d0d;
-$btnInteractionPost: #070707a1;
-$colorIconsHeadMenu: #fff;
-$backgrounWindow: #0e0d0d;
-$actionBtnDefaul: #1f1f1f;
-$leftoverBoxDark: #101113;
-$boderBlurBox: rgba(255, 255, 255, 0.1);
-$backgroundFile:  radial-gradient(circle at 0% 0%, 
-    #313130 50%, #222127 66.67%, #15131e 83.33%, #080016 100%);
-$backgroundNavigation: rgba(0, 0, 0, 0.68);
-*/
+/*MOON*/
 .boxFriends {
   margin-bottom: 60px;
   width: 100%;
@@ -2027,11 +1834,11 @@ $backgroundNavigation: rgba(0, 0, 0, 0.68);
   margin-top: 15px;
   width: 34%;
   border-radius: 20px;
-  border: 1px solid #cccccc;
+  border: 1px solid #3f3e3e;
   padding: 0;
-  background-color: #fff; }
+  background-color: #050505; }
   .contentFriend:active {
-    background-color: #b6b3b3; }
+    background-color: #000000; }
   .contentFriend.contentOnePost {
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px; }
@@ -2039,12 +1846,12 @@ $backgroundNavigation: rgba(0, 0, 0, 0.68);
 .nameFriend {
   margin: 0;
   font-size: 17.6px;
-  color: #000;
+  color: #fff;
   margin-bottom: 3px;
   text-align: center; }
 
 .usernameFriend {
-  color: #000;
+  color: #fff;
   margin-bottom: 5px; }
 
 .photoContact {
@@ -2067,24 +1874,7 @@ $backgroundNavigation: rgba(0, 0, 0, 0.68);
 /*NOTE: BORDER*/
 /*NOTE: TEXT*/
 /*NOTE: BUTTON*/
-/*MOON
-$white: #fff;
-$lowlowWhite: #b6b6b6;
-$lowWhite: #e7e7e7;
-$backgroundComponent: #050505;
-$colorActiveBtn: #000000;
-$borderBlack: #3f3e3e;
-$backgrounBody: #0e0d0d;
-$btnInteractionPost: #070707a1;
-$colorIconsHeadMenu: #fff;
-$backgrounWindow: #0e0d0d;
-$actionBtnDefaul: #1f1f1f;
-$leftoverBoxDark: #101113;
-$boderBlurBox: rgba(255, 255, 255, 0.1);
-$backgroundFile:  radial-gradient(circle at 0% 0%, 
-    #313130 50%, #222127 66.67%, #15131e 83.33%, #080016 100%);
-$backgroundNavigation: rgba(0, 0, 0, 0.68);
-*/
+/*MOON*/
 .divSearch {
   padding-top: 5px;
   -moz-user-select: none;
@@ -2093,7 +1883,7 @@ $backgroundNavigation: rgba(0, 0, 0, 0.68);
   -ms-user-select: none; }
 
 .barSearch {
-  background-color: #fff;
+  background-color: #050505;
   margin: 0;
   position: relative;
   bottom: 1px;
@@ -2147,9 +1937,9 @@ $backgroundNavigation: rgba(0, 0, 0, 0.68);
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background: #fff;
-  color: #000;
-  border: 1px solid #b6b3b3;
+  background: #050505;
+  color: #fff;
+  border: 1px solid #000000;
   padding: 2px;
   font-size: 15px; }
   .options:active {
@@ -2158,7 +1948,7 @@ $backgroundNavigation: rgba(0, 0, 0, 0.68);
 
 /*NOTE:BOX*/
 div.user_ {
-  background-color: #fff;
+  background-color: #050505;
   margin: auto;
   margin-top: 10px;
   border: none;
@@ -2170,14 +1960,14 @@ div.user_ {
   height: 110px;
   border-radius: 15px; }
   div.user_:active {
-    background: #b6b3b3; }
+    background: #000000; }
 
 div.user_photo {
   width: 50px;
   height: 50px;
   border-radius: 15px;
   border: 2px solid #0fee7e;
-  background-color: #333333;
+  background-color: #b6b6b6;
   position: relative;
   top: 15px;
   left: 5px;
@@ -2212,12 +2002,12 @@ div.user_contentInformation {
 label.user_name {
   font-size: 16px;
   font-weight: 700;
-  color: #000; }
+  color: #fff; }
 
 label.user_username {
   font-size: 15px;
   font-weight: 500;
-  color: #333333; }
+  color: #b6b6b6; }
 
 p.user_description {
   position: relative;
@@ -2227,7 +2017,7 @@ p.user_description {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  color: #333333;
+  color: #b6b6b6;
   margin: 0; }
 
 div.user_informationAccount {
@@ -2235,7 +2025,7 @@ div.user_informationAccount {
   div.user_informationAccount label {
     font-size: 16px;
     font-weight: 700;
-    color: #333333;
+    color: #b6b6b6;
     text-align: right; }
 
 div.user_add {
@@ -2279,7 +2069,7 @@ div.user_add {
   height: 50px;
   border: none;
   backdrop-filter: blur(5px);
-  border: 2px solid rgba(0, 0, 0, 0.1);
+  border: 2px solid rgba(255, 255, 255, 0.1);
   float: left;
   left: 20%;
   position: relative;
@@ -2291,18 +2081,18 @@ div.user_add {
     position: relative;
     left: 55px;
     bottom: 57px;
-    color: #000; }
+    color: #fff; }
   .information .usernamePost {
     width: 250px;
     position: relative;
     left: 55px;
     bottom: 78px;
-    color: #000; }
+    color: #fff; }
   .information .photoUser {
     width: 40px;
     height: 40px;
     border-radius: 20px;
-    background-color: #333333;
+    background-color: #b6b6b6;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -2328,7 +2118,7 @@ div.user_add {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #fff;
+  background: #050505;
   /*border: 1px solid $borderBlack;*/
   overflow: hidden; }
 
@@ -2348,7 +2138,7 @@ div.user_add {
   height: 40px;
   border-radius: 30px;
   backdrop-filter: blur(5px);
-  border: 2px solid rgba(0, 0, 0, 0.1);
+  border: 2px solid rgba(255, 255, 255, 0.1);
   float: right;
   padding: 0 5px;
   position: relative;

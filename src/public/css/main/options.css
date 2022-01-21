@@ -17,24 +17,7 @@
 /*NOTE: BORDER*/
 /*NOTE: TEXT*/
 /*NOTE: BUTTON*/
-/*MOON
-$white: #fff;
-$lowlowWhite: #b6b6b6;
-$lowWhite: #e7e7e7;
-$backgroundComponent: #050505;
-$colorActiveBtn: #000000;
-$borderBlack: #3f3e3e;
-$backgrounBody: #0e0d0d;
-$btnInteractionPost: #070707a1;
-$colorIconsHeadMenu: #fff;
-$backgrounWindow: #0e0d0d;
-$actionBtnDefaul: #1f1f1f;
-$leftoverBoxDark: #101113;
-$boderBlurBox: rgba(255, 255, 255, 0.1);
-$backgroundFile:  radial-gradient(circle at 0% 0%, 
-    #313130 50%, #222127 66.67%, #15131e 83.33%, #080016 100%);
-$backgroundNavigation: rgba(0, 0, 0, 0.68);
-*/
+/*MOON*/
 .divBlur {
   position: fixed;
   width: 100%;
@@ -49,20 +32,17 @@ div.contentBoxBlur {
   position: relative;
   width: 300px;
   max-height: 450px;
-  background-color: #fff;
+  background-color: #0e0d0d;
   border-radius: 20px;
-  /*-webkit-box-shadow: 2px 2px 5px $leftoverBoxDark;
-  -moz-box-shadow: 2px 2px 5px $leftoverBoxDark;*/
-  border: 1px solid #cccccc;
-  filter: shadow(color=#7b7b7b, direction=135, strength=2);
+  filter: shadow(color=#101113, direction=135, strength=2);
   padding: 10px;
   margin: auto;
   margin-top: 40px; }
   div.contentBoxBlur div.user_ {
-    background-color: #fff;
+    background-color: #050505;
     height: 80px; }
     div.contentBoxBlur div.user_:active {
-      background-color: #fff; }
+      background-color: #050505; }
   div.contentBoxBlur div.user_photo {
     top: 6px; }
   div.contentBoxBlur div.user_information {
@@ -76,20 +56,20 @@ div.contentBoxBlur {
   padding-top: 10px;
   padding-left: 10px;
   margin: 0 10px;
-  color: #000;
+  color: #fff;
   -moz-user-select: none;
   -webkit-user-drag: none;
   -webkit-user-select: none;
   -ms-user-select: none; }
   .optionsBox:active {
-    background: #b6b3b3;
+    background: #000000;
     border: 1px solid #999898; }
   .optionsBox h4 {
     position: relative;
     bottom: 25px; }
     .optionsBox h4 .iconsOp {
       margin-right: 10px;
-      color: #000 !important;
+      color: #fff !important;
       width: 20px;
       position: relative;
       top: 5px; }

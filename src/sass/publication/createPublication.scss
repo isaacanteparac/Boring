@@ -1,3 +1,5 @@
+@import "../abstracts/variables.scss";
+@import "../abstracts/mixis.scss";
 
 #boxCreatePublication{
     display: none;
@@ -30,13 +32,23 @@
 
 .fileUpload {
     background: $transparent;
-    @include roundedBorder(30px, 30px, 10px);
+    width: 40px;
+    height: 35px;
     overflow: hidden;
     position: relative;
-    @include centerPositionColumn;
+    @include centerPosition;
     cursor: pointer;
     margin: 0 1px;
+    &:hover{
+        border-bottom-left-radius: 0;
+        border-bottom: 2px solid map-get($color, goldenfizz_ );
+    }
 
+    &:active{
+        border: none;
+        border-radius: map-get($borderRadius, small);
+        background-color: $colorActiveBtn;
+    }
     input.upload {
         position: absolute;
         top: 0;
@@ -69,15 +81,6 @@ input[type="file"] {
     cursor: pointer;
 }
 
-.iconsNewPost {
-    width: 30px;
-    color: map-get($color, blue_ )!important;
-
-    &:hover {
-        color: map-get($color, blackD_ )!important;
-    }
-}
-
 .divBtnUpadateBottom {
     position: relative;
     top: 50%;
@@ -90,9 +93,10 @@ input[type="file"] {
     color: map-get($color, white_ );
     font-size: 20px;
     text-align: center;
-    @include roundedBorder(70px, 30px, 20px);
+    @include roundedBorder(70px, 35px, 20px);
     margin-right: 5px;
-    margin-top: 30px;
+    position: relative;
+    top: 5px;
 
     &:active {
         background-color: map-get($color, blueD_ );

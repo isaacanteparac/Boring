@@ -118,7 +118,7 @@
     @include roundedBorder(15%, 35px, map-get($borderRadius, extrabig));
     margin-left: 5px;
     background-color: map-get($color, blue_ );
-    color: map-get($color, whie_ );
+    color: map-get($color, white_ );
     border: map-get($borderRadius, null);
     font-size: map-get($fontSize, rem_1 );
 

@@ -1,9 +1,3 @@
-/*NOTE: DO NOT COPY CONTENT*/
-/*NOTE:CENTER ELEMENTS*/
-/*NOTE: PLACE ELEMENTS IN CENTERED COLUMANS*/
-/*NOTE: ROUND EDGES*/
-/*NOTE:BALL MOVEMENT*/
-/*NOTE:SIDE BODY*/
 /*NOTE: LOGO COLORS*/
 /*NOTE:BORDER RADIUS*/
 /*NOTE: FONT-SIZE*/
@@ -14,6 +8,12 @@
 /*NOTE: TEXT*/
 /*NOTE: BUTTON*/
 /*MOON*/
+/*NOTE: DO NOT COPY CONTENT*/
+/*NOTE:CENTER ELEMENTS*/
+/*NOTE: PLACE ELEMENTS IN CENTERED COLUMANS*/
+/*NOTE: ROUND EDGES*/
+/*NOTE:BALL MOVEMENT*/
+/*NOTE:SIDE BODY*/
 #boxCreatePublication {
   display: none; }
 
@@ -39,17 +39,22 @@
 
 .fileUpload {
   background: #ffffff00;
-  width: 30px;
-  height: 30px;
-  border-radius: 10px;
+  width: 40px;
+  height: 35px;
   overflow: hidden;
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
   cursor: pointer;
   margin: 0 1px; }
+  .fileUpload:hover {
+    border-bottom-left-radius: 0;
+    border-bottom: 2px solid #Fbf849; }
+  .fileUpload:active {
+    border: none;
+    border-radius: 10px;
+    background-color: #000000; }
   .fileUpload input.upload {
     position: absolute;
     top: 0;
@@ -74,12 +79,6 @@ input[type="file"] {
   padding: 6px 12px;
   cursor: pointer; }
 
-.iconsNewPost {
-  width: 30px;
-  color: #0055ff !important; }
-  .iconsNewPost:hover {
-    color: #000000 !important; }
-
 .divBtnUpadateBottom {
   position: relative;
   top: 50%; }
@@ -92,10 +91,11 @@ input[type="file"] {
   font-size: 20px;
   text-align: center;
   width: 70px;
-  height: 30px;
+  height: 35px;
   border-radius: 20px;
   margin-right: 5px;
-  margin-top: 30px; }
+  position: relative;
+  top: 5px; }
   .btnNewPost:active {
     background-color: #003cb4; }
 

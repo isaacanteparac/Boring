@@ -11,7 +11,6 @@
   height: 100%;
   @include centerPosition;
   top: 50px;
-  //background: var(--backgrounNavigation);
   backdrop-filter: map-get($blurEffect, small);
 }
 
@@ -19,11 +18,8 @@ div.contentBoxBlur {
   position: relative;
   width: map-get($post, maxCreateWidth);
   max-height: map-get($post, maxCreateHeigth);
-  background-color: $backgroundComponent;
+  background-color: $backgrounWindow;
   border-radius: map-get($borderRadius, big);
-  /*-webkit-box-shadow: 2px 2px 5px $leftoverBoxDark;
-  -moz-box-shadow: 2px 2px 5px $leftoverBoxDark;*/
-  border: 1px solid $borderBlack;
   filter: shadow(color=$leftoverBoxDark, direction=135, strength=2);
   padding: 10px;
   margin: auto;
