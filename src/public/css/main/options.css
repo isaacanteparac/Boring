@@ -37,19 +37,24 @@ div.contentBoxBlur {
   filter: shadow(color=#101113, direction=135, strength=2);
   padding: 10px;
   margin: auto;
-  margin-top: 40px; }
+  margin-top: 40px;
+  border: 1px solid #050505; }
+  div.contentBoxBlur label.btnClose {
+    position: relative;
+    left: 6px;
+    bottom: 8px; }
   div.contentBoxBlur div.user_ {
-    background-color: #050505;
+    background-color: #0e0d0d;
     height: 80px; }
     div.contentBoxBlur div.user_:active {
-      background-color: #050505; }
+      background-color: #0e0d0d; }
   div.contentBoxBlur div.user_photo {
     top: 6px; }
   div.contentBoxBlur div.user_information {
     width: 225px;
     bottom: 50px; }
 
-.optionsBox {
+div.optionsBox {
   height: 40px;
   padding-top: 10px;
   border-radius: 10px;
@@ -61,13 +66,13 @@ div.contentBoxBlur {
   -webkit-user-drag: none;
   -webkit-user-select: none;
   -ms-user-select: none; }
-  .optionsBox:active {
+  div.optionsBox:active {
     background: #000000;
     border: 1px solid #999898; }
-  .optionsBox h4 {
+  div.optionsBox h4 {
     position: relative;
     bottom: 25px; }
-    .optionsBox h4 .iconsOp {
+    div.optionsBox h4 svg.iconsOp {
       margin-right: 10px;
       color: #fff !important;
       width: 20px;

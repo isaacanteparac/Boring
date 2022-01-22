@@ -7,11 +7,8 @@
         content="width=device-width, initial-scale=1.0">
     <title>Boring</title>
     <link  rel="icon"  type="image/png" href="favicon.png"/>
-
-    <!--TITLE:JQUERY INTERACTIVE-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     
-    <!--TITLE: MAIN--->
     <link rel="stylesheet" href="css/main.css"/>
 
     <script src="javascript/main/headAndnavigation.js"></script>
@@ -27,25 +24,18 @@
 </head>
 
 <body>
-    <!--TITLE:HEAD-->
-    
     {{>headi}}
-
-    <!--TITLE:BODY-->
     <div class="contentApp">
         {{{body}}}
         
     </div>
     {{>alert}}
-    <!--INTERACION-- {{>animationLoader}}-->
+
     <div class="divBlur" id="divBlurid" style="display: none;">
         {{>createPublication}}
         {{>optionsContact}}
-        <!---->
     </div>
     
-    
-    <!--TITLE:MENU BOTTOM--> 
     
     {{>navigation}}
 

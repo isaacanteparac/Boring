@@ -24,26 +24,39 @@ div.contentBoxBlur {
   padding: 10px;
   margin: auto;
   margin-top: 40px;
+  border: 1px solid $backgroundComponent;
 
-  div.user_ {
-    background-color: $backgroundComponent;
-    height: 80px;
-    &:active {
-      background-color: $backgroundComponent;
+  label.btnClose{
+    position: relative;
+    left: 6px;
+    bottom: 8px;
+  }
+    div.user_ {
+      background-color: $backgrounWindow;
+      height: 80px;
+      &:active {
+        background-color: $backgrounWindow;
+      }
+
+      
     }
-  }
+  
+    div.user_photo {
+      top: 6px;
+    }
+  
+    div.user_information {
+      width: 225px;
+      bottom: 50px;
+    }
 
-  div.user_photo {
-    top: 6px;
-  }
 
-  div.user_information {
-    width: 225px;
-    bottom: 50px;
-  }
+  
+
+ 
 }
 
-.optionsBox {
+div.optionsBox {
   height: 40px;
   padding-top: 10px;
   border-radius: map-get($borderRadius, small );
@@ -61,7 +74,7 @@ div.contentBoxBlur {
   h4 {
     position: relative;
     bottom: 25px;
-    .iconsOp {
+    svg.iconsOp {
         margin-right: 10px;
         color: $white!important;
         width: 20px;
