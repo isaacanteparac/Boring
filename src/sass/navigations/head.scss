@@ -85,6 +85,10 @@
     display: block;
     text-decoration: none;
     float: left;
+    background-color: map-get($transparent, total_ );;
+    @include roundedBorder(40px, 36px, map-get($borderRadius, small));
+    @include centerPosition;
+    
 
     .logoTop{
         border-left: 2px solid map-get($logo, first );
@@ -140,7 +144,7 @@
 }
 
 .btnHead {
-    background-color: $transparent;
+    background-color: map-get($transparent, total_ );
     @include roundedBorder(40px, 40px, map-get($borderRadius, big));
     border: map-get($borderRadius, null);
 }

@@ -5,7 +5,7 @@
 
 
 .register {
-    background-color: $transparent;
+    background-color: map-get($transparent, total_ );
 }
 
 .contenRegister {
@@ -62,7 +62,7 @@
     padding: 10px 0;
 
     input {
-        background-color: $transparent;
+        background-color: map-get($transparent, total_ );
         width: 80%;
         height: 35px;
         border: none;
@@ -105,7 +105,7 @@
     @include roundedBorder(75%, 50px, map-get($borderRadius, small));
     margin: 10px 0;
     border: none;
-    background: $transparent;
+    background: map-get($transparent, total_ );
     color: map-get($color, grayL_ );
     border: 1px solid map-get($color, grayL_ );
     font-size: map-get($fontSize, rem_2 );

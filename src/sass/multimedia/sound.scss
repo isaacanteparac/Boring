@@ -1,13 +1,12 @@
 *:focus {
     outline: none;
 }
-@import "../abstracts/mixis.scss";
-@import "../abstracts/variables.scss";
+
 
 
 /*NOTE:VIZUALIZAR EL TIEMPO DEL AUDIO*/
 #player-track {
-    background-color: $transparent;
+    background-color: map-get($transparent, total_);
     @include roundedBorder(240px, 50px, map-get($borderRadius, small ));
     padding: 0 5px;
 
@@ -25,7 +24,7 @@
 #track-time {
     margin-top: 5px;
     height: 20px;
-    background-color: $transparent;
+    background-color: map-get($transparent, total_);
     border-radius: 5px;
 }
 
@@ -45,7 +44,7 @@
 #track-length {
     font-size: map-get($fontSize, medium );
     color: $white;
-    background-color: $transparent;
+    background-color: map-get($transparent, total_);
     border-radius: map-get($borderRadius, small);
 }
 
@@ -86,13 +85,13 @@
     float: right;
     @include roundedBorder(250px, 40px, map-get($borderRadius, small));
     position: relative;
-    background-color: $transparent;
+    background-color: map-get($transparent, total_);
     @include centerPosition;
 }
 
 .button {
     @include roundedBorder(30px, 30px, map-get($borderRadius, small));
-    background-color: $transparentGray;
+    background-color: map-get($transparent, gray_);
     margin: 0 3px;
     margin-bottom: 10px;
     cursor: pointer;

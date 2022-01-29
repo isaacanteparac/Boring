@@ -1,5 +1,4 @@
-@import "../abstracts/variables.scss";
-@import "../abstracts/mixis.scss";
+
 
 #boxCreatePublication{
     display: none;
@@ -19,7 +18,7 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-    background: $transparent;
+    background: map-get($transparent, total_ );
 }
 
 .contentTypeFile {
@@ -31,7 +30,7 @@
 }
 
 .fileUpload {
-    background: $transparent;
+    background: map-get($transparent, total_ );
     width: 40px;
     height: 35px;
     overflow: hidden;
@@ -131,7 +130,7 @@ input[type="file"] {
     margin-top: 20px;
     margin-left: 14px;
     position: relative;
-    background-color: $transparent;
+    background-color: map-get($transparent, total_ );
     border: none;
     color: map-get($color, white_ );
     border-bottom: 1px solid $borderGrayLigth;
@@ -140,14 +139,14 @@ input[type="file"] {
 }
 
 .optionsContent {
-    background: $transparent;
+    background: map-get($transparent, total_ );
     text-decoration: none;
     border: none;
 }
 
 .descriptionNewPost {
     textarea {
-        background-color: $transparent;
+        background-color: map-get($transparent, total_ );
         margin-left: 10px;
         border: none;
         color: $white;
@@ -178,7 +177,7 @@ input[type="file"] {
 }
 
 .btnClose{
-    background-color: $transparent;
+    background-color: map-get($transparent, total_ );
     position: relative;
     bottom: 5px;
     right: 5px;
@@ -199,7 +198,7 @@ input[type="file"] {
     float: left;
     position: relative;
     left: 8px;
-    color: $borderGrayLigth!important;
+    color: map-get($transparent, gray_ )!important;
     &:active{
         color: $white!important;
     }
@@ -209,7 +208,9 @@ input[type="file"] {
 .preview{
     display: none;
     background-image: $backgroundFile;
-    @include roundedBorderMax(250px, 250px, 10px);
+    max-width:  250px;
+    max-height: 250px;
+    border-radius: map-get($borderRadius, small);
     margin: auto;
     @include notUnderline;
     @include centerPosition;
@@ -220,7 +221,9 @@ input[type="file"] {
 
 .previewFile{
     margin: auto;
-    @include roundedBorderMax(250px, 250px, 10px);
+    max-width:  250px;
+    max-height: 250px;
+    border-radius: map-get($borderRadius, small);
     @include notUnderline;
 }
 

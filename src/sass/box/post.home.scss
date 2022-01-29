@@ -1,6 +1,6 @@
 .userPost {
   border-radius: map-get($borderRadius, big);
-  background-color: $transparent;
+  background-color: map-get($transparent, total_);
   padding: 0;
   width: 100%;
   margin: auto;
@@ -77,18 +77,19 @@
 
 .interactionPost {
   @include centerPosition;
-  @include roundedBorder(50%, 40px, map-get($borderRadius, extrabig));
+  @include roundedBorder(60%, 40px, map-get($borderRadius, extrabig));
   backdrop-filter: map-get($blurEffect, nano);
+  background-color:  map-get($transparent, black_);
   border: 2px solid $boderBlurBox;
   float: right;
   padding: 0 5px;
   position: relative;
   bottom: 105px;
-  right: 25%;
+  right: 20%;
 }
 
 .btnInteraction {
-  background-color: $transparent;
+  background-color:  map-get($transparent, total_);
   @include roundedBorder(40px, 40px, map-get($borderRadius, big));
   border: none;
   padding: 0;
@@ -98,23 +99,5 @@
   svg.icon_ {
     width: 30px;
     margin: auto;
-    color: map-get($color, gray_) !important;
-  }
-
-  svg.icon_heart:active {
-    color: map-get($color, pink_) !important;
-  }
-
-  svg.icon_noHeart:active {
-    color: map-get($color, black_) !important;
-  }
-
-  svg.icon_publication:active {
-    width: 12px;
-    color: map-get($color, eilish_) !important;
-  }
-
-  svg.icon_save:active {
-    color: map-get($color, blue_) !important;
   }
 }

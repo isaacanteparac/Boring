@@ -1,51 +1,70 @@
-@import "../abstracts/mixis.scss";
-@import "../abstracts/variables.scss";
 
 .allPost {
-    width: 100%;
-    padding: 0;
-    padding-bottom: 10px;
-    overflow: hidden;
-    @include wrapPosition;
+  width: 100%;
+  padding: 0;
+  padding-bottom: 10px;
+  overflow: hidden;
+  @include wrapPosition;
 }
 
 .onePost {
-    background: $backgroundComponent;
-    @include roundedBorder(28%, 105px, map-get($borderRadius, medium));
-    max-height: 200px;
-    margin: auto;
-    margin-top: 10px;
-    padding: 0;
-    overflow: hidden;
-    @include centerPosition;
-    @include notUnderline;
+  background: $backgroundComponent;
+  width: 336px;
+  height: auto;
+  border-radius: map-get($borderRadius, medium);
+  margin: auto;
+  margin-top: 10px;
+  padding: 0;
+  overflow: hidden;
+  @include centerPositionColumn;
+  @include notUnderline;
 
-    &:active{
-        background: $transparent;
-        backdrop-filter: map-get($blurEffect, small );
-        position: fixed;
-        bottom: 10%;
-        width: 100%;
-        max-height: 100%;
-        transform: scale(1.2);
-    }
 }
-
 
 .contentOnePost {
-    width: 100%;
-    max-height: 200px;
-    @include notUnderline;
-    
-    &:active{
-        transition-duration: 0.4s;
-        position: fixed;
-        bottom: map-get($post,  maxWidth);
-        width: 25%;
-        height: 25%;
-      
-        transform: scale(1.2);
-        border-radius: map-get($borderRadius, small);
-    }
+  width: auto;
+  max-height: 336px;
+  border-bottom-left-radius: map-get($borderRadius, medium);
+  border-bottom-right-radius: map-get($borderRadius, medium);
+  margin: auto;
+  @include notUnderline;
 }
 
+
+
+.informationPostUser {
+  width: 100%;
+  max-height: 380px;
+  margin: auto;
+  background-color: map-get($transparent, total_ );
+}
+
+.contentinformationPostUser {
+  margin-top: 5px;
+  padding: 0 5px;
+  height: auto;
+  @include leftPositionColumn;
+  label.user_username {
+    color: $white;
+    font-weight: 700;
+    -webkit-transition: 0.5s ease;
+    &:hover {
+      text-shadow: 0px -2px 0px rgba(0, 0, 0, 1),
+        0 0 5px rgba(255, 255, 255, 0.8), 0 -4px 15px rgba(255, 255, 255, 0.5);
+    }
+  }
+
+  .user_description{
+    white-space: initial;
+    height: auto;
+    overflow: hidden;
+    overflow:scroll;
+    overflow-x:hidden;
+    max-height: 350px;
+    margin-top: 5px;
+    background-color: map-get($transparent, total_ );
+    font-size: map-get($fontSize, rem_1 );
+  }
+
+
+}

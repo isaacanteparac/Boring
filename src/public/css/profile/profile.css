@@ -9,15 +9,13 @@
 /*NOTE: FONT-SIZE*/
 /*NOTE: FONT TYPE*/
 /*NOTE: BACKGROUND*/
-/*NOTE: TRANSPARENT*/
 /*NOTE: BORDER*/
 /*NOTE: TEXT*/
 /*NOTE: BUTTON*/
-/*MOON*/
+/*MOON**/
 .profile {
   width: 100%;
   height: 100%;
-  /* background-color: var(--backgroundDark);*/
   display: flex;
   align-items: center;
   justify-content: center;
@@ -68,7 +66,6 @@
 
 .informationUser {
   width: 100%;
-  /*background-image: var(--backgroundFile);*/
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -104,7 +101,7 @@
   margin-top: 10px;
   padding: 0; }
 
-.listLine {
+ul.listLine {
   margin: 0;
   margin-top: 10px;
   padding: 0;
@@ -114,7 +111,7 @@
   justify-content: center;
   color: #fff;
   text-align: center; }
-  .listLine .elementList {
+  ul.listLine li.elementList {
     display: inline;
     margin: 0 5px;
     display: flex;
@@ -132,48 +129,51 @@
     -webkit-user-drag: none;
     -webkit-user-select: none;
     -ms-user-select: none; }
-    .listLine .elementList:hover {
+    ul.listLine li.elementList:hover {
       border-bottom: 2px solid #0fee7e; }
-    .listLine .elementList:active {
+    ul.listLine li.elementList:active {
       border-bottom-left-radius: 10px;
       border-bottom-right-radius: 10px;
       border: none;
       background: #000000; }
-    .listLine .elementList label {
+    ul.listLine li.elementList label {
       display: flex;
       align-items: center;
       justify-content: center;
       flex-direction: column; }
-      .listLine .elementList label .user_icon {
+      ul.listLine li.elementList label .user_icon {
         width: 15px;
         margin: 0;
         padding: 0;
         position: relative; }
-      .listLine .elementList label svg.user_iconPost {
+      ul.listLine li.elementList label svg.user_iconPost {
         width: 12px;
         color: #0fee7e !important; }
-      .listLine .elementList label svg.user_iconFollowing {
+      ul.listLine li.elementList label svg.user_iconFollowing {
         width: 25px;
         color: #8c0fee !important; }
-      .listLine .elementList label svg.user_iconHeart {
+      ul.listLine li.elementList label svg.user_iconHeart {
         color: #ffff00 !important; }
 
 .optionsSearchPost {
   background: #050505;
+  width: 100%;
   height: 60px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   padding-bottom: 5px;
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
   border-bottom: 1px solid #3f3e3e; }
+  .optionsSearchPost .listLine {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px; }
 
 .btnFilesUser {
   margin: 0 5px;
   margin-top: 10px;
   position: relative;
-  width: 55px;
+  width: 60px;
   height: 50px;
   border-radius: 10px;
   border-bottom-left-radius: 0;
@@ -184,11 +184,13 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background-color: #ffffff00; }
+  background-color: #ffffff00;
+  color: #fff;
+  font-weight: 700; }
   .btnFilesUser:hover {
-    border-bottom: 2px solid #ffff00; }
+    border-bottom: 2px solid; }
   .btnFilesUser:active {
     background: #000000; }
-  .btnFilesUser .icon_file {
+  .btnFilesUser svg.icon_file {
     width: 30px;
     margin-bottom: 5px; }

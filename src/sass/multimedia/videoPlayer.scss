@@ -30,7 +30,7 @@
 }
 
 .ProgressContainer{
-  background: $transparent;
+  background: map-get($transparent, total_ );
   height: 20px;
 }
 
@@ -46,7 +46,7 @@
 
   .progressBar {
     @include roundedBorder(140px, 10px, map-get($borderRadius, big ));
-    background: $borderGrayLigth;
+    background: map-get($transparent, gray_ );;
     cursor: pointer;
     position: relative;
     bottom:14px;

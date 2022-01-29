@@ -40,11 +40,10 @@
 /*NOTE: FONT-SIZE*/
 /*NOTE: FONT TYPE*/
 /*NOTE: BACKGROUND*/
-/*NOTE: TRANSPARENT*/
 /*NOTE: BORDER*/
 /*NOTE: TEXT*/
 /*NOTE: BUTTON*/
-/*MOON*/
+/*MOON**/
 .head {
   display: none;
   position: fixed;
@@ -86,7 +85,14 @@
 .logo {
   display: block;
   text-decoration: none;
-  float: left; }
+  float: left;
+  background-color: #ffffff00;
+  width: 40px;
+  height: 36px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
   .logo .logoTop {
     border-left: 2px solid #0fee7e;
     border-right: 2px solid #ffff00;

@@ -8,17 +8,73 @@
 /*NOTE: TEXT*/
 /*NOTE: BUTTON*/
 /*MOON*/
+label.contentIcon {
+  display: inline-block;
+  margin: 0 3px; }
+
+div.iconLogo {
+  margin-top: 10px;
+  animation-name: iconLogoAnimate;
+  animation-duration: 4s;
+  animation-delay: 1s;
+  animation-iteration-count: infinite; }
+
+@keyframes iconLogoAnimate {
+  50% {
+    border-left: 2px solid #0fee7e;
+    border-right: 2px solid #0055ff;
+    border-left-width: 20px;
+    border-right-width: 20px; } }
+
 svg.icon_ {
-  width: 15px;
+  width: 30px;
   float: left; }
 
+svg.icon_logo {
+  color: #0fee7e; }
+
 svg.icon_heart {
-  color: #FFD700 !important; }
+  color: #Fb4958 !important; }
+
+svg.icon_noHeart {
+  color: #353232 !important; }
+
+svg.icon_following {
+  color: #6849fb !important; }
 
 svg.icon_publication {
-  width: 12px;
-  color: #0fee7e !important; }
+  width: 18px;
+  color: #Fbf849 !important; }
+
+svg.icon_comment {
+  color: #ffffff !important; }
+
+svg.icon_save {
+  color: #0055ff !important; }
 
 svg.icon_add {
+  color: #0055ff !important;
   width: 30px;
   float: none; }
+  svg.icon_add:active {
+    color: #003cb4 !important; }
+
+svg.icon_x {
+  color: #ff002b !important; }
+  svg.icon_x:active {
+    color: !important; }
+
+svg.icon_warning {
+  color: #e3e309 !important; }
+
+svg.icon_success {
+  color: #3abc0f !important; }
+
+svg.icon_message {
+  color: #d3d5d7 !important; }
+
+svg.icon_failed {
+  color: #bc0f0f !important; }
+
+svg.icon_file {
+  color: #0fee7e !important; }

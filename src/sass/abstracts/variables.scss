@@ -42,14 +42,13 @@ $color:(
     grayL_:#999898,
     black_: #353232,
     blackD_:#000000,
-    yelow_:#ffff00,
+    yellow_:#ffff00,
     white_: #ffffff,
     pink_:#Fb4958,
     violet_:#6849fb,
-    goldenfizz_:#Fbf849,
-    
-    
+    goldenfizz_:#Fbf849
 );
+
 
 /*NOTE:BORDER RADIUS*/
 $borderRadius:(
@@ -71,6 +70,7 @@ $fontSize:(
     small: 13px
 
 );
+
 /*NOTE: FONT TYPE*/
 $fontFamily:(
     first: 'Segoe UI',
@@ -91,7 +91,7 @@ $alertMessage:(
     iconMessage: #d3d5d7,
     iconSuccess: #3abc0f,
     iconFailed: #bc0f0f,
-    iconWarning:#e3e309,
+    iconWarning:#e3e309
 );
 
 $navigation:(
@@ -104,6 +104,13 @@ $navigation:(
     icons:30px
 );
 
+$transparent:(
+    total_:#ffffff00,
+    gray_: rgba(0, 0, 0, 0.465),
+    black_: rgba(0, 0, 0, 0.826)
+);
+
+
 /*NOTE: BACKGROUND*/
 $backgroundLeft: #000;
 $backgroundRight: #000;
@@ -113,11 +120,6 @@ $backgroundComponent: #fff;
 $backgrounWindow: #fff;
 $backgroundFile:  radial-gradient(circle at 0% 0%,
  #b1b1b8 50%, #b1b1b8 66.67%, #8c8ca3 83.33%, #6e6b8f 100%);
-//$backgroundNavigation: rgba(255, 255, 255, 0.146);
-
-/*NOTE: TRANSPARENT*/
-$transparent:#ffffff00;
-$transparentGray: rgba(0, 0, 0, 0.465);
 
 
 /*NOTE: BORDER*/
@@ -141,7 +143,7 @@ $actionBtnDefaul: #B9b5b5;
 $leftoverBoxDark: #7b7b7b;
 
 
-/*MOON*/
+/*MOON**/
 $white: #fff;
 $lowlowWhite: #b6b6b6;
 $lowWhite: #e7e7e7;

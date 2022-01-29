@@ -85,12 +85,12 @@ div.user_add {
   position: relative;
   float: right;
   bottom: 115px;
-  background-color: $transparent;
+  background-color: map-get($transparent, total_ );
   @include roundedBorder(30px, 30px, 15px);
   @include centerPosition;
 
   button {
-    background-color: $transparent;
+    background-color: map-get($transparent, total_ );
     text-decoration: none;
     border: none;
     @include roundedBorder(30px, 30px, 15px);

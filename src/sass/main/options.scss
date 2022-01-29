@@ -1,9 +1,5 @@
-* {
-  cursor: default;
-  outline: none;
-}
-@import "../abstracts/mixis.scss";
-@import "../abstracts/variables.scss";
+
+
 
 .divBlur {
   position: fixed;
@@ -88,7 +84,7 @@ div.optionsBox {
 
 
 .btnOptions {
-  background-color: $transparent;
+  background-color: map-get($transparent, total_ );;
   width: 30px;
   height: 30px;
   border: none;

@@ -35,7 +35,7 @@
         color: map-get($color, white_ )!important;
         &:active {
           color: map-get($color, white_ )!important;
-          background: $transparent;
+          background: map-get($transparent, total_);
         }
       }
       &:active {
@@ -70,7 +70,7 @@
 
   &:active {
     border: 2px solid map-get($color, blue_ );
-    background-color: $transparentGray;
+    background-color: map-get($transparent, gray_);
   }
 }
 

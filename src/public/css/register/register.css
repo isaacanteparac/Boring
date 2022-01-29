@@ -10,11 +10,10 @@
 /*NOTE: FONT-SIZE*/
 /*NOTE: FONT TYPE*/
 /*NOTE: BACKGROUND*/
-/*NOTE: TRANSPARENT*/
 /*NOTE: BORDER*/
 /*NOTE: TEXT*/
 /*NOTE: BUTTON*/
-/*MOON*/
+/*MOON**/
 .register {
   background-color: #ffffff00; }
 
@@ -87,6 +86,7 @@
   margin: 10px 0;
   border: none;
   background: #0055ff;
+  color: #ffffff;
   font-size: 19.2px; }
   .btnOk:active {
     background: #003cb4; }

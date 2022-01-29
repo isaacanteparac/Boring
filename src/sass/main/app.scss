@@ -16,12 +16,12 @@ code {
 
 ::-webkit-scrollbar {
     @include roundedBorder(2px, 2px, 50px);
-    background-color: $transparent;
+    background-color:map-get($transparent, total_ );
 }
 
 ::-webkit-scrollbar-track {
     border-radius: map-get($borderRadius, small );
-    background-color: $transparent;
+    background-color: map-get($transparent, total_ );
 }
 
 ::-webkit-scrollbar-thumb {

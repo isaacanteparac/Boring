@@ -1,7 +1,7 @@
 
 
 .alert_message{
-    background: $transparent;
+    background: map-get($transparent, total_);
     @include centerPosition;
     @include notUnderline;
     margin: 0 auto;
@@ -29,7 +29,7 @@ label.iconAlert{
 
 p.textMessage{
     font-family: map-get($fontFamily, first );
-    background: $transparent;
+    background: map-get($transparent, total_);
     width: 80%;
     font-weight: 500;
     max-height: 40px;
@@ -65,7 +65,7 @@ div.messageWarning{
     @include centerPosition;
     @include roundedBorder(30px, 30px, map-get($borderRadius, medium ));
     margin-right: 2px;
-    color: $transparentGray!important;
-    background-color: $transparent;
+    color: map-get($transparent, gray_)!important;
+    background-color: map-get($transparent, total_);
     border: map-get($borderRadius, null);
 }

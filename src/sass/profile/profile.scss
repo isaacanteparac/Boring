@@ -1,10 +1,8 @@
-@import "../abstracts/mixis.scss";
-@import "../abstracts/variables.scss";
+
 
 .profile {
     width: 100%;
     height: 100%;
-    /* background-color: var(--backgroundDark);*/
     @include centerPositionColumn;
 }
 
@@ -49,7 +47,6 @@
 
 .informationUser {
     width: 100%;
-    /*background-image: var(--backgroundFile);*/
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -93,7 +90,7 @@
     padding: 0;
 }
 
-.listLine {
+ul.listLine {
     margin: 0;
     margin-top: 10px;
     padding: 0;
@@ -103,7 +100,7 @@
     color: $white;
     text-align: center;
 
-    .elementList {
+    li.elementList {
         display: inline;
         margin: 0 5px;      
         @include centerPosition;
@@ -114,7 +111,6 @@
         border-bottom-left-radius: 0;
         border-bottom-right-radius: 0;
         @include notUnderline;
-
         &:hover {
             border-bottom: 2px solid map-get($color, eilish_ );
         }
@@ -155,12 +151,17 @@
 
 .optionsSearchPost {
     background: $backgroundComponent;
+    width: 100%;
     height: 60px;
-    @include centerPosition;
     padding-bottom: 5px;
     border-bottom-left-radius: map-get($borderRadius, medium );
     border-bottom-right-radius: map-get($borderRadius, medium );
     border-bottom: 1px solid $borderBlack;
+
+    .listLine{
+        @include centerPosition;
+        height: 50px;
+    }
 
 }
 
@@ -169,13 +170,15 @@
     margin: 0 5px;
     margin-top: 10px;
     position: relative;
-    @include roundedBorder(55px, 50px, map-get($borderRadius, small));
+    @include roundedBorder(60px, 50px, map-get($borderRadius, small));
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
     border: map-get($borderRadius, null);
     text-align: center;
     @include centerPositionColumn;
-    background-color: $transparent;
+    background-color: map-get($transparent, total_ );
+    color: $white;
+    font-weight: 700;
 
     &:hover {
         border-bottom: 2px solid map-get($color, yelow_ );
@@ -185,9 +188,8 @@
         background: $colorActiveBtn;
     }
 
-    .icon_file{
+    svg.icon_file{
         width: 30px;
         margin-bottom: 5px;
     }
 }
-

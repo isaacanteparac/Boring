@@ -7,7 +7,7 @@ div.allchats {
     padding-top:10px;
     margin: 0;
     margin-bottom: 60px;
-    background-color: $transparent;
+    background-color: map-get($transparent, total_);
     @include centerPositionColumn;
 }
 
@@ -21,7 +21,7 @@ div.chat {
         width: 100%;
         height: 60px;
         margin: auto;
-        background-color: $transparent;
+        background-color: map-get($transparent, total_);
         &:active{
             background-color: $colorActiveBtn;
         }

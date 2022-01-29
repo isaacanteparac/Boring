@@ -1,4 +1,5 @@
 
+
 .navInfer {
     display: none;
     position: fixed;
@@ -16,8 +17,8 @@
         margin: 0;
         padding: 0;
         @include centerPosition;
-        //background: $backgroundNavigation;
-        backdrop-filter: map-get($blurEffect, big );
+        /*backdrop-filter: map-get($blurEffect, big );*/ 
+        background-color: $backgroundComponent;
         border: 2px solid $boderBlurBox;
         @include roundedBorder(map-get($navigation, navWidth ), 
         map-get($navigation, navheigth), 
@@ -44,7 +45,7 @@
 
 
 .btnFooter {
-    background-color: $transparent;
+    background-color: map-get($transparent, total_ );;
     margin: 0 5px;
     padding-top: 5px;
     position: relative;

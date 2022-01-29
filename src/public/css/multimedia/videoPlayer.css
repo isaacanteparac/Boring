@@ -9,11 +9,10 @@
 /*NOTE: FONT-SIZE*/
 /*NOTE: FONT TYPE*/
 /*NOTE: BACKGROUND*/
-/*NOTE: TRANSPARENT*/
 /*NOTE: BORDER*/
 /*NOTE: TEXT*/
 /*NOTE: BUTTON*/
-/*MOON*/
+/*MOON**/
 .video video {
   width: 250px;
   max-height: 250px;
@@ -53,7 +52,7 @@
     width: 140px;
     height: 10px;
     border-radius: 20px;
-    background: #999898;
+    background: rgba(0, 0, 0, 0.465);
     cursor: pointer;
     position: relative;
     bottom: 14px;

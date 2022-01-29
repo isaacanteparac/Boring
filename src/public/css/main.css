@@ -10,25 +10,48 @@
 /*NOTE: FONT-SIZE*/
 /*NOTE: FONT TYPE*/
 /*NOTE: BACKGROUND*/
-/*NOTE: TRANSPARENT*/
 /*NOTE: BORDER*/
 /*NOTE: TEXT*/
 /*NOTE: BUTTON*/
-/*MOON*/
+/*MOON**/
 @import url(https://fonts.googleapis.com/css2?family=Azeret+Mono&display=swap);
 label.contentIcon {
   display: inline-block;
   margin: 0 3px; }
 
+.iconLogo {
+  margin-top: 6px; }
+
 svg.icon_ {
   width: 30px;
-  float: left; }
+  float: left;
+  color: #a19e9e !important; }
 
-svg.icon_heart {
+svg.icon_logo {
+  color: #fff !important;
+  /*animation-name: iconLogoAnimate;
+  animation-duration: 4s;
+  animation-delay: 1s;
+  animation-iteration-count: infinite;
+  @keyframes iconLogoAnimate {
+    25% {
+      color: map-get($logo, second);
+    }
+
+    50% {
+      color: map-get($logo, third);
+    }
+
+    100% {
+      color: map-get($logo, fourth);
+    }
+  }*/ }
+
+svg.icon_good:active {
+  color: #0fee7e !important; }
+
+svg.icon_bad:active {
   color: #Fb4958 !important; }
-
-svg.icon_noHeart {
-  color: #353232 !important; }
 
 svg.icon_following {
   color: #6849fb !important; }
@@ -36,12 +59,18 @@ svg.icon_following {
 svg.icon_publication {
   width: 18px;
   color: #Fbf849 !important; }
+  svg.icon_publication svg.icon_publication:active {
+    width: 12px;
+    color: #0fee7e !important; }
 
-svg.icon_comment {
+svg.icon_comment:active {
   color: #ffffff !important; }
 
-svg.icon_save {
+svg.icon_save:active {
   color: #0055ff !important; }
+
+svg.icon_reload:active {
+  color: #Fbf849 !important; }
 
 svg.icon_add {
   color: #0055ff !important;
@@ -71,26 +100,6 @@ svg.icon_file {
   color: #0fee7e !important; }
 
 /*main*/
-* {
-  cursor: default;
-  outline: none; }
-
-/*NOTE: DO NOT COPY CONTENT*/
-/*NOTE:CENTER ELEMENTS*/
-/*NOTE: PLACE ELEMENTS IN CENTERED COLUMANS*/
-/*NOTE: ROUND EDGES*/
-/*NOTE:BALL MOVEMENT*/
-/*NOTE:SIDE BODY*/
-/*NOTE: LOGO COLORS*/
-/*NOTE:BORDER RADIUS*/
-/*NOTE: FONT-SIZE*/
-/*NOTE: FONT TYPE*/
-/*NOTE: BACKGROUND*/
-/*NOTE: TRANSPARENT*/
-/*NOTE: BORDER*/
-/*NOTE: TEXT*/
-/*NOTE: BUTTON*/
-/*MOON*/
 .divBlur {
   position: fixed;
   width: 100%;
@@ -251,7 +260,8 @@ code {
     display: flex;
     align-items: center;
     justify-content: center;
-    backdrop-filter: blur(30px);
+    /*backdrop-filter: map-get($blurEffect, big );*/
+    background-color: #050505;
     border: 2px solid rgba(255, 255, 255, 0.1);
     width: 300px;
     height: 100%;
@@ -326,11 +336,10 @@ code {
 /*NOTE: FONT-SIZE*/
 /*NOTE: FONT TYPE*/
 /*NOTE: BACKGROUND*/
-/*NOTE: TRANSPARENT*/
 /*NOTE: BORDER*/
 /*NOTE: TEXT*/
 /*NOTE: BUTTON*/
-/*MOON*/
+/*MOON**/
 .head {
   display: none;
   position: fixed;
@@ -372,7 +381,14 @@ code {
 .logo {
   display: block;
   text-decoration: none;
-  float: left; }
+  float: left;
+  background-color: #ffffff00;
+  width: 40px;
+  height: 36px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
   .logo .logoTop {
     border-left: 2px solid #0fee7e;
     border-right: 2px solid #ffff00;
@@ -637,22 +653,6 @@ div.messageWarning {
 *:focus {
   outline: none; }
 
-/*NOTE: DO NOT COPY CONTENT*/
-/*NOTE:CENTER ELEMENTS*/
-/*NOTE: PLACE ELEMENTS IN CENTERED COLUMANS*/
-/*NOTE: ROUND EDGES*/
-/*NOTE:BALL MOVEMENT*/
-/*NOTE:SIDE BODY*/
-/*NOTE: LOGO COLORS*/
-/*NOTE:BORDER RADIUS*/
-/*NOTE: FONT-SIZE*/
-/*NOTE: FONT TYPE*/
-/*NOTE: BACKGROUND*/
-/*NOTE: TRANSPARENT*/
-/*NOTE: BORDER*/
-/*NOTE: TEXT*/
-/*NOTE: BUTTON*/
-/*MOON*/
 /*NOTE:VIZUALIZAR EL TIEMPO DEL AUDIO*/
 #player-track {
   background-color: #ffffff00;
@@ -824,11 +824,10 @@ div.messageWarning {
 /*NOTE: FONT-SIZE*/
 /*NOTE: FONT TYPE*/
 /*NOTE: BACKGROUND*/
-/*NOTE: TRANSPARENT*/
 /*NOTE: BORDER*/
 /*NOTE: TEXT*/
 /*NOTE: BUTTON*/
-/*MOON*/
+/*MOON**/
 .video video {
   width: 250px;
   max-height: 250px;
@@ -868,7 +867,7 @@ div.messageWarning {
     width: 140px;
     height: 10px;
     border-radius: 20px;
-    background: #999898;
+    background: rgba(0, 0, 0, 0.465);
     cursor: pointer;
     position: relative;
     bottom: 14px;
@@ -911,11 +910,10 @@ div.messageWarning {
 /*NOTE: FONT-SIZE*/
 /*NOTE: FONT TYPE*/
 /*NOTE: BACKGROUND*/
-/*NOTE: TRANSPARENT*/
 /*NOTE: BORDER*/
 /*NOTE: TEXT*/
 /*NOTE: BUTTON*/
-/*MOON*/
+/*MOON**/
 .register {
   background-color: #ffffff00; }
 
@@ -1114,22 +1112,6 @@ div.messageWarning {
   justify-content: center; }
 
 /*PUBLIC*/
-/*NOTE: DO NOT COPY CONTENT*/
-/*NOTE:CENTER ELEMENTS*/
-/*NOTE: PLACE ELEMENTS IN CENTERED COLUMANS*/
-/*NOTE: ROUND EDGES*/
-/*NOTE:BALL MOVEMENT*/
-/*NOTE:SIDE BODY*/
-/*NOTE: LOGO COLORS*/
-/*NOTE:BORDER RADIUS*/
-/*NOTE: FONT-SIZE*/
-/*NOTE: FONT TYPE*/
-/*NOTE: BACKGROUND*/
-/*NOTE: TRANSPARENT*/
-/*NOTE: BORDER*/
-/*NOTE: TEXT*/
-/*NOTE: BUTTON*/
-/*MOON*/
 div.post, div.viewPostContentuser {
   width: 96%;
   margin: auto;
@@ -1154,11 +1136,10 @@ div.viewPostContentuser {
 /*NOTE: FONT-SIZE*/
 /*NOTE: FONT TYPE*/
 /*NOTE: BACKGROUND*/
-/*NOTE: TRANSPARENT*/
 /*NOTE: BORDER*/
 /*NOTE: TEXT*/
 /*NOTE: BUTTON*/
-/*MOON*/
+/*MOON**/
 .coment {
   margin: 0;
   padding: 0;
@@ -1266,22 +1247,6 @@ div.viewPostContentuser {
   .btnPostMessage :active {
     background-color: #003cb4; }
 
-/*NOTE: LOGO COLORS*/
-/*NOTE:BORDER RADIUS*/
-/*NOTE: FONT-SIZE*/
-/*NOTE: FONT TYPE*/
-/*NOTE: BACKGROUND*/
-/*NOTE: TRANSPARENT*/
-/*NOTE: BORDER*/
-/*NOTE: TEXT*/
-/*NOTE: BUTTON*/
-/*MOON*/
-/*NOTE: DO NOT COPY CONTENT*/
-/*NOTE:CENTER ELEMENTS*/
-/*NOTE: PLACE ELEMENTS IN CENTERED COLUMANS*/
-/*NOTE: ROUND EDGES*/
-/*NOTE:BALL MOVEMENT*/
-/*NOTE:SIDE BODY*/
 #boxCreatePublication {
   display: none; }
 
@@ -1448,7 +1413,7 @@ input[type="file"] {
   float: left;
   position: relative;
   left: 8px;
-  color: #999898 !important; }
+  color: rgba(0, 0, 0, 0.465) !important; }
   #eliminarFileCreatePublication:active {
     color: #fff !important; }
 
@@ -1495,26 +1460,9 @@ input[type="file"] {
   max-height: 250px; }
 
 /*profile*/
-/*NOTE: DO NOT COPY CONTENT*/
-/*NOTE:CENTER ELEMENTS*/
-/*NOTE: PLACE ELEMENTS IN CENTERED COLUMANS*/
-/*NOTE: ROUND EDGES*/
-/*NOTE:BALL MOVEMENT*/
-/*NOTE:SIDE BODY*/
-/*NOTE: LOGO COLORS*/
-/*NOTE:BORDER RADIUS*/
-/*NOTE: FONT-SIZE*/
-/*NOTE: FONT TYPE*/
-/*NOTE: BACKGROUND*/
-/*NOTE: TRANSPARENT*/
-/*NOTE: BORDER*/
-/*NOTE: TEXT*/
-/*NOTE: BUTTON*/
-/*MOON*/
 .profile {
   width: 100%;
   height: 100%;
-  /* background-color: var(--backgroundDark);*/
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1565,7 +1513,6 @@ input[type="file"] {
 
 .informationUser {
   width: 100%;
-  /*background-image: var(--backgroundFile);*/
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -1601,7 +1548,7 @@ input[type="file"] {
   margin-top: 10px;
   padding: 0; }
 
-.listLine {
+ul.listLine {
   margin: 0;
   margin-top: 10px;
   padding: 0;
@@ -1611,7 +1558,7 @@ input[type="file"] {
   justify-content: center;
   color: #fff;
   text-align: center; }
-  .listLine .elementList {
+  ul.listLine li.elementList {
     display: inline;
     margin: 0 5px;
     display: flex;
@@ -1629,48 +1576,51 @@ input[type="file"] {
     -webkit-user-drag: none;
     -webkit-user-select: none;
     -ms-user-select: none; }
-    .listLine .elementList:hover {
+    ul.listLine li.elementList:hover {
       border-bottom: 2px solid #0fee7e; }
-    .listLine .elementList:active {
+    ul.listLine li.elementList:active {
       border-bottom-left-radius: 10px;
       border-bottom-right-radius: 10px;
       border: none;
       background: #000000; }
-    .listLine .elementList label {
+    ul.listLine li.elementList label {
       display: flex;
       align-items: center;
       justify-content: center;
       flex-direction: column; }
-      .listLine .elementList label .user_icon {
+      ul.listLine li.elementList label .user_icon {
         width: 15px;
         margin: 0;
         padding: 0;
         position: relative; }
-      .listLine .elementList label svg.user_iconPost {
+      ul.listLine li.elementList label svg.user_iconPost {
         width: 12px;
         color: #0fee7e !important; }
-      .listLine .elementList label svg.user_iconFollowing {
+      ul.listLine li.elementList label svg.user_iconFollowing {
         width: 25px;
         color: #8c0fee !important; }
-      .listLine .elementList label svg.user_iconHeart {
+      ul.listLine li.elementList label svg.user_iconHeart {
         color: #ffff00 !important; }
 
 .optionsSearchPost {
   background: #050505;
+  width: 100%;
   height: 60px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   padding-bottom: 5px;
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
   border-bottom: 1px solid #3f3e3e; }
+  .optionsSearchPost .listLine {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px; }
 
 .btnFilesUser {
   margin: 0 5px;
   margin-top: 10px;
   position: relative;
-  width: 55px;
+  width: 60px;
   height: 50px;
   border-radius: 10px;
   border-bottom-left-radius: 0;
@@ -1681,31 +1631,17 @@ input[type="file"] {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background-color: #ffffff00; }
+  background-color: #ffffff00;
+  color: #fff;
+  font-weight: 700; }
   .btnFilesUser:hover {
-    border-bottom: 2px solid #ffff00; }
+    border-bottom: 2px solid; }
   .btnFilesUser:active {
     background: #000000; }
-  .btnFilesUser .icon_file {
+  .btnFilesUser svg.icon_file {
     width: 30px;
     margin-bottom: 5px; }
 
-/*NOTE: DO NOT COPY CONTENT*/
-/*NOTE:CENTER ELEMENTS*/
-/*NOTE: PLACE ELEMENTS IN CENTERED COLUMANS*/
-/*NOTE: ROUND EDGES*/
-/*NOTE:BALL MOVEMENT*/
-/*NOTE:SIDE BODY*/
-/*NOTE: LOGO COLORS*/
-/*NOTE:BORDER RADIUS*/
-/*NOTE: FONT-SIZE*/
-/*NOTE: FONT TYPE*/
-/*NOTE: BACKGROUND*/
-/*NOTE: TRANSPARENT*/
-/*NOTE: BORDER*/
-/*NOTE: TEXT*/
-/*NOTE: BUTTON*/
-/*MOON*/
 .allPost {
   width: 100%;
   padding: 0;
@@ -1716,10 +1652,9 @@ input[type="file"] {
 
 .onePost {
   background: #050505;
-  width: 28%;
-  height: 105px;
+  width: 336px;
+  height: auto;
   border-radius: 15px;
-  max-height: 200px;
   margin: auto;
   margin-top: 10px;
   padding: 0;
@@ -1727,34 +1662,53 @@ input[type="file"] {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
   -moz-user-select: none;
   -webkit-user-drag: none;
   -webkit-user-select: none;
   -ms-user-select: none; }
-  .onePost:active {
-    background: #ffffff00;
-    backdrop-filter: blur(10px);
-    position: fixed;
-    bottom: 10%;
-    width: 100%;
-    max-height: 100%;
-    transform: scale(1.2); }
 
 .contentOnePost {
-  width: 100%;
-  max-height: 200px;
+  width: auto;
+  max-height: 336px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  margin: auto;
   -moz-user-select: none;
   -webkit-user-drag: none;
   -webkit-user-select: none;
   -ms-user-select: none; }
-  .contentOnePost:active {
-    transition-duration: 0.4s;
-    position: fixed;
-    bottom: 326px;
-    width: 25%;
-    height: 25%;
-    transform: scale(1.2);
-    border-radius: 10px; }
+
+.informationPostUser {
+  width: 100%;
+  max-height: 380px;
+  margin: auto;
+  background-color: #ffffff00; }
+
+.contentinformationPostUser {
+  margin-top: 5px;
+  padding: 0 5px;
+  height: auto;
+  display: flex;
+  align-items: flex-start;
+  justify-content: left;
+  flex-direction: column; }
+  .contentinformationPostUser label.user_username {
+    color: #fff;
+    font-weight: 700;
+    -webkit-transition: 0.5s ease; }
+    .contentinformationPostUser label.user_username:hover {
+      text-shadow: 0px -2px 0px black, 0 0 5px rgba(255, 255, 255, 0.8), 0 -4px 15px rgba(255, 255, 255, 0.5); }
+  .contentinformationPostUser .user_description {
+    white-space: initial;
+    height: auto;
+    overflow: hidden;
+    overflow: scroll;
+    overflow-x: hidden;
+    max-height: 350px;
+    margin-top: 5px;
+    background-color: #ffffff00;
+    font-size: 17.6px; }
 
 /*CHAT*/
 /*NOTE: DO NOT COPY CONTENT*/
@@ -1768,11 +1722,10 @@ input[type="file"] {
 /*NOTE: FONT-SIZE*/
 /*NOTE: FONT TYPE*/
 /*NOTE: BACKGROUND*/
-/*NOTE: TRANSPARENT*/
 /*NOTE: BORDER*/
 /*NOTE: TEXT*/
 /*NOTE: BUTTON*/
-/*MOON*/
+/*MOON**/
 div.allchats {
   width: 100%;
   padding: 0;
@@ -1818,11 +1771,10 @@ div.chat {
 /*NOTE: FONT-SIZE*/
 /*NOTE: FONT TYPE*/
 /*NOTE: BACKGROUND*/
-/*NOTE: TRANSPARENT*/
 /*NOTE: BORDER*/
 /*NOTE: TEXT*/
 /*NOTE: BUTTON*/
-/*MOON*/
+/*MOON**/
 .boxFriends {
   margin-bottom: 60px;
   width: 100%;
@@ -1875,11 +1827,10 @@ div.chat {
 /*NOTE: FONT-SIZE*/
 /*NOTE: FONT TYPE*/
 /*NOTE: BACKGROUND*/
-/*NOTE: TRANSPARENT*/
 /*NOTE: BORDER*/
 /*NOTE: TEXT*/
 /*NOTE: BUTTON*/
-/*MOON*/
+/*MOON**/
 .divSearch {
   padding-top: 5px;
   -moz-user-select: none;
@@ -2139,16 +2090,17 @@ div.user_add {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 50%;
+  width: 60%;
   height: 40px;
   border-radius: 30px;
   backdrop-filter: blur(5px);
+  background-color: rgba(0, 0, 0, 0.826);
   border: 2px solid rgba(255, 255, 255, 0.1);
   float: right;
   padding: 0 5px;
   position: relative;
   bottom: 105px;
-  right: 25%; }
+  right: 20%; }
 
 .btnInteraction {
   background-color: #ffffff00;
@@ -2163,14 +2115,27 @@ div.user_add {
   justify-content: center; }
   .btnInteraction svg.icon_ {
     width: 30px;
-    margin: auto;
-    color: #a19e9e !important; }
-  .btnInteraction svg.icon_heart:active {
-    color: #Fb4958 !important; }
-  .btnInteraction svg.icon_noHeart:active {
-    color: #353232 !important; }
-  .btnInteraction svg.icon_publication:active {
-    width: 12px;
-    color: #0fee7e !important; }
-  .btnInteraction svg.icon_save:active {
-    color: #0055ff !important; }
+    margin: auto; }
+
+/*NOTE:BUTTONS*/
+.InteractionPostUserProfile {
+  width: 100%;
+  height: 35px;
+  background-color: #ffffff00;
+  display: flex;
+  align-items: flex-end;
+  justify-content: right;
+  margin: 2px 0; }
+
+.btnInteractionPostUserProfile {
+  background-color: #ffffff00;
+  width: 35px;
+  height: 35px;
+  border-radius: 15px;
+  margin: 0 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none; }
+  .btnInteractionPostUserProfile svg.icon_ {
+    width: 50px; }
