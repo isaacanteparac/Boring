@@ -6,13 +6,26 @@
   margin: 2px 0;
 }
 
+.contentInteractionPostUser{
+  @include centerPosition;
+  width: 70%;
+  height: 35px;
+  background-color: map-get($transparent, total_ );
+  overflow: hidden;
+}
+
 .btnInteractionPostUserProfile {
   background-color: map-get($transparent, total_ );
-  @include roundedBorder(35px, 35px, map-get($borderRadius, medium));
+  max-width: 75px;
+  height: 35px;
+  color: map-get($color , gray_ );
+  border-radius: map-get($borderRadius, medium);
   margin: 0 3px;
   @include centerPosition;
+  font-size: map-get($fontSize, rem_ );
+  font-weight: 600;
   border: none;
   svg.icon_ {
-    width: 50px;
+    width: 25px;
   }
 }

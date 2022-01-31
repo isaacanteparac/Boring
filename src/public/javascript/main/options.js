@@ -144,6 +144,28 @@ $(document).ready(() => {
   $(".btnClosrMessage").click(() => {
     $(".content_message").hide();
   });
+
+
+  $(".readMore").click( () =>{
+   if($(".user_description").css("height") == 345){
+      alert("es 25");
+    }
+    else{
+      alert("es 25");
+      $(".user_description").css({
+        "text-overflow": "none",
+        "height": "345px",
+        "overflow":"scroll",
+        "overflow-x":"hidden"
+      });
+    }
+
+  });
+
+
+
+
+
 });
 
 function viewImage() {

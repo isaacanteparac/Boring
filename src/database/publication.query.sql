@@ -14,3 +14,6 @@ CREATE TABLE publications(
     PRIMARY KEY (id),
     FOREIGN KEY (id_user) REFERENCES users(id)
 );
+
+
+ALTER TABLE publications ADD views INT(11);

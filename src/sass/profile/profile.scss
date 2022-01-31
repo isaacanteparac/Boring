@@ -14,12 +14,7 @@
     padding-bottom: 10px;
     @include notUnderline;
     background: $backgroundComponent;
-    .user_photo {
-        @include roundedBorder(80px, 80px, map-get($borderRadius, extrabig ));
-        background-image: $backgroundFile;
-        margin-bottom: 10px;
-        left: 0;
-    }
+
 
     
 
@@ -40,10 +35,6 @@
     }
 }
 
-.iconsProfile {
-    width: 20px;
-    filter: invert(100%);
-}
 
 .informationUser {
     width: 100%;
@@ -88,39 +79,34 @@
 .postFollowLike {
     margin-top: 10px;
     padding: 0;
+    height: 83px;
 }
 
 ul.listLine {
     margin: 0;
-    margin-top: 10px;
     padding: 0;
-    height: 40px;
- 
-    @include centerPosition;
+    height: 83px;
+    @include wrapPosition;
     color: $white;
     text-align: center;
 
+    .user_photo {
+        @include roundedBorder(80px, 80px, map-get($borderRadius, extrabig ));
+        background-image: $backgroundFile;
+        top: 0;
+        left:0;
+    }
+
     li.elementList {
         display: inline;
-        margin: 0 5px;      
+        margin: 0 30px;
+        margin-top: 20px;
         @include centerPosition;
         text-align: center;
         padding: 5px;
         font-weight: 500;
         @include roundedBorderMax(auto,40px,map-get($borderRadius, small ));
-        border-bottom-left-radius: 0;
-        border-bottom-right-radius: 0;
         @include notUnderline;
-        &:hover {
-            border-bottom: 2px solid map-get($color, eilish_ );
-        }
-
-        &:active{
-            border-bottom-left-radius: map-get($borderRadius, small );
-            border-bottom-right-radius: map-get($borderRadius, small );
-            border: none;
-            background: $colorActiveBtn;
-        }
 
         label{
             @include centerPositionColumn;
@@ -139,10 +125,6 @@ ul.listLine {
                 width: 25px;
                 color: map-get($logo, fourth )!important;
             }
-    
-            svg.user_iconHeart{
-                color: map-get($logo, second )!important;
-            }
         }
 
        
@@ -152,7 +134,7 @@ ul.listLine {
 .optionsSearchPost {
     background: $backgroundComponent;
     width: 100%;
-    height: 60px;
+    height: 55px;
     padding-bottom: 5px;
     border-bottom-left-radius: map-get($borderRadius, medium );
     border-bottom-right-radius: map-get($borderRadius, medium );
@@ -181,7 +163,7 @@ ul.listLine {
     font-weight: 700;
 
     &:hover {
-        border-bottom: 2px solid map-get($color, yelow_ );
+        border-bottom: 2px solid map-get($color, yellow_ );
     }
 
     &:active {
