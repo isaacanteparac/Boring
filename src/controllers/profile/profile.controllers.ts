@@ -5,7 +5,9 @@ import { connect } from "../../connect_database";
 export async function _get_(req: Request, res: Response) {
   const db = await connect();
   const username: string = "iac";
-
+    /*
+        MIERDA: ORDERNAR POR FECHA DE MAS RECIENTE A MENOS
+    */
   let userData = await db.query("SELECT * FROM users WHERE username = ?", [
     username
   ]);

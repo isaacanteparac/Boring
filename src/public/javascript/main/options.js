@@ -147,18 +147,14 @@ $(document).ready(() => {
 
 
   $(".readMore").click( () =>{
-   if($(".user_description").css("height") == 345){
-      alert("es 25");
-    }
-    else{
-      alert("es 25");
-      $(".user_description").css({
+
+      $("#description65").css({
         "text-overflow": "none",
-        "height": "345px",
+        "height": "340px",
         "overflow":"scroll",
         "overflow-x":"hidden"
       });
-    }
+
 
   });
 

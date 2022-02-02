@@ -1779,8 +1779,11 @@ ul.listLine {
   background-color: #ffffff00;
   padding: 0;
   width: 100%;
+  height: auto;
   display: flex;
-  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: left;
+  flex-direction: column;
   margin-top: 5px; }
 
 .readMore {
@@ -2265,7 +2268,7 @@ div.user_add {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 70%;
+  width: 80%;
   height: 35px;
   background-color: #ffffff00;
   overflow: hidden; }
