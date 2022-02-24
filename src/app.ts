@@ -112,10 +112,8 @@ export class App {
   async listen() {
     console.clear();
     console.log("\n");
-    console.log("█▀▀█ █▀▀█ █▀▀█  ▀  █▀▀▄ █▀▀▀ ");
-    console.log("█▀▀▄ █  █ █▄▄▀ ▀█▀ █  █ █ ▀█ ");
-    console.log("█▄▄█ ▀▀▀▀ ▀ ▀▀ ▀▀▀ ▀  ▀ ▀▀▀▀ ");
-    console.log("\nDev By Isaac Antepara C.");
+    console.log("█▀▀ █   ▀█▀ █▀█ █▀█ █▀█ ▀█▀ █▀█ █▀█");
+    console.log("█▄▄ █▄▄ ▄█▄ █▄█ █▀▀ █▀█  █  █▀▄ █▀█");
     await this.app.listen(this.app.get("port"));
     console.log("\nSERVER ON PORT " + this.app.get("port"));
   }
