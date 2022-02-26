@@ -3,7 +3,7 @@ USE duaui;
 CREATE TABLE publications(
     id INT(11) NOT NULL AUTO_INCREMENT,
     description VARCHAR(255) NULL,
-    file_content MEDIUMTEXT,
+    file_content LONGTEXT,
     likes INT(11),
     dislikes INT(11),
     views INT(11),

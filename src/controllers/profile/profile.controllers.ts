@@ -4,7 +4,7 @@ import { connect } from "../../connect_database";
 
 export async function _get_(req: Request, res: Response) {
   const db = await connect();
-  const username: string = "iac";
+  const username: string = "thisisisaacac";
     /*
         MIERDA: ORDERNAR POR FECHA DE MAS RECIENTE A MENOS
     */

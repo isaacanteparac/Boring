@@ -83,6 +83,7 @@ $backgroundNavigation: rgba(0, 0, 0, 0.68);
 .options {
   margin: 0 5px;
   position: relative;
+  top: 30px;
   width: 48px;
   height: 35px;
   border-radius: 10px;
@@ -94,9 +95,7 @@ $backgroundNavigation: rgba(0, 0, 0, 0.68);
   flex-direction: column;
   background: #fff;
   color: #000;
-  border: 1px solid #b6b3b3;
   padding: 2px;
   font-size: 15px; }
   .options:active {
-    border: 2px solid #0055ff;
-    background-color: rgba(0, 0, 0, 0.465); }
+    border: 2px solid #0055ff; }

@@ -89,8 +89,8 @@ export class App {
       this.app.locals.success = req.flash("success");
       this.app.locals.failed = req.flash("failed");
       this.app.locals.failed = req.flash("warning");
-
       this.app.locals.user = req.user;
+     
       next();
     });
   }

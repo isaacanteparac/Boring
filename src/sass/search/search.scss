@@ -58,19 +58,20 @@
 .options {
   margin: 0 5px;
   position: relative;
+  top: 30px;
   @include roundedBorder(48px, 35px, map-get($borderRadius, small));
   border: map-get($borderRadius, null);
   text-align: center;
   @include centerPositionColumn;
   background: $backgroundComponent;
   color: $white;
-  border: 1px solid $colorActiveBtn;
+  //border: 1px solid $colorActiveBtn;
   padding: 2px;
   font-size: map-get($fontSize, medium);
 
   &:active {
     border: 2px solid map-get($color, blue_ );
-    background-color: map-get($transparent, gray_);
+    //background-color: map-get($transparent, gray_);
   }
 }
 
